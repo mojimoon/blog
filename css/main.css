@@ -697,7 +697,7 @@ table:not([class]) {
   outline: none;
 }
 html {
-  font-family: Lato, Arial, "Noto Serif SC", "Microsoft Yahei", "WenQuanYi Micro Hei", Helvetica, sans-serif;
+  font-family: Lato, Arial, "Noto Sans SC", "Microsoft Yahei", "WenQuanYi Micro Hei", Helvetica, sans-serif;
   font-size: 16px;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
@@ -4560,7 +4560,7 @@ nav.menu a.nav-item:hover {
   padding: 0.5rem 0;
   line-height: 1;
   box-sizing: border-box;
-  font-family: Lato, Arial, "Noto Serif SC", "Microsoft Yahei", "WenQuanYi Micro Hei", Helvetica, sans-serif;
+  font-family: Lato, Arial, "Noto Sans SC", "Microsoft Yahei", "WenQuanYi Micro Hei", Helvetica, sans-serif;
   color: var(--text-p0);
 }
 .search-wrapper.noresult .search-icon {
