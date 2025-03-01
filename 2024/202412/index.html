@@ -78,7 +78,7 @@
 <widget class="widget-wrapper search"><div class="widget-body"><div class="search-wrapper" id="search"><form class="search-form"><input type="text" class="search-input" id="search-input" data-filter="/blog/" placeholder="文章搜索"><svg t="1670596976048" class="icon search-icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2676" width="200" height="200"><path d="M938.2 832.6L723.8 618.1c-2.5-2.5-5.3-4.4-7.9-6.4 36.2-55.6 57.3-121.8 57.3-193.1C773.3 222.8 614.6 64 418.7 64S64 222.8 64 418.6c0 195.9 158.8 354.6 354.6 354.6 71.3 0 137.5-21.2 193.2-57.4 2 2.7 3.9 5.4 6.3 7.8L832.5 938c14.6 14.6 33.7 21.9 52.8 21.9 19.1 0 38.2-7.3 52.8-21.8 29.2-29.1 29.2-76.4 0.1-105.5M418.7 661.3C284.9 661.3 176 552.4 176 418.6 176 284.9 284.9 176 418.7 176c133.8 0 242.6 108.9 242.6 242.7 0 133.7-108.9 242.6-242.6 242.6" p-id="2677"></path></svg></form><div id="search-result"></div><div class="search-no-result">没有找到内容！</div></div></div></widget>
 
 
-<widget class="widget-wrapper toc single" id="data-toc" collapse="false"><div class="widget-header cap dis-select"><span class="name">2024 年 12 月：旧乡晶尘</span></div><div class="widget-body fs14"><div class="doc-tree active"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8D%9A%E5%AE%A2%E6%98%93%E6%96%B0%E5%9D%80"><span class="toc-text">博客易新址</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B7%A5%E4%BD%9C%E5%AD%A6%E4%B8%9A%E6%9C%89%E6%89%80%E6%88%90"><span class="toc-text">工作学业有所成</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B9%B4%E6%9C%AB%E7%BF%BB%E6%96%B0%E7%AF%87"><span class="toc-text">年末翻新篇</span></a></li></ol></div></div></widget>
+<widget class="widget-wrapper toc single" id="data-toc" collapse="false"><div class="widget-header cap dis-select"><span class="name">2024 年 12 月：旧乡晶尘</span></div><div class="widget-body fs14"><div class="doc-tree active"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8D%9A%E5%AE%A2%E6%98%93%E6%96%B0%E5%9D%80"><span class="toc-text"> 博客易新址</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B7%A5%E4%BD%9C%E5%AD%A6%E4%B8%9A%E6%9C%89%E6%89%80%E6%88%90"><span class="toc-text"> 工作学业有所成</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B9%B4%E6%9C%AB%E7%BF%BB%E6%96%B0%E7%AF%87"><span class="toc-text"> 年末翻新篇</span></a></li></ol></div></div></widget>
 
 
 
@@ -105,29 +105,29 @@
 <p>距离上次写日志已经过去四个月了。四个月！你知道我这四个月是怎么过的嘛！</p>
 <p>总之先是进行例行的近况报告。</p>
 <!-- 575 haiku -->
-<h2 id="博客易新址">博客易新址</h2>
+<h2 id="博客易新址"><a class="markdownIt-Anchor" href="#博客易新址"></a> 博客易新址</h2>
 <p>如你所见，这个博客的网址从 <a href="https://mojimoon.github.io">mojimoon.github.io</a> 迁移到了 <a href="https://mojimoon.github.io/blog/">https://mojimoon.github.io/blog/</a>。为了我自己未来的发展做准备，我决定将前者预留成简历式的个人主页，而目前的博客则退居二线继续更新。</p>
 <p>这个过程并不麻烦，首先是将对应的仓库从 <code>mojimoon/mojimoon.github.io</code> 移动到 <code>mojimoon/blog</code>，批量替换所有的链接。然后下一次 <code>hexo d</code> 时，GitHub Actions 就会自动把 <code>gh-pages</code> 分支部署到新的地址上。</p>
 <p>比较坑的一点是，我使用的评论插件 <a target="_blank" rel="noopener" href="https://beaudar.lipk.org/">Beaudar</a> 认的是网站 <code>origins</code>（即 <code>mojimoon.github.io</code>），而不是 <code>site_url</code>（即 <code>https://mojimoon.github.io/blog/</code>）。可见，博客搬迁前后的 <code>origins</code> 并没有改变。但由于 Beaudar 辨认页面依靠的是相对于 <code>origins</code> 的路径，搬迁之后所有页面的相对路径都多了个 <code>blog/</code>（例如，本博客的相对路径由 <code>/2024/202412/</code> 变为 <code>/blog/2024/202412/</code>，但在 Beaudar 的 GitHub Issues 中记载的路径仍然是前者），导致原有的评论无法加载。这个问题或许稍后会解决。</p>
-<hr>
+<hr />
 <p>除此之外，组织 <a target="_blank" rel="noopener" href="https://github.com/cityu-cs">cityu-cs</a> 也移动到了 <a target="_blank" rel="noopener" href="https://github.com/gorandint">gorandint</a>。这样做有两个考虑，一是让名字更符合头像（换言之，只是我懒得更新头像），另一方面我也不再有必要占据 <code>cityu-cs</code> 这个名字了。</p>
-<hr>
+<hr />
 <p>顺便一提，这几个月虽然没有时间写新 mod，但花一晚上翻译一个 <a target="_blank" rel="noopener" href="https://github.com/kimjoy2002/StSProblemSolver68">mod</a> 完全不成问题。这是杀戮尖塔的蔚蓝档案便利屋 68 Mod，发布在 <a target="_blank" rel="noopener" href="https://steamcommunity.com/sharedfiles/filedetails/?id=3384732830">创意工坊</a> 上，欢迎来捧个场。</p>
 <p>比较有趣的是，原作者是韩国人，而我作为翻译原本的英文版本经常和韩文对不上。这不是谁的问题，正是 Nexon 的英文翻译质量实在堪忧导致的。不过，借助 DeepL 等工具，这些问题也不算难以解决。</p>
-<h2 id="工作学业有所成">工作学业有所成</h2>
+<h2 id="工作学业有所成"><a class="markdownIt-Anchor" href="#工作学业有所成"></a> 工作学业有所成</h2>
 <p>导致我这么忙、忙到无法抽空写日志的直接原因是工作，在之前 <a href="../202407/">7 月</a> 的日志中也有提到。虽然 4 个月不更新完全不符合本站的初衷，但写总比不写好。而适逢学期结束，虽然工作上并不放假（只放香港公共假期），但总算是比较轻松了。</p>
 <p>不得不承认，全职工作要远远大于学业。哪怕我分得的工作并不是很多，但每天早 10 晚 7 的工作时间（含 1 小时午休），再加上往返各接近一小时的通勤时间，使我一回到宿舍便只想躺在床上刷手机。人总得稍微有点娱乐时间，但现实是我只能靠挤压睡眠时间来进行浅层娱乐。这种状态持续了 4 个月 —— 我现在只想好好睡上一觉。</p>
 <p>在此之外，每周上班 4 天上课 1 天的第一学期总算是相对平稳地结束了。虽然 CS3343 的小组作业一度濒临无法完成，但经过数天的熬夜，我们总算在最后一周时间还算宽裕的情况下交差了。CS4335 的课件、练习和作业都十分简单，而期末考却是完全有区域赛难度的题目，一道分治和 DP 无从下手，2 小时 6 道大题的恐怖题量更是让人无暇哀悼。不过，整体而言，不算太差。</p>
 <blockquote>
-<p>顺便，这道分治题是：<strong>给定一个序列和一个区间 [L, R]，求序列和在这个区间内的子序列数量，要求时间复杂度为 O(n log n)</strong>。<br>
+<p>顺便，这道分治题是：<strong>给定一个序列和一个区间 [L, R]，求序列和在这个区间内的子序列数量，要求时间复杂度为 O(n log n)</strong>。<br />
 <a target="_blank" rel="noopener" href="https://www.geeksforgeeks.org/number-of-subarrays-having-sum-in-a-given-range/">GeeksforGeeks</a> 上有这道题的解法。</p>
 </blockquote>
-<hr>
+<hr />
 <p>说到区域赛，那就不得不提我们最近在参加 ICPC 了。我们在之前参加了 ICPC Hangzhou Regional（@杭州师范大学）和 Hong Kong Regional（@香港理工大学）的比赛，并且由于我校是区域赛主办方之一（虽然只起到一个颁奖的作用），我们队也有幸参加 ICPC Asia EC Final（@西北工业大学）。—— 虽然说，ECF 甚至还没开始（12 月 27-28 日）；并且由于香港到西安的旅程较长、在西安的时间也长达五天（12 月 26-30 日），我预计后续会单独写一篇日志来记录这次可能很难再有的旅程。</p>
 <p>前两次比赛由于我没有做记录的习惯，并没有太多可聊的，也无法像他人那样单独写一篇「ICPC 游记」。—— 虽准备如此说，但由于我还是拍摄了大量照片，颇有一些可聊之处。不过，这些内容可能要等 2025 年才能见到了。</p>
-<hr>
+<hr />
 <p>在此之外，之前提及的论文也几近完成。虽然在实验过程中遇到了诸多错漏 —— 诸如， <code>epochs</code> 是 5 还是 10 没有统一；<code>val_idx</code> 设置为 10（每 10 retrain iterations 进行一次 validation）导致速度被严重拖慢；改了 <code>test_generator</code> 的数据读入但没有改 <code>val_generator</code>，导致数据 shape 匹配不上而报错 —— 导致实验一拖再拖，有一次甚至一周都没有进展。不过，现在数据已经汇总完毕，我也写好了结论并接受了指导老师的修改，只剩后续的排版和提交了。</p>
-<h2 id="年末翻新篇">年末翻新篇</h2>
+<h2 id="年末翻新篇"><a class="markdownIt-Anchor" href="#年末翻新篇"></a> 年末翻新篇</h2>
 <p>2024 年会写总结吗？可能会，可能不会。</p>
 <p>上年写了两篇 <a href="../../2023/2023H1/">2023 年都玩了点什么（梗）</a> 和 <a href="../../2023/2023H2/">2023 年都造了点什么（乐子）</a>，不过这两篇实际上是对先前日志的扩展和总结，而实际上看 URL 就知道，其实还准备了第 3 篇 <code>2023H3</code>，这才是正式且完整的总结，甚至包含了「年度最佳」等一系列评选。当然了，虽然这篇文章还在草稿箱里（实际上草稿箱已经有十几篇了，包括若干已删除博文），我始终找不到写这篇日志的时间和动力，而今由于大部分记忆已经模糊，也不再有必要。</p>
 <p>所以感受一事，是十分易逝的。而要忠实地记录感受、再现生活，耗费的精力又是过多而不切实际的。因此，何时和怎么写日志，从这一博客建立之初就是一个难题，而我也始终没有想到正确答案。</p>
