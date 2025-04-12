@@ -73,7 +73,7 @@
 <div class="widgets">
 <widget class="widget-wrapper search"><div class="widget-body"><div class="search-wrapper" id="search"><form class="search-form"><input type="text" class="search-input" id="search-input" data-filter="/blog/" placeholder="文章搜索"><svg t="1670596976048" class="icon search-icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2676" width="200" height="200"><path d="M938.2 832.6L723.8 618.1c-2.5-2.5-5.3-4.4-7.9-6.4 36.2-55.6 57.3-121.8 57.3-193.1C773.3 222.8 614.6 64 418.7 64S64 222.8 64 418.6c0 195.9 158.8 354.6 354.6 354.6 71.3 0 137.5-21.2 193.2-57.4 2 2.7 3.9 5.4 6.3 7.8L832.5 938c14.6 14.6 33.7 21.9 52.8 21.9 19.1 0 38.2-7.3 52.8-21.8 29.2-29.1 29.2-76.4 0.1-105.5M418.7 661.3C284.9 661.3 176 552.4 176 418.6 176 284.9 284.9 176 418.7 176c133.8 0 242.6 108.9 242.6 242.7 0 133.7-108.9 242.6-242.6 242.6" p-id="2677"></path></svg></form><div id="search-result"></div><div class="search-no-result">没有找到内容！</div></div></div></widget>
 
-<widget class="widget-wrapper recent"><div class="widget-header cap theme dis-select"><span class="name">最近更新</span></div><div class="widget-body related-posts fs14"><a class="item title" href="/blog/2025/ColorConvert/"><span class="title">笔记：颜色转换</span></a><a class="item title" href="/blog/2024/ML/"><span class="title">笔记：机器学习的基本工具</span></a><a class="item title" href="/blog/2023/Javaweb/"><span class="title">笔记：JavaWeb 项目环境配置</span></a><a class="item title" href="/blog/2023/Pandas/"><span class="title">笔记：pandas 的常用操作</span></a><a class="item title" href="/blog/2023/Python/"><span class="title">笔记：Python 爬虫/数据分析简易教程</span></a></div></widget>
+<widget class="widget-wrapper recent"><div class="widget-header cap theme dis-select"><span class="name">最近更新</span></div><div class="widget-body related-posts fs14"><a class="item title" href="/blog/2025/ColorConvert/"><span class="title">笔记：颜色转换</span></a><a class="item title" href="/blog/2023/Javaweb/"><span class="title">笔记：JavaWeb 项目环境配置</span></a><a class="item title" href="/blog/2024/ML/"><span class="title">笔记：机器学习的基本工具</span></a><a class="item title" href="/blog/2023/Pandas/"><span class="title">笔记：pandas 的常用操作</span></a><a class="item title" href="/blog/2023/Python/"><span class="title">笔记：Python 爬虫/数据分析简易教程</span></a></div></widget>
 
 
 </div>
@@ -90,11 +90,26 @@
 
       
  
-@import 'partial/*'
-@import 'tag-plugins/*'
-@import 'sidebar/*'
-@import 'widgets/*'
-@import 'pages/*'
+
+
+
+  
+
+<div class="nav-wrap"><nav class="sub post cap"><a href="/blog/">近期发布</a><a class="active" href="/blog/categories">分类：Technical</a><a href="/blog/archives">归档</a></nav></div>
+  <div class="post-list post"><a class="post-card post " href="/blog/2025/ColorConvert/">
+<article class="md-text"><h2 class="post-title">笔记：颜色转换</h2><div class="excerpt"><p>RGB、linear RGB、HSL、HSV、HWB、CMYK、XYZ、Lab、LCh 之间的转换。除 HSV 外，其他颜色空间都可作为 CSS 颜色函数直接使用。</p></div><div class="meta cap"><span class="cap" id="post-meta">发布于&nbsp;<time datetime="2025-04-12T00:00:00.000Z">2025-04-12</time></span><span class="cap breadcrumb">Technical</span></div></article>
+</a><a class="post-card post " href="/blog/2024/ML/">
+<article class="md-text"><h2 class="post-title">笔记：机器学习的基本工具</h2><div class="excerpt"><p>本文介绍机器学习的基本 Python 工具和流程。所用算法包括决策树（Decision Tree）、随机森林（Random Forest）和 XGBoost。</p></div><div class="meta cap"><span class="cap" id="post-meta">发布于&nbsp;<time datetime="2024-03-26T00:00:00.000Z">2024-03-26</time></span><span class="cap breadcrumb">Technical</span></div></article>
+</a><a class="post-card post " href="/blog/2023/Pandas/">
+<article class="md-text"><h2 class="post-title">笔记：pandas 的常用操作</h2><div class="excerpt"><p>我可能真的什么都记不住，所以来复盘下两个月前写过的 demo。</p></div><div class="meta cap"><span class="cap" id="post-meta">发布于&nbsp;<time datetime="2023-07-17T00:00:00.000Z">2023-07-17</time></span><span class="cap breadcrumb">Technical</span></div></article>
+</a><a class="post-card post " href="/blog/2023/Javaweb/">
+<article class="md-text"><h2 class="post-title">笔记：JavaWeb 项目环境配置</h2><div class="excerpt"><p>个人向踩坑记录，包括 IDEA、Tomcat、MySQL、Maven 等环境配置。</p></div><div class="meta cap"><span class="cap" id="post-meta">发布于&nbsp;<time datetime="2023-06-28T00:00:00.000Z">2023-06-28</time></span><span class="cap breadcrumb">Technical</span></div></article>
+</a><a class="post-card post " href="/blog/2023/Python/">
+<article class="md-text"><h2 class="post-title">笔记：Python 爬虫/数据分析简易教程</h2><div class="excerpt"><p>哪怕连 HTML 都不懂，也能通过分析模式和结构，想办法爬取数据。两年前的我确实这样做了。</p></div><div class="meta cap"><span class="cap" id="post-meta">发布于&nbsp;<time datetime="2023-05-12T00:00:00.000Z">2023-05-12</time></span><span class="cap breadcrumb">Technical</span></div></article>
+</a></div>
+  
+
+
 
       
 <footer class="page-footer reveal fs12"><hr><div class="sitemap"><div class="sitemap-group"><span class="fs14">博客</span><a href="/blog/">近期</a><a href="/blog/categories/">分类</a><a href="/blog/archives/">归档</a></div><div class="sitemap-group"><span class="fs14">外链</span><a target="_blank" rel="noopener" href="https://steamcommunity.com/id/unreset/">Steam</a><a target="_blank" rel="noopener" href="https://bgm.tv/user/788548">Bangumi</a><a target="_blank" rel="noopener" href="https://github.com/mojimoon">Github</a></div><div class="sitemap-group"><span class="fs14">社交</span><a href="/blog/2023/about/">关于</a><a href="/blog/">友链</a><a href="/blog/">留言板</a></div></div><div class="text"><p><a target="_blank" rel="noopener" href="https://github.com/mojimoon">@mojimoon</a> Overclocked by <a target="_blank" rel="noopener" href="https://xaoxuu.com/wiki/stellar/">Stellar</a></p>
