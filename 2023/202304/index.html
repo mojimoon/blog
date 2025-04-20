@@ -1,12 +1,11 @@
-<!DOCTYPE html>
-<html lang='zh-CN'>
 
+<!DOCTYPE html><html lang="zh-CN">
 
 <head>
   <meta charset="utf-8">
-  <meta name="hexo-theme" content="https://github.com/xaoxuu/hexo-theme-stellar/tree/1.23.0" theme-name="Stellar" theme-version="1.23.0">
+  <meta name="hexo-theme" content="https://github.com/xaoxuu/hexo-theme-stellar/tree/1.29.1" theme-name="Stellar" theme-version="1.29.1">
   
-  <meta name="generator" content="Hexo 6.3.0">
+  <meta name="generator" content="Hexo 7.3.0">
   <meta http-equiv='x-dns-prefetch-control' content='on' />
   
   <meta name="renderer" content="webkit">
@@ -15,7 +14,8 @@
   <meta name="HandheldFriendly" content="True" >
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="theme-color" content="#f8f8f8">
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000">
+  <meta name="theme-color" content="#f9fafb">
   
   <title>2023 年 4 月：脱轨 - もじもんの文字門</title>
 
@@ -23,7 +23,7 @@
     <meta name="description" content="見せられないのだ レールを狂わせる">
 <meta property="og:type" content="article">
 <meta property="og:title" content="2023 年 4 月：脱轨">
-<meta property="og:url" content="https://mojimoon.github.io/blog/2023/202304/index.html">
+<meta property="og:url" content="https://mojimoon.github.io/blog/2023/202304/">
 <meta property="og:site_name" content="もじもんの文字門">
 <meta property="og:description" content="見せられないのだ レールを狂わせる">
 <meta property="og:locale" content="zh_CN">
@@ -32,7 +32,7 @@
 <meta property="og:image" content="https://cdn.akamai.steamstatic.com/steam/apps/1604380/extras/%E5%92%8C%E6%B3%89%E6%99%BA%E5%AE%8F.png">
 <meta property="og:image" content="https://mojimoon.github.io/blog/image/2023/04/hamidashi.png">
 <meta property="article:published_time" content="2023-04-11T00:00:00.000Z">
-<meta property="article:modified_time" content="2023-10-28T05:28:03.214Z">
+<meta property="article:modified_time" content="2025-04-15T11:25:26.545Z">
 <meta property="article:author" content="mojimoon">
 <meta property="article:tag" content="mojimoon, computer science, python, blog, hexo">
 <meta name="twitter:card" content="summary">
@@ -45,11 +45,7 @@
   <!-- feed -->
   
 
-  
-    
-<link rel="stylesheet" href="/blog/css/main.css">
-
-  
+  <link rel="stylesheet" href="/css/main.css?v=1.29.1">
 
   
     <link rel="shortcut icon" href="/blog/image/favicon.png">
@@ -57,57 +53,51 @@
 
   
 
-  
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/blog/css/main.css"><script src="/blog/js/main.js"></script><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet"><link rel="stylesheet" href="/blog/css/override.css">
 </head>
-
 <body>
-  
+
+<div class="l_body s:aa content tech" id="start" layout="post" ><aside class="l_left"><div class="leftbar-container">
 
 
+<header class="header"><div class="logo-wrap"><a class="avatar" href="/blog/about/"><div class="bg" style="opacity:0;background-image:url(https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/avatar/round/rainbow64@3x.webp);"></div><img no-lazy class="avatar" src="/blog/image/mojimoon.png" onerror="javascript:this.classList.add('error');this.src='https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/image/2659360.svg';"></a><a class="title" href="/blog/"><div class="main" ff="title">もじもんの文字門</div><div class="sub normal cap">Computer Science</div><div class="sub hover cap" style="opacity:0"> Puzzled Puzzler</div></a></div></header>
 
+<div class="nav-area">
+<div class="search-wrapper" id="search-wrapper"><form class="search-form"><a class="search-button" onclick="document.getElementById(&quot;search-input&quot;).focus();"><svg t="1705074644177" viewBox="0 0 1025 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1560" width="200" height="200"><path d="M1008.839137 935.96571L792.364903 719.491476a56.783488 56.783488 0 0 0-80.152866 0 358.53545 358.53545 0 1 1 100.857314-335.166073 362.840335 362.840335 0 0 1-3.689902 170.145468 51.248635 51.248635 0 1 0 99.217358 26.444296 462.057693 462.057693 0 1 0-158.255785 242.303546l185.930047 185.725053a51.248635 51.248635 0 0 0 72.568068 0 51.248635 51.248635 0 0 0 0-72.978056z" p-id="1561"></path><path d="M616.479587 615.969233a50.428657 50.428657 0 0 0-61.498362-5.534852 174.655348 174.655348 0 0 1-177.525271 3.484907 49.403684 49.403684 0 0 0-58.833433 6.76482l-3.074918 2.869923a49.403684 49.403684 0 0 0 8.609771 78.10292 277.767601 277.767601 0 0 0 286.992355-5.739847 49.403684 49.403684 0 0 0 8.404776-76.667958z" p-id="1562"></path></svg></a><input type="text" class="search-input" id="search-input" placeholder="站内搜索"></form><div id="search-result"></div><div class="search-no-result">没有找到内容！</div></div>
 
-  <div class='l_body' id='start'>
-    <aside class='l_left' layout='post'>
-    
-
-  
-
-<header class="header"><div class="logo-wrap"><a class="title" href="/blog/"><div class="main" ff="title">もじもんの文字門</div><div class="sub normal cap">Computer Science</div><div class="sub hover cap" style="opacity:0"> Puzzled Puzzler</div></a></div>
 
 <nav class="menu dis-select"></nav>
-</header>
-
-
+</div>
 <div class="widgets">
-<widget class="widget-wrapper search"><div class="widget-body"><div class="search-wrapper" id="search"><form class="search-form"><input type="text" class="search-input" id="search-input" data-filter="/blog/" placeholder="文章搜索"><svg t="1670596976048" class="icon search-icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2676" width="200" height="200"><path d="M938.2 832.6L723.8 618.1c-2.5-2.5-5.3-4.4-7.9-6.4 36.2-55.6 57.3-121.8 57.3-193.1C773.3 222.8 614.6 64 418.7 64S64 222.8 64 418.6c0 195.9 158.8 354.6 354.6 354.6 71.3 0 137.5-21.2 193.2-57.4 2 2.7 3.9 5.4 6.3 7.8L832.5 938c14.6 14.6 33.7 21.9 52.8 21.9 19.1 0 38.2-7.3 52.8-21.8 29.2-29.1 29.2-76.4 0.1-105.5M418.7 661.3C284.9 661.3 176 552.4 176 418.6 176 284.9 284.9 176 418.7 176c133.8 0 242.6 108.9 242.6 242.7 0 133.7-108.9 242.6-242.6 242.6" p-id="2677"></path></svg></form><div id="search-result"></div><div class="search-no-result">没有找到内容！</div></div></div></widget>
 
 
-<widget class="widget-wrapper toc single" id="data-toc" collapse="false"><div class="widget-header cap dis-select"><span class="name">2023 年 4 月：脱轨</span></div><div class="widget-body fs14"><div class="doc-tree active"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#2023-%E5%B9%B4-4-%E6%9C%88-11-%E6%97%A5%E6%98%9F%E6%9C%9F%E4%BA%8C"><span class="toc-text"> 2023 年 4 月 11 日，星期二</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BB%99%E4%BD%A0%E6%9C%BA%E4%BC%9A%E4%BD%A0%E4%B8%8D%E4%B8%AD%E7%94%A8%E5%95%8A"><span class="toc-text"> 给你机会你不中用啊</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B8%A9%E6%96%AF%E9%A1%BF%E5%8F%B2%E5%AF%86%E6%96%AF"><span class="toc-text"> 温斯顿·史密斯</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%81%B5%E6%84%9F%E6%BB%A1%E6%BA%A2%E7%9A%84%E7%94%9C%E8%9C%9C%E5%88%9B%E6%83%B3"><span class="toc-text"> 灵感满溢的甜蜜创想</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AF%B7%E5%9C%A8%E5%B0%8F%E7%BB%84%E7%A0%94%E8%AE%A8%E5%AE%A4%E5%BE%AE%E7%AC%91"><span class="toc-text"> 请在小组研讨室微笑</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2023-%E5%B9%B4-4-%E6%9C%88-12-%E6%97%A5%E6%98%9F%E6%9C%9F%E4%B8%89"><span class="toc-text"> 2023 年 4 月 12 日，星期三</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#gpt3-%E5%B0%B1%E6%98%AF%E5%AE%83%E5%90%97"><span class="toc-text"> G.P.T.3. 就是它吗？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%9C%8B%E8%BF%87%E5%87%A0%E4%B8%AA%E8%A7%86%E9%A2%91%E5%B0%B1%E7%AE%97%E9%93%81%E8%B7%AF%E8%BF%B7"><span class="toc-text"> 看过几个视频就算铁路迷</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%8D%E5%A4%AA%E5%AE%9E%E7%94%A8%E7%9A%84%E5%AE%9E%E7%94%A8%E4%B8%BB%E4%B9%89%E6%95%99%E5%AD%A6"><span class="toc-text"> 不太实用的实用主义教学</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%82%A3%E6%88%91%E7%BC%BA%E7%9A%84%E7%9D%A1%E7%9C%A0%E6%88%91%E8%87%AA%E5%B7%B1%E8%A1%A5%E5%95%8A"><span class="toc-text"> 那我缺的睡眠我自己补啊</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2023-%E5%B9%B4-4-%E6%9C%88-15-%E6%97%A5%E6%98%9F%E6%9C%9F%E5%85%AD"><span class="toc-text"> 2023 年 4 月 15 日，星期六</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%AE%8B%E9%85%B7%E5%A4%A9%E4%BD%BF%E7%9A%84%E8%A1%8C%E5%8A%A8%E7%BA%B2%E9%A2%86"><span class="toc-text"> 残酷天使的行动纲领</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%88%91%E7%AC%91%E5%BE%97%E5%BE%88%E6%9C%89%E8%8A%82%E5%A5%8F%E6%89%80%E4%BB%A5%E7%AE%97%E5%B9%BF%E4%B9%89%E8%8A%82%E5%A5%8F%E6%B8%B8%E6%88%8F"><span class="toc-text"> 我笑得很有节奏所以算广义节奏游戏</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A4%AA%E9%98%B3%E7%85%A7%E5%B8%B8%E8%A5%BF%E8%90%BD%E4%BD%86%E6%98%AF%E5%B7%B2%E8%BF%87%E5%8D%8A%E5%A4%9C"><span class="toc-text"> 太阳照常西落，但是已过半夜</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2023-%E5%B9%B4-4-%E6%9C%88-16-%E6%97%A5%E6%98%9F%E6%9C%9F%E6%97%A5"><span class="toc-text"> 2023 年 4 月 16 日，星期日</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#itertoolspermutations"><span class="toc-text"> itertools.permutations</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A7%A6%E7%8A%AF%E5%A4%A9%E6%9D%A1%E7%9A%84-16gb-%E5%86%85%E5%AD%98"><span class="toc-text"> 触犯天条的 16GB 内存</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BC%BA%E6%89%AD%E7%9A%84%E7%93%9C%E5%BE%88%E7%94%9C"><span class="toc-text"> 强扭的瓜很甜！</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#css_is_awesomeminjs"><span class="toc-text"> CSS_is_awesome.min.js</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%8B%B9%E6%9E%9C%E6%B4%BE-%E5%9B%BE%E7%89%87%E4%BB%85%E4%BE%9B%E5%8F%82%E8%80%83"><span class="toc-text"> 苹果派 ※图片仅供参考</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2023-%E5%B9%B4-4-%E6%9C%88-17-%E6%97%A5%E6%98%9F%E6%9C%9F%E4%B8%80"><span class="toc-text"> 2023 年 4 月 17 日，星期一</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BB%8E%E6%B5%81%E7%A8%8B%E4%B8%8A%E6%9D%A5%E8%AF%B4%E6%9C%89%E4%BB%80%E4%B9%88%E4%B8%8D%E5%AF%B9%E7%9A%84%E5%90%97"><span class="toc-text"> 从流程上来说有什么不对的吗</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%97%A0%E8%84%B8%E7%94%B7%E4%B8%BB%E4%BC%9A%E6%A2%A6%E8%A7%81%E8%87%AA%E9%97%AD%E7%97%87%E7%8E%A9%E5%AE%B6%E5%90%97"><span class="toc-text"> 无脸男主会梦见自闭症玩家吗</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%92%8C%E9%9D%A2%E5%85%B7%E6%8E%A5%E5%90%BB%E4%BC%9A%E6%82%B8%E5%8A%A8%E5%90%97"><span class="toc-text"> 和面具接吻会悸动吗</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2023-%E5%B9%B4-4-%E6%9C%88-22-%E6%97%A5%E6%98%9F%E6%9C%9F%E5%85%AD"><span class="toc-text"> 2023 年 4 月 22 日，星期六</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%93%B6%E5%AD%90%E7%BD%90%E5%AD%90%E7%9B%92%E5%AD%90%E6%A1%B6%E5%AD%90%E8%A2%8B%E5%AD%90"><span class="toc-text"> 瓶子罐子盒子桶子袋子</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B0%B8%E6%81%92%E7%9A%84%E7%BB%88%E7%BB%93"><span class="toc-text"> 永恒的终结</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B0%B8%E6%81%92%E7%9A%84%E7%BB%88%E7%BB%93-%E9%AB%98%E6%B8%85%E9%87%8D%E7%BD%AE%E7%89%88"><span class="toc-text"> 永恒的终结 (高清重置版)</span></a></li></ol></li></ol></div></div></widget>
-
-
-
-
+<widget class="widget-wrapper post-list"><div class="widget-header dis-select"><span class="name">最近更新</span></div><div class="widget-body fs14"><a class="item title" href="/blog/2023/about/"><span class="title">置顶：关于本博客</span></a><a class="item title" href="/blog/2023/202301/"><span class="title">2023 年 1 月：白夜</span></a><a class="item title" href="/blog/2023/202303/"><span class="title">2023 年 3 月：复制</span></a><a class="item title" href="/blog/2023/202304/"><span class="title">2023 年 4 月：脱轨</span></a><a class="item title" href="/blog/2023/202305/"><span class="title">2023 年 5 月：离散</span></a><a class="item title" href="/blog/2023/202305A/"><span class="title">解决 Kirkiri2 引擎的乱码问题</span></a><a class="item title" href="/blog/2023/202305B/"><span class="title">解决 Windows 更新禁用导致微软商店无法安装的问题 (0x80070422)</span></a><a class="item title" href="/blog/2023/202305C/"><span class="title">解决 Stable Diffusion WebUI 安装 xformers 出现 Torch 无法使用 GPU 的问题</span></a><a class="item title" href="/blog/2023/20230617/"><span class="title">2023-06-17 | Back to Square One</span></a><a class="item title" href="/blog/2023/202306/"><span class="title">2023 年 6 月上：涂白</span></a></div></widget>
 </div>
 
+</div></aside><div class="l_main" id="main">
 
-    </aside>
-    <div class='l_main'>
-      
 
-      
 
-<div class="bread-nav fs12"><div class="left"><div id="breadcrumb"><a class="cap breadcrumb" href="/blog/blog/">主页</a><span class="sep"></span><a class="cap breadcrumb" href="/blog/">文章</a><span class="sep"></span><a class="cap breadcrumb-link" href="/blog/categories/Journal/">Journal</a></div><div id="post-meta"><span class="author">发布于</span>
-    <span class="created"><time datetime="2023-04-11T00:00:00.000Z">2023-04-11</time></span>
+
+
+<div class="article banner top">
+  <div class="content">
+    <div class="top bread-nav footnote"><div class="left"><div class="flex-row" id="breadcrumb"><a class="cap breadcrumb" href="/blog/blog/">主页</a>
+<span class="sep"></span><a class="cap breadcrumb" href="/blog/">文章</a><span class="sep"></span><a class="cap breadcrumb-link" href="/blog/categories/Journal/">Journal</a></div>
+<div class="flex-row" id="post-meta"><span class="text created">发布于：<time datetime="2023-04-11T00:00:00.000Z">2023-04-11</time></span><span class="sep updated"></span><span class="text updated">更新于：<time datetime="2025-04-15T11:25:26.545Z">2025-04-15</time></span></div></div></div>
     
-    <span class="updated">，更新于&nbsp;<time datetime="2023-10-28T05:28:03.214Z">2023-10-28</time></span>
-    </div></div></div>
-
-<article class='md-text content post'>
-<h1 class="article-title"><span>2023 年 4 月：脱轨</span></h1>
-<!-- ![](https://lohas.nicoseiga.jp/thumb/10952508i?1652423816) -->
+    <div class="bottom only-title">
+      
+      <div class="text-area">
+        <h1 class="text title"><span>2023 年 4 月：脱轨</span></h1>
+        
+      </div>
+    </div>
+    
+  </div>
+  </div><article class="md-text content"><!-- ![](https://lohas.nicoseiga.jp/thumb/10952508i?1652423816) -->
 <div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://lohas.nicoseiga.jp/thumb/10952508i?1652423816" alt="見せられないのだ" style="width:200px;"/></div><div class="image-meta"><span class="image-caption center">見せられないのだ</span></div></div>
-<div class="tag-plugin quot"><p class="content" type="text">レールを狂わせる</p></div>
+<div class="tag-plugin quot"><p class="content" type="text"><span class="empty"></span><span class="text">レールを狂わせる</span><span class="empty"></span></p></div>
 <span id="more"></span>
 <p>呃，我当然知道这行字和表情包是对不上的，但是有谁会不喜欢<s>免费素材</s>毛豆精呢。</p>
 <p>那么回到标题。人类有三大脱轨：正轨、常轨、<s>反轨</s>铁轨。</p>
@@ -285,7 +275,7 @@
 <h3 id="css_is_awesomeminjs"><a class="markdownIt-Anchor" href="#css_is_awesomeminjs"></a> CSS_is_awesome.min.js</h3>
 <p>然后是第三次大更：我今天用 Via 切换浅色/深色模式才知道，这个主题有跟随浏览器切换模式的功能。所以，<strong>深色文本标记现在改成了蓝色</strong>。</p>
 <p>这么说也奇怪，深色文本标记在浅色模式下太刺眼，深色模式下看不清。</p>
-<p>顺便一提，<strong>字体改成了 Noto Serif SC</strong>，更加柔和，日文的显示效果也好很多。而且能直接从<a target="_blank" rel="noopener" href="https://xaoxuu.com/wiki/stellar/advanced-settings/index.html#%E5%A4%96%E9%83%A8%E5%AD%97%E4%BD%93">官方教程</a> 抄到配置。</p>
+<p>顺便一提，<strong>字体改成了 Noto Serif SC</strong>，更加柔和，日文的显示效果也好很多。而且能直接从<a target="_blank" rel="noopener" href="https://xaoxuu.com/wiki/stellar/advanced-settings/#%E5%A4%96%E9%83%A8%E5%AD%97%E4%BD%93">官方教程</a> 抄到配置。</p>
 <hr />
 <h3 id="苹果派-图片仅供参考"><a class="markdownIt-Anchor" href="#苹果派-图片仅供参考"></a> 苹果派 ※图片仅供参考</h3>
 <p>早上吃了公仔面(gung1 zai2 min6)，那中午就不怎么吃得下了。去麦当劳点了麦香鸡和蘋果批(ping4 gwo2 pai1)，太饱了，实在是失策；这个 $23.5 的组合含金量比 $28 的猪柳蛋汉堡套餐高太多了。（猪柳蛋汉堡实在是小得可怜，吃这玩意纯粹是奔着薯条可乐去的）——那么话说回来大概也没必要怪 $36 的将军汉堡套餐了。它上市之前，第二便宜的套餐是 $41 的麦香鱼，那实在有点超出我的消费水平了。</p>
@@ -346,8 +336,8 @@
 <div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://cdn.akamai.steamstatic.com/steam/apps/1604380/extras/%E5%92%8C%E6%B3%89%E6%99%BA%E5%AE%8F.png" alt="官网上也用这个“占位符”头像"/></div><div class="image-meta"><span class="image-caption center">官网上也用这个“占位符”头像</span></div></div>
 <p>嗯，自闭症这个俗名还是不太友善，还是“孤独症”吧。这样我们就能开「ふたりぼっち」这个老得不能再老、都不知道有多少首同名曲的玩笑了。</p>
 <p>今天洗澡的时候在想我真是不折不扣的自闭社恐了，万一哪天真能“中大奖”了，有人来强迫我开展社交，我会不会感恩戴德呢。答案应该是想得美。我实际上也参与不少宿舍级的活动和志愿服务，要问除了加分还有什么好处的话，应该说成功证明了我与人沟通的基本能力是没有问题的——但是谁都没有问题好嘛！——不过，这算不算是一种代入感呢。作者明明故意省略的部分，却被别有用心的读者大作文章，就好像有人永远能强调“玩家”在游戏中的参与性（比如说，<em>玩家</em>与主角的<em>单向互动</em>性），进而证明任何游戏都是元游戏一样。</p>
-<p>在这种还算温柔的世界里，哪怕选择逃避现实，大概也不会过上充满恐惧的人生。这和我的人生还是不太一样的，我到现在活了约莫二十年，已经积累了太多的恐惧，哪怕没有人准备伤害我，我也没法结束这种不太严重的妄想症。当然，姑且是离黑暗的世界、黑暗的人生和黑暗的故事还有距离，这至少能让人活得稍微放松一些——除非，我的恐惧就是这些黑暗面，而且我一直祈祷自己没有了解过<a href="../202302/index.html#%E6%88%91%E4%BB%A5%E4%B8%BA%E5%A4%A7%E5%AE%B6%E2%80%9C%E5%B8%A6%E5%9B%9E%E5%AE%B6%E2%80%9D%E9%83%BD%E6%98%AF%E8%AF%B4%E7%9D%80%E7%8E%A9%E7%9A%84">延伸阅读</a>。</p>
-<p>说人话：在这种萌系游戏里，坏结局至少不会让主角堕落成为<mark class="tag-plugin colorful mark" color="blue">一个杀人犯，而是让他变成一个自闭症患者。这样的话，我就不会有那么多的恐惧了。</mark>——对，又不对。这反而加深了我的恐惧，因为现实生活毕竟是更容易走向铁轨的，这样一说，黑暗面是肯定存在的。但是我正是对这些东西一点兴趣都没有，才来玩你这游戏的，结果却在<a href="../202302/index.html#%E4%B8%BA%E4%BA%86%E8%BF%9E%E8%BD%BD%E4%B8%8B%E5%8E%BB%E6%B4%BB%E5%BE%97%E5%A5%BD%E5%A5%BD%E7%9A%84%E8%BF%98%E8%A6%81%E5%8A%A0%E7%82%B9%E9%85%8D%E8%A7%92">图穷匕见</a>的时候，觉得这个世界太黑暗了，哪怕一切都在<em>我的选择操纵之中</em>，我也没法以<em>我最希望的姿态</em>看到理固宜然的结局。</p>
+<p>在这种还算温柔的世界里，哪怕选择逃避现实，大概也不会过上充满恐惧的人生。这和我的人生还是不太一样的，我到现在活了约莫二十年，已经积累了太多的恐惧，哪怕没有人准备伤害我，我也没法结束这种不太严重的妄想症。当然，姑且是离黑暗的世界、黑暗的人生和黑暗的故事还有距离，这至少能让人活得稍微放松一些——除非，我的恐惧就是这些黑暗面，而且我一直祈祷自己没有了解过<a href="../202302/#%E6%88%91%E4%BB%A5%E4%B8%BA%E5%A4%A7%E5%AE%B6%E2%80%9C%E5%B8%A6%E5%9B%9E%E5%AE%B6%E2%80%9D%E9%83%BD%E6%98%AF%E8%AF%B4%E7%9D%80%E7%8E%A9%E7%9A%84">延伸阅读</a>。</p>
+<p>说人话：在这种萌系游戏里，坏结局至少不会让主角堕落成为<mark class="tag-plugin colorful mark" color="blue">一个杀人犯，而是让他变成一个自闭症患者。这样的话，我就不会有那么多的恐惧了。</mark>——对，又不对。这反而加深了我的恐惧，因为现实生活毕竟是更容易走向铁轨的，这样一说，黑暗面是肯定存在的。但是我正是对这些东西一点兴趣都没有，才来玩你这游戏的，结果却在<a href="../202302/#%E4%B8%BA%E4%BA%86%E8%BF%9E%E8%BD%BD%E4%B8%8B%E5%8E%BB%E6%B4%BB%E5%BE%97%E5%A5%BD%E5%A5%BD%E7%9A%84%E8%BF%98%E8%A6%81%E5%8A%A0%E7%82%B9%E9%85%8D%E8%A7%92">图穷匕见</a>的时候，觉得这个世界太黑暗了，哪怕一切都在<em>我的选择操纵之中</em>，我也没法以<em>我最希望的姿态</em>看到理固宜然的结局。</p>
 <p>再说人话：最没必要选的地方偏偏是分支，最没选择的地方偏偏是顺理成章，那我又何必假装我能做到，我<em>身</em>能够消受这福？还是说，我正是因为做不到，<mark class="tag-plugin colorful mark" color="blue">才会在这里选择逃避现实呢？</mark>也许是吧，但是在这种地方却遇到了脑内的虚构与作品的虚构之间的矛盾，反而给我带来了更多精神内耗，这是否值得？是因为男主有能，反映出我的无能，还是说因为假装的我有能，反映出我的无能？这两个概念脱离、互斥，但其指向的矛盾却是一致且深刻的，令我难以理解，也难以接受。</p>
 <h2 id="2023-年-4-月-22-日星期六"><a class="markdownIt-Anchor" href="#2023-年-4-月-22-日星期六"></a> 2023 年 4 月 22 日，星期六</h2>
 <h3 id="瓶子罐子盒子桶子袋子"><a class="markdownIt-Anchor" href="#瓶子罐子盒子桶子袋子"></a> 瓶子罐子盒子桶子袋子</h3>
@@ -385,36 +375,31 @@
 <p>我还读过、看过、听过很多令我难以忘怀的故事，不过到今天也差不多该忘完了。</p>
 <p>自从笑声和泪水都不太受大脑控制之后，到现在，我真的好久几乎没看 ACGN 了——偶尔有感兴趣的动画，还是可以追或者补完的；剩下的很多就半途而废了。但是我确实不曾想到，现在让我觉得永恒还可以再久一些的，竟然是我之前以为给我带来精神内耗最多的 Galgame。这确实是很精彩的欣赏故事的故事，尽管写下来仍让人深觉缺乏趣味，但前所未有的体验常人也很难用语言来形容吧。</p>
 <p>故事是不可能不完结的——对某些两年能水千把章的作者来说，那就不是完结是寸止了——我当然早就明白这个道理了。不过，现在有些东西却<em>再次激发</em>了我对故事<em>能够继续</em>的期待。更确切地说，不太具有教育意义的一个续章。考虑到受众的类型，作品一定是携带一定的目的性的，但是有的时候飞得太高了，收不回来怎么办呢？</p>
-<div class="tag-plugin quot"><p class="content" type="text">我们就假装从来没有飞过，继续在地面上跑吧。</p></div>
-<div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="../../image/2023/04/hamidashi.png" alt="エンドマークに希望と涙を添えて" fancybox="true"/></div><div class="image-meta"><span class="image-caption center">エンドマークに希望と涙を添えて</span></div></div>
+<div class="tag-plugin quot"><p class="content" type="text"><span class="empty"></span><span class="text">我们就假装从来没有飞过，继续在地面上跑吧。</span><span class="empty"></span></p></div>
+<div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="../../image/2023/04/hamidashi.png" alt="エンドマークに希望と涙を添えて" data-fancybox="true"/></div><div class="image-meta"><span class="image-caption center">エンドマークに希望と涙を添えて</span></div></div>
 
-
-
-<div class="article-footer reveal fs14">
+<div class="article-footer fs14">
     <section id="license">
       <div class="header"><span>许可协议</span></div>
       <div class="body"><p>本文采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh">署名-相同方式共享 4.0 国际许可协议</a>，转载请注明出处。</p>
 </div>
     </section>
     </div>
-
 </article>
-
-<div class="related-wrap reveal" id="read-next"><section class="body"><div class="item" id="prev"><div class="note">较新文章</div><a href="/blog/2023/202305/">2023 年 5 月：离散</a></div><div class="item" id="next"><div class="note">较早文章</div><a href="/blog/2023/202303/">2023 年 3 月：复制</a></div></section></div>
-
+<div class="related-wrap" id="read-next"><section class="body"><div class="item" id="prev"><div class="note">较新文章</div><a href="/blog/2023/202305/">2023 年 5 月：离散</a></div><div class="item" id="next"><div class="note">较早文章</div><a href="/blog/2023/202303/">2023 年 3 月：复制</a></div></section></div>
 
 
 
 
-
-  <div class='related-wrap md-text reveal' id="comments">
+  <div class="related-wrap md-text" id="comments">
     <section class='header cmt-title cap theme'>
-      快来参与讨论吧
+      <p>快来参与讨论吧~</p>
+
     </section>
     <section class='body cmt-body beaudar'>
       
 
-<svg class="loading" style="vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2709"><path d="M832 512c0-176-144-320-320-320V128c211.2 0 384 172.8 384 384h-64zM192 512c0 176 144 320 320 320v64C300.8 896 128 723.2 128 512h64z" p-id="2710"></path></svg>
+<svg class="loading" style="vertical-align:middle;fill:currentColor;overflow:hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2709"><path d="M832 512c0-176-144-320-320-320V128c211.2 0 384 172.8 384 384h-64zM192 512c0 176 144 320 320 320v64C300.8 896 128 723.2 128 512h64z" p-id="2710"></path></svg>
 
 <div id="beaudar" repo="mojimoon/blog-comments" issue-term="pathname" theme="preferred-color-scheme" input-position="top" comment-order="desc" loading="false" branch="main"></div>
 
@@ -423,24 +408,63 @@
 
 
 
-      
-<footer class="page-footer reveal fs12"><hr><div class="sitemap"><div class="sitemap-group"><span class="fs14">博客</span><a href="/blog/">近期</a><a href="/blog/categories/">分类</a><a href="/blog/archives/">归档</a></div><div class="sitemap-group"><span class="fs14">外链</span><a target="_blank" rel="noopener" href="https://steamcommunity.com/id/unreset/">Steam</a><a target="_blank" rel="noopener" href="https://bgm.tv/user/788548">Bangumi</a><a target="_blank" rel="noopener" href="https://github.com/mojimoon">Github</a></div><div class="sitemap-group"><span class="fs14">社交</span><a href="/blog/2023/about/">关于</a><a href="/blog/">友链</a><a href="/blog/">留言板</a></div></div><div class="text"><p><a target="_blank" rel="noopener" href="https://github.com/mojimoon">@mojimoon</a> Overclocked by <a target="_blank" rel="noopener" href="https://xaoxuu.com/wiki/stellar/">Stellar</a></p>
+<footer class="page-footer footnote"><hr><div class="sitemap"><div class="sitemap-group"><span class="fs15">博客</span><a href="/blog/">近期</a><a href="/blog/categories/">分类</a><a href="/blog/archives/">归档</a></div><div class="sitemap-group"><span class="fs15">外链</span><a target="_blank" rel="noopener" href="https://steamcommunity.com/id/unreset/">Steam</a><a target="_blank" rel="noopener" href="https://bgm.tv/user/788548">Bangumi</a><a target="_blank" rel="noopener" href="https://github.com/mojimoon">Github</a></div><div class="sitemap-group"><span class="fs15">社交</span><a href="/blog/2023/about/">关于</a><a href="/blog/">友链</a><a href="/blog/">留言板</a></div></div><div class="text"><p><a target="_blank" rel="noopener" href="https://github.com/mojimoon">@mojimoon</a> Overclocked by <a target="_blank" rel="noopener" href="https://xaoxuu.com/wiki/stellar/">Stellar</a><br />
+Total <span id="busuanzi_value_site_pv"></span> views.</p>
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 </div></footer>
+<div class="main-mask" onclick="sidebar.dismiss()"></div></div><aside class="l_right">
+<div class="widgets">
 
-      <div class='float-panel mobile-only blur' style='display:none'>
-  <button type='button' class='sidebar-toggle mobile' onclick='sidebar.toggle()'>
-    <svg class="icon" style="width: 1em; height: 1em;vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="15301"><path d="M566.407 808.3c26.9-0.1 49.3-20.8 51.6-47.6-1.9-27.7-23.9-49.7-51.6-51.6h-412.6c-28.2-1.4-52.6 19.5-55.5 47.6 2.3 26.8 24.6 47.5 51.6 47.6h416.5v4z m309.3-249.9c26.9-0.1 49.3-20.8 51.6-47.6-2.2-26.8-24.6-47.5-51.6-47.6h-721.9c-27.7-2.8-52.5 17.4-55.3 45.1-0.1 0.8-0.1 1.7-0.2 2.5 0.9 27.2 23.6 48.5 50.7 47.6H875.707z m-103.1-245.9c26.9-0.1 49.3-20.8 51.6-47.6-0.4-28.3-23.2-51.1-51.5-51.6h-618.9c-29.5-1.1-54.3 21.9-55.5 51.4v0.2c1.4 27.8 25.2 49.2 53 47.8 0.8 0 1.7-0.1 2.5-0.2h618.8z" p-id="15302"></path><path d="M566.407 808.3c26.9-0.1 49.3-20.8 51.6-47.6-1.9-27.7-23.9-49.7-51.6-51.6h-412.6c-28.2-1.4-52.6 19.5-55.5 47.6 1.9 27.7 23.9 49.7 51.6 51.6h416.5z m309.3-249.9c26.9-0.1 49.3-20.8 51.6-47.6-2.2-26.8-24.6-47.5-51.6-47.6h-721.9c-27.7-2.8-52.5 17.4-55.3 45.1-0.1 0.8-0.1 1.7-0.2 2.5 0.9 27.2 23.6 48.5 50.7 47.6H875.707z m-103.1-245.9c26.9-0.1 49.3-20.8 51.6-47.6-0.4-28.3-23.2-51.1-51.5-51.6h-618.9c-29.5-1.1-54.3 21.9-55.5 51.4v0.2c1.4 27.8 25.2 49.2 53 47.8 0.8 0 1.7-0.1 2.5-0.2h618.8z" p-id="15303"></path></svg>
+
+
+<widget class="widget-wrapper toc" id="data-toc" collapse="false"><div class="widget-header dis-select"><span class="name">本文目录</span><a class="cap-action" onclick="sidebar.toggleTOC()" ><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6h11m-11 6h11m-11 6h11M4 6h1v4m-1 0h2m0 8H4c0-1 2-2 2-3s-1-1.5-2-1"/></svg></a></div><div class="widget-body"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#2023-%E5%B9%B4-4-%E6%9C%88-11-%E6%97%A5%E6%98%9F%E6%9C%9F%E4%BA%8C"><span class="toc-text"> 2023 年 4 月 11 日，星期二</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BB%99%E4%BD%A0%E6%9C%BA%E4%BC%9A%E4%BD%A0%E4%B8%8D%E4%B8%AD%E7%94%A8%E5%95%8A"><span class="toc-text"> 给你机会你不中用啊</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B8%A9%E6%96%AF%E9%A1%BF%E5%8F%B2%E5%AF%86%E6%96%AF"><span class="toc-text"> 温斯顿·史密斯</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%81%B5%E6%84%9F%E6%BB%A1%E6%BA%A2%E7%9A%84%E7%94%9C%E8%9C%9C%E5%88%9B%E6%83%B3"><span class="toc-text"> 灵感满溢的甜蜜创想</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AF%B7%E5%9C%A8%E5%B0%8F%E7%BB%84%E7%A0%94%E8%AE%A8%E5%AE%A4%E5%BE%AE%E7%AC%91"><span class="toc-text"> 请在小组研讨室微笑</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2023-%E5%B9%B4-4-%E6%9C%88-12-%E6%97%A5%E6%98%9F%E6%9C%9F%E4%B8%89"><span class="toc-text"> 2023 年 4 月 12 日，星期三</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#gpt3-%E5%B0%B1%E6%98%AF%E5%AE%83%E5%90%97"><span class="toc-text"> G.P.T.3. 就是它吗？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%9C%8B%E8%BF%87%E5%87%A0%E4%B8%AA%E8%A7%86%E9%A2%91%E5%B0%B1%E7%AE%97%E9%93%81%E8%B7%AF%E8%BF%B7"><span class="toc-text"> 看过几个视频就算铁路迷</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%8D%E5%A4%AA%E5%AE%9E%E7%94%A8%E7%9A%84%E5%AE%9E%E7%94%A8%E4%B8%BB%E4%B9%89%E6%95%99%E5%AD%A6"><span class="toc-text"> 不太实用的实用主义教学</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%82%A3%E6%88%91%E7%BC%BA%E7%9A%84%E7%9D%A1%E7%9C%A0%E6%88%91%E8%87%AA%E5%B7%B1%E8%A1%A5%E5%95%8A"><span class="toc-text"> 那我缺的睡眠我自己补啊</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2023-%E5%B9%B4-4-%E6%9C%88-15-%E6%97%A5%E6%98%9F%E6%9C%9F%E5%85%AD"><span class="toc-text"> 2023 年 4 月 15 日，星期六</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%AE%8B%E9%85%B7%E5%A4%A9%E4%BD%BF%E7%9A%84%E8%A1%8C%E5%8A%A8%E7%BA%B2%E9%A2%86"><span class="toc-text"> 残酷天使的行动纲领</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%88%91%E7%AC%91%E5%BE%97%E5%BE%88%E6%9C%89%E8%8A%82%E5%A5%8F%E6%89%80%E4%BB%A5%E7%AE%97%E5%B9%BF%E4%B9%89%E8%8A%82%E5%A5%8F%E6%B8%B8%E6%88%8F"><span class="toc-text"> 我笑得很有节奏所以算广义节奏游戏</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A4%AA%E9%98%B3%E7%85%A7%E5%B8%B8%E8%A5%BF%E8%90%BD%E4%BD%86%E6%98%AF%E5%B7%B2%E8%BF%87%E5%8D%8A%E5%A4%9C"><span class="toc-text"> 太阳照常西落，但是已过半夜</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2023-%E5%B9%B4-4-%E6%9C%88-16-%E6%97%A5%E6%98%9F%E6%9C%9F%E6%97%A5"><span class="toc-text"> 2023 年 4 月 16 日，星期日</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#itertoolspermutations"><span class="toc-text"> itertools.permutations</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A7%A6%E7%8A%AF%E5%A4%A9%E6%9D%A1%E7%9A%84-16gb-%E5%86%85%E5%AD%98"><span class="toc-text"> 触犯天条的 16GB 内存</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BC%BA%E6%89%AD%E7%9A%84%E7%93%9C%E5%BE%88%E7%94%9C"><span class="toc-text"> 强扭的瓜很甜！</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#css_is_awesomeminjs"><span class="toc-text"> CSS_is_awesome.min.js</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%8B%B9%E6%9E%9C%E6%B4%BE-%E5%9B%BE%E7%89%87%E4%BB%85%E4%BE%9B%E5%8F%82%E8%80%83"><span class="toc-text"> 苹果派 ※图片仅供参考</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2023-%E5%B9%B4-4-%E6%9C%88-17-%E6%97%A5%E6%98%9F%E6%9C%9F%E4%B8%80"><span class="toc-text"> 2023 年 4 月 17 日，星期一</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BB%8E%E6%B5%81%E7%A8%8B%E4%B8%8A%E6%9D%A5%E8%AF%B4%E6%9C%89%E4%BB%80%E4%B9%88%E4%B8%8D%E5%AF%B9%E7%9A%84%E5%90%97"><span class="toc-text"> 从流程上来说有什么不对的吗</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%97%A0%E8%84%B8%E7%94%B7%E4%B8%BB%E4%BC%9A%E6%A2%A6%E8%A7%81%E8%87%AA%E9%97%AD%E7%97%87%E7%8E%A9%E5%AE%B6%E5%90%97"><span class="toc-text"> 无脸男主会梦见自闭症玩家吗</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%92%8C%E9%9D%A2%E5%85%B7%E6%8E%A5%E5%90%BB%E4%BC%9A%E6%82%B8%E5%8A%A8%E5%90%97"><span class="toc-text"> 和面具接吻会悸动吗</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2023-%E5%B9%B4-4-%E6%9C%88-22-%E6%97%A5%E6%98%9F%E6%9C%9F%E5%85%AD"><span class="toc-text"> 2023 年 4 月 22 日，星期六</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%93%B6%E5%AD%90%E7%BD%90%E5%AD%90%E7%9B%92%E5%AD%90%E6%A1%B6%E5%AD%90%E8%A2%8B%E5%AD%90"><span class="toc-text"> 瓶子罐子盒子桶子袋子</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B0%B8%E6%81%92%E7%9A%84%E7%BB%88%E7%BB%93"><span class="toc-text"> 永恒的终结</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B0%B8%E6%81%92%E7%9A%84%E7%BB%88%E7%BB%93-%E9%AB%98%E6%B8%85%E9%87%8D%E7%BD%AE%E7%89%88"><span class="toc-text"> 永恒的终结 (高清重置版)</span></a></li></ol></li></ol></div><div class="widget-footer">
+
+<a class="top" onclick="util.scrollTop()"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 12c0-4.714 0-7.071 1.464-8.536C4.93 2 7.286 2 12 2c4.714 0 7.071 0 8.535 1.464C22 4.93 22 7.286 22 12c0 4.714 0 7.071-1.465 8.535C19.072 22 16.714 22 12 22s-7.071 0-8.536-1.465C2 19.072 2 16.714 2 12Z"/><path stroke-linecap="round" stroke-linejoin="round" d="m9 15.5l3-3l3 3m-6-4l3-3l3 3"/></g></svg><span>回到顶部</span></a><a class="buttom" onclick="util.scrollComment()"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="M10.46 1.25h3.08c1.603 0 2.86 0 3.864.095c1.023.098 1.861.3 2.6.752a5.75 5.75 0 0 1 1.899 1.899c.452.738.654 1.577.752 2.6c.095 1.004.095 2.261.095 3.865v1.067c0 1.141 0 2.036-.05 2.759c-.05.735-.153 1.347-.388 1.913a5.75 5.75 0 0 1-3.112 3.112c-.805.334-1.721.408-2.977.43a10.81 10.81 0 0 0-.929.036c-.198.022-.275.054-.32.08c-.047.028-.112.078-.224.232c-.121.166-.258.396-.476.764l-.542.916c-.773 1.307-2.69 1.307-3.464 0l-.542-.916a10.605 10.605 0 0 0-.476-.764c-.112-.154-.177-.204-.224-.232c-.045-.026-.122-.058-.32-.08c-.212-.023-.49-.03-.93-.037c-1.255-.021-2.171-.095-2.976-.429A5.75 5.75 0 0 1 1.688 16.2c-.235-.566-.338-1.178-.389-1.913c-.049-.723-.049-1.618-.049-2.76v-1.066c0-1.604 0-2.86.095-3.865c.098-1.023.3-1.862.752-2.6a5.75 5.75 0 0 1 1.899-1.899c.738-.452 1.577-.654 2.6-.752C7.6 1.25 8.857 1.25 10.461 1.25M6.739 2.839c-.914.087-1.495.253-1.959.537A4.25 4.25 0 0 0 3.376 4.78c-.284.464-.45 1.045-.537 1.96c-.088.924-.089 2.11-.089 3.761v1c0 1.175 0 2.019.046 2.685c.045.659.131 1.089.278 1.441a4.25 4.25 0 0 0 2.3 2.3c.515.214 1.173.294 2.429.316h.031c.398.007.747.013 1.037.045c.311.035.616.104.909.274c.29.17.5.395.682.645c.169.232.342.525.538.856l.559.944a.52.52 0 0 0 .882 0l.559-.944c.196-.331.37-.624.538-.856c.182-.25.392-.476.682-.645c.293-.17.598-.24.909-.274c.29-.032.639-.038 1.037-.045h.032c1.255-.022 1.913-.102 2.428-.316a4.25 4.25 0 0 0 2.3-2.3c.147-.352.233-.782.278-1.441c.046-.666.046-1.51.046-2.685v-1c0-1.651 0-2.837-.089-3.762c-.087-.914-.253-1.495-.537-1.959a4.25 4.25 0 0 0-1.403-1.403c-.464-.284-1.045-.45-1.96-.537c-.924-.088-2.11-.089-3.761-.089h-3c-1.651 0-2.837 0-3.762.089" clip-rule="evenodd"/><path fill="currentColor" d="M9 11a1 1 0 1 1-2 0a1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0a1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0a1 1 0 0 1 2 0"/></svg><span>参与讨论</span></a></div></widget>
+</div></aside><div class='float-panel blur'>
+  <button type='button' style='display:none' class='laptop-only rightbar-toggle mobile' onclick='sidebar.rightbar()'>
+    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6h11m-11 6h11m-11 6h11M4 6h1v4m-1 0h2m0 8H4c0-1 2-2 2-3s-1-1.5-2-1"/></svg>
+  </button>
+  <button type='button' style='display:none' class='mobile-only leftbar-toggle mobile' onclick='sidebar.leftbar()'>
+    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 11c0-3.771 0-5.657 1.172-6.828C4.343 3 6.229 3 10 3h4c3.771 0 5.657 0 6.828 1.172C22 5.343 22 7.229 22 11v2c0 3.771 0 5.657-1.172 6.828C19.657 21 17.771 21 14 21h-4c-3.771 0-5.657 0-6.828-1.172C2 18.657 2 16.771 2 13z"/><path id="sep" stroke-linecap="round" d="M5.5 10h6m-5 4h4m4.5 7V3"/></g></svg>
   </button>
 </div>
-
-    </div>
-  </div>
-  <div class='scripts'>
-    
+</div><div class="scripts">
 <script type="text/javascript">
-  const stellar = {
+  const ctx = {
+    date_suffix: {
+      just: `刚刚`,
+      min: `分钟前`,
+      hour: `小时前`,
+      day: `天前`,
+    },
+    root : `/blog/`,
+  };
+
+  // required plugins (only load if needs)
+  if (`local_search`) {
+    ctx.search = {};
+    ctx.search.service = `local_search`;
+    if (ctx.search.service == 'local_search') {
+      let service_obj = Object.assign({}, `{"field":"all","path":"/search.json","content":true,"sort":"-date"}`);
+      ctx.search[ctx.search.service] = service_obj;
+    }
+  }
+  const def = {
+    avatar: `https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/avatar/round/3442075.svg`,
+    cover: `https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/cover/76b86c0226ffd.svg`,
+  };
+  const deps = {
+    jquery: `https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js`,
+    marked: `https://cdn.jsdelivr.net/npm/marked@13.0.1/lib/marked.umd.min.js`
+  }
+  
+
+</script>
+
+<script type="text/javascript">
+  const utils = {
     // 懒加载 css https://github.com/filamentgroup/loadCSS
-    loadCSS: (href, before, media, attributes) => {
+    css: (href, before, media, attributes) => {
       var doc = window.document;
       var ss = doc.createElement("link");
       var ref;
@@ -498,11 +522,10 @@
       return ss;
     },
 
-    // 从 butterfly 和 volantis 获得灵感
-    loadScript: (src, opt) => new Promise((resolve, reject) => {
+    js: (src, opt) => new Promise((resolve, reject) => {
       var script = document.createElement('script');
       if (src.startsWith('/')){
-        src = stellar.config.root + src.substring(1);
+        src = ctx.root + src.substring(1);
       }
       script.src = src;
       if (opt) {
@@ -523,115 +546,368 @@
       document.head.appendChild(script)
     }),
 
-    // https://github.com/jerryc127/hexo-theme-butterfly
-    jQuery: (fn) => {
+    jq: (fn) => {
       if (typeof jQuery === 'undefined') {
-        stellar.loadScript(stellar.plugins.jQuery).then(fn)
+        utils.js(deps.jquery).then(fn)
       } else {
         fn()
       }
-    }
-  };
-  stellar.version = '1.23.0';
-  stellar.github = 'https://github.com/xaoxuu/hexo-theme-stellar/tree/1.23.0';
-  stellar.config = {
-    date_suffix: {
-      just: '刚刚',
-      min: '分钟前',
-      hour: '小时前',
-      day: '天前',
-      month: '个月前',
     },
-    root : '/blog/',
+    
+    onLoading: (el) => {
+      if (el) {
+        $(el).append('<div class="loading-wrap"><svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2"><path stroke-dasharray="60" stroke-dashoffset="60" stroke-opacity=".3" d="M12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3Z"><animate fill="freeze" attributeName="stroke-dashoffset" dur="1.3s" values="60;0"/></path><path stroke-dasharray="15" stroke-dashoffset="15" d="M12 3C16.9706 3 21 7.02944 21 12"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.3s" values="15;0"/><animateTransform attributeName="transform" dur="1.5s" repeatCount="indefinite" type="rotate" values="0 12 12;360 12 12"/></path></g></svg></div>');
+      }
+    },
+    onLoadSuccess: (el) => {
+      if (el) {
+        $(el).find('.loading-wrap').remove();
+      }
+    },
+    onLoadFailure: (el) => {
+      if (el) {
+        $(el).find('.loading-wrap svg').remove();
+        $(el).find('.loading-wrap').append('<svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path stroke-dasharray="60" stroke-dashoffset="60" d="M12 3L21 20H3L12 3Z"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.5s" values="60;0"/></path><path stroke-dasharray="6" stroke-dashoffset="6" d="M12 10V14"><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.6s" dur="0.2s" values="6;0"/></path></g><circle cx="12" cy="17" r="1" fill="currentColor" fill-opacity="0"><animate fill="freeze" attributeName="fill-opacity" begin="0.8s" dur="0.4s" values="0;1"/></circle></svg>');
+        $(el).find('.loading-wrap').addClass('error');
+      }
+    },
+    request: (el, url, callback, onFailure) => {
+      let retryTimes = 3;
+      utils.onLoading(el);
+      function req() {
+        return new Promise((resolve, reject) => {
+          let status = 0; // 0 等待 1 完成 2 超时
+          let timer = setTimeout(() => {
+            if (status === 0) {
+              status = 2;
+              timer = null;
+              reject('请求超时');
+              if (retryTimes == 0) {
+                onFailure();
+              }
+            }
+          }, 5000);
+          fetch(url).then(function(response) {
+            if (status !== 2) {
+              clearTimeout(timer);
+              resolve(response);
+              timer = null;
+              status = 1;
+            }
+            if (response.ok) {
+              return response.json();
+            }
+            throw new Error('Network response was not ok.');
+          }).then(function(data) {
+            retryTimes = 0;
+            utils.onLoadSuccess(el);
+            callback(data);
+          }).catch(function(error) {
+            if (retryTimes > 0) {
+              retryTimes -= 1;
+              setTimeout(() => {
+                req();
+              }, 5000);
+            } else {
+              utils.onLoadFailure(el);
+              onFailure();
+            }
+          });
+        });
+      }
+      req();
+    },
   };
-
-  // required plugins (only load if needs)
-  stellar.plugins = {
-    jQuery: 'https://gcore.jsdelivr.net/npm/jquery@3.6.2/dist/jquery.min.js'
-  };
-
-  if ('local_search') {
-    stellar.search = {};
-    stellar.search.service = 'local_search';
-    if (stellar.search.service == 'local_search') {
-      let service_obj = Object.assign({}, {"field":"all","path":"/search.json","content":true,"sort":"-date"});
-      stellar.search[stellar.search.service] = service_obj;
-    }
-  }
-
-  // stellar js
-  stellar.plugins.stellar = Object.assign({"sites":"/js/plugins/sites.js","friends":"/js/plugins/friends.js","ghinfo":"/js/plugins/ghinfo.js","timeline":"/js/plugins/timeline.js","linkcard":"/js/plugins/linkcard.js","fcircle":"/js/plugins/fcircle.js","weibo":"/js/plugins/weibo.js","memos":"/js/plugins/memos.js"});
-
-  stellar.plugins.marked = Object.assign("https://cdn.bootcdn.net/ajax/libs/marked/4.0.18/marked.min.js");
-  // optional plugins
-  if ('true' == 'true') {
-    stellar.plugins.lazyload = Object.assign({"enable":true,"js":"https://gcore.jsdelivr.net/npm/vanilla-lazyload@17.8.3/dist/lazyload.min.js","transition":"blur"});
-  }
-  if ('true' == 'true') {
-    stellar.plugins.swiper = Object.assign({"enable":true,"css":"https://unpkg.com/swiper@10.3/swiper-bundle.min.css","js":"https://unpkg.com/swiper@10.3/swiper-bundle.min.js"});
-  }
-  if ('' == 'true') {
-    stellar.plugins.scrollreveal = Object.assign({"enable":null,"js":"https://gcore.jsdelivr.net/npm/scrollreveal@4.0.9/dist/scrollreveal.min.js","distance":"8px","duration":500,"interval":100,"scale":1});
-  }
-  if ('true' == 'true') {
-    stellar.plugins.preload = Object.assign({"enable":true,"service":"flying_pages","instant_page":"https://gcore.jsdelivr.net/gh/volantis-x/cdn-volantis@4.1.2/js/instant_page.js","flying_pages":"https://gcore.jsdelivr.net/gh/gijo-varghese/flying-pages@2.1.2/flying-pages.min.js"});
-  }
-  if ('true' == 'true') {
-    stellar.plugins.fancybox = Object.assign({"enable":true,"js":"https://gcore.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js","css":"https://gcore.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css","selector":".fancybox img"});
-  }
-  if ('false' == 'true') {
-    stellar.plugins.heti = Object.assign({"enable":false,"css":"https://unpkg.com/heti@0.9.2/umd/heti.min.css","js":"https://unpkg.com/heti@0.9.2/umd/heti-addon.min.js"});
-  }
-  if ('true' == 'true') {
-    stellar.plugins.copycode = Object.assign({"enable":true,"js":"/js/plugins/copycode.js","default_text":"Copy","success_text":"Copied","toast":"复制成功"});
-  }
 </script>
 
+<script>
+  const sidebar = {
+    leftbar: () => {
+      if (l_body) {
+        l_body.toggleAttribute('leftbar');
+        l_body.removeAttribute('rightbar');
+      }
+    },
+    rightbar: () => {
+      if (l_body) {
+        l_body.toggleAttribute('rightbar');
+        l_body.removeAttribute('leftbar');
+      }
+    },
+    dismiss: () => {
+      if (l_body) {
+        l_body.removeAttribute('leftbar');
+        l_body.removeAttribute('rightbar');
+      }
+    },
+    toggleTOC: () => {
+      document.querySelector('#data-toc').classList.toggle('collapse');
+    }
+  }
+</script>
+<script type="text/javascript">
+  (() => {
+    const tagSwitchers = document.querySelectorAll('.tag-subtree.parent-tag > a > .tag-switcher-wrapper')
+    for (const tagSwitcher of tagSwitchers) {
+      tagSwitcher.addEventListener('click', (e) => {
+        const parent = e.target.closest('.tag-subtree.parent-tag')
+        parent.classList.toggle('expanded')
+        e.preventDefault()
+      })
+    }
+
+    // Get active tag from query string, then activate it.
+    const urlParams = new URLSearchParams(window.location.search)
+    const activeTag = urlParams.get('tag')
+    if (activeTag) {
+      let tag = document.querySelector(`.tag-subtree[data-tag="${activeTag}"]`)
+      if (tag) {
+        tag.querySelector('a').classList.add('active')
+        
+        while (tag) {
+          tag.classList.add('expanded')
+          tag = tag.parentElement.closest('.tag-subtree.parent-tag')
+        }
+      }
+    }
+  })()
+</script>
+
+
 <!-- required -->
+<script src="/js/main.js?v=1.29.1" defer></script>
 
-  
-<script src="/blog/js/main.js" async></script>
+<script type="text/javascript">
+  const applyTheme = (theme) => {
+    if (theme === 'auto') {
+      document.documentElement.removeAttribute('data-theme')
+    } else {
+      document.documentElement.setAttribute('data-theme', theme)
+    }
 
+    applyThemeToGiscus(theme)
+  }
+
+  const applyThemeToGiscus = (theme) => {
+    theme = theme === 'auto' ? 'preferred_color_scheme' : theme
+
+    const cmt = document.getElementById('giscus')
+    if (cmt) {
+      // This works before giscus load.
+      cmt.setAttribute('data-theme', theme)
+    }
+
+    const iframe = document.querySelector('#comments > section.giscus > iframe')
+    if (iframe) {
+      // This works after giscus loaded.
+      const src = iframe.src
+      const newSrc = src.replace(/theme=[\w]+/, `theme=${theme}`)
+      iframe.src = newSrc
+    }
+  }
+
+  const switchTheme = () => {
+    // light -> dark -> auto -> light -> ...
+    const currentTheme = document.documentElement.getAttribute('data-theme')
+    let newTheme;
+    switch (currentTheme) {
+      case 'light':
+        newTheme = 'dark'
+        break
+      case 'dark':
+        newTheme = 'auto'
+        break
+      default:
+        newTheme = 'light'
+    }
+    applyTheme(newTheme)
+    window.localStorage.setItem('Stellar.theme', newTheme)
+
+    const messages = {
+      light: `切换到浅色模式`,
+      dark: `切换到深色模式`,
+      auto: `切换到跟随系统配色`,
+    }
+    hud?.toast?.(messages[newTheme])
+  }
+
+  (() => {
+    // Apply user's preferred theme, if any.
+    const theme = window.localStorage.getItem('Stellar.theme')
+    if (theme !== null) {
+      applyTheme(theme)
+    }
+  })()
+</script>
 
 
 <!-- optional -->
 
-  <script>
-  function loadBeaudar() {
-    const els = document.querySelectorAll("#comments #beaudar");
-    if (els.length === 0) return;
-    els.forEach((el, i) => {
-      try {
-        el.innerHTML = '';
-      } catch (error) {
-        console.error(error);
+  <script type="module">
+  const el = document.querySelector('#comments #beaudar');
+  util.viewportLazyload(el, load_beaudar, false);
+
+  function load_beaudar() {
+    if (!el) return;
+    try {
+      el.innerHTML = '';
+    } catch (error) {
+      console.error(error);
+    }
+    const script = document.createElement('script');
+    script.src = 'https://beaudar.lipk.org/client.js';
+    script.async = true;
+    for (const key of Object.keys(el.attributes)) {
+      const attr = el.attributes[key];
+      if (['class', 'id'].includes(attr.name) === false) {
+        script.setAttribute(attr.name, attr.value);
       }
-      var script = document.createElement('script');
-      script.src = 'https://beaudar.lipk.org/client.js';
-      script.async = true;
-      for (let key of Object.keys(el.attributes)) {
-        let attr = el.attributes[key];
-        if (['class', 'id'].includes(attr.name) === false) {
-          script.setAttribute(attr.name, attr.value);
-        }
-      }
-      el.appendChild(script);
-    });
+    }
+    el.appendChild(script);
   }
-  window.addEventListener('DOMContentLoaded', (event) => {
-      loadBeaudar();
-  });
 </script>
 
 
 
 
+<script defer>
+  window.addEventListener('DOMContentLoaded', (event) => {
+    ctx.services = Object.assign({}, JSON.parse(`{"mdrender":{"js":"/js/services/mdrender.js"},"siteinfo":{"js":"/js/services/siteinfo.js","api":null},"ghinfo":{"js":"/js/services/ghinfo.js"},"sites":{"js":"/js/services/sites.js"},"friends":{"js":"/js/services/friends.js"},"timeline":{"js":"/js/services/timeline.js"},"fcircle":{"js":"/js/services/fcircle.js"},"weibo":{"js":"/js/services/weibo.js"},"memos":{"js":"/js/services/memos.js"}}`));
+    for (let id of Object.keys(ctx.services)) {
+      const js = ctx.services[id].js;
+      if (id == 'siteinfo') {
+        ctx.cardlinks = document.querySelectorAll('a.link-card[cardlink]');
+        if (ctx.cardlinks?.length > 0) {
+          utils.js(js, { defer: true }).then(function () {
+            setCardLink(ctx.cardlinks);
+          });
+        }
+      } else {
+        const els = document.getElementsByClassName(`ds-${id}`);
+        if (els?.length > 0) {
+          utils.jq(() => {
+            if (id == 'timeline' || 'memos' || 'marked') {
+              utils.js(deps.marked).then(function () {
+                utils.js(js, { defer: true });
+              });
+            } else {
+              utils.js(js, { defer: true });
+            }
+          });
+        }
+      }
+    }
+  });
+</script>
 
+<script>
+  window.addEventListener('DOMContentLoaded', (event) => {
+    ctx.search = {
+      path: `/search.json`,
+    }
+    utils.js('/js/search/local-search.js', { defer: true });
+  });
+</script><script>
+  window.FPConfig = {
+    delay: 0,
+    ignoreKeywords: [],
+    maxRPS: 5,
+    hoverDelay: 25
+  };
+</script>
+<script defer src="https://cdn.jsdelivr.net/npm/flying-pages@2/flying-pages.min.js"></script><script defer src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@19.1.3/dist/lazyload.min.js"></script>
+<script>
+  // https://www.npmjs.com/package/vanilla-lazyload
+  // Set the options globally
+  // to make LazyLoad self-initialize
+  window.lazyLoadOptions = {
+    elements_selector: ".lazy",
+  };
+  // Listen to the initialization event
+  // and get the instance of LazyLoad
+  window.addEventListener(
+    "LazyLoad::Initialized",
+    function (event) {
+      window.lazyLoadInstance = event.detail.instance;
+    },
+    false
+  );
+  document.addEventListener('DOMContentLoaded', function () {
+    window.lazyLoadInstance?.update();
+  });
+</script><script>
+  ctx.fancybox = {
+    selector: `.timenode p>img`,
+    css: `https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css`,
+    js: `https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js`
+  };
+  var selector = '[data-fancybox]:not(.error)';
+  if (ctx.fancybox.selector) {
+    selector += `, ${ctx.fancybox.selector}`
+  }
+  var needFancybox = document.querySelectorAll(selector).length !== 0;
+  if (!needFancybox) {
+    const els = document.getElementsByClassName('ds-memos');
+    if (els != undefined && els.length > 0) {
+      needFancybox = true;
+    }
+  }
+  if (needFancybox) {
+    utils.css(ctx.fancybox.css);
+    utils.js(ctx.fancybox.js, { defer: true }).then(function () {
+      Fancybox.bind(selector, {
+        hideScrollbar: false,
+        Thumbs: {
+          autoStart: false,
+        },
+        caption: (fancybox, slide) => {
+          return slide.triggerEl.alt || slide.triggerEl.dataset.caption || null
+        }
+      });
+    })
+  }
+</script>
+<script>
+  window.addEventListener('DOMContentLoaded', (event) => {
+    const swiper_api = document.getElementById('swiper-api');
+    if (swiper_api != undefined) {
+      utils.css(`https://unpkg.com/swiper@10.3.1/swiper-bundle.min.css`);
+      utils.js(`https://unpkg.com/swiper@10.3.1/swiper-bundle.min.js`, { defer: true }).then(function () {
+        const effect = swiper_api.getAttribute('effect') || '';
+        var swiper = new Swiper('.swiper#swiper-api', {
+          slidesPerView: 'auto',
+          spaceBetween: 8,
+          centeredSlides: true,
+          effect: effect,
+          rewind: true,
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+          },
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+        });
+      })
+    }
+  });
+</script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    window.codeElements = document.querySelectorAll('.code');
+    if (window.codeElements.length > 0) {
+      ctx.copycode = {
+        default_text: `Copy`,
+        success_text: `Copied`,
+        toast: `复制成功`,
+      };
+      utils.js('/js/plugins/copycode.js');
+    }
+  });
+</script>
 
 
 <!-- inject -->
 
-
-  </div>
-</body>
-</html>
+</div></body></html>
