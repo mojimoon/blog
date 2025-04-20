@@ -91,7 +91,7 @@ const hud = {
 
 // defines
 
-const l_body = document.querySelector('.l_body');
+let l_body = document.querySelector('.l_body');
 
 
 const init = {
@@ -162,14 +162,14 @@ const init = {
     })
   },
   relativeDate: (selector) => {
-    selector.forEach(item => {
-      const $this = item
-      const timeVal = $this.getAttribute('datetime')
-      let relativeValue = util.diffDate(timeVal, true)
-      if (relativeValue) {
-        $this.innerText = relativeValue
-      }
-    })
+    // selector.forEach(item => {
+    //   const $this = item
+    //   const timeVal = $this.getAttribute('datetime')
+    //   let relativeValue = util.diffDate(timeVal, true)
+    //   if (relativeValue) {
+    //     $this.innerText = relativeValue
+    //   }
+    // })
   },
   /**
    * Tabs tag listener (without twitter bootstrap).
