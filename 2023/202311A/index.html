@@ -66,7 +66,7 @@
 <div class="widgets">
 
 
-<widget class="widget-wrapper post-list"><div class="widget-header dis-select"><span class="name">最近更新</span></div><div class="widget-body fs14"><a class="item title" href="/blog/2023/about/"><span class="title">置顶：关于本博客</span></a><a class="item title" href="/blog/2023/202301/"><span class="title">2023 年 1 月：白夜</span></a><a class="item title" href="/blog/2023/202303/"><span class="title">2023 年 3 月：复制</span></a><a class="item title" href="/blog/2023/202304/"><span class="title">2023 年 4 月：脱轨</span></a><a class="item title" href="/blog/2023/202305/"><span class="title">2023 年 5 月：离散</span></a><a class="item title" href="/blog/2023/202305A/"><span class="title">解决 Kirkiri2 引擎的乱码问题</span></a><a class="item title" href="/blog/2023/202305B/"><span class="title">解决 Windows 更新禁用导致微软商店无法安装的问题 (0x80070422)</span></a><a class="item title" href="/blog/2023/202305C/"><span class="title">解决 Stable Diffusion WebUI 安装 xformers 出现 Torch 无法使用 GPU 的问题</span></a><a class="item title" href="/blog/2023/20230617/"><span class="title">2023-06-17 | Back to Square One</span></a><a class="item title" href="/blog/2023/202306/"><span class="title">2023 年 6 月上：涂白</span></a></div></widget>
+<widget class="widget-wrapper post-list"><div class="widget-header dis-select"><span class="name">最近更新</span></div><div class="widget-body fs14"><a class="item title" href="/blog/2023/about/"><span class="title">置顶：关于本博客</span></a><a class="item title" href="/blog/2023/202301/"><span class="title">2023 年 1 月：白夜</span></a><a class="item title" href="/blog/2023/202303/"><span class="title">2023 年 3 月：复制</span></a><a class="item title" href="/blog/2023/202305/"><span class="title">2023 年 5 月：离散</span></a><a class="item title" href="/blog/2023/202304/"><span class="title">2023 年 4 月：脱轨</span></a><a class="item title" href="/blog/2023/202305B/"><span class="title">解决 Windows 更新禁用导致微软商店无法安装的问题 (0x80070422)</span></a><a class="item title" href="/blog/2023/202305C/"><span class="title">解决 Stable Diffusion WebUI 安装 xformers 出现 Torch 无法使用 GPU 的问题</span></a><a class="item title" href="/blog/2023/202305A/"><span class="title">解决 Kirkiri2 引擎的乱码问题</span></a><a class="item title" href="/blog/2023/20230617/"><span class="title">2023-06-17 | Back to Square One</span></a><a class="item title" href="/blog/2023/202306/"><span class="title">2023 年 6 月上：涂白</span></a></div></widget>
 </div>
 
 </div></aside><div class="l_main" id="main">
@@ -92,7 +92,7 @@
   </div>
   </div><article class="md-text content"><p>上一篇<a href="../202311/">文章</a>谈论了关于轻小说和 galgame 市场及文学评价的问题，但还有不少细节值得大书特书，已经多到值得单独写一篇文章来补充了。</p>
 <p>当然我得承认，由于自己的阅历不足，这两篇文章都会有很多的 hot take，但写就写了，反正也没人看。</p>
-<h2 id="想法和实现"><a class="markdownIt-Anchor" href="#想法和实现"></a> 想法和实现</h2>
+<h2 id="想法和实现">想法和实现</h2>
 <p>我们经常听到这样的评论：「作者有点想法」，言下之意是由于实现的问题，这部作品并没有达到作者的预期。但首先要搞清楚这两个词的含义。</p>
 <p>要想理解，可以把创作的过程抽象为一个函数，输入是作者的想法，输出是作品。</p>
 <ul>
@@ -112,7 +112,7 @@
 </blockquote>
 <p>说人话：</p>
 <div class="tag-plugin colorful note" color="blue"><div class="body"><ul><li>作品 = 想法 + 实现</li><li>想法 = 风格 + 主题 + 情绪 + 创意，创造性的</li><li>实现 = 技术性的</li><li>实现的稳健性 &gt; 想法的创造性</li></ul></div></div>
-<h2 id="作者是谁"><a class="markdownIt-Anchor" href="#作者是谁"></a> 作者是谁</h2>
+<h2 id="作者是谁">作者是谁</h2>
 <p>对一般作品而言，「作者是谁」很重要吗？</p>
 <p>要想回答这个问题，可以先考虑，倘有人被尊为大师，对他的读者来说，「作者是谁」很重要吗？确实。「作者」这个名字承载着作者的风格和读者的期待，读者会因为这个名字而去阅读作品，而不是因为作品本身 —— 尽管作品本身才是吸引更多读者的关键。</p>
 <p>那么对一般作品与一般读者而言，「作者」这个名字有着相同的效力，「作者是谁」还重要吗？</p>
@@ -141,7 +141,7 @@
 <p>这意味着永远没法拿作者标签当 genre 来用：<code>a:庵野</code> 不是 <code>g:机战</code> <code>g:科幻</code> <code>g:心理</code> <code>g:哲学</code> 的子集，也不是超集，它只是一个独立的标签，其具体承载的意义是无法被标签体系所描述的，只有作品本身才能说明。而如果引入 <code>g:庵野</code> 这样的标签，则是将一个界定性的「metadata」转化为了描述性的「content」，肯定是不合理的。</p>
 <p>说人话：</p>
 <div class="tag-plugin colorful note" color="blue"><div class="body"><p>所有读者和作者的偏好和风格都可以用一个特征向量来描述，这个特征向量是由整体 genre 和个人特色组成的。</p><p>假如你很喜欢作者 A 的作品，并且其风格相当稳定：</p><ul><li>你找到了与自身偏好最接近的特征向量</li><li>可以去尝试阅读类似作者的类似作品，但不应用类似「很有 A 的风格」的标签来描述这些作品</li><li>整体而言，类似作者的类似作品给你带来的体验优于作者 A 的不同风格作品</li><li>但是，作者 A 的个人特色是很难被其他作者模仿的，因此你还是会优先选择作者 A 的作品</li></ul><p>需要注意的是，每个作者和读者都可以有多个特征向量，互不联系。对于作者而言，作者可以以多种名义出版作品，以面向不同的读者群体；对于读者而言，读者也可以有多种偏好，一是读者本身的喜好多元，二是能够有效对抗刺激的边际收益递减，促进多通道的感官体验。</p><p>而不同特征向量的主要区别在于整体 genre 的不同；个人特色可以相同也可以不同，更常见的是有部分分量相同，剩下的部分是根据 genre 而自发产生的。</p></div></div>
-<h2 id="风水轮流转"><a class="markdownIt-Anchor" href="#风水轮流转"></a> 风水轮流转</h2>
+<h2 id="风水轮流转">风水轮流转</h2>
 <p>上文的简化模型基于一个假设：作者的个人风格是始终不变的。但实际上，作者和读者都会随着时间的推移而改变，引入新的变量之后，体系就变得复杂了。</p>
 <p>首先是「个人特色」的微调。这很常见；一是作者和读者在生活和创作/阅读中的经历都会逐渐影响个人偏好，二是作为作者/读者的技术水平也会在这一历程中提高，三是对于有限空间中的多样性的追求，也会促使作者/读者去尝试新的东西。这并没有太多可展开的，并且，哪怕是同一个作者，两部作品也会有所不同。</p>
 <p>其次是「整体 genre」的变化。以上三个原因仍然适用，但作为一部作品，必须要考虑到市场需求。这就必然会牵扯到两种情况：</p>
@@ -161,7 +161,7 @@
 <p>说是 genre，是因为这些 subgenre 相较于原 genre，个人特色的特征向量非常突出，使作品整体异于同 genre 的其他作品，喜欢 A 的读者可能对其他作者的同类作品也不感冒；说是个人特色，是因为这些 subgenre 是高度可塑的，与 A 类似的作者 B，拥有相同的 subgenre 共性（如，宏大的世界观、电影镜头式的描写、对细节的高度关注），但具体实现的方式完全不同，这就是个人特色。</p>
 <p>我很难对此问题作出有意义的结论。如果回归到「想法」和「实现」的关系，这些 subgenre 是横跨想法和实现的。可以在宏观上被模仿 —— 这是想法的相似性，而在微观上完全不同 —— 这是实现的差异性。</p>
 <p>这就和上面提到的「流水线」作品反其道而行之了。</p>
-<h2 id="文学批评"><a class="markdownIt-Anchor" href="#文学批评"></a> 文学批评？</h2>
+<h2 id="文学批评？">文学批评？</h2>
 <p>即，不追求实现的稳健性 —— 因为作者已经是大人物了，做成啥样都不缺读者 —— 而是追求想法的……创新性？</p>
 <p>真的是创新性吗？</p>
 <p>我们来回顾一下他的成名之路。为了更简单地说明又不举具体例子，我们把说明对象换成 J-POP。</p>
@@ -211,7 +211,7 @@
 
 
 
-<footer class="page-footer footnote"><hr><div class="sitemap"><div class="sitemap-group"><span class="fs15">博客</span><a href="/blog/">近期</a><a href="/blog/categories/">分类</a><a href="/blog/archives/">归档</a></div><div class="sitemap-group"><span class="fs15">外链</span><a target="_blank" rel="noopener" href="https://steamcommunity.com/id/unreset/">Steam</a><a target="_blank" rel="noopener" href="https://bgm.tv/user/788548">Bangumi</a><a target="_blank" rel="noopener" href="https://github.com/mojimoon">Github</a></div><div class="sitemap-group"><span class="fs15">社交</span><a href="/blog/2023/about/">关于</a><a href="/blog/">友链</a><a href="/blog/">留言板</a></div></div><div class="text"><p><a target="_blank" rel="noopener" href="https://github.com/mojimoon">@mojimoon</a> Overclocked by <a target="_blank" rel="noopener" href="https://xaoxuu.com/wiki/stellar/">Stellar</a><br />
+<footer class="page-footer footnote"><hr><div class="sitemap"><div class="sitemap-group"><span class="fs15">博客</span><a href="/blog/">近期</a><a href="/blog/categories/">分类</a><a href="/blog/archives/">归档</a></div><div class="sitemap-group"><span class="fs15">外链</span><a target="_blank" rel="noopener" href="https://steamcommunity.com/id/unreset/">Steam</a><a target="_blank" rel="noopener" href="https://bgm.tv/user/788548">Bangumi</a><a target="_blank" rel="noopener" href="https://github.com/mojimoon">Github</a></div><div class="sitemap-group"><span class="fs15">社交</span><a href="/blog/2023/about/">关于</a><a href="/blog/">友链</a><a href="/blog/">留言板</a></div></div><div class="text"><p><a target="_blank" rel="noopener" href="https://github.com/mojimoon">@mojimoon</a> Overclocked by <a target="_blank" rel="noopener" href="https://xaoxuu.com/wiki/stellar/">Stellar</a><br>
 Total <span id="busuanzi_value_site_pv"></span> views.</p>
 <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 </div></footer>
@@ -220,7 +220,7 @@ Total <span id="busuanzi_value_site_pv"></span> views.</p>
 
 
 
-<widget class="widget-wrapper toc" id="data-toc" collapse="false"><div class="widget-header dis-select"><span class="name">本文目录</span><a class="cap-action" onclick="sidebar.toggleTOC()" ><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6h11m-11 6h11m-11 6h11M4 6h1v4m-1 0h2m0 8H4c0-1 2-2 2-3s-1-1.5-2-1"/></svg></a></div><div class="widget-body"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%83%B3%E6%B3%95%E5%92%8C%E5%AE%9E%E7%8E%B0"><span class="toc-text"> 想法和实现</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BD%9C%E8%80%85%E6%98%AF%E8%B0%81"><span class="toc-text"> 作者是谁</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%A3%8E%E6%B0%B4%E8%BD%AE%E6%B5%81%E8%BD%AC"><span class="toc-text"> 风水轮流转</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%96%87%E5%AD%A6%E6%89%B9%E8%AF%84"><span class="toc-text"> 文学批评？</span></a></li></ol></div><div class="widget-footer">
+<widget class="widget-wrapper toc" id="data-toc" collapse="false"><div class="widget-header dis-select"><span class="name">本文目录</span><a class="cap-action" onclick="sidebar.toggleTOC()" ><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6h11m-11 6h11m-11 6h11M4 6h1v4m-1 0h2m0 8H4c0-1 2-2 2-3s-1-1.5-2-1"/></svg></a></div><div class="widget-body"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%83%B3%E6%B3%95%E5%92%8C%E5%AE%9E%E7%8E%B0"><span class="toc-text">想法和实现</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BD%9C%E8%80%85%E6%98%AF%E8%B0%81"><span class="toc-text">作者是谁</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%A3%8E%E6%B0%B4%E8%BD%AE%E6%B5%81%E8%BD%AC"><span class="toc-text">风水轮流转</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%96%87%E5%AD%A6%E6%89%B9%E8%AF%84%EF%BC%9F"><span class="toc-text">文学批评？</span></a></li></ol></div><div class="widget-footer">
 
 <a class="top" onclick="util.scrollTop()"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 12c0-4.714 0-7.071 1.464-8.536C4.93 2 7.286 2 12 2c4.714 0 7.071 0 8.535 1.464C22 4.93 22 7.286 22 12c0 4.714 0 7.071-1.465 8.535C19.072 22 16.714 22 12 22s-7.071 0-8.536-1.465C2 19.072 2 16.714 2 12Z"/><path stroke-linecap="round" stroke-linejoin="round" d="m9 15.5l3-3l3 3m-6-4l3-3l3 3"/></g></svg><span>回到顶部</span></a><a class="buttom" onclick="util.scrollComment()"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="M10.46 1.25h3.08c1.603 0 2.86 0 3.864.095c1.023.098 1.861.3 2.6.752a5.75 5.75 0 0 1 1.899 1.899c.452.738.654 1.577.752 2.6c.095 1.004.095 2.261.095 3.865v1.067c0 1.141 0 2.036-.05 2.759c-.05.735-.153 1.347-.388 1.913a5.75 5.75 0 0 1-3.112 3.112c-.805.334-1.721.408-2.977.43a10.81 10.81 0 0 0-.929.036c-.198.022-.275.054-.32.08c-.047.028-.112.078-.224.232c-.121.166-.258.396-.476.764l-.542.916c-.773 1.307-2.69 1.307-3.464 0l-.542-.916a10.605 10.605 0 0 0-.476-.764c-.112-.154-.177-.204-.224-.232c-.045-.026-.122-.058-.32-.08c-.212-.023-.49-.03-.93-.037c-1.255-.021-2.171-.095-2.976-.429A5.75 5.75 0 0 1 1.688 16.2c-.235-.566-.338-1.178-.389-1.913c-.049-.723-.049-1.618-.049-2.76v-1.066c0-1.604 0-2.86.095-3.865c.098-1.023.3-1.862.752-2.6a5.75 5.75 0 0 1 1.899-1.899c.738-.452 1.577-.654 2.6-.752C7.6 1.25 8.857 1.25 10.461 1.25M6.739 2.839c-.914.087-1.495.253-1.959.537A4.25 4.25 0 0 0 3.376 4.78c-.284.464-.45 1.045-.537 1.96c-.088.924-.089 2.11-.089 3.761v1c0 1.175 0 2.019.046 2.685c.045.659.131 1.089.278 1.441a4.25 4.25 0 0 0 2.3 2.3c.515.214 1.173.294 2.429.316h.031c.398.007.747.013 1.037.045c.311.035.616.104.909.274c.29.17.5.395.682.645c.169.232.342.525.538.856l.559.944a.52.52 0 0 0 .882 0l.559-.944c.196-.331.37-.624.538-.856c.182-.25.392-.476.682-.645c.293-.17.598-.24.909-.274c.29-.032.639-.038 1.037-.045h.032c1.255-.022 1.913-.102 2.428-.316a4.25 4.25 0 0 0 2.3-2.3c.147-.352.233-.782.278-1.441c.046-.666.046-1.51.046-2.685v-1c0-1.651 0-2.837-.089-3.762c-.087-.914-.253-1.495-.537-1.959a4.25 4.25 0 0 0-1.403-1.403c-.464-.284-1.045-.45-1.96-.537c-.924-.088-2.11-.089-3.761-.089h-3c-1.651 0-2.837 0-3.762.089" clip-rule="evenodd"/><path fill="currentColor" d="M9 11a1 1 0 1 1-2 0a1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0a1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0a1 1 0 0 1 2 0"/></svg><span>参与讨论</span></a></div></widget>
 </div></aside><div class='float-panel blur'>
