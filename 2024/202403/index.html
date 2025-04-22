@@ -1,234 +1,4 @@
-
-<!DOCTYPE html><html lang="zh-CN">
-
-<head>
-  <meta charset="utf-8">
-  <meta name="hexo-theme" content="https://github.com/xaoxuu/hexo-theme-stellar/tree/1.29.1" theme-name="Stellar" theme-version="1.29.1">
-  
-  <meta name="generator" content="Hexo 7.3.0">
-  <meta http-equiv='x-dns-prefetch-control' content='on' />
-  
-  <meta name="renderer" content="webkit">
-  <meta name="force-rendering" content="webkit">
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
-  <meta name="HandheldFriendly" content="True" >
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000">
-  <meta name="theme-color" content="#f9fafb">
-  
-  <title>2024 年 3 月：解密通信 - もじもんの文字門</title>
-
-  
-    <meta name="description" content="我最近得了一种时间不够用的病……">
-<meta property="og:type" content="article">
-<meta property="og:title" content="2024 年 3 月：解密通信">
-<meta property="og:url" content="https://mojimoon.github.io/blog/2024/202403/">
-<meta property="og:site_name" content="もじもんの文字門">
-<meta property="og:description" content="我最近得了一种时间不够用的病……">
-<meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2024-03-18T00:00:00.000Z">
-<meta property="article:modified_time" content="2024-03-19T04:11:50.508Z">
-<meta property="article:author" content="mojimoon">
-<meta property="article:tag" content="mojimoon, computer science, python, blog, hexo">
-<meta name="twitter:card" content="summary">
-  
-  
-  
-  <meta name="keywords" content="mojimoon, computer science, python, blog, hexo">
-
-  <!-- feed -->
-  
-
-  <link rel="stylesheet" href="/blog/css/main.css?v=1.29.1">
-
-
-  
-    <link rel="shortcut icon" href="/blog/image/favicon.png">
-  
-
-  
-
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet"><link rel="stylesheet" href="/blog/css/override.css">
-</head>
-<body>
-
-<div class="l_body s:aa content tech" id="start" layout="post" ><aside class="l_left"><div class="leftbar-container">
-
-
-<header class="header"><div class="logo-wrap"><a class="avatar" href="/blog/2023/about/"><div class="bg" style="opacity:0;background-image:url(https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/avatar/round/rainbow64@3x.webp);"></div><img no-lazy class="avatar" src="/blog/image/mojimoon.png" onerror="javascript:this.classList.add('error');this.src='https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/image/2659360.svg';"></a><a class="title" href="/blog/"><div class="main" ff="title">もじもんの文字門</div><div class="sub normal cap">Computer Science</div><div class="sub hover cap" style="opacity:0"> Puzzled Puzzler</div></a></div></header>
-
-<div class="nav-area">
-<div class="search-wrapper" id="search-wrapper"><form class="search-form"><a class="search-button" onclick="document.getElementById(&quot;search-input&quot;).focus();"><svg t="1705074644177" viewBox="0 0 1025 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1560" width="200" height="200"><path d="M1008.839137 935.96571L792.364903 719.491476a56.783488 56.783488 0 0 0-80.152866 0 358.53545 358.53545 0 1 1 100.857314-335.166073 362.840335 362.840335 0 0 1-3.689902 170.145468 51.248635 51.248635 0 1 0 99.217358 26.444296 462.057693 462.057693 0 1 0-158.255785 242.303546l185.930047 185.725053a51.248635 51.248635 0 0 0 72.568068 0 51.248635 51.248635 0 0 0 0-72.978056z" p-id="1561"></path><path d="M616.479587 615.969233a50.428657 50.428657 0 0 0-61.498362-5.534852 174.655348 174.655348 0 0 1-177.525271 3.484907 49.403684 49.403684 0 0 0-58.833433 6.76482l-3.074918 2.869923a49.403684 49.403684 0 0 0 8.609771 78.10292 277.767601 277.767601 0 0 0 286.992355-5.739847 49.403684 49.403684 0 0 0 8.404776-76.667958z" p-id="1562"></path></svg></a><input type="text" class="search-input" id="search-input" placeholder="站内搜索"></form><div id="search-result"></div><div class="search-no-result">没有找到内容！</div></div>
-
-
-<nav class="menu dis-select"></nav>
-</div>
-<div class="widgets">
-
-
-<widget class="widget-wrapper post-list"><div class="widget-header dis-select"><span class="name">最近更新</span></div><div class="widget-body fs14"><a class="item title" href="/blog/2023/about/"><span class="title">置顶：关于本博客</span></a><a class="item title" href="/blog/2023/202301/"><span class="title">2023 年 1 月：白夜</span></a><a class="item title" href="/blog/2023/202304/"><span class="title">2023 年 4 月：脱轨</span></a><a class="item title" href="/blog/2023/202303/"><span class="title">2023 年 3 月：复制</span></a><a class="item title" href="/blog/2023/202305A/"><span class="title">解决 Kirkiri2 引擎的乱码问题</span></a><a class="item title" href="/blog/2023/202305/"><span class="title">2023 年 5 月：离散</span></a><a class="item title" href="/blog/2023/202305B/"><span class="title">解决 Windows 更新禁用导致微软商店无法安装的问题 (0x80070422)</span></a><a class="item title" href="/blog/2023/202305C/"><span class="title">解决 Stable Diffusion WebUI 安装 xformers 出现 Torch 无法使用 GPU 的问题</span></a><a class="item title" href="/blog/2023/202306/"><span class="title">2023 年 6 月上：涂白</span></a><a class="item title" href="/blog/2023/20230617/"><span class="title">2023-06-17 | Back to Square One</span></a></div></widget>
-</div>
-
-</div></aside><div class="l_main" id="main">
-
-
-
-
-
-<div class="article banner top">
-  <div class="content">
-    <div class="top bread-nav footnote"><div class="left"><div class="flex-row" id="breadcrumb"><a class="cap breadcrumb" href="https://mojimoon.github.io/">主页</a>
-<span class="sep"></span><a class="cap breadcrumb" href="/blog/">文章</a><span class="sep"></span><a class="cap breadcrumb-link" href="/blog/categories/Journal/">Journal</a></div>
-<div class="flex-row" id="post-meta"><span class="text created">发布于：<time datetime="2024-03-18T00:00:00.000Z">2024-03-18</time></span><span class="sep updated"></span><span class="text updated">更新于：<time datetime="2024-03-19T04:11:50.508Z">2024-03-19</time></span></div></div></div>
-    
-    <div class="bottom only-title">
-      
-      <div class="text-area">
-        <h1 class="text title"><span>2024 年 3 月：解密通信</span></h1>
-        
-      </div>
-    </div>
-    
-  </div>
-  </div><article class="md-text content"><p>我最近得了一种时间不够用的病……</p>
-<span id="more"></span>
-<h2 id="四畳半">四畳半</h2>
-<p>首先有必要解释一下我是如何变得这么忙的。</p>
-<p>先举个例子。高中的教学楼有东西两个楼梯，每到跑操时间楼梯都会堵得水泄不通，课间 15 分钟要花两三分钟上下楼。这意味着教学楼的设计是时空不均匀的，在大部分时间里楼梯都空无一人，只有在极少数时间里才会有大量人群涌入。当然，也不能说是设计的问题，毕竟在任何一个系统中，都会有一些节点是瓶颈。虽说你也可以提出别的方案 —— 比如让学生分批跑操，但只要涉及协调人的工作，很有可能会浪费更多时间。</p>
-<p>另一个例子。我们都听说过日本有一种名为「畳」的家具，是一种可折叠的地板。畳可以解决时空不均匀问题 —— 既可以在日常生活中腾出空间，又可以在需要时铺开。当然了，这种发明已经和「和室」一起逐渐被淘汰。变化必然有其原因，GPT 大概会这样回复你：</p>
-<blockquote>
-<p>畳（たたみ）是日本传统的家具，它的使用可以追溯到奈良时代。畳由蔺草编织而成，具有冬暖夏凉的特性，因此在日本的气候下非常适用。然而，随着时间的推移，畳的使用在现代社会中逐渐减少，主要原因包括：</p>
-<ol>
-<li><strong>生活方式的变化</strong>：现代化的生活方式导致人们更倾向于使用椅子和桌子，而不是坐在地上。这种变化减少了对畳的需求。</li>
-<li><strong>住宅空间的变化</strong>：现代住宅设计趋向于西式化，使用地毯或木地板取代了传统的畳。</li>
-<li><strong>维护成本</strong>：畳需要定期更换和维护，这对于忙碌的现代生活来说可能是一项额外的负担。</li>
-<li><strong>文化价值观的转变</strong> ：虽然畳仍然被视为日本文化的一部分，但它不再是日常生活中不可或缺的元素。<br>
-尽管如此，畳仍然在某些传统场合和文化活动中保持其重要性，例如茶道和某些宗教仪式。此外，也有一些现代设计尝试将畳的元素融入到现代家居中，以保留这一传统的一部分。</li>
-</ol>
-</blockquote>
-<p>从这两个例子可以概括出，时空不均匀的本质是 <strong>需求</strong> 和 <strong>资源</strong> 的不匹配。任何对系统本身的改变都无法触及输入和输出的不匹配，因此想要结局这个问题，只能调整需求或资源。而此种调整也会引入时间成本，即使成功，最终达成的也只是时间换空间（而非时间换时间）。</p>
-<hr>
-<p>当然了，「畳」这个计量单位（约合 1.82 平方米）还是保留了下来，并且能够直观地告诉你，房间有多小 —— 就够铺几张床的面积。</p>
-<p>我在内地时对住宅面积这个问题并没有什么概念，但是香港的宿舍就实在是小得可怜，恐怕是真的住进了四畳半。还是看看远处的租房中介吧。</p>
-<h2 id="无法之法">无法之法</h2>
-<p>回到正题。每个学期的常态都是，前期啥事没有，后期死线冲刺。而更要命的是，大部分 project 都是 group work，而根据我前几个学期的经验，如果你想对自己的分数负责，那么你就几乎得对整个 project 负责。诸如 internal deadline 根本不起作用，发了 any volunteer 后谁也不想再动一下，这种事情实在太正常了，因为我自己也是这样。扛大旗会让人觉得自己突然很有 leadership quality，但实际上什么都没学到。不用说，cooperation 是个很重要的能力，但是大学里的太多团队合作都处于无效合作的范畴，可能还不如布置 individual assignment 能够更好地锻炼学生的能力。</p>
-<p>那么问题来了，倘真如此，要怎么培养有效合作的能力呢？以我之见，没有一点办法。（摊手）</p>
-<p>任何锻炼、培养、教育的尝试都是基于对未来的预测，而这种预测是基于过去的经验。「无法之法」恰恰是这种矛盾的体现。如果人永远无法成功，锻炼是无用的；但如果没有锻炼，人永远无法成功。虽说，这个矛盾实质是我们下意识的假定导致的 —— 这个模式隐含着让人第一次尝试就能做到最好的要求。这当然很难实现，但我们难道还能 <strong>不</strong> 这么要求吗？或者说，我们 <strong>愿意</strong> 不这么要求吗？</p>
-<p>所以，结果而言，大部分人还是卡在那里，上不去下不来，既不愿意放弃，也不愿意改变。想要跳脱这种死局，最好的办法是一开始根本不在这个死局里，其次就只能尊重可能性的存在了 —— 改变思维方式不一定能够解决问题，但不改变一定解决不了问题。如同 hypothesis testing 一样，我们只能证伪，而不能证实。</p>
-<h2 id="致敬">致敬</h2>
-<p>作为保留节目，我们来致敬一部传奇游戏。其英文名可用以下正则表达式匹配：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">\d+\s\w+:\s\w+\s\w+</span><br></pre></td></tr></table></figure>
-<p>我正在读一部四格漫画 —— 《<code>\w+\s\w+!&#123;1,3&#125;\s\w+</code>》。其第 <code>\d+</code> 话讲述了一个关于 <code>\w+</code> 的支线故事，其中这两个变量就是游戏标题中匹配到的前两个变量。</p>
-<hr>
-<p>四格漫画，虽然叫这个名字，但是今天已经演变成了八格漫画。虽然有时也会变成 2 格、1 格或者 0.5 格。总之，四格漫画甚至不一定是一堆无厘头的笑话加上一个莫名其妙的小标题，它也可以很严肃，虽然在同一话里面画风转变多次还是有点（令人）忍俊不禁。</p>
-<p>之前在推特上刷到一个短篇，每到第 <code>\d</code> 的倍数或者带有 <code>\d</code> 这个数字的格子都会风格突变。这虽然也不是什么新鲜的手法了，但应该是没有作者画过一直遵守这个规则、格子连续编号的长篇。作为前期的噱头、后期的关键点，连续性的维护成本是很高的，但不也很酷吗？</p>
-<p>我已经迫不及待地想要看到第 <code>\d+</code> 格了。这个数字质因数分解后的结果是 <code>a x bc x de</code> (a &lt; bc &lt; de)，其中两位数 <code>bd</code> 就是标题中的第一个数字。</p>
-<hr>
-<p>我有非常丰富的创作动机，但一是我想得太过远大，想着不能做大不如不做，二是我在创作方面很匮乏填充细节的能力（这当然是说得好听了，说人话就是啥也写不出来）。总之，此事只能想想，这也不错，至少能让它只是一个美好的幻想。</p>
-<h2 id="第四面墙">第四面墙</h2>
-<p>metafictional 的意义在于它是虚构的。它如果发生在现实中，那就是纯粹的恐怖。</p>
-<p>当然第四面墙可不止一种。传统意义上的打破第四面墙只是和读者互动，但角色要怎样和作者对话呢？他们不会；他们只知道这个世界是个 crapsack world，哪怕他们知道自己是虚构的，也没法通过这个认识改变什么。</p>
-<p>与之相对的，读者在这个故事中的行为也是被预设的，毕竟作者只能给出有限的选项。这意味着，虽然打破第四面墙，仍然存在一种力量作为读者代理，和剧中角色对话。这是什么人呢？从现实意义上，只能是作者自己。</p>
-<p>因此，假如存在打破第四面墙却发现是作者的情况，让角色事实性地和作者对话，这种工具就过分强大了。作者既然能与角色对话，角色也能自发地去干扰作者的创作。或者说，作者并非在创作，而是在记录，传达给现实中的读者。既然角色的行为不再受限于作者的预设，故事很容易变得不可控 —— 或者说，哪怕故事可控，引入一个强大的工具却不用它，这本身如同 deus ex machina 一样破坏了连续性。（当然，也可以暂时不用，再把这种工具当作关键点）</p>
-<p>再进一步，想象「作者代理」与「读者代理」同框的情况。虽然这个世界可能不止两个「我」，甚至所有角色都是同一个人，未免会引入一些混乱，但我觉得反而是一种很好的创作手法。可以先通过解构 trope 作为笑料，然后在后面的篇章非常正式地重现或模仿这种 trope，一是完成呼应，二是强化读者认同。不过，如何处理「我」和另外两个「我」的关系，使之各有特色，是一个很大的挑战。</p>
-<p>用 concurrency 的概念来看，主角是个 semaphore，作者代理是个 mutex，读者代理是个 condition variable。主角是这个故事本身需要的，而后两者起到了控制和通信的作用。作者代理的存在保证了秩序的存在，读者代理的存在实现了交互的可能。</p>
-<p>总之，到头来，这个模型反而修好了第四面墙。尽管读者代理名义上是代表读者完成与角色的互动，但实际上是为了满足作者代理的需求而存在的。这也意味着，如果你要把这些角色放在同一个平面上，那么读者到头来也不用关心角色是否真的在与自己对话。</p>
-<p>或许也可以考虑嵌套故事中嵌套地打破第四面墙的情况。比如，「我」是个剧本家，「我」发现读者在看着「我」，然后「我」笔下的人物又发现了「我」的存在。这个逻辑确实是成立的 —— 因为在现实世界中的我们，也无法确认自己是否处于现实的最外层；即使剧本家对自己假装角色获得自由意志这件事非常明晰 —— 因为，正是「我」在创造这个世界 —— 他也无法证伪自己的行为是否被预设。</p>
-<p>我举一个 TV Tropes 上没有的 trope 作为例子，暂定名「As the Story Goes」。</p>
-<p>定义：一个故事完全作为「一个人讲述故事给另一个人/一个人写故事」的产物存在。</p>
-<p>由于叙述者无法干涉故事的进行，这件事本身通常只在开头和/或结尾被提及，在故事的主体部分完全没有影响。但是，这并不意味着叙述者和故事就毫无关系 —— 经常有某种暗示或明示（比如说，外貌和名字相似），体现叙述者就是故事的亲历者，或者与故事中的某个角色有某种联系。有时，听者实际也和故事存在联系。</p>
-<p>有时也会和 <a target="_blank" rel="noopener" href="https://tvtropes.org/pmwiki/pmwiki.php/Main/AllJustaDream">All Just a Dream</a> 一起使用 —— 我们无法得知这个故事是否真的发生过，也有可能确实发生过，但已经被形而上学地抹去了。如果叙述者拿出故事中的物件，那就属于 <a target="_blank" rel="noopener" href="https://tvtropes.org/pmwiki/pmwiki.php/Main/OrWasItADream">Or Was It a Dream?</a> 和 <a target="_blank" rel="noopener" href="https://tvtropes.org/pmwiki/pmwiki.php/Main/FantasyKeepsake">Fantasy Keepsake</a>。</p>
-<p>如果原故事没有结局（<a target="_blank" rel="noopener" href="https://tvtropes.org/pmwiki/pmwiki.php/Main/NoEnding">No Ending</a>），或者使用了以下处理之一：</p>
-<ul>
-<li>听者问故事的结局，叙述者只是笑了笑。这是 <a target="_blank" rel="noopener" href="https://tvtropes.org/pmwiki/pmwiki.php/Main/YourPrincessIsInAnotherCastle">Your Princess Is in Another Castle!</a>。</li>
-<li>叙述者用自己的话概括了故事的结局，或者自己提供了一个结局。这是 <a target="_blank" rel="noopener" href="https://tvtropes.org/pmwiki/pmwiki.php/Main/AmbiguousEnding">Ambiguous Ending</a> 或者 <a target="_blank" rel="noopener" href="https://tvtropes.org/pmwiki/pmwiki.php/Main/ShockAndSwitchEnding">Shock-and-Switch Ending</a>。</li>
-</ul>
-<p>甚至，如果听者离开之后，叙述者开始阅读剩下的故事，暗示着刚才给出了一个不同的结局，那就是 <a target="_blank" rel="noopener" href="https://tvtropes.org/pmwiki/pmwiki.php/Main/FakeOutTwist">Fake-Out Twist</a>。</p>
-<p>参见 <a target="_blank" rel="noopener" href="https://tvtropes.org/pmwiki/pmwiki.php/Main/NestedStoryReveal">Nested Story Reveal</a>，其中角色对这个故事是「虚构」一事知情但读者不知情。参见 <a target="_blank" rel="noopener" href="https://tvtropes.org/pmwiki/pmwiki.php/Main/FakeOutOpening">Fake-Out Opening</a>，其中故事开头和主体部分讲述了不同的故事。</p>
-<hr>
-<p>灵感来源：某部英文名和罗马音都符合《<code>\w+\s\w+\s\w+</code>》的游戏，于 <code>202f</code> 年 <code>d</code> 月 <code>bg</code> 日发售，其中 <code>gcd(202f, bg) = h</code>，<code>a, b, c, d, e, f, g, h</code> 均为 0 ~ 9 之间的不同数字。</p>
-<h2 id="■おまかせ">■おまかせ</h2>
-<p>我今天才注意到 S14 赛制的改动，大概总结如下：</p>
-<p>前情提要：LJL 赛区并入 PCS，现在 PCS、LJL、LCO 三个子赛区的常规赛独立进行，季后赛则是由 PCS 前六、LJL 前二、LCO 前三组成的 11 支队伍进行。</p>
-<p>考虑到今年 LCS（10→8）、LJL（8→6）、LLA（8→7）相继削减席位，合并外卡赛区确实是大势所趋。就是，PCS 要不连 LCS、CBLOL、LLA 也一起合并了，组一个环太平洋赛区吧。</p>
-<p>直通世界赛的赛区从 9 个减少至 8 个，MSI 和世界赛的名额自然也有所调整。</p>
-<blockquote>
-<p><strong>MSI</strong>：入围赛名额改为 LCK、LPL、LEC、LCS#2 和 PCS、VCS、CBLOL、LLA#1。入围赛变为八进四，四支队伍和 LCK、LPL、LEC、LCS#1 一起进行淘汰赛。</p>
-</blockquote>
-<p>名额从 5+8 个减少至 4+8 个，现在 LCK#2 也要去打入围赛了。这样一来，虽说入围赛的竞争更加激烈，但并不改变四个名额中有三个过于板上钉钉的事实。</p>
-<blockquote>
-<p><strong>世界赛</strong>：瑞士轮名额改为 LCK 3 个、LPL 3 个、LEC 3 个、LCS 3 个。此外，新增两条规则：</p>
-<ul>
-<li>MSI 冠军直接入围世界赛，不占用赛区名额。</li>
-<li><s>MSI 亚军所在赛区额外获得一个名额。</s> MSI 成绩第二好的赛区额外获得一个名额。<br>
-入围赛名额改为 PCS 2 个、VCS 2 个、CBLOL 1 个、LLA 1 个。入围赛改为六进二。</li>
-</ul>
-</blockquote>
-<p>对比去年赛制，LCK 和 LPL 的基础名额都减少到了 3 个，而 LEC#4 和 LCS#4 压根连入围赛的资格赛都没得打了。PCS 和 LJL 合并后，总名额也由 3 个下降到了 2 个。入围赛从八进二改为六进二，不仅赛程更加紧凑，竞争 —— 这个倒是不会降低，毕竟外卡要么吊打要么菜鸡互啄，没有中间地带。</p>
-<p>此外，新赛制让 MSI 成绩的重要性显著提升。MSI 冠军直接入围世界赛，亚军则可以为赛区争取一个名额，再也不只是茶余谈资了。与之相对的，如果在 MSI 上出师不利，世界赛只有 3 个名额，就会变得非常被动。</p>
-<p><s>对 LPL 来说，最起码的，要拿到 4 个名额。否则，极大概率就是由 LCK 夺取 5 个名额，这样夏季赛的舆论压力 —— 尤其是三到六名的队伍 —— 就会非常大。</s></p>
-<p>（注：LPL 的季后赛方案是，如果地区名额只有 3 个，那么冒泡赛只由冠军积分 3 至 5 名的队伍参加，第一场 #4 vs #5，第二场 #3 vs 胜者，最终胜者取得三号种子。以上排名忽略通过 MSI 冠军直接入围的队伍，如果有的话。）</p>
-<p>我其实很难说拳头到底有什么打算。总之，这一届的名额分配恐怕有点过分得公平了，四大赛区 MSI 都是 1+1 个名额，世界赛都是 3 个基础名额。再也不用考虑上年地区积分这种问题了，直接 MSI 打出成绩就好了。</p>
-<p>■おいわい</p>
-<blockquote>
-<p>2024/03/19 edit：第二条规则实际上是「MSI 成绩第二好的赛区额外获得一个名额」，而不是「MSI 亚军所在赛区额外获得一个名额」。<br>
-这样一来，名额基本上还是 4+4+3+3，没什么讨论的价值。总而言之，只要打完 MSI 自然就会明晰，不用特别担心。</p>
-</blockquote>
-
-<div class="article-footer fs14">
-    <section id="license">
-      <div class="header"><span>许可协议</span></div>
-      <div class="body"><p>本文采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh">署名-相同方式共享 4.0 国际许可协议</a>，转载请注明出处。</p>
-</div>
-    </section>
-    </div>
-</article>
-<div class="related-wrap" id="read-next"><section class="body"><div class="item" id="prev"><div class="note">较新文章</div><a href="/blog/2024/ML/">笔记：机器学习的基本工具</a></div><div class="item" id="next"><div class="note">较早文章</div><a href="/blog/2024/202402/">2024 年 2 月：翻译人生</a></div></section></div>
-
-
-
-
-  <div class="related-wrap md-text" id="comments">
-    <section class='header cmt-title cap theme'>
-      <p>快来参与讨论吧~</p>
-
-    </section>
-    <section class='body cmt-body beaudar'>
-      
-
-<svg class="loading" style="vertical-align:middle;fill:currentColor;overflow:hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2709"><path d="M832 512c0-176-144-320-320-320V128c211.2 0 384 172.8 384 384h-64zM192 512c0 176 144 320 320 320v64C300.8 896 128 723.2 128 512h64z" p-id="2710"></path></svg>
-
-<div id="beaudar" repo="mojimoon/blog-comments" issue-term="pathname" theme="preferred-color-scheme" input-position="top" comment-order="desc" loading="false" branch="main"></div>
-
-    </section>
-  </div>
-
-
-
-<footer class="page-footer footnote"><hr><div class="sitemap"><div class="sitemap-group"><span class="fs15">博客</span><a href="/blog/">近期</a><a href="/blog/categories/">分类</a><a href="/blog/archives/">归档</a></div><div class="sitemap-group"><span class="fs15">外链</span><a target="_blank" rel="noopener" href="https://steamcommunity.com/id/unreset/">Steam</a><a target="_blank" rel="noopener" href="https://bgm.tv/user/788548">Bangumi</a><a target="_blank" rel="noopener" href="https://github.com/mojimoon">Github</a></div><div class="sitemap-group"><span class="fs15">社交</span><a href="/blog/2023/about/">关于</a><a href="/blog/">友链</a><a href="/blog/">留言板</a></div></div><div class="text"><p><a target="_blank" rel="noopener" href="https://github.com/mojimoon">@mojimoon</a> Overclocked by <a target="_blank" rel="noopener" href="https://xaoxuu.com/wiki/stellar/">Stellar</a><br>
-Total <span id="busuanzi_value_site_pv"></span> views.</p>
-<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-</div></footer>
-<div class="main-mask" onclick="sidebar.dismiss()"></div></div><aside class="l_right">
-<div class="widgets">
-
-
-
-<widget class="widget-wrapper toc" id="data-toc" collapse="false"><div class="widget-header dis-select"><span class="name">本文目录</span><a class="cap-action" onclick="sidebar.toggleTOC()" ><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6h11m-11 6h11m-11 6h11M4 6h1v4m-1 0h2m0 8H4c0-1 2-2 2-3s-1-1.5-2-1"/></svg></a></div><div class="widget-body"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9B%9B%E7%95%B3%E5%8D%8A"><span class="toc-text">四畳半</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%97%A0%E6%B3%95%E4%B9%8B%E6%B3%95"><span class="toc-text">无法之法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%87%B4%E6%95%AC"><span class="toc-text">致敬</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E5%9B%9B%E9%9D%A2%E5%A2%99"><span class="toc-text">第四面墙</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E2%96%A0%E3%81%8A%E3%81%BE%E3%81%8B%E3%81%9B"><span class="toc-text">■おまかせ</span></a></li></ol></div><div class="widget-footer">
-
-<a class="top" onclick="util.scrollTop()"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 12c0-4.714 0-7.071 1.464-8.536C4.93 2 7.286 2 12 2c4.714 0 7.071 0 8.535 1.464C22 4.93 22 7.286 22 12c0 4.714 0 7.071-1.465 8.535C19.072 22 16.714 22 12 22s-7.071 0-8.536-1.465C2 19.072 2 16.714 2 12Z"/><path stroke-linecap="round" stroke-linejoin="round" d="m9 15.5l3-3l3 3m-6-4l3-3l3 3"/></g></svg><span>回到顶部</span></a><a class="buttom" onclick="util.scrollComment()"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="M10.46 1.25h3.08c1.603 0 2.86 0 3.864.095c1.023.098 1.861.3 2.6.752a5.75 5.75 0 0 1 1.899 1.899c.452.738.654 1.577.752 2.6c.095 1.004.095 2.261.095 3.865v1.067c0 1.141 0 2.036-.05 2.759c-.05.735-.153 1.347-.388 1.913a5.75 5.75 0 0 1-3.112 3.112c-.805.334-1.721.408-2.977.43a10.81 10.81 0 0 0-.929.036c-.198.022-.275.054-.32.08c-.047.028-.112.078-.224.232c-.121.166-.258.396-.476.764l-.542.916c-.773 1.307-2.69 1.307-3.464 0l-.542-.916a10.605 10.605 0 0 0-.476-.764c-.112-.154-.177-.204-.224-.232c-.045-.026-.122-.058-.32-.08c-.212-.023-.49-.03-.93-.037c-1.255-.021-2.171-.095-2.976-.429A5.75 5.75 0 0 1 1.688 16.2c-.235-.566-.338-1.178-.389-1.913c-.049-.723-.049-1.618-.049-2.76v-1.066c0-1.604 0-2.86.095-3.865c.098-1.023.3-1.862.752-2.6a5.75 5.75 0 0 1 1.899-1.899c.738-.452 1.577-.654 2.6-.752C7.6 1.25 8.857 1.25 10.461 1.25M6.739 2.839c-.914.087-1.495.253-1.959.537A4.25 4.25 0 0 0 3.376 4.78c-.284.464-.45 1.045-.537 1.96c-.088.924-.089 2.11-.089 3.761v1c0 1.175 0 2.019.046 2.685c.045.659.131 1.089.278 1.441a4.25 4.25 0 0 0 2.3 2.3c.515.214 1.173.294 2.429.316h.031c.398.007.747.013 1.037.045c.311.035.616.104.909.274c.29.17.5.395.682.645c.169.232.342.525.538.856l.559.944a.52.52 0 0 0 .882 0l.559-.944c.196-.331.37-.624.538-.856c.182-.25.392-.476.682-.645c.293-.17.598-.24.909-.274c.29-.032.639-.038 1.037-.045h.032c1.255-.022 1.913-.102 2.428-.316a4.25 4.25 0 0 0 2.3-2.3c.147-.352.233-.782.278-1.441c.046-.666.046-1.51.046-2.685v-1c0-1.651 0-2.837-.089-3.762c-.087-.914-.253-1.495-.537-1.959a4.25 4.25 0 0 0-1.403-1.403c-.464-.284-1.045-.45-1.96-.537c-.924-.088-2.11-.089-3.761-.089h-3c-1.651 0-2.837 0-3.762.089" clip-rule="evenodd"/><path fill="currentColor" d="M9 11a1 1 0 1 1-2 0a1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0a1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0a1 1 0 0 1 2 0"/></svg><span>参与讨论</span></a></div></widget>
-</div></aside><div class='float-panel blur'>
-  <button type='button' style='display:none' class='laptop-only rightbar-toggle mobile' onclick='sidebar.rightbar()'>
-    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6h11m-11 6h11m-11 6h11M4 6h1v4m-1 0h2m0 8H4c0-1 2-2 2-3s-1-1.5-2-1"/></svg>
-  </button>
-  <button type='button' style='display:none' class='mobile-only leftbar-toggle mobile' onclick='sidebar.leftbar()'>
-    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 11c0-3.771 0-5.657 1.172-6.828C4.343 3 6.229 3 10 3h4c3.771 0 5.657 0 6.828 1.172C22 5.343 22 7.229 22 11v2c0 3.771 0 5.657-1.172 6.828C19.657 21 17.771 21 14 21h-4c-3.771 0-5.657 0-6.828-1.172C2 18.657 2 16.771 2 13z"/><path id="sep" stroke-linecap="round" d="M5.5 10h6m-5 4h4m4.5 7V3"/></g></svg>
-  </button>
-</div>
-</div><div class="scripts">
-<script type="text/javascript">
-  const ctx = {
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="hexo-theme" content="https://github.com/xaoxuu/hexo-theme-stellar/tree/1.29.1" theme-name="Stellar" theme-version="1.29.1"><meta name="generator" content="Hexo 7.3.0"><meta http-equiv="x-dns-prefetch-control" content="on"><meta name="renderer" content="webkit"><meta name="force-rendering" content="webkit"><meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"><meta name="HandheldFriendly" content="True"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1"><meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000"><meta name="theme-color" content="#f9fafb"><title>2024 年 3 月：解密通信 - もじもんの文字門</title><meta name="description" content="我最近得了一种时间不够用的病……"><meta property="og:type" content="article"><meta property="og:title" content="2024 年 3 月：解密通信"><meta property="og:url" content="https://mojimoon.github.io/blog/2024/202403/"><meta property="og:site_name" content="もじもんの文字門"><meta property="og:description" content="我最近得了一种时间不够用的病……"><meta property="og:locale" content="zh_CN"><meta property="article:published_time" content="2024-03-18T00:00:00.000Z"><meta property="article:modified_time" content="2024-03-19T04:11:50.508Z"><meta property="article:author" content="mojimoon"><meta property="article:tag" content="mojimoon, computer science, python, blog, hexo"><meta name="twitter:card" content="summary"><meta name="keywords" content="mojimoon, computer science, python, blog, hexo"><link rel="stylesheet" href="/blog/css/main.css?v=1.29.1"><link rel="shortcut icon" href="/blog/image/favicon.png"><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet"><link rel="stylesheet" href="/blog/css/override.css"></head><body><div class="l_body s:aa content tech" id="start" layout="post"><aside class="l_left"><div class="leftbar-container"><header class="header"><div class="logo-wrap"><a class="avatar" href="/blog/2023/about/"><div class="bg" style="opacity:0;background-image:url(https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/avatar/round/rainbow64@3x.webp)"></div><img no-lazy class="avatar" src="/blog/image/mojimoon.png" onerror='this.classList.add("error"),this.src="https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/image/2659360.svg"'></a><a class="title" href="/blog/"><div class="main" ff="title">もじもんの文字門</div><div class="sub normal cap">Computer Science</div><div class="sub hover cap" style="opacity:0">Puzzled Puzzler</div></a></div></header><div class="nav-area"><div class="search-wrapper" id="search-wrapper"><form class="search-form"><a class="search-button" onclick="document.getElementById(&quot;search-input&quot;).focus();"><svg t="1705074644177" viewBox="0 0 1025 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1560" width="200" height="200"><path d="M1008.839137 935.96571 792.364903 719.491476a56.783488 56.783488 0 0 0-80.152866 0 358.53545 358.53545 0 1 1 100.857314-335.166073 362.840335 362.840335 0 0 1-3.689902 170.145468 51.248635 51.248635 0 1 0 99.217358 26.444296 462.057693 462.057693 0 1 0-158.255785 242.303546l185.930047 185.725053a51.248635 51.248635 0 0 0 72.568068 0 51.248635 51.248635 0 0 0 0-72.978056z" p-id="1561"></path><path d="M616.479587 615.969233a50.428657 50.428657 0 0 0-61.498362-5.534852 174.655348 174.655348 0 0 1-177.525271 3.484907 49.403684 49.403684 0 0 0-58.833433 6.76482l-3.074918 2.869923a49.403684 49.403684 0 0 0 8.609771 78.10292 277.767601 277.767601 0 0 0 286.992355-5.739847 49.403684 49.403684 0 0 0 8.404776-76.667958z" p-id="1562"></path></svg></a><input type="text" class="search-input" id="search-input" placeholder="站内搜索"></form><div id="search-result"></div><div class="search-no-result">没有找到内容！</div></div><nav class="menu dis-select"></nav></div><div class="widgets"><widget class="widget-wrapper post-list"><div class="widget-header dis-select"><span class="name">最近更新</span></div><div class="widget-body fs14"><a class="item title" href="/blog/2023/about/"><span class="title">置顶：关于本博客</span></a><a class="item title" href="/blog/2023/202301/"><span class="title">2023 年 1 月：白夜</span></a><a class="item title" href="/blog/2023/202303/"><span class="title">2023 年 3 月：复制</span></a><a class="item title" href="/blog/2023/202304/"><span class="title">2023 年 4 月：脱轨</span></a><a class="item title" href="/blog/2023/202305/"><span class="title">2023 年 5 月：离散</span></a><a class="item title" href="/blog/2023/202305A/"><span class="title">解决 Kirkiri2 引擎的乱码问题</span></a><a class="item title" href="/blog/2023/202305B/"><span class="title">解决 Windows 更新禁用导致微软商店无法安装的问题 (0x80070422)</span></a><a class="item title" href="/blog/2023/202305C/"><span class="title">解决 Stable Diffusion WebUI 安装 xformers 出现 Torch 无法使用 GPU 的问题</span></a><a class="item title" href="/blog/2023/20230617/"><span class="title">2023-06-17 | Back to Square One</span></a><a class="item title" href="/blog/2023/202306/"><span class="title">2023 年 6 月上：涂白</span></a></div></widget></div></div></aside><div class="l_main" id="main"><div class="article banner top"><div class="content"><div class="top bread-nav footnote"><div class="left"><div class="flex-row" id="breadcrumb"><a class="cap breadcrumb" href="https://mojimoon.github.io/">主页</a><span class="sep"></span> <a class="cap breadcrumb" href="/blog/">文章</a><span class="sep"></span><a class="cap breadcrumb-link" href="/blog/categories/Journal/">Journal</a></div><div class="flex-row" id="post-meta"><span class="text created">发布于：<time datetime="2024-03-18T00:00:00.000Z">2024-03-18</time></span><span class="sep updated"></span><span class="text updated">更新于：<time datetime="2024-03-19T04:11:50.508Z">2024-03-19</time></span></div></div></div><div class="bottom only-title"><div class="text-area"><h1 class="text title"><span>2024 年 3 月：解密通信</span></h1></div></div></div></div><article class="md-text content"><p>我最近得了一种时间不够用的病……</p><span id="more"></span><h2 id="四畳半"><a class="markdownIt-Anchor" href="#四畳半"></a> 四畳半</h2><p>首先有必要解释一下我是如何变得这么忙的。</p><p>先举个例子。高中的教学楼有东西两个楼梯，每到跑操时间楼梯都会堵得水泄不通，课间 15 分钟要花两三分钟上下楼。这意味着教学楼的设计是时空不均匀的，在大部分时间里楼梯都空无一人，只有在极少数时间里才会有大量人群涌入。当然，也不能说是设计的问题，毕竟在任何一个系统中，都会有一些节点是瓶颈。虽说你也可以提出别的方案 —— 比如让学生分批跑操，但只要涉及协调人的工作，很有可能会浪费更多时间。</p><p>另一个例子。我们都听说过日本有一种名为「畳」的家具，是一种可折叠的地板。畳可以解决时空不均匀问题 —— 既可以在日常生活中腾出空间，又可以在需要时铺开。当然了，这种发明已经和「和室」一起逐渐被淘汰。变化必然有其原因，GPT 大概会这样回复你：</p><blockquote><p>畳（たたみ）是日本传统的家具，它的使用可以追溯到奈良时代。畳由蔺草编织而成，具有冬暖夏凉的特性，因此在日本的气候下非常适用。然而，随着时间的推移，畳的使用在现代社会中逐渐减少，主要原因包括：</p><ol><li><strong>生活方式的变化</strong>：现代化的生活方式导致人们更倾向于使用椅子和桌子，而不是坐在地上。这种变化减少了对畳的需求。</li><li><strong>住宅空间的变化</strong>：现代住宅设计趋向于西式化，使用地毯或木地板取代了传统的畳。</li><li><strong>维护成本</strong>：畳需要定期更换和维护，这对于忙碌的现代生活来说可能是一项额外的负担。</li><li><strong>文化价值观的转变</strong> ：虽然畳仍然被视为日本文化的一部分，但它不再是日常生活中不可或缺的元素。<br>尽管如此，畳仍然在某些传统场合和文化活动中保持其重要性，例如茶道和某些宗教仪式。此外，也有一些现代设计尝试将畳的元素融入到现代家居中，以保留这一传统的一部分。</li></ol></blockquote><p>从这两个例子可以概括出，时空不均匀的本质是 <strong>需求</strong> 和 <strong>资源</strong> 的不匹配。任何对系统本身的改变都无法触及输入和输出的不匹配，因此想要结局这个问题，只能调整需求或资源。而此种调整也会引入时间成本，即使成功，最终达成的也只是时间换空间（而非时间换时间）。</p><hr><p>当然了，「畳」这个计量单位（约合 1.82 平方米）还是保留了下来，并且能够直观地告诉你，房间有多小 —— 就够铺几张床的面积。</p><p>我在内地时对住宅面积这个问题并没有什么概念，但是香港的宿舍就实在是小得可怜，恐怕是真的住进了四畳半。还是看看远处的租房中介吧。</p><h2 id="无法之法"><a class="markdownIt-Anchor" href="#无法之法"></a> 无法之法</h2><p>回到正题。每个学期的常态都是，前期啥事没有，后期死线冲刺。而更要命的是，大部分 project 都是 group work，而根据我前几个学期的经验，如果你想对自己的分数负责，那么你就几乎得对整个 project 负责。诸如 internal deadline 根本不起作用，发了 any volunteer 后谁也不想再动一下，这种事情实在太正常了，因为我自己也是这样。扛大旗会让人觉得自己突然很有 leadership quality，但实际上什么都没学到。不用说，cooperation 是个很重要的能力，但是大学里的太多团队合作都处于无效合作的范畴，可能还不如布置 individual assignment 能够更好地锻炼学生的能力。</p><p>那么问题来了，倘真如此，要怎么培养有效合作的能力呢？以我之见，没有一点办法。（摊手）</p><p>任何锻炼、培养、教育的尝试都是基于对未来的预测，而这种预测是基于过去的经验。「无法之法」恰恰是这种矛盾的体现。如果人永远无法成功，锻炼是无用的；但如果没有锻炼，人永远无法成功。虽说，这个矛盾实质是我们下意识的假定导致的 —— 这个模式隐含着让人第一次尝试就能做到最好的要求。这当然很难实现，但我们难道还能 <strong>不</strong> 这么要求吗？或者说，我们 <strong>愿意</strong> 不这么要求吗？</p><p>所以，结果而言，大部分人还是卡在那里，上不去下不来，既不愿意放弃，也不愿意改变。想要跳脱这种死局，最好的办法是一开始根本不在这个死局里，其次就只能尊重可能性的存在了 —— 改变思维方式不一定能够解决问题，但不改变一定解决不了问题。如同 hypothesis testing 一样，我们只能证伪，而不能证实。</p><h2 id="致敬"><a class="markdownIt-Anchor" href="#致敬"></a> 致敬</h2><p>作为保留节目，我们来致敬一部传奇游戏。其英文名可用以下正则表达式匹配：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">\d+\s\w+:\s\w+\s\w+</span><br></pre></td></tr></table></figure><p>我正在读一部四格漫画 —— 《<code>\w+\s\w+!&#123;1,3&#125;\s\w+</code>》。其第 <code>\d+</code> 话讲述了一个关于 <code>\w+</code> 的支线故事，其中这两个变量就是游戏标题中匹配到的前两个变量。</p><hr><p>四格漫画，虽然叫这个名字，但是今天已经演变成了八格漫画。虽然有时也会变成 2 格、1 格或者 0.5 格。总之，四格漫画甚至不一定是一堆无厘头的笑话加上一个莫名其妙的小标题，它也可以很严肃，虽然在同一话里面画风转变多次还是有点（令人）忍俊不禁。</p><p>之前在推特上刷到一个短篇，每到第 <code>\d</code> 的倍数或者带有 <code>\d</code> 这个数字的格子都会风格突变。这虽然也不是什么新鲜的手法了，但应该是没有作者画过一直遵守这个规则、格子连续编号的长篇。作为前期的噱头、后期的关键点，连续性的维护成本是很高的，但不也很酷吗？</p><p>我已经迫不及待地想要看到第 <code>\d+</code> 格了。这个数字质因数分解后的结果是 <code>a x bc x de</code> (a &lt; bc &lt; de)，其中两位数 <code>bd</code> 就是标题中的第一个数字。</p><hr><p>我有非常丰富的创作动机，但一是我想得太过远大，想着不能做大不如不做，二是我在创作方面很匮乏填充细节的能力（这当然是说得好听了，说人话就是啥也写不出来）。总之，此事只能想想，这也不错，至少能让它只是一个美好的幻想。</p><h2 id="第四面墙"><a class="markdownIt-Anchor" href="#第四面墙"></a> 第四面墙</h2><p>metafictional 的意义在于它是虚构的。它如果发生在现实中，那就是纯粹的恐怖。</p><p>当然第四面墙可不止一种。传统意义上的打破第四面墙只是和读者互动，但角色要怎样和作者对话呢？他们不会；他们只知道这个世界是个 crapsack world，哪怕他们知道自己是虚构的，也没法通过这个认识改变什么。</p><p>与之相对的，读者在这个故事中的行为也是被预设的，毕竟作者只能给出有限的选项。这意味着，虽然打破第四面墙，仍然存在一种力量作为读者代理，和剧中角色对话。这是什么人呢？从现实意义上，只能是作者自己。</p><p>因此，假如存在打破第四面墙却发现是作者的情况，让角色事实性地和作者对话，这种工具就过分强大了。作者既然能与角色对话，角色也能自发地去干扰作者的创作。或者说，作者并非在创作，而是在记录，传达给现实中的读者。既然角色的行为不再受限于作者的预设，故事很容易变得不可控 —— 或者说，哪怕故事可控，引入一个强大的工具却不用它，这本身如同 deus ex machina 一样破坏了连续性。（当然，也可以暂时不用，再把这种工具当作关键点）</p><p>再进一步，想象「作者代理」与「读者代理」同框的情况。虽然这个世界可能不止两个「我」，甚至所有角色都是同一个人，未免会引入一些混乱，但我觉得反而是一种很好的创作手法。可以先通过解构 trope 作为笑料，然后在后面的篇章非常正式地重现或模仿这种 trope，一是完成呼应，二是强化读者认同。不过，如何处理「我」和另外两个「我」的关系，使之各有特色，是一个很大的挑战。</p><p>用 concurrency 的概念来看，主角是个 semaphore，作者代理是个 mutex，读者代理是个 condition variable。主角是这个故事本身需要的，而后两者起到了控制和通信的作用。作者代理的存在保证了秩序的存在，读者代理的存在实现了交互的可能。</p><p>总之，到头来，这个模型反而修好了第四面墙。尽管读者代理名义上是代表读者完成与角色的互动，但实际上是为了满足作者代理的需求而存在的。这也意味着，如果你要把这些角色放在同一个平面上，那么读者到头来也不用关心角色是否真的在与自己对话。</p><p>或许也可以考虑嵌套故事中嵌套地打破第四面墙的情况。比如，「我」是个剧本家，「我」发现读者在看着「我」，然后「我」笔下的人物又发现了「我」的存在。这个逻辑确实是成立的 —— 因为在现实世界中的我们，也无法确认自己是否处于现实的最外层；即使剧本家对自己假装角色获得自由意志这件事非常明晰 —— 因为，正是「我」在创造这个世界 —— 他也无法证伪自己的行为是否被预设。</p><p>我举一个 TV Tropes 上没有的 trope 作为例子，暂定名「As the Story Goes」。</p><p>定义：一个故事完全作为「一个人讲述故事给另一个人/一个人写故事」的产物存在。</p><p>由于叙述者无法干涉故事的进行，这件事本身通常只在开头和/或结尾被提及，在故事的主体部分完全没有影响。但是，这并不意味着叙述者和故事就毫无关系 —— 经常有某种暗示或明示（比如说，外貌和名字相似），体现叙述者就是故事的亲历者，或者与故事中的某个角色有某种联系。有时，听者实际也和故事存在联系。</p><p>有时也会和 <a target="_blank" rel="noopener" href="https://tvtropes.org/pmwiki/pmwiki.php/Main/AllJustaDream">All Just a Dream</a> 一起使用 —— 我们无法得知这个故事是否真的发生过，也有可能确实发生过，但已经被形而上学地抹去了。如果叙述者拿出故事中的物件，那就属于 <a target="_blank" rel="noopener" href="https://tvtropes.org/pmwiki/pmwiki.php/Main/OrWasItADream">Or Was It a Dream?</a> 和 <a target="_blank" rel="noopener" href="https://tvtropes.org/pmwiki/pmwiki.php/Main/FantasyKeepsake">Fantasy Keepsake</a>。</p><p>如果原故事没有结局（<a target="_blank" rel="noopener" href="https://tvtropes.org/pmwiki/pmwiki.php/Main/NoEnding">No Ending</a>），或者使用了以下处理之一：</p><ul><li>听者问故事的结局，叙述者只是笑了笑。这是 <a target="_blank" rel="noopener" href="https://tvtropes.org/pmwiki/pmwiki.php/Main/YourPrincessIsInAnotherCastle">Your Princess Is in Another Castle!</a>。</li><li>叙述者用自己的话概括了故事的结局，或者自己提供了一个结局。这是 <a target="_blank" rel="noopener" href="https://tvtropes.org/pmwiki/pmwiki.php/Main/AmbiguousEnding">Ambiguous Ending</a> 或者 <a target="_blank" rel="noopener" href="https://tvtropes.org/pmwiki/pmwiki.php/Main/ShockAndSwitchEnding">Shock-and-Switch Ending</a>。</li></ul><p>甚至，如果听者离开之后，叙述者开始阅读剩下的故事，暗示着刚才给出了一个不同的结局，那就是 <a target="_blank" rel="noopener" href="https://tvtropes.org/pmwiki/pmwiki.php/Main/FakeOutTwist">Fake-Out Twist</a>。</p><p>参见 <a target="_blank" rel="noopener" href="https://tvtropes.org/pmwiki/pmwiki.php/Main/NestedStoryReveal">Nested Story Reveal</a>，其中角色对这个故事是「虚构」一事知情但读者不知情。参见 <a target="_blank" rel="noopener" href="https://tvtropes.org/pmwiki/pmwiki.php/Main/FakeOutOpening">Fake-Out Opening</a>，其中故事开头和主体部分讲述了不同的故事。</p><hr><p>灵感来源：某部英文名和罗马音都符合《<code>\w+\s\w+\s\w+</code>》的游戏，于 <code>202f</code> 年 <code>d</code> 月 <code>bg</code> 日发售，其中 <code>gcd(202f, bg) = h</code>，<code>a, b, c, d, e, f, g, h</code> 均为 0 ~ 9 之间的不同数字。</p><h2 id="おまかせ"><a class="markdownIt-Anchor" href="#おまかせ"></a> ■おまかせ</h2><p>我今天才注意到 S14 赛制的改动，大概总结如下：</p><p>前情提要：LJL 赛区并入 PCS，现在 PCS、LJL、LCO 三个子赛区的常规赛独立进行，季后赛则是由 PCS 前六、LJL 前二、LCO 前三组成的 11 支队伍进行。</p><p>考虑到今年 LCS（10→8）、LJL（8→6）、LLA（8→7）相继削减席位，合并外卡赛区确实是大势所趋。就是，PCS 要不连 LCS、CBLOL、LLA 也一起合并了，组一个环太平洋赛区吧。</p><p>直通世界赛的赛区从 9 个减少至 8 个，MSI 和世界赛的名额自然也有所调整。</p><blockquote><p><strong>MSI</strong>：入围赛名额改为 LCK、LPL、LEC、LCS#2 和 PCS、VCS、CBLOL、LLA#1。入围赛变为八进四，四支队伍和 LCK、LPL、LEC、LCS#1 一起进行淘汰赛。</p></blockquote><p>名额从 5+8 个减少至 4+8 个，现在 LCK#2 也要去打入围赛了。这样一来，虽说入围赛的竞争更加激烈，但并不改变四个名额中有三个过于板上钉钉的事实。</p><blockquote><p><strong>世界赛</strong>：瑞士轮名额改为 LCK 3 个、LPL 3 个、LEC 3 个、LCS 3 个。此外，新增两条规则：</p><ul><li>MSI 冠军直接入围世界赛，不占用赛区名额。</li><li><s>MSI 亚军所在赛区额外获得一个名额。</s> MSI 成绩第二好的赛区额外获得一个名额。<br>入围赛名额改为 PCS 2 个、VCS 2 个、CBLOL 1 个、LLA 1 个。入围赛改为六进二。</li></ul></blockquote><p>对比去年赛制，LCK 和 LPL 的基础名额都减少到了 3 个，而 LEC#4 和 LCS#4 压根连入围赛的资格赛都没得打了。PCS 和 LJL 合并后，总名额也由 3 个下降到了 2 个。入围赛从八进二改为六进二，不仅赛程更加紧凑，竞争 —— 这个倒是不会降低，毕竟外卡要么吊打要么菜鸡互啄，没有中间地带。</p><p>此外，新赛制让 MSI 成绩的重要性显著提升。MSI 冠军直接入围世界赛，亚军则可以为赛区争取一个名额，再也不只是茶余谈资了。与之相对的，如果在 MSI 上出师不利，世界赛只有 3 个名额，就会变得非常被动。</p><p><s>对 LPL 来说，最起码的，要拿到 4 个名额。否则，极大概率就是由 LCK 夺取 5 个名额，这样夏季赛的舆论压力 —— 尤其是三到六名的队伍 —— 就会非常大。</s></p><p>（注：LPL 的季后赛方案是，如果地区名额只有 3 个，那么冒泡赛只由冠军积分 3 至 5 名的队伍参加，第一场 #4 vs #5，第二场 #3 vs 胜者，最终胜者取得三号种子。以上排名忽略通过 MSI 冠军直接入围的队伍，如果有的话。）</p><p>我其实很难说拳头到底有什么打算。总之，这一届的名额分配恐怕有点过分得公平了，四大赛区 MSI 都是 1+1 个名额，世界赛都是 3 个基础名额。再也不用考虑上年地区积分这种问题了，直接 MSI 打出成绩就好了。</p><p>■おいわい</p><blockquote><p>2024/03/19 edit：第二条规则实际上是「MSI 成绩第二好的赛区额外获得一个名额」，而不是「MSI 亚军所在赛区额外获得一个名额」。<br>这样一来，名额基本上还是 4+4+3+3，没什么讨论的价值。总而言之，只要打完 MSI 自然就会明晰，不用特别担心。</p></blockquote><div class="article-footer fs14"><section id="license"><div class="header"><span>许可协议</span></div><div class="body"><p>本文采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh">署名-相同方式共享 4.0 国际许可协议</a>，转载请注明出处。</p></div></section></div></article><div class="related-wrap" id="read-next"><section class="body"><div class="item" id="prev"><div class="note">较新文章</div><a href="/blog/2024/ML/">笔记：机器学习的基本工具</a></div><div class="item" id="next"><div class="note">较早文章</div><a href="/blog/2024/202402/">2024 年 2 月：翻译人生</a></div></section></div><div class="related-wrap md-text" id="comments"><section class="header cmt-title cap theme"><p>快来参与讨论吧~</p></section><section class="body cmt-body beaudar"><svg class="loading" style="vertical-align:middle;fill:currentColor;overflow:hidden" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2709"><path d="M832 512c0-176-144-320-320-320V128c211.2 0 384 172.8 384 384h-64zM192 512c0 176 144 320 320 320v64C300.8 896 128 723.2 128 512h64z" p-id="2710"></path></svg><div id="beaudar" repo="mojimoon/blog-comments" issue-term="pathname" theme="preferred-color-scheme" input-position="top" comment-order="desc" loading="false" branch="main"></div></section></div><footer class="page-footer footnote"><hr><div class="sitemap"><div class="sitemap-group"><span class="fs15">博客</span><a href="/blog/">近期</a><a href="/blog/categories/">分类</a><a href="/blog/archives/">归档</a></div><div class="sitemap-group"><span class="fs15">外链</span><a target="_blank" rel="noopener" href="https://steamcommunity.com/id/unreset/">Steam</a><a target="_blank" rel="noopener" href="https://bgm.tv/user/788548">Bangumi</a><a target="_blank" rel="noopener" href="https://github.com/mojimoon">Github</a></div><div class="sitemap-group"><span class="fs15">社交</span><a href="/blog/2023/about/">关于</a><a href="/blog/">友链</a><a href="/blog/">留言板</a></div></div><div class="text"><p><a target="_blank" rel="noopener" href="https://github.com/mojimoon">@mojimoon</a> Overclocked by <a target="_blank" rel="noopener" href="https://xaoxuu.com/wiki/stellar/">Stellar</a><br>Total<span id="busuanzi_value_site_pv"></span> views.</p><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></footer><div class="main-mask" onclick="sidebar.dismiss()"></div></div><aside class="l_right"><div class="widgets"><widget class="widget-wrapper toc" id="data-toc" collapse="false"><div class="widget-header dis-select"><span class="name">本文目录</span><a class="cap-action" onclick="sidebar.toggleTOC()"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6h11m-11 6h11m-11 6h11M4 6h1v4m-1 0h2m0 8H4c0-1 2-2 2-3s-1-1.5-2-1"/></svg></a></div><div class="widget-body"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9B%9B%E7%95%B3%E5%8D%8A"><span class="toc-text">四畳半</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%97%A0%E6%B3%95%E4%B9%8B%E6%B3%95"><span class="toc-text">无法之法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%87%B4%E6%95%AC"><span class="toc-text">致敬</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E5%9B%9B%E9%9D%A2%E5%A2%99"><span class="toc-text">第四面墙</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E3%81%8A%E3%81%BE%E3%81%8B%E3%81%9B"><span class="toc-text">■おまかせ</span></a></li></ol></div><div class="widget-footer"><a class="top" onclick="util.scrollTop()"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 12c0-4.714 0-7.071 1.464-8.536C4.93 2 7.286 2 12 2c4.714 0 7.071 0 8.535 1.464C22 4.93 22 7.286 22 12c0 4.714 0 7.071-1.465 8.535C19.072 22 16.714 22 12 22s-7.071 0-8.536-1.465C2 19.072 2 16.714 2 12Z"/><path stroke-linecap="round" stroke-linejoin="round" d="m9 15.5 3-3 3 3m-6-4 3-3 3 3"/></g></svg><span>回到顶部</span></a><a class="buttom" onclick="util.scrollComment()"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="M10.46 1.25h3.08c1.603 0 2.86 0 3.864.095 1.023.098 1.861.3 2.6.752a5.75 5.75 0 0 1 1.899 1.899c.452.738.654 1.577.752 2.6.095 1.004.095 2.261.095 3.865v1.067c0 1.141 0 2.036-.05 2.759-.05.735-.153 1.347-.388 1.913a5.75 5.75 0 0 1-3.112 3.112c-.805.334-1.721.408-2.977.43a10.81 10.81 0 0 0-.929.036c-.198.022-.275.054-.32.08-.047.028-.112.078-.224.232-.121.166-.258.396-.476.764l-.542.916c-.773 1.307-2.69 1.307-3.464 0l-.542-.916a10.605 10.605 0 0 0-.476-.764c-.112-.154-.177-.204-.224-.232-.045-.026-.122-.058-.32-.08-.212-.023-.49-.03-.93-.037-1.255-.021-2.171-.095-2.976-.429A5.75 5.75 0 0 1 1.688 16.2c-.235-.566-.338-1.178-.389-1.913-.049-.723-.049-1.618-.049-2.76v-1.066c0-1.604 0-2.86.095-3.865.098-1.023.3-1.862.752-2.6a5.75 5.75 0 0 1 1.899-1.899c.738-.452 1.577-.654 2.6-.752C7.6 1.25 8.857 1.25 10.461 1.25M6.739 2.839c-.914.087-1.495.253-1.959.537A4.25 4.25 0 0 0 3.376 4.78c-.284.464-.45 1.045-.537 1.96-.088.924-.089 2.11-.089 3.761v1c0 1.175 0 2.019.046 2.685.045.659.131 1.089.278 1.441a4.25 4.25 0 0 0 2.3 2.3c.515.214 1.173.294 2.429.316h.031c.398.007.747.013 1.037.045.311.035.616.104.909.274.29.17.5.395.682.645.169.232.342.525.538.856l.559.944a.52.52 0 0 0 .882 0l.559-.944c.196-.331.37-.624.538-.856.182-.25.392-.476.682-.645.293-.17.598-.24.909-.274.29-.032.639-.038 1.037-.045h.032c1.255-.022 1.913-.102 2.428-.316a4.25 4.25 0 0 0 2.3-2.3c.147-.352.233-.782.278-1.441.046-.666.046-1.51.046-2.685v-1c0-1.651 0-2.837-.089-3.762-.087-.914-.253-1.495-.537-1.959a4.25 4.25 0 0 0-1.403-1.403c-.464-.284-1.045-.45-1.96-.537-.924-.088-2.11-.089-3.761-.089h-3c-1.651 0-2.837 0-3.762.089" clip-rule="evenodd"/><path fill="currentColor" d="M9 11a1 1 0 1 1-2 0 1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/></svg><span>参与讨论</span></a></div></widget></div></aside><div class="float-panel blur"><button type="button" style="display:none" class="laptop-only rightbar-toggle mobile" onclick="sidebar.rightbar()"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6h11m-11 6h11m-11 6h11M4 6h1v4m-1 0h2m0 8H4c0-1 2-2 2-3s-1-1.5-2-1"/></svg></button> <button type="button" style="display:none" class="mobile-only leftbar-toggle mobile" onclick="sidebar.leftbar()"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 11c0-3.771 0-5.657 1.172-6.828C4.343 3 6.229 3 10 3h4c3.771 0 5.657 0 6.828 1.172C22 5.343 22 7.229 22 11v2c0 3.771 0 5.657-1.172 6.828C19.657 21 17.771 21 14 21h-4c-3.771 0-5.657 0-6.828-1.172C2 18.657 2 16.771 2 13z"/><path id="sep" stroke-linecap="round" d="M5.5 10h6m-5 4h4m4.5 7V3"/></g></svg></button></div></div><div class="scripts"><script>const ctx = {
     date_suffix: {
       just: `刚刚`,
       min: `分钟前`,
@@ -257,13 +27,7 @@ Total <span id="busuanzi_value_site_pv"></span> views.</p>
   const deps = {
     jquery: `https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js`,
     marked: `https://cdn.jsdelivr.net/npm/marked@13.0.1/lib/marked.umd.min.js`
-  }
-  
-
-</script>
-
-<script type="text/javascript">
-  function RunItem() {
+  }</script><script>function RunItem() {
     this.list = []; // 存放回调函数
     this.start = () => {
       for (var i = 0; i < this.list.length; i++) {
@@ -478,10 +242,7 @@ Total <span id="busuanzi_value_site_pv"></span> views.</p>
   };
   utils.dark = Object.assign(utils.dark, {
     push: utils.dark.method.toggle.push,
-  });
-</script>
-<script>
-  const sidebar = {
+  });</script><script>const sidebar = {
     leftbar: () => {
       if (l_body) {
         l_body.toggleAttribute('leftbar');
@@ -503,10 +264,7 @@ Total <span id="busuanzi_value_site_pv"></span> views.</p>
     toggleTOC: () => {
       document.querySelector('#data-toc').classList.toggle('collapse');
     }
-  }
-</script>
-<script type="text/javascript">
-  (() => {
+  }</script><script>(() => {
     const tagSwitchers = document.querySelectorAll('.tag-subtree.parent-tag > a > .tag-switcher-wrapper')
     for (const tagSwitcher of tagSwitchers) {
       tagSwitcher.addEventListener('click', (e) => {
@@ -530,15 +288,7 @@ Total <span id="busuanzi_value_site_pv"></span> views.</p>
         }
       }
     }
-  })()
-</script>
-
-
-<!-- required -->
-<script src="/blog/js/main.js?v=1.29.1" defer></script>
-
-<script type="text/javascript">
-  const applyTheme = (theme) => {
+  })()</script><script src="/blog/js/main.js?v=1.29.1" defer></script><script>const applyTheme = (theme) => {
     if (theme === 'auto') {
       document.documentElement.removeAttribute('data-theme')
     } else {
@@ -602,14 +352,7 @@ Total <span id="busuanzi_value_site_pv"></span> views.</p>
       utils.dark.mode = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
     }
     utils.dark.method.toggle.start();
-  })()
-</script>
-
-
-<!-- optional -->
-
-  <script type="module">
-  const el = document.querySelector('#comments #beaudar');
+  })()</script><script type="module">const el = document.querySelector('#comments #beaudar');
   util.viewportLazyload(el, load_beaudar, false);
 
   function load_beaudar() {
@@ -629,14 +372,7 @@ Total <span id="busuanzi_value_site_pv"></span> views.</p>
       }
     }
     el.appendChild(script);
-  }
-</script>
-
-
-
-
-<script defer>
-  window.addEventListener('DOMContentLoaded', (event) => {
+  }</script><script defer>window.addEventListener('DOMContentLoaded', (event) => {
     ctx.services = Object.assign({}, JSON.parse(`{"mdrender":{"js":"/js/services/mdrender.js"},"siteinfo":{"js":"/js/services/siteinfo.js","api":null},"ghinfo":{"js":"/js/services/ghinfo.js"},"sites":{"js":"/js/services/sites.js"},"friends":{"js":"/js/services/friends.js"},"timeline":{"js":"/js/services/timeline.js"},"fcircle":{"js":"/js/services/fcircle.js"},"weibo":{"js":"/js/services/weibo.js"},"memos":{"js":"/js/services/memos.js"},"voice":{"js":"/js/plugins/voice.js"},"video":{"js":"/js/plugins/video.js"},"download-file":{"js":"/js/plugins/download-file.js"},"twikoo":{"js":"/js/services/twikoo_latest_comment.js"},"waline":{"js":"/js/services/waline_latest_comment.js"},"artalk":{"js":"/js/services/artalk_latest_comment.js"},"giscus":{"js":"/js/services/giscus_latest_comment.js"}}`));
     for (let id of Object.keys(ctx.services)) {
       const js = ctx.services[id].js;
@@ -753,27 +489,12 @@ Total <span id="busuanzi_value_site_pv"></span> views.</p>
         }
       });
     });
-  });
-</script>
-
-<script>
-  window.addEventListener('DOMContentLoaded', (event) => {
+  });</script><script>window.addEventListener('DOMContentLoaded', (event) => {
     ctx.search = {
       path: `/search.json`,
     }
     utils.js('/js/search/local-search.js', { defer: true });
-  });
-</script><script>
-  window.FPConfig = {
-    delay: 0,
-    ignoreKeywords: [],
-    maxRPS: 5,
-    hoverDelay: 25
-  };
-</script>
-<script defer src="https://cdn.jsdelivr.net/npm/flying-pages@2/flying-pages.min.js"></script><script defer src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@19.1.3/dist/lazyload.min.js"></script>
-<script>
-  // https://www.npmjs.com/package/vanilla-lazyload
+  });</script><script>window.FPConfig={delay:0,ignoreKeywords:[],maxRPS:5,hoverDelay:25}</script><script defer src="https://cdn.jsdelivr.net/npm/flying-pages@2/flying-pages.min.js"></script><script defer src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@19.1.3/dist/lazyload.min.js"></script><script>// https://www.npmjs.com/package/vanilla-lazyload
   // Set the options globally
   // to make LazyLoad self-initialize
   window.lazyLoadOptions = {
@@ -790,9 +511,7 @@ Total <span id="busuanzi_value_site_pv"></span> views.</p>
   );
   document.addEventListener('DOMContentLoaded', function () {
     window.lazyLoadInstance?.update();
-  });
-</script><script>
-  ctx.fancybox = {
+  });</script><script>ctx.fancybox = {
     selector: `.timenode p>img`,
     css: `https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css`,
     js: `https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js`
@@ -821,10 +540,7 @@ Total <span id="busuanzi_value_site_pv"></span> views.</p>
         }
       });
     })
-  }
-</script>
-<script>
-  window.addEventListener('DOMContentLoaded', (event) => {
+  }</script><script>window.addEventListener('DOMContentLoaded', (event) => {
     const swiper_api = document.getElementById('swiper-api');
     if (swiper_api != undefined) {
       utils.css(`https://unpkg.com/swiper@10.3.1/swiper-bundle.min.css`);
@@ -847,10 +563,7 @@ Total <span id="busuanzi_value_site_pv"></span> views.</p>
         });
       })
     }
-  });
-</script>
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
+  });</script><script>document.addEventListener('DOMContentLoaded', function () {
     window.codeElements = document.querySelectorAll('.code');
     if (window.codeElements.length > 0) {
       ctx.copycode = {
@@ -860,10 +573,4 @@ Total <span id="busuanzi_value_site_pv"></span> views.</p>
       };
       utils.js('/js/plugins/copycode.js');
     }
-  });
-</script>
-
-
-<!-- inject -->
-
-</div></body></html>
+  });</script></div></body></html>
