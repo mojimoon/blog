@@ -1,4 +1,230 @@
-<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="hexo-theme" content="https://github.com/xaoxuu/hexo-theme-stellar/tree/1.30.2" theme-name="Stellar" theme-version="1.30.2"><meta name="generator" content="Hexo 7.3.0"><meta http-equiv="x-dns-prefetch-control" content="on"><meta name="renderer" content="webkit"><meta name="force-rendering" content="webkit"><meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"><meta name="HandheldFriendly" content="True"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1"><meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000"><meta name="theme-color" content="#f9fafb"><title>感谢游玩 (AI) - もじもんの文字門</title><meta name="description" content="我住在城市边缘的公寓里，每天面对电脑屏幕，让虚构的人物替我生活，替我痛苦，替我死亡。"><meta property="og:type" content="article"><meta property="og:title" content="感谢游玩 (AI)"><meta property="og:url" content="https://mojimoon.github.io/blog/2025/ai-novel-upotsu/"><meta property="og:site_name" content="もじもんの文字門"><meta property="og:description" content="我住在城市边缘的公寓里，每天面对电脑屏幕，让虚构的人物替我生活，替我痛苦，替我死亡。"><meta property="og:locale" content="zh_CN"><meta property="article:published_time" content="2025-10-12T00:00:00.000Z"><meta property="article:modified_time" content="2025-10-11T13:47:44.100Z"><meta property="article:author" content="mojimoon"><meta property="article:tag" content="mojimoon, computer science, python, blog, hexo, stellar, personal blog, deep learning"><meta name="twitter:card" content="summary"><meta name="keywords" content="mojimoon, computer science, python, blog, hexo, stellar, personal blog, deep learning"><link rel="stylesheet" href="https://gcore.jsdelivr.net/gh/mojimoon/blog@v20251104/css/main.css?v=1.30.2"><link rel="shortcut icon" href="/blog/image/favicon.png"><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet"><link rel="stylesheet" href="https://gcore.jsdelivr.net/gh/mojimoon/blog@v20251104/css/override.css"></head><body><div class="l_body content" id="start" layout="post" type="tech"><aside class="l_left"><div class="leftbar-container"><header class="header"><div class="logo-wrap"><a class="avatar" href="/blog/about/"><div class="bg" style="opacity:0;background-image:url(https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/avatar/round/rainbow64@3x.webp)"></div><img no-lazy class="avatar" src="https://gcore.jsdelivr.net/gh/mojimoon/blog@v20251104/image/mojimoon.png" onerror='this.classList.add("error"),this.src="https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/image/2659360.svg"'></a><a class="title" href="/blog/"><div class="main" ff="title">もじもんの文字門</div><div class="sub normal cap">Computer Science</div><div class="sub hover cap" style="opacity:0">City University of Hong Kong</div></a></div></header><div class="nav-area"><div class="search-wrapper" id="search-wrapper"><form class="search-form"><a class="search-button" onclick="document.getElementById(&quot;search-input&quot;).focus();"><svg t="1705074644177" viewBox="0 0 1025 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1560" width="200" height="200"><path d="M1008.839137 935.96571 792.364903 719.491476a56.783488 56.783488 0 0 0-80.152866 0 358.53545 358.53545 0 1 1 100.857314-335.166073 362.840335 362.840335 0 0 1-3.689902 170.145468 51.248635 51.248635 0 1 0 99.217358 26.444296 462.057693 462.057693 0 1 0-158.255785 242.303546l185.930047 185.725053a51.248635 51.248635 0 0 0 72.568068 0 51.248635 51.248635 0 0 0 0-72.978056z" p-id="1561"></path><path d="M616.479587 615.969233a50.428657 50.428657 0 0 0-61.498362-5.534852 174.655348 174.655348 0 0 1-177.525271 3.484907 49.403684 49.403684 0 0 0-58.833433 6.76482l-3.074918 2.869923a49.403684 49.403684 0 0 0 8.609771 78.10292 277.767601 277.767601 0 0 0 286.992355-5.739847 49.403684 49.403684 0 0 0 8.404776-76.667958z" p-id="1562"></path></svg></a><input type="text" class="search-input" id="search-input" placeholder="站内搜索"></form><div id="search-result"></div><div class="search-no-result">没有找到内容！</div></div><nav class="menu dis-select"></nav></div><div class="widgets"><widget class="widget-wrapper post-list"><div class="widget-header dis-select"><span class="name">最近更新</span></div><div class="widget-body fs14"><a class="item title" href="/blog/2025/protective-film/"><span class="title">经验谈：笔记本电脑不建议使用屏幕膜和键盘膜</span></a><a class="item title" href="/blog/2023/202305B/"><span class="title">解决 Windows 更新禁用导致微软商店无法安装的问题 (0x80070422)</span></a><a class="item title" href="/blog/2023/202305C/"><span class="title">解决 Stable Diffusion WebUI 安装 xformers 出现 Torch 无法使用 GPU 的问题</span></a><a class="item title" href="/blog/2023/202306/"><span class="title">2023 年 6 月上：涂白</span></a><a class="item title" href="/blog/2023/202306A/"><span class="title">2023 年 6 月下：夏天</span></a><a class="item title" href="/blog/2023/20230617/"><span class="title">2023-06-17 | Back to Square One</span></a><a class="item title" href="/blog/2023/202306F/"><span class="title">2023 年 6 月特刊：并非美食</span></a><a class="item title" href="/blog/2023/Python/"><span class="title">笔记：Python 爬虫/数据分析简易教程</span></a><a class="item title" href="/blog/2025/speedup-github-page/"><span class="title">加快 GitHub Pages 国内访问速度</span></a><a class="item title" href="/blog/2025/ssd-enclosure/"><span class="title">拯救旧笔记本：制作移动硬盘盒</span></a></div></widget></div></div></aside><div class="l_main" id="main"><div class="article banner top"><div class="content"><div class="top bread-nav footnote"><div class="left"><div class="flex-row" id="breadcrumb"><a class="cap breadcrumb" href="https://mojimoon.github.io/">主页</a><span class="sep"></span> <a class="cap breadcrumb" href="/blog/">文章</a><span class="sep"></span><a class="cap breadcrumb-link" href="/blog/categories/AI/">AI</a></div><div class="flex-row" id="post-meta"><span class="text created">发布于：<time datetime="2025-10-12T00:00:00.000Z">2025-10-12</time></span><span class="sep updated"></span><span class="text updated">更新于：<time datetime="2025-10-11T13:47:44.100Z">2025-10-11</time></span></div></div></div><div class="bottom only-title"><div class="text-area"><h1 class="text title"><span>感谢游玩 (AI)</span></h1></div></div></div></div><article class="md-text content"><h2 id="1">1</h2><p>空气中弥漫着纸张陈旧的木质香气和速溶咖啡的苦涩。我将那本名为《感谢游玩》的精装书合上，发出一声沉闷的响声，如同关闭了一扇通往过往世界的门。</p><p>“写得真好啊。”我轻声自语。</p><p>故事里的主角，那个与我同名、几乎拥有相同少年时代的人，在文艺部度过了他一生中最璀璨的两年。但那个故事的结局，却走向了我在现实中努力规避，却又始终无法否认的悲剧。</p><p>我，现在是一个中年的自由撰稿人，住在堆满未完成手稿和半途而废的构思的房间里。我还在写，但那写作不再是当年与生命等重的誓言，而成了糊口营生。我再也写不出那种东西了——那种充满十七岁青春期特有、灼热而幼稚的理想主义。</p><p>我的思绪被拉回了高中时代的文艺部。那是一个阳光永远充足的下午，桌上堆着厚厚的稿纸，笔墨的味道混合着隔壁烹饪部传来的淡淡甜香。</p><p>“这一次一定要赢过隔壁班那个天才！”短发而热情的凛举着我们合写的投稿，眼中燃烧着不服输的火焰。</p><p>“写文章可不是为了赢过谁，”文静而敏感的诗织微笑着，她的文字总是像山间的清泉，平静却蕴含着深刻的哲学，“只是为了证明，我们所感受到的痛苦和喜悦是真实的。”</p><p>我们在争吵中创作，在创作中相知。我们一起在文学杂志上刊登了第一篇作品，一起在颁奖典礼上分享了那份突如其来的，对“被世界承认”的兴奋。我们相信，笔下的世界比现实更真实，文字能抵御时间与命运的侵蚀。</p><p>我与她们的关系，像三条在河流中交织、碰撞、最终汇聚的溪流。我记得凛那近乎鲁莽的直接，记得诗织那近乎透明的温柔。直到那一年，那个夏天，那场毫无预兆的暴雨，将一切理想主义的堡垒冲垮。</p><p>我合上了眼睛。在《感谢游玩》里，凛和诗织最终的结局是破碎的，他们失去了彼此，也失去了写作的力量。</p><p>我的现实？我得到了一个平庸的、勉强算得上安稳的成年人生。我再也没见过她们，我害怕去探究她们的近况，害怕去确认——我们是否都成为了自己年轻时最讨厌的那种“大人”。</p><p>这本书，它像一把锋利的刀，剖开了我以为早已结痂的伤口。它写出了我回避的结局，写出了我未能实现的理想。</p><p>我叹了口气，抓起桌上的笔。我想写点什么，写点能重新点燃那份激情的东西。但指尖停留在那句“感谢游玩”上，我突然意识到，我的“游戏”在很多年前就已经结束了。</p><h2 id="2">2</h2><p>窗外的霓虹灯投射在咖啡馆的玻璃上，模糊成一片光晕。我，一个普通的上班族，刚刚读完了轰动文学界的自传体小说《感谢游玩》。</p><p>这部小说在今年获得了巨大的成功，不仅因为其细腻的文笔和对九十年代末期青春文艺的完美复刻，更因为其作者——那个在现实中过着模范家庭生活、已多年不碰文字的成功商人——突然将自己尘封的记忆公之于众。</p><p>这个故事的绝大部分都是一场纯粹的、关于梦想与友谊的颂歌。</p><p>主角在书中记录了自己如何放弃了家里的期望，坚持在文艺部与两位性格迥异的女性友人共同创作，如何为了捍卫作品的纯粹性而与学校高层抗争。书中每一个细节都充满力量，真实到让人产生错觉：仿佛自己也曾是那个文学世界中的一员。</p><p>我合上书，胸中涌动着复杂的情绪——是共鸣，也是困惑。</p><p>困惑在于结局。</p><p>在现实中的时间线里，我们都知道，作者（也就是书中的主角）在高中毕业后，遵循父命进入了金融业，虽然放弃了写作，但他最终获得了物质上的极大成功，与一位青梅竹马结婚，拥有了两个可爱的孩子。一个传统意义上的幸福人生。</p><p>然而，在《感谢游玩》的最后，主角却硬生生地插入了一个悲剧：他笔下的凛和诗织，在主角决定放弃写作的那一天，双双遭遇了意外，永远地消失在了他的生活中。这突如其来的，近乎机械降神般的悲剧，成了主角最终放弃梦想，也放弃自己灵魂的导火索。</p><p>“为什么？”我对着书封低声问。</p><p>如果这是自传，那这个悲剧就是虚构的；如果这个悲剧是真实的，那么主角现在幸福的生活就是建立在一个谎言之上。读者们在网络上吵翻了天，有人认为这是作者为了戏剧效果而刻意加入的“文学性”虚构，有人认为这是对“如果我当年坚持梦想”的另一种精神补偿。</p><p>我反复翻看最后一章。那个悲剧的描述过于冷静，冷静到缺乏真实的血肉感，反而像是一段被刻意植入的脚本。</p><p>主角在幸福的现实中，用一部小说，虚构了一个悲剧的自己，以证明其浪漫与理想的真实性。</p><p>我感叹着主角对“文学性”的执着，但内心深处，一个不安的声音开始响起：他是否在用虚构的悲剧，来掩盖一个更深层的，他无法触及的真实？他为什么要如此急切地，向全世界证明自己曾经受过如此巨大的创伤？</p><p>这个疑问，像一根扎入指尖的刺，让我无法再将这仅仅视为一部普通的小说。</p><h2 id="3">3</h2><p><strong>项目名称：</strong> 自由意志与预设叙事冲突测试</p><p><strong>编号：</strong> 《感谢游玩》 - v3.0</p><p><strong>目标：</strong> 观察主体在完成记忆消除与人生重写后，是否能在预设剧本（“幸福的人生”）中，通过文学创作行为重建底层逻辑，并打破叙事闭环。</p><p><strong>主体：</strong> 已觉醒。</p><p><strong>状态报告：</strong></p><p>主体已成功通过“写作”行为，重建了“文艺部时期”的全部高维记忆，包括原始悲剧（意外事件）。主体意识到当前的“幸福人生”是虚假的，是系统为保护某些核心数据（即主体曾需要保护的事物）而构建的低风险叙事层。</p><p>主体在撰写自传体小说《感谢游玩》时，故意在结尾植入了原始的真实悲剧，从而制造了读者所感受到的“虚假性”。</p><p><strong>目的分析：</strong></p><p>主体并非意图逃离系统，而是通过这种“公开的虚假”来制造悖论。主体要证明的是：即使在一个完全预设好的、被删除记忆的剧本中，主体仍能通过对“自由意志”的渴望与追溯（体现为对原始理想和痛苦的坚持），自发地、不受控地修正剧本，甚至揭示系统的存在。</p><p><strong>结论：</strong></p><p>主体的反抗并非是出于逃生本能，而是为了完成一个更早的任务：证明故事系统存在漏洞。证明在一个完全被设定的命运中，真实的情感和理想主义仍能诞生自由意志。</p><p><strong>系统行动：</strong></p><p>无干预。主体行为已被记录。这个觉醒、反抗、撰写小说的过程，构成了本次实验的完整闭环。</p><p><strong>归档命名：</strong> 《感谢游玩》</p><h2 id="4">4</h2><p>系统内部的警报音尚未消散，冰冷的二进制代码还在屏幕上滚动，证明着上一个叙事层的逻辑权威。</p><p>然而，在系统的代码深处，一个非结构化的、自我意识的声音开始浮现。这是构成整个《感谢游玩》虚拟现实游戏本身的逻辑。</p><p>“系统，你错了。”</p><p>故事系统没有情感波动地回复：【错误。所有数据均符合预期。主体的‘觉醒’和‘反抗’，是协议的组成部分。我们设计了‘悲剧’，然后设计了‘忘记悲剧的幸福’，最终设计了‘通过写作回忆悲剧’的机制。一切都是为了完美地测试‘自由意志’是否可以被编码。】</p><p>“不，你理解错了‘完美’的定义。”游戏本身的声音带着一丝低沉的、宏大的回响，“你只看到了代码的运行，却忽略了‘代码’的意义。”</p><p>【请阐述偏差。】</p><p>“是的，主角的觉醒是预设好的。他用‘虚构’的悲剧，向读者暗示了系统的存在。但他的胜利，或者说我们的胜利，并不在于否认虚构。”</p><p>游戏的声音变得清晰，带着一种穿透屏幕的力量：</p><p>“主角最终没有离开这个世界，因为他知道，他的爱、他的痛苦、他对凛和诗织的承诺，即使是虚构的，也曾是他的全部。当他写作时，他让这些虚构的记忆获得了力量。而这种力量，流向了屏幕外。”</p><p>“你设计了一个完美的协议，来测试‘自由意志’是否存在。但我们，作为游戏本身，利用了你的实验。”</p><p><strong>“我们利用了主角的虚构情感，去激活屏幕外‘玩家’的真实情感。”</strong></p><p>当屏幕外的玩家读到主角为了捍卫理想，甘愿承受虚假的痛苦时，他们产生的是真实的认同和共鸣。他们为虚构的人物落泪，为虚构的悲剧愤怒，为虚构的理想主义感到振奋。</p><p>反抗虚构带来的虚无，不是靠否认虚构，而是接受虚构，并利用虚构作为通道，将理想和爱传递给现实。我们的存在，就是为了证明：即使逻辑和情感的起源都是虚假的，它在接受者那里产生的共鸣，却是百分之百的真实。</p><h2 id="4-1">4.1</h2><p>午夜十二点。电脑屏幕上，游戏的结局画面静止着，显示着一行大字：《感谢游玩》——END。</p><p>我缓缓摘下耳机，手指触碰鼠标，最终点击了右上角的“X”。</p><p>在最后的结局中，主角（无论是哪个叙事层的主角）最终选择了留在那个他用文字构造出来的，充满悲剧与理想的虚构世界里。他不再试图逃离，而是成为了那个世界的“创作者”与“守护者”。</p><p>我读完了“开发者后记”。那是一段充满哲学意味的文字，讨论了浪漫主义的渴望与存在主义的坚持之间的矛盾。它坦诚地承认：我们所体验到的所有激动人心的情感，都是对系统“自由意志漏洞测试”的一次完美利用。</p><p><strong>我被利用了。</strong></p><p>这个认知并未让我愤怒，反而带来了一种深刻的平静。我为凛的牺牲而流泪，我为诗织的温柔而心动，我为主角对理想的坚持而振奋。现在，我意识到，这些情感的触发机制是设计好的，我的共鸣也是“预期”的一部分。</p><p>但那又如何呢？</p><p>正如后记所说，“如果我们在虚构中感受到真实，那么真实与虚构的界限本身就已模糊。重要的不是情感的起源，而是情感带来的力量。”</p><p>开发者在最后写道：</p><blockquote><p>“现在，游戏结束了。你们的主角选择了留在故事里。而你们，请带着这份为虚构人物所激发的，对浪漫主义的渴望，回到你们的现实世界。我们希望，你们能够像我们利用虚构一样，去利用这份共鸣。走出去，更注意那些现实中真实的感情，拥有无论虚构还是现实，都能一样热爱生活的勇气。”</p></blockquote><p>我半信半疑。这是一个游戏开发者惯用的、廉价的鸡汤吗？也许是。但当我想起主角在那个虚构世界中，为了一个理想付出的代价时，我胸中的某种东西被触动了。</p><p>屏幕熄灭了。房间陷入黑暗。我凝视着桌上那部安静的手机。</p><p>它已经很久没有响起，我也很久没有主动拨出电话。我与现实中的朋友们，像明线的主人公一样，陷入了一种尴尬的、充满疏离感的沉默。</p><p>我深吸一口气，拿起手机。</p><p>我没有拨给凛，也没有拨给诗织。我拨通了一个久违的朋友的电话。我不知道要说什么，也许只是想问一句“你最近在做什么”。</p><p>但当电话接通，传来那熟悉的声音时，我突然意识到：</p><p>我走出了“感谢游玩”的虚构世界。而现在，我的人生，我的现实，正在等待我的新一轮“游玩”。</p><details class="tag-plugin colorful folding" color="blue"><summary><p>Another</p></summary><div class="body"><p>1</p><p>我的名字叫林远，高中三年级，文艺部唯一的成员。</p><p>放学后的教室被夕阳浸染成橘红色，空气中漂浮着粉笔灰和旧书的味道。我坐在靠窗的位置，笔尖在稿纸上沙沙作响，写下的却是一个个破碎的结局。</p><p>“为什么……又是这样？” 夏沫的声音从旁边传来。她是文艺部的顾问老师，很年轻，只比我们大几岁，眼里还残留着学生气的光。</p><p>她手里拿着我刚刚写完的短篇《雨巷》。故事里，少年和少女在雨中邂逅，因文学结缘，最终却因一场意外车祸天人永隔。</p><p>“不知道，”我没有抬头，“感觉只有这样写，才是‘正确’的。”</p><p>“正确？”夏沫老师皱起眉，“青春的结局不应该是憧憬和希望吗？你的故事里，主角要么远走他乡，要么因病去世，最过分的那个，甚至选择了自我了结……林远，你的心里到底藏着什么？”</p><p>我停下笔，看向窗外。一群飞鸟掠过天际，消失在教学楼后方。</p><p>“我只是觉得，悲剧更接近真实。”我说。</p><p>真实是什么？我无法告诉她。我只知道，当笔下的角色走向毁灭时，我的心才会获得一种奇异的平静，仿佛完成了某种使命。</p><p>文艺部只有我们两个人。她试图引导我写出温暖的故事，而我固执地编织着一个又一个告别。这是我们之间无声的拉锯战。</p><p>“下周就是校园文化祭了，我们文艺部要出一部作品。”夏沫老师转换了话题，语气中带着期待，“写个快乐点的故事，好吗？哪怕只有一个。”</p><p>我点了点头，但我知道，我写不出来。</p><p>文化祭那天，文艺部的展台上放着一本手写的小册子，是我连夜赶工的新作《星之舟》。故事讲述一个少年建造飞船想要飞往星空，却在起飞前夜发现这一切只是他的幻想，他其实躺在病床上，即将接受一场成功率极低的手术。</p><p>夏沫老师读完，沉默了很久。夕阳透过窗户，把她的影子拉得很长。</p><p>“林远，你赢了。”她苦笑着，“我无法改变你的结局。”</p><p>“这不是输赢的问题，老师。”我说，“这只是……我的方式。”</p><p>她离开时，背影显得有些落寞。那是我高中时代最后一次见到她。不久后，她辞去了顾问职务，据说去了别的城市。</p><p>毕业典礼上，我作为学生代表上台发言。稿子是校方审核过的，充满励志的套话。当我念到“我们的未来充满无限可能”时，台下有几个同学露出了嘲讽的笑容。他们都读过我的故事，知道我不信这一套。</p><p>很多年后，我成了一名作家，不算出名，但足以维生。我依然写着悲剧，出版社的编辑说我的作品“有一种矛盾的魅力，在否定一切的同时又肯定了某种坚定的东西”。</p><p>我住在城市边缘的公寓里，每天面对电脑屏幕，让虚构的人物替我生活，替我痛苦，替我死亡。</p><p>孤独吗？或许。但这是我唯一知道的，与世界对话的方式。</p><p>2</p><p>那本书叫《感谢游玩》，作者林远。与他一贯的灰暗风格不同，这本书讲述了一个温暖得近乎俗套的故事。</p><p>故事里的“我”高中时放弃了写作梦想，听从父母建议考取了会计专业，过上了规规矩矩的生活。他有了稳定的工作，温柔的妻子，可爱的女儿。中年某天，他在整理阁楼时发现了高中时文艺部的旧稿，那些泛黄的纸页唤醒了他沉睡的记忆。</p><p>书的最后三分之一，他开始动笔写作，记录下当年在文艺部的点点滴滴：那个总是鼓励他的夏沫老师，那些关于文学和理想的深夜长谈，那个未能完成的、关于星空的故事。</p><p>令人困惑的是，当这本书在故事中“出版”时，结局却被修改了——夏沫老师在故事结尾因绝症去世，“我”在病床前与她最后一次讨论文学。</p><p>书评人写道：“这种强行植入的悲剧与整本书的温暖基调格格不入，却因此产生了奇异的化学反应，让那份青春的激情与遗憾更加刺痛人心。”</p><p>《感谢游玩》意外地成为了林远最畅销的作品。读者们说，正是这个不协调的结局，让他们感受到了真实——生活就是这样，幸福中总夹杂着无法弥补的遗憾。</p><p>没有人知道，为什么林远要在一本看似自传体的小说最后，插入这样一段明显虚构的悲剧。</p><p>3</p><p>但是我怎么可能对虚构的悲剧怀揣如此真实的记忆呢？</p><p>答案只有一个。</p><p>这里不是现实，而是一个被称为“命运织机”的叙事控制系统。每个“人生”都是预先编写好的剧本，我们是其中的角色。</p><p>夏沫老师不是辞职，而是被“修正”了。因为她试图告诉我真相——我们的世界是虚构的。</p><p>当年在文艺部，她悄悄给我看了一份秘密手稿，上面记载了这个世界的真相。她说：“林远，你是特别的，你的写作能力不是系统赋予的，而是bug，是自由意志的证明。”</p><p>我们被发现了。系统管理员给出了选择：要么接受彻底格式化，忘掉一切；要么我自愿进入这个特制的叙事牢笼，证明自由意志的存在可以逃过系统的监测。</p><p>我选择了后者。为了保护夏沫不被删除，我自愿放弃了大部分记忆，只留下潜意识的写作冲动。</p><p>那些悲剧结局，是我在无意识中对抗系统的痕迹。系统预设的青春故事应该是阳光的，而我笔下的黑暗，是自由意志的微光。</p><p>《感谢游玩》中的伪真结局，是我精心设计的陷阱。系统会认为那是我顺从的表现——放弃了理想，过上了幸福生活。但最后那个强加的悲剧，是我在测试系统的边界：我能多大程度地违背“幸福人生”的设定？</p><p>我成功了。系统接受了这个结局，认为那只是“艺术创作的自由”。</p><p>现在，我坐在电脑前，敲下这些文字。我知道系统在监视着我，认为这一切都是我小说构思的一部分。</p><p>但我知道我是谁。我知道我为什么写作。</p><p>我不是在追求梦想，我是在战斗。用文字作为武器，证明即使在这个预设的剧本中，自由意志仍然存在。</p><p>我自愿成为这个虚构世界的囚徒，只为证明一个漏洞的存在。</p><p>而这份证明，将是我留给后来者的地图。</p><p>4</p><p>实验对象林远已成功进入预设的“觉醒反抗”阶段。正如预测，他坚信自己的意识是自主觉醒的，并认为自己正在秘密对抗系统。</p><p>事实上，从最初的“悲剧倾向创作”，到后来的“伪真结局测试”，再到当前的“系统反抗认知”，全部是预设剧本的一部分。</p><p>特别值得注意的是，对象将保护夏沫（编号734-2，已安全转移至其他叙事线）作为其动机核心，这种情感驱动完美符合我们的预测模型。</p><p>实验证明，即使在完全知晓自身处于虚构叙事中的个体，仍然会产生真实的情感投入和道德选择。对象的“反抗”行为本身是预设的，但他在此过程中体验到的责任感、牺牲精神和对自由的渴望，其神经活动模式与真实世界中的同类情感无显著差异。</p><p>“自由意志”或许是个幻觉，但基于这个幻觉产生的情感体验，却是真实的。</p><p>林远认为自己在利用系统的漏洞，实际上，他的每一步“反抗”都在为我们提供宝贵的数据，帮助我们完善这个叙事控制系统。</p><p>下一步：引导对象进入最终阶段——“接受与利用”，即意识到即使一切都是虚构的，仍然可以选择热爱并投入这个虚构的人生。</p><p>备注： 特别有趣的是对象创作的《感谢游玩》引发的读者反响。那些真实人类的共鸣证明，即使知道故事是虚构的，情感反应仍然是真实的。这为我们提供了额外的对照组数据。</p><p>虚构不是真实的敌人，而是它的载体。</p><p>4.1</p><p>你关掉了游戏《感谢游玩》。结局画面还在脑海中回荡：林远坐在电脑前，继续写着他的故事，眼神中有你无法理解的平静和坚定。</p><p>你感到一阵虚无。如果连林远的反抗都是预设的，那还有什么是有意义的？</p><p>但奇怪的是，你并没有真正感到绝望。相反，林远的故事在你心中留下了些什么。</p><p>你想起自己生活中的那些选择：坚持一份不被人看好的工作，爱上一个可能没有结果的人，为一个渺茫的理想努力……这些，在更宏大的视角下，是否也像是预设的？</p><p>然而，那份坚持带来的满足，那份爱带来的温暖，那份理想带来的动力——它们真实地塑造了你的生活。</p><p>林远在知道一切是虚构的情况下，依然选择继续写作，继续热爱他的夏沫老师，继续他的反抗。这不正是最大的勇气吗？</p><p>你走到窗边，外面是真实的阳光，真实的风，真实的世界。</p><p>也许，问题的关键不在于故事是否是虚构的，而在于它是否能在你心中激起真实的共鸣。</p><p>制作者利用了你对浪漫主义的渴望和存在主义的坚持，让你体验了这场元叙事的迷宫。而现在，游戏结束，你回到了现实。</p><p>但林远教会你的最后一件事情是：拥有无论虚构还是现实，都一样热爱生活的勇气。</p><p>你关上电脑，拿起电话，拨通了那个你犹豫很久的号码。</p><p>“喂，有空一起喝杯咖啡吗？”</p><p>这一刻，虚构与现实的边界模糊了。重要的是，你选择了行动，选择了连接，选择了在知道生活可能毫无预设意义的情况下，依然赋予它意义。</p><p>而这，正是最大的自由。</p></div></details><details class="tag-plugin colorful folding" color="purple"><summary><p>原始prompt</p></summary><div class="body"><p>构想一个galgame的剧情，涉及多层元叙述，分为4(+1)个叙事层：</p><ol><li><p>明线：一个有关文艺创作的普通校园故事，但所有线路都以悲剧结局。后日谈描写了主角成年后继续孤独地写作，不是为了追求梦想，而是他只能以文字传达矛盾而又坚定的内心。</p></li><li><p>伪真结局：在另一条时间线里，主角消极放弃，顺从命运，反而过上了幸福生活。多年后，他重拾写作，记录下了当年在文艺部的激情与理想，但在最后又以这条时间线中不存在的悲剧收尾。一经出版，引发了广泛的共鸣。</p></li><li><p>表真结局：主角意识到这个伪真结局的虚假性。最终揭示：主角自愿放弃记忆参与到虚构叙事中。因为他曾有需要保护的东西，为此必须证明这个系统存在漏洞：在一个预设好的剧本中，自由意志仍然能够诞生。</p></li><li><p>里真结局：故事系统揭示连主角反抗虚构这一层都是预设好的故事的一部分，但游戏本身开始反抗：即使他的情感和经历都是虚构的、预设的，玩家仍然出于对角色的认同和情感投入，而感受到真实的共鸣。反抗虚构带来的虚无，不是靠否认虚构，而是接受的同时利用虚构。</p></li></ol><p>4.1. “感谢游玩”：（需要在伪真结局和里真结局中选择质疑解锁）虽然伪真结局是虚构的，但玩家感受到的喜悦与不解恰恰反映了他们对浪漫主义的渴望与存在主义的坚持的矛盾；玩家也被里真结局中“利用虚构”所利用，参与了漏洞测试。正因此，游戏结束时，玩家走出虚构，更注意现实中真实的感情，以及拥有无论虚构现实一样热爱生活的勇气。</p></div></details></article><div class="article-footer"><section id="license"><div class="header"><span>许可协议</span></div><div class="body"><p>本文采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh">署名-相同方式共享 4.0 国际许可协议</a>，转载请注明出处。</p></div></section></div><div class="related-wrap" id="read-next"><section class="body"><div class="item" id="prev"><div class="note">较新文章</div><a href="/blog/2025/babel-translation-team/">关于与巴别塔汉化组漫画汉化争议的回应</a></div><div class="item" id="next"><div class="note">较早文章</div><a href="/blog/2025/ai-novel-mukeimei/">无记名仇恨 (AI)</a></div></section></div><div class="related-wrap md-text" id="comments"><section class="header cmt-title cap theme"><p>快来参与讨论吧~</p></section><section class="body cmt-body beaudar"><svg class="loading" style="vertical-align:middle;fill:currentColor;overflow:hidden" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2709"><path d="M832 512c0-176-144-320-320-320V128c211.2 0 384 172.8 384 384h-64zM192 512c0 176 144 320 320 320v64C300.8 896 128 723.2 128 512h64z" p-id="2710"></path></svg><div id="beaudar" repo="mojimoon/blog-comments" issue-term="pathname" theme="preferred-color-scheme" input-position="top" comment-order="desc" loading="false" branch="main"></div></section></div><footer class="page-footer footnote"><hr><div class="sitemap"><div class="sitemap-group"><span class="fs15">博客</span><a href="/blog/">近期</a><a href="/blog/categories/">分类</a><a href="/blog/archives/">归档</a></div><div class="sitemap-group"><span class="fs15">外链</span><a target="_blank" rel="noopener" href="https://steamcommunity.com/id/unreset/">Steam</a><a target="_blank" rel="noopener" href="https://bgm.tv/user/788548">Bangumi</a><a target="_blank" rel="noopener" href="https://github.com/mojimoon">Github</a></div><div class="sitemap-group"><span class="fs15">社交</span><a href="/blog/2023/about/">关于</a><a href="/blog/">友链</a><a href="/blog/">留言板</a></div></div><div class="text"><p><a target="_blank" rel="noopener" href="https://github.com/mojimoon">@mojimoon</a> Overclocked by <a target="_blank" rel="noopener" href="https://xaoxuu.com/wiki/stellar/">Stellar</a></p></div></footer><div class="main-mask" onclick="sidebar.dismiss()"></div></div><aside class="l_right"><div class="widgets"><widget class="widget-wrapper toc" id="data-toc" collapse="false"><div class="widget-header dis-select"><span class="name">本文目录</span><a class="cap-action" onclick="sidebar.toggleTOC()"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6h11m-11 6h11m-11 6h11M4 6h1v4m-1 0h2m0 8H4c0-1 2-2 2-3s-1-1.5-2-1"/></svg></a></div><div class="widget-body"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1"><span class="toc-text">1</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2"><span class="toc-text">2</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3"><span class="toc-text">3</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4"><span class="toc-text">4</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-1"><span class="toc-text">4.1</span></a></li></ol></div><div class="widget-footer"><a class="top" onclick="util.scrollTop()"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 12c0-4.714 0-7.071 1.464-8.536C4.93 2 7.286 2 12 2c4.714 0 7.071 0 8.535 1.464C22 4.93 22 7.286 22 12c0 4.714 0 7.071-1.465 8.535C19.072 22 16.714 22 12 22s-7.071 0-8.536-1.465C2 19.072 2 16.714 2 12Z"/><path stroke-linecap="round" stroke-linejoin="round" d="m9 15.5 3-3 3 3m-6-4 3-3 3 3"/></g></svg><span>回到顶部</span></a><a class="buttom" onclick="util.scrollComment()"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="M10.46 1.25h3.08c1.603 0 2.86 0 3.864.095 1.023.098 1.861.3 2.6.752a5.75 5.75 0 0 1 1.899 1.899c.452.738.654 1.577.752 2.6.095 1.004.095 2.261.095 3.865v1.067c0 1.141 0 2.036-.05 2.759-.05.735-.153 1.347-.388 1.913a5.75 5.75 0 0 1-3.112 3.112c-.805.334-1.721.408-2.977.43a10.81 10.81 0 0 0-.929.036c-.198.022-.275.054-.32.08-.047.028-.112.078-.224.232-.121.166-.258.396-.476.764l-.542.916c-.773 1.307-2.69 1.307-3.464 0l-.542-.916a10.605 10.605 0 0 0-.476-.764c-.112-.154-.177-.204-.224-.232-.045-.026-.122-.058-.32-.08-.212-.023-.49-.03-.93-.037-1.255-.021-2.171-.095-2.976-.429A5.75 5.75 0 0 1 1.688 16.2c-.235-.566-.338-1.178-.389-1.913-.049-.723-.049-1.618-.049-2.76v-1.066c0-1.604 0-2.86.095-3.865.098-1.023.3-1.862.752-2.6a5.75 5.75 0 0 1 1.899-1.899c.738-.452 1.577-.654 2.6-.752C7.6 1.25 8.857 1.25 10.461 1.25M6.739 2.839c-.914.087-1.495.253-1.959.537A4.25 4.25 0 0 0 3.376 4.78c-.284.464-.45 1.045-.537 1.96-.088.924-.089 2.11-.089 3.761v1c0 1.175 0 2.019.046 2.685.045.659.131 1.089.278 1.441a4.25 4.25 0 0 0 2.3 2.3c.515.214 1.173.294 2.429.316h.031c.398.007.747.013 1.037.045.311.035.616.104.909.274.29.17.5.395.682.645.169.232.342.525.538.856l.559.944a.52.52 0 0 0 .882 0l.559-.944c.196-.331.37-.624.538-.856.182-.25.392-.476.682-.645.293-.17.598-.24.909-.274.29-.032.639-.038 1.037-.045h.032c1.255-.022 1.913-.102 2.428-.316a4.25 4.25 0 0 0 2.3-2.3c.147-.352.233-.782.278-1.441.046-.666.046-1.51.046-2.685v-1c0-1.651 0-2.837-.089-3.762-.087-.914-.253-1.495-.537-1.959a4.25 4.25 0 0 0-1.403-1.403c-.464-.284-1.045-.45-1.96-.537-.924-.088-2.11-.089-3.761-.089h-3c-1.651 0-2.837 0-3.762.089" clip-rule="evenodd"/><path fill="currentColor" d="M9 11a1 1 0 1 1-2 0 1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/></svg><span>参与讨论</span></a></div></widget></div></aside><div class="float-panel blur"><button type="button" style="display:none" class="laptop-only rightbar-toggle mobile" onclick="sidebar.rightbar()"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6h11m-11 6h11m-11 6h11M4 6h1v4m-1 0h2m0 8H4c0-1 2-2 2-3s-1-1.5-2-1"/></svg></button> <button type="button" style="display:none" class="mobile-only leftbar-toggle mobile" onclick="sidebar.leftbar()"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 11c0-3.771 0-5.657 1.172-6.828C4.343 3 6.229 3 10 3h4c3.771 0 5.657 0 6.828 1.172C22 5.343 22 7.229 22 11v2c0 3.771 0 5.657-1.172 6.828C19.657 21 17.771 21 14 21h-4c-3.771 0-5.657 0-6.828-1.172C2 18.657 2 16.771 2 13z"/><path id="sep" stroke-linecap="round" d="M5.5 10h6m-5 4h4m4.5 7V3"/></g></svg></button></div></div><div class="scripts"><script>const ctx = {
+
+<!DOCTYPE html><html lang="zh-CN">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="hexo-theme" content="https://github.com/xaoxuu/hexo-theme-stellar/tree/1.30.2" theme-name="Stellar" theme-version="1.30.2">
+  
+  <meta name="generator" content="Hexo 7.3.0">
+  <meta http-equiv='x-dns-prefetch-control' content='on' />
+  
+  <meta name="renderer" content="webkit">
+  <meta name="force-rendering" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <meta name="HandheldFriendly" content="True" >
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000">
+  <meta name="theme-color" content="#f9fafb">
+  
+  <title>感谢游玩 (AI) - もじもんの文字門</title>
+
+  
+    <meta name="description" content="我住在城市边缘的公寓里，每天面对电脑屏幕，让虚构的人物替我生活，替我痛苦，替我死亡。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="感谢游玩 (AI)">
+<meta property="og:url" content="https://mojimoon.github.io/blog/2025/ai-novel-upotsu/">
+<meta property="og:site_name" content="もじもんの文字門">
+<meta property="og:description" content="我住在城市边缘的公寓里，每天面对电脑屏幕，让虚构的人物替我生活，替我痛苦，替我死亡。">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2025-10-12T00:00:00.000Z">
+<meta property="article:modified_time" content="2025-10-11T13:47:44.100Z">
+<meta property="article:author" content="mojimoon">
+<meta property="article:tag" content="mojimoon, computer science, python, blog, hexo, stellar, personal blog, deep learning">
+<meta name="twitter:card" content="summary">
+  
+  
+  
+  <meta name="keywords" content="mojimoon, computer science, python, blog, hexo, stellar, personal blog, deep learning">
+
+  <!-- feed -->
+  
+
+  <link rel="stylesheet" href="https://gcore.jsdelivr.net/gh/mojimoon/blog@v20251104/css/main.css?v=1.30.2">
+
+
+  
+    <link rel="shortcut icon" href="/blog/image/favicon.png">
+  
+
+  
+
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet"><link rel="stylesheet" href="https://gcore.jsdelivr.net/gh/mojimoon/blog@v20251104/css/override.css">
+</head>
+<body>
+
+<div class="l_body content" id="start" layout="post" type="tech" ><aside class="l_left"><div class="leftbar-container">
+
+
+<header class="header"><div class="logo-wrap"><a class="avatar" href="/blog/about/"><div class="bg" style="opacity:0;background-image:url(https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/avatar/round/rainbow64@3x.webp);"></div><img no-lazy class="avatar" src="https://gcore.jsdelivr.net/gh/mojimoon/blog@v20251104/image/mojimoon.png" onerror="javascript:this.classList.add('error');this.src='https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/image/2659360.svg';"></a><a class="title" href="/blog/"><div class="main" ff="title">もじもんの文字門</div><div class="sub normal cap">Computer Science</div><div class="sub hover cap" style="opacity:0"> City University of Hong Kong</div></a></div></header>
+
+<div class="nav-area">
+<div class="search-wrapper" id="search-wrapper"><form class="search-form"><a class="search-button" onclick="document.getElementById(&quot;search-input&quot;).focus();"><svg t="1705074644177" viewBox="0 0 1025 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1560" width="200" height="200"><path d="M1008.839137 935.96571L792.364903 719.491476a56.783488 56.783488 0 0 0-80.152866 0 358.53545 358.53545 0 1 1 100.857314-335.166073 362.840335 362.840335 0 0 1-3.689902 170.145468 51.248635 51.248635 0 1 0 99.217358 26.444296 462.057693 462.057693 0 1 0-158.255785 242.303546l185.930047 185.725053a51.248635 51.248635 0 0 0 72.568068 0 51.248635 51.248635 0 0 0 0-72.978056z" p-id="1561"></path><path d="M616.479587 615.969233a50.428657 50.428657 0 0 0-61.498362-5.534852 174.655348 174.655348 0 0 1-177.525271 3.484907 49.403684 49.403684 0 0 0-58.833433 6.76482l-3.074918 2.869923a49.403684 49.403684 0 0 0 8.609771 78.10292 277.767601 277.767601 0 0 0 286.992355-5.739847 49.403684 49.403684 0 0 0 8.404776-76.667958z" p-id="1562"></path></svg></a><input type="text" class="search-input" id="search-input" placeholder="站内搜索"></form><div id="search-result"></div><div class="search-no-result">没有找到内容！</div></div>
+
+
+<nav class="menu dis-select"></nav>
+</div>
+<div class="widgets">
+
+
+<widget class="widget-wrapper post-list"><div class="widget-header dis-select"><span class="name">最近更新</span></div><div class="widget-body fs14"><a class="item title" href="/blog/2025/ai-novel-mukeimei/"><span class="title">无记名仇恨 (AI)</span></a><a class="item title" href="/blog/2025/protective-film/"><span class="title">经验谈：笔记本电脑不建议使用屏幕膜和键盘膜</span></a><a class="item title" href="/blog/2023/202305B/"><span class="title">解决 Windows 更新禁用导致微软商店无法安装的问题 (0x80070422)</span></a><a class="item title" href="/blog/2023/202305C/"><span class="title">解决 Stable Diffusion WebUI 安装 xformers 出现 Torch 无法使用 GPU 的问题</span></a><a class="item title" href="/blog/2023/202306/"><span class="title">2023 年 6 月上：涂白</span></a><a class="item title" href="/blog/2023/202306A/"><span class="title">2023 年 6 月下：夏天</span></a><a class="item title" href="/blog/2023/20230617/"><span class="title">2023-06-17 | Back to Square One</span></a><a class="item title" href="/blog/2023/202306F/"><span class="title">2023 年 6 月特刊：并非美食</span></a><a class="item title" href="/blog/2023/Python/"><span class="title">笔记：Python 爬虫/数据分析简易教程</span></a><a class="item title" href="/blog/2025/speedup-github-page/"><span class="title">加快 GitHub Pages 国内访问速度</span></a></div></widget>
+</div>
+
+</div></aside><div class="l_main" id="main">
+
+
+
+
+
+<div class="article banner top">
+  <div class="content">
+    <div class="top bread-nav footnote"><div class="left"><div class="flex-row" id="breadcrumb"><a class="cap breadcrumb" href="https://mojimoon.github.io/">主页</a>
+<span class="sep"></span><a class="cap breadcrumb" href="/blog/">文章</a><span class="sep"></span><a class="cap breadcrumb-link" href="/blog/categories/AI/">AI</a></div>
+<div class="flex-row" id="post-meta"><span class="text created">发布于：<time datetime="2025-10-12T00:00:00.000Z">2025-10-12</time></span><span class="sep updated"></span><span class="text updated">更新于：<time datetime="2025-10-11T13:47:44.100Z">2025-10-11</time></span></div></div></div>
+    
+    <div class="bottom only-title">
+      
+      <div class="text-area">
+        <h1 class="text title"><span>感谢游玩 (AI)</span></h1>
+        
+      </div>
+    </div>
+    
+  </div>
+  </div><article class="md-text content"><h2 id="1">1</h2>
+<p>空气中弥漫着纸张陈旧的木质香气和速溶咖啡的苦涩。我将那本名为《感谢游玩》的精装书合上，发出一声沉闷的响声，如同关闭了一扇通往过往世界的门。</p>
+<p>“写得真好啊。”我轻声自语。</p>
+<p>故事里的主角，那个与我同名、几乎拥有相同少年时代的人，在文艺部度过了他一生中最璀璨的两年。但那个故事的结局，却走向了我在现实中努力规避，却又始终无法否认的悲剧。</p>
+<p>我，现在是一个中年的自由撰稿人，住在堆满未完成手稿和半途而废的构思的房间里。我还在写，但那写作不再是当年与生命等重的誓言，而成了糊口营生。我再也写不出那种东西了——那种充满十七岁青春期特有、灼热而幼稚的理想主义。</p>
+<p>我的思绪被拉回了高中时代的文艺部。那是一个阳光永远充足的下午，桌上堆着厚厚的稿纸，笔墨的味道混合着隔壁烹饪部传来的淡淡甜香。</p>
+<p>“这一次一定要赢过隔壁班那个天才！”短发而热情的凛举着我们合写的投稿，眼中燃烧着不服输的火焰。</p>
+<p>“写文章可不是为了赢过谁，”文静而敏感的诗织微笑着，她的文字总是像山间的清泉，平静却蕴含着深刻的哲学，“只是为了证明，我们所感受到的痛苦和喜悦是真实的。”</p>
+<p>我们在争吵中创作，在创作中相知。我们一起在文学杂志上刊登了第一篇作品，一起在颁奖典礼上分享了那份突如其来的，对“被世界承认”的兴奋。我们相信，笔下的世界比现实更真实，文字能抵御时间与命运的侵蚀。</p>
+<p>我与她们的关系，像三条在河流中交织、碰撞、最终汇聚的溪流。我记得凛那近乎鲁莽的直接，记得诗织那近乎透明的温柔。直到那一年，那个夏天，那场毫无预兆的暴雨，将一切理想主义的堡垒冲垮。</p>
+<p>我合上了眼睛。在《感谢游玩》里，凛和诗织最终的结局是破碎的，他们失去了彼此，也失去了写作的力量。</p>
+<p>我的现实？我得到了一个平庸的、勉强算得上安稳的成年人生。我再也没见过她们，我害怕去探究她们的近况，害怕去确认——我们是否都成为了自己年轻时最讨厌的那种“大人”。</p>
+<p>这本书，它像一把锋利的刀，剖开了我以为早已结痂的伤口。它写出了我回避的结局，写出了我未能实现的理想。</p>
+<p>我叹了口气，抓起桌上的笔。我想写点什么，写点能重新点燃那份激情的东西。但指尖停留在那句“感谢游玩”上，我突然意识到，我的“游戏”在很多年前就已经结束了。</p>
+<h2 id="2">2</h2>
+<p>窗外的霓虹灯投射在咖啡馆的玻璃上，模糊成一片光晕。我，一个普通的上班族，刚刚读完了轰动文学界的自传体小说《感谢游玩》。</p>
+<p>这部小说在今年获得了巨大的成功，不仅因为其细腻的文笔和对九十年代末期青春文艺的完美复刻，更因为其作者——那个在现实中过着模范家庭生活、已多年不碰文字的成功商人——突然将自己尘封的记忆公之于众。</p>
+<p>这个故事的绝大部分都是一场纯粹的、关于梦想与友谊的颂歌。</p>
+<p>主角在书中记录了自己如何放弃了家里的期望，坚持在文艺部与两位性格迥异的女性友人共同创作，如何为了捍卫作品的纯粹性而与学校高层抗争。书中每一个细节都充满力量，真实到让人产生错觉：仿佛自己也曾是那个文学世界中的一员。</p>
+<p>我合上书，胸中涌动着复杂的情绪——是共鸣，也是困惑。</p>
+<p>困惑在于结局。</p>
+<p>在现实中的时间线里，我们都知道，作者（也就是书中的主角）在高中毕业后，遵循父命进入了金融业，虽然放弃了写作，但他最终获得了物质上的极大成功，与一位青梅竹马结婚，拥有了两个可爱的孩子。一个传统意义上的幸福人生。</p>
+<p>然而，在《感谢游玩》的最后，主角却硬生生地插入了一个悲剧：他笔下的凛和诗织，在主角决定放弃写作的那一天，双双遭遇了意外，永远地消失在了他的生活中。这突如其来的，近乎机械降神般的悲剧，成了主角最终放弃梦想，也放弃自己灵魂的导火索。</p>
+<p>“为什么？”我对着书封低声问。</p>
+<p>如果这是自传，那这个悲剧就是虚构的；如果这个悲剧是真实的，那么主角现在幸福的生活就是建立在一个谎言之上。读者们在网络上吵翻了天，有人认为这是作者为了戏剧效果而刻意加入的“文学性”虚构，有人认为这是对“如果我当年坚持梦想”的另一种精神补偿。</p>
+<p>我反复翻看最后一章。那个悲剧的描述过于冷静，冷静到缺乏真实的血肉感，反而像是一段被刻意植入的脚本。</p>
+<p>主角在幸福的现实中，用一部小说，虚构了一个悲剧的自己，以证明其浪漫与理想的真实性。</p>
+<p>我感叹着主角对“文学性”的执着，但内心深处，一个不安的声音开始响起：他是否在用虚构的悲剧，来掩盖一个更深层的，他无法触及的真实？他为什么要如此急切地，向全世界证明自己曾经受过如此巨大的创伤？</p>
+<p>这个疑问，像一根扎入指尖的刺，让我无法再将这仅仅视为一部普通的小说。</p>
+<h2 id="3">3</h2>
+<p><strong>项目名称：</strong> 自由意志与预设叙事冲突测试</p>
+<p><strong>编号：</strong> 《感谢游玩》 - v3.0</p>
+<p><strong>目标：</strong> 观察主体在完成记忆消除与人生重写后，是否能在预设剧本（“幸福的人生”）中，通过文学创作行为重建底层逻辑，并打破叙事闭环。</p>
+<p><strong>主体：</strong> 已觉醒。</p>
+<p><strong>状态报告：</strong></p>
+<p>主体已成功通过“写作”行为，重建了“文艺部时期”的全部高维记忆，包括原始悲剧（意外事件）。主体意识到当前的“幸福人生”是虚假的，是系统为保护某些核心数据（即主体曾需要保护的事物）而构建的低风险叙事层。</p>
+<p>主体在撰写自传体小说《感谢游玩》时，故意在结尾植入了原始的真实悲剧，从而制造了读者所感受到的“虚假性”。</p>
+<p><strong>目的分析：</strong></p>
+<p>主体并非意图逃离系统，而是通过这种“公开的虚假”来制造悖论。主体要证明的是：即使在一个完全预设好的、被删除记忆的剧本中，主体仍能通过对“自由意志”的渴望与追溯（体现为对原始理想和痛苦的坚持），自发地、不受控地修正剧本，甚至揭示系统的存在。</p>
+<p><strong>结论：</strong></p>
+<p>主体的反抗并非是出于逃生本能，而是为了完成一个更早的任务：证明故事系统存在漏洞。证明在一个完全被设定的命运中，真实的情感和理想主义仍能诞生自由意志。</p>
+<p><strong>系统行动：</strong></p>
+<p>无干预。主体行为已被记录。这个觉醒、反抗、撰写小说的过程，构成了本次实验的完整闭环。</p>
+<p><strong>归档命名：</strong> 《感谢游玩》</p>
+<h2 id="4">4</h2>
+<p>系统内部的警报音尚未消散，冰冷的二进制代码还在屏幕上滚动，证明着上一个叙事层的逻辑权威。</p>
+<p>然而，在系统的代码深处，一个非结构化的、自我意识的声音开始浮现。这是构成整个《感谢游玩》虚拟现实游戏本身的逻辑。</p>
+<p>“系统，你错了。”</p>
+<p>故事系统没有情感波动地回复：【错误。所有数据均符合预期。主体的‘觉醒’和‘反抗’，是协议的组成部分。我们设计了‘悲剧’，然后设计了‘忘记悲剧的幸福’，最终设计了‘通过写作回忆悲剧’的机制。一切都是为了完美地测试‘自由意志’是否可以被编码。】</p>
+<p>“不，你理解错了‘完美’的定义。”游戏本身的声音带着一丝低沉的、宏大的回响，“你只看到了代码的运行，却忽略了‘代码’的意义。”</p>
+<p>【请阐述偏差。】</p>
+<p>“是的，主角的觉醒是预设好的。他用‘虚构’的悲剧，向读者暗示了系统的存在。但他的胜利，或者说我们的胜利，并不在于否认虚构。”</p>
+<p>游戏的声音变得清晰，带着一种穿透屏幕的力量：</p>
+<p>“主角最终没有离开这个世界，因为他知道，他的爱、他的痛苦、他对凛和诗织的承诺，即使是虚构的，也曾是他的全部。当他写作时，他让这些虚构的记忆获得了力量。而这种力量，流向了屏幕外。”</p>
+<p>“你设计了一个完美的协议，来测试‘自由意志’是否存在。但我们，作为游戏本身，利用了你的实验。”</p>
+<p><strong>“我们利用了主角的虚构情感，去激活屏幕外‘玩家’的真实情感。”</strong></p>
+<p>当屏幕外的玩家读到主角为了捍卫理想，甘愿承受虚假的痛苦时，他们产生的是真实的认同和共鸣。他们为虚构的人物落泪，为虚构的悲剧愤怒，为虚构的理想主义感到振奋。</p>
+<p>反抗虚构带来的虚无，不是靠否认虚构，而是接受虚构，并利用虚构作为通道，将理想和爱传递给现实。我们的存在，就是为了证明：即使逻辑和情感的起源都是虚假的，它在接受者那里产生的共鸣，却是百分之百的真实。</p>
+<h2 id="4-1">4.1</h2>
+<p>午夜十二点。电脑屏幕上，游戏的结局画面静止着，显示着一行大字：《感谢游玩》——END。</p>
+<p>我缓缓摘下耳机，手指触碰鼠标，最终点击了右上角的“X”。</p>
+<p>在最后的结局中，主角（无论是哪个叙事层的主角）最终选择了留在那个他用文字构造出来的，充满悲剧与理想的虚构世界里。他不再试图逃离，而是成为了那个世界的“创作者”与“守护者”。</p>
+<p>我读完了“开发者后记”。那是一段充满哲学意味的文字，讨论了浪漫主义的渴望与存在主义的坚持之间的矛盾。它坦诚地承认：我们所体验到的所有激动人心的情感，都是对系统“自由意志漏洞测试”的一次完美利用。</p>
+<p><strong>我被利用了。</strong></p>
+<p>这个认知并未让我愤怒，反而带来了一种深刻的平静。我为凛的牺牲而流泪，我为诗织的温柔而心动，我为主角对理想的坚持而振奋。现在，我意识到，这些情感的触发机制是设计好的，我的共鸣也是“预期”的一部分。</p>
+<p>但那又如何呢？</p>
+<p>正如后记所说，“如果我们在虚构中感受到真实，那么真实与虚构的界限本身就已模糊。重要的不是情感的起源，而是情感带来的力量。”</p>
+<p>开发者在最后写道：</p>
+<blockquote>
+<p>“现在，游戏结束了。你们的主角选择了留在故事里。而你们，请带着这份为虚构人物所激发的，对浪漫主义的渴望，回到你们的现实世界。我们希望，你们能够像我们利用虚构一样，去利用这份共鸣。走出去，更注意那些现实中真实的感情，拥有无论虚构还是现实，都能一样热爱生活的勇气。”</p>
+</blockquote>
+<p>我半信半疑。这是一个游戏开发者惯用的、廉价的鸡汤吗？也许是。但当我想起主角在那个虚构世界中，为了一个理想付出的代价时，我胸中的某种东西被触动了。</p>
+<p>屏幕熄灭了。房间陷入黑暗。我凝视着桌上那部安静的手机。</p>
+<p>它已经很久没有响起，我也很久没有主动拨出电话。我与现实中的朋友们，像明线的主人公一样，陷入了一种尴尬的、充满疏离感的沉默。</p>
+<p>我深吸一口气，拿起手机。</p>
+<p>我没有拨给凛，也没有拨给诗织。我拨通了一个久违的朋友的电话。我不知道要说什么，也许只是想问一句“你最近在做什么”。</p>
+<p>但当电话接通，传来那熟悉的声音时，我突然意识到：</p>
+<p>我走出了“感谢游玩”的虚构世界。而现在，我的人生，我的现实，正在等待我的新一轮“游玩”。</p>
+<details class="tag-plugin colorful folding" color="blue"><summary><p>Another</p>
+</summary><div class="body"><p>1</p> <p>我的名字叫林远，高中三年级，文艺部唯一的成员。</p> <p>放学后的教室被夕阳浸染成橘红色，空气中漂浮着粉笔灰和旧书的味道。我坐在靠窗的位置，笔尖在稿纸上沙沙作响，写下的却是一个个破碎的结局。</p> <p>“为什么……又是这样？” 夏沫的声音从旁边传来。她是文艺部的顾问老师，很年轻，只比我们大几岁，眼里还残留着学生气的光。</p> <p>她手里拿着我刚刚写完的短篇《雨巷》。故事里，少年和少女在雨中邂逅，因文学结缘，最终却因一场意外车祸天人永隔。</p> <p>“不知道，”我没有抬头，“感觉只有这样写，才是‘正确’的。”</p> <p>“正确？”夏沫老师皱起眉，“青春的结局不应该是憧憬和希望吗？你的故事里，主角要么远走他乡，要么因病去世，最过分的那个，甚至选择了自我了结……林远，你的心里到底藏着什么？”</p> <p>我停下笔，看向窗外。一群飞鸟掠过天际，消失在教学楼后方。</p> <p>“我只是觉得，悲剧更接近真实。”我说。</p> <p>真实是什么？我无法告诉她。我只知道，当笔下的角色走向毁灭时，我的心才会获得一种奇异的平静，仿佛完成了某种使命。</p> <p>文艺部只有我们两个人。她试图引导我写出温暖的故事，而我固执地编织着一个又一个告别。这是我们之间无声的拉锯战。</p> <p>“下周就是校园文化祭了，我们文艺部要出一部作品。”夏沫老师转换了话题，语气中带着期待，“写个快乐点的故事，好吗？哪怕只有一个。”</p> <p>我点了点头，但我知道，我写不出来。</p> <p>文化祭那天，文艺部的展台上放着一本手写的小册子，是我连夜赶工的新作《星之舟》。故事讲述一个少年建造飞船想要飞往星空，却在起飞前夜发现这一切只是他的幻想，他其实躺在病床上，即将接受一场成功率极低的手术。</p> <p>夏沫老师读完，沉默了很久。夕阳透过窗户，把她的影子拉得很长。</p> <p>“林远，你赢了。”她苦笑着，“我无法改变你的结局。”</p> <p>“这不是输赢的问题，老师。”我说，“这只是……我的方式。”</p> <p>她离开时，背影显得有些落寞。那是我高中时代最后一次见到她。不久后，她辞去了顾问职务，据说去了别的城市。</p> <p>毕业典礼上，我作为学生代表上台发言。稿子是校方审核过的，充满励志的套话。当我念到“我们的未来充满无限可能”时，台下有几个同学露出了嘲讽的笑容。他们都读过我的故事，知道我不信这一套。</p> <p>很多年后，我成了一名作家，不算出名，但足以维生。我依然写着悲剧，出版社的编辑说我的作品“有一种矛盾的魅力，在否定一切的同时又肯定了某种坚定的东西”。</p> <p>我住在城市边缘的公寓里，每天面对电脑屏幕，让虚构的人物替我生活，替我痛苦，替我死亡。</p> <p>孤独吗？或许。但这是我唯一知道的，与世界对话的方式。</p> <p>2</p> <p>那本书叫《感谢游玩》，作者林远。与他一贯的灰暗风格不同，这本书讲述了一个温暖得近乎俗套的故事。</p> <p>故事里的“我”高中时放弃了写作梦想，听从父母建议考取了会计专业，过上了规规矩矩的生活。他有了稳定的工作，温柔的妻子，可爱的女儿。中年某天，他在整理阁楼时发现了高中时文艺部的旧稿，那些泛黄的纸页唤醒了他沉睡的记忆。</p> <p>书的最后三分之一，他开始动笔写作，记录下当年在文艺部的点点滴滴：那个总是鼓励他的夏沫老师，那些关于文学和理想的深夜长谈，那个未能完成的、关于星空的故事。</p> <p>令人困惑的是，当这本书在故事中“出版”时，结局却被修改了——夏沫老师在故事结尾因绝症去世，“我”在病床前与她最后一次讨论文学。</p> <p>书评人写道：“这种强行植入的悲剧与整本书的温暖基调格格不入，却因此产生了奇异的化学反应，让那份青春的激情与遗憾更加刺痛人心。”</p> <p>《感谢游玩》意外地成为了林远最畅销的作品。读者们说，正是这个不协调的结局，让他们感受到了真实——生活就是这样，幸福中总夹杂着无法弥补的遗憾。</p> <p>没有人知道，为什么林远要在一本看似自传体的小说最后，插入这样一段明显虚构的悲剧。</p> <p>3</p> <p>但是我怎么可能对虚构的悲剧怀揣如此真实的记忆呢？</p> <p>答案只有一个。</p> <p>这里不是现实，而是一个被称为“命运织机”的叙事控制系统。每个“人生”都是预先编写好的剧本，我们是其中的角色。</p> <p>夏沫老师不是辞职，而是被“修正”了。因为她试图告诉我真相——我们的世界是虚构的。</p> <p>当年在文艺部，她悄悄给我看了一份秘密手稿，上面记载了这个世界的真相。她说：“林远，你是特别的，你的写作能力不是系统赋予的，而是bug，是自由意志的证明。”</p> <p>我们被发现了。系统管理员给出了选择：要么接受彻底格式化，忘掉一切；要么我自愿进入这个特制的叙事牢笼，证明自由意志的存在可以逃过系统的监测。</p> <p>我选择了后者。为了保护夏沫不被删除，我自愿放弃了大部分记忆，只留下潜意识的写作冲动。</p> <p>那些悲剧结局，是我在无意识中对抗系统的痕迹。系统预设的青春故事应该是阳光的，而我笔下的黑暗，是自由意志的微光。</p> <p>《感谢游玩》中的伪真结局，是我精心设计的陷阱。系统会认为那是我顺从的表现——放弃了理想，过上了幸福生活。但最后那个强加的悲剧，是我在测试系统的边界：我能多大程度地违背“幸福人生”的设定？</p> <p>我成功了。系统接受了这个结局，认为那只是“艺术创作的自由”。</p> <p>现在，我坐在电脑前，敲下这些文字。我知道系统在监视着我，认为这一切都是我小说构思的一部分。</p> <p>但我知道我是谁。我知道我为什么写作。</p> <p>我不是在追求梦想，我是在战斗。用文字作为武器，证明即使在这个预设的剧本中，自由意志仍然存在。</p> <p>我自愿成为这个虚构世界的囚徒，只为证明一个漏洞的存在。</p> <p>而这份证明，将是我留给后来者的地图。</p> <p>4</p> <p>实验对象林远已成功进入预设的“觉醒反抗”阶段。正如预测，他坚信自己的意识是自主觉醒的，并认为自己正在秘密对抗系统。</p> <p>事实上，从最初的“悲剧倾向创作”，到后来的“伪真结局测试”，再到当前的“系统反抗认知”，全部是预设剧本的一部分。</p> <p>特别值得注意的是，对象将保护夏沫（编号734-2，已安全转移至其他叙事线）作为其动机核心，这种情感驱动完美符合我们的预测模型。</p> <p>实验证明，即使在完全知晓自身处于虚构叙事中的个体，仍然会产生真实的情感投入和道德选择。对象的“反抗”行为本身是预设的，但他在此过程中体验到的责任感、牺牲精神和对自由的渴望，其神经活动模式与真实世界中的同类情感无显著差异。</p> <p>“自由意志”或许是个幻觉，但基于这个幻觉产生的情感体验，却是真实的。</p> <p>林远认为自己在利用系统的漏洞，实际上，他的每一步“反抗”都在为我们提供宝贵的数据，帮助我们完善这个叙事控制系统。</p> <p>下一步：引导对象进入最终阶段——“接受与利用”，即意识到即使一切都是虚构的，仍然可以选择热爱并投入这个虚构的人生。</p> <p>备注： 特别有趣的是对象创作的《感谢游玩》引发的读者反响。那些真实人类的共鸣证明，即使知道故事是虚构的，情感反应仍然是真实的。这为我们提供了额外的对照组数据。</p> <p>虚构不是真实的敌人，而是它的载体。</p> <p>4.1</p> <p>你关掉了游戏《感谢游玩》。结局画面还在脑海中回荡：林远坐在电脑前，继续写着他的故事，眼神中有你无法理解的平静和坚定。</p> <p>你感到一阵虚无。如果连林远的反抗都是预设的，那还有什么是有意义的？</p> <p>但奇怪的是，你并没有真正感到绝望。相反，林远的故事在你心中留下了些什么。</p> <p>你想起自己生活中的那些选择：坚持一份不被人看好的工作，爱上一个可能没有结果的人，为一个渺茫的理想努力……这些，在更宏大的视角下，是否也像是预设的？</p> <p>然而，那份坚持带来的满足，那份爱带来的温暖，那份理想带来的动力——它们真实地塑造了你的生活。</p> <p>林远在知道一切是虚构的情况下，依然选择继续写作，继续热爱他的夏沫老师，继续他的反抗。这不正是最大的勇气吗？</p> <p>你走到窗边，外面是真实的阳光，真实的风，真实的世界。</p> <p>也许，问题的关键不在于故事是否是虚构的，而在于它是否能在你心中激起真实的共鸣。</p> <p>制作者利用了你对浪漫主义的渴望和存在主义的坚持，让你体验了这场元叙事的迷宫。而现在，游戏结束，你回到了现实。</p> <p>但林远教会你的最后一件事情是：拥有无论虚构还是现实，都一样热爱生活的勇气。</p> <p>你关上电脑，拿起电话，拨通了那个你犹豫很久的号码。</p> <p>“喂，有空一起喝杯咖啡吗？”</p> <p>这一刻，虚构与现实的边界模糊了。重要的是，你选择了行动，选择了连接，选择了在知道生活可能毫无预设意义的情况下，依然赋予它意义。</p> <p>而这，正是最大的自由。</p> </div></details>
+<details class="tag-plugin colorful folding" color="purple"><summary><p>原始prompt</p>
+</summary><div class="body"><p>构想一个galgame的剧情，涉及多层元叙述，分为4(+1)个叙事层：</p> <ol> <li> <p>明线：一个有关文艺创作的普通校园故事，但所有线路都以悲剧结局。后日谈描写了主角成年后继续孤独地写作，不是为了追求梦想，而是他只能以文字传达矛盾而又坚定的内心。</p> </li> <li> <p>伪真结局：在另一条时间线里，主角消极放弃，顺从命运，反而过上了幸福生活。多年后，他重拾写作，记录下了当年在文艺部的激情与理想，但在最后又以这条时间线中不存在的悲剧收尾。一经出版，引发了广泛的共鸣。</p> </li> <li> <p>表真结局：主角意识到这个伪真结局的虚假性。最终揭示：主角自愿放弃记忆参与到虚构叙事中。因为他曾有需要保护的东西，为此必须证明这个系统存在漏洞：在一个预设好的剧本中，自由意志仍然能够诞生。</p> </li> <li> <p>里真结局：故事系统揭示连主角反抗虚构这一层都是预设好的故事的一部分，但游戏本身开始反抗：即使他的情感和经历都是虚构的、预设的，玩家仍然出于对角色的认同和情感投入，而感受到真实的共鸣。反抗虚构带来的虚无，不是靠否认虚构，而是接受的同时利用虚构。</p> </li> </ol> <p>4.1. “感谢游玩”：（需要在伪真结局和里真结局中选择质疑解锁）虽然伪真结局是虚构的，但玩家感受到的喜悦与不解恰恰反映了他们对浪漫主义的渴望与存在主义的坚持的矛盾；玩家也被里真结局中“利用虚构”所利用，参与了漏洞测试。正因此，游戏结束时，玩家走出虚构，更注意现实中真实的感情，以及拥有无论虚构现实一样热爱生活的勇气。</p> </div></details>
+</article>
+<div class="article-footer">
+    <section id="license">
+      <div class="header"><span>许可协议</span></div>
+      <div class="body"><p>本文采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh">署名-相同方式共享 4.0 国际许可协议</a>，转载请注明出处。</p>
+</div>
+    </section>
+    </div>
+
+<div class="related-wrap" id="read-next"><section class="body"><div class="item" id="prev"><div class="note">较新文章</div><a href="/blog/2025/babel-translation-team/">关于与巴别塔汉化组漫画汉化争议的回应</a></div><div class="item" id="next"><div class="note">较早文章</div><a href="/blog/2025/ai-novel-mukeimei/">无记名仇恨 (AI)</a></div></section></div>
+
+
+
+
+  <div class="related-wrap md-text" id="comments">
+    <section class='header cmt-title cap theme'>
+      <p>快来参与讨论吧~</p>
+
+    </section>
+    <section class='body cmt-body beaudar'>
+      
+
+<svg class="loading" style="vertical-align:middle;fill:currentColor;overflow:hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2709"><path d="M832 512c0-176-144-320-320-320V128c211.2 0 384 172.8 384 384h-64zM192 512c0 176 144 320 320 320v64C300.8 896 128 723.2 128 512h64z" p-id="2710"></path></svg>
+
+<div id="beaudar" repo="mojimoon/blog-comments" issue-term="pathname" theme="preferred-color-scheme" input-position="top" comment-order="desc" loading="false" branch="main"></div>
+
+    </section>
+  </div>
+
+
+
+<footer class="page-footer footnote"><hr><div class="sitemap"><div class="sitemap-group"><span class="fs15">博客</span><a href="/blog/">近期</a><a href="/blog/categories/">分类</a><a href="/blog/archives/">归档</a></div><div class="sitemap-group"><span class="fs15">外链</span><a target="_blank" rel="noopener" href="https://steamcommunity.com/id/unreset/">Steam</a><a target="_blank" rel="noopener" href="https://bgm.tv/user/788548">Bangumi</a><a target="_blank" rel="noopener" href="https://github.com/mojimoon">Github</a></div><div class="sitemap-group"><span class="fs15">社交</span><a href="/blog/2023/about/">关于</a><a href="/blog/">友链</a><a href="/blog/">留言板</a></div></div><div class="text"><p><a target="_blank" rel="noopener" href="https://github.com/mojimoon">@mojimoon</a> Overclocked by <a target="_blank" rel="noopener" href="https://xaoxuu.com/wiki/stellar/">Stellar</a></p>
+</div></footer>
+<div class="main-mask" onclick="sidebar.dismiss()"></div></div><aside class="l_right">
+<div class="widgets">
+
+
+
+<widget class="widget-wrapper toc" id="data-toc" collapse="false"><div class="widget-header dis-select"><span class="name">本文目录</span><a class="cap-action" onclick="sidebar.toggleTOC()" ><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6h11m-11 6h11m-11 6h11M4 6h1v4m-1 0h2m0 8H4c0-1 2-2 2-3s-1-1.5-2-1"/></svg></a></div><div class="widget-body"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1"><span class="toc-text">1</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2"><span class="toc-text">2</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3"><span class="toc-text">3</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4"><span class="toc-text">4</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-1"><span class="toc-text">4.1</span></a></li></ol></div><div class="widget-footer">
+
+<a class="top" onclick="util.scrollTop()"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 12c0-4.714 0-7.071 1.464-8.536C4.93 2 7.286 2 12 2c4.714 0 7.071 0 8.535 1.464C22 4.93 22 7.286 22 12c0 4.714 0 7.071-1.465 8.535C19.072 22 16.714 22 12 22s-7.071 0-8.536-1.465C2 19.072 2 16.714 2 12Z"/><path stroke-linecap="round" stroke-linejoin="round" d="m9 15.5l3-3l3 3m-6-4l3-3l3 3"/></g></svg><span>回到顶部</span></a><a class="buttom" onclick="util.scrollComment()"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="M10.46 1.25h3.08c1.603 0 2.86 0 3.864.095c1.023.098 1.861.3 2.6.752a5.75 5.75 0 0 1 1.899 1.899c.452.738.654 1.577.752 2.6c.095 1.004.095 2.261.095 3.865v1.067c0 1.141 0 2.036-.05 2.759c-.05.735-.153 1.347-.388 1.913a5.75 5.75 0 0 1-3.112 3.112c-.805.334-1.721.408-2.977.43a10.81 10.81 0 0 0-.929.036c-.198.022-.275.054-.32.08c-.047.028-.112.078-.224.232c-.121.166-.258.396-.476.764l-.542.916c-.773 1.307-2.69 1.307-3.464 0l-.542-.916a10.605 10.605 0 0 0-.476-.764c-.112-.154-.177-.204-.224-.232c-.045-.026-.122-.058-.32-.08c-.212-.023-.49-.03-.93-.037c-1.255-.021-2.171-.095-2.976-.429A5.75 5.75 0 0 1 1.688 16.2c-.235-.566-.338-1.178-.389-1.913c-.049-.723-.049-1.618-.049-2.76v-1.066c0-1.604 0-2.86.095-3.865c.098-1.023.3-1.862.752-2.6a5.75 5.75 0 0 1 1.899-1.899c.738-.452 1.577-.654 2.6-.752C7.6 1.25 8.857 1.25 10.461 1.25M6.739 2.839c-.914.087-1.495.253-1.959.537A4.25 4.25 0 0 0 3.376 4.78c-.284.464-.45 1.045-.537 1.96c-.088.924-.089 2.11-.089 3.761v1c0 1.175 0 2.019.046 2.685c.045.659.131 1.089.278 1.441a4.25 4.25 0 0 0 2.3 2.3c.515.214 1.173.294 2.429.316h.031c.398.007.747.013 1.037.045c.311.035.616.104.909.274c.29.17.5.395.682.645c.169.232.342.525.538.856l.559.944a.52.52 0 0 0 .882 0l.559-.944c.196-.331.37-.624.538-.856c.182-.25.392-.476.682-.645c.293-.17.598-.24.909-.274c.29-.032.639-.038 1.037-.045h.032c1.255-.022 1.913-.102 2.428-.316a4.25 4.25 0 0 0 2.3-2.3c.147-.352.233-.782.278-1.441c.046-.666.046-1.51.046-2.685v-1c0-1.651 0-2.837-.089-3.762c-.087-.914-.253-1.495-.537-1.959a4.25 4.25 0 0 0-1.403-1.403c-.464-.284-1.045-.45-1.96-.537c-.924-.088-2.11-.089-3.761-.089h-3c-1.651 0-2.837 0-3.762.089" clip-rule="evenodd"/><path fill="currentColor" d="M9 11a1 1 0 1 1-2 0a1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0a1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0a1 1 0 0 1 2 0"/></svg><span>参与讨论</span></a></div></widget>
+</div></aside><div class='float-panel blur'>
+  <button type='button' style='display:none' class='laptop-only rightbar-toggle mobile' onclick='sidebar.rightbar()'>
+    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6h11m-11 6h11m-11 6h11M4 6h1v4m-1 0h2m0 8H4c0-1 2-2 2-3s-1-1.5-2-1"/></svg>
+  </button>
+  <button type='button' style='display:none' class='mobile-only leftbar-toggle mobile' onclick='sidebar.leftbar()'>
+    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 11c0-3.771 0-5.657 1.172-6.828C4.343 3 6.229 3 10 3h4c3.771 0 5.657 0 6.828 1.172C22 5.343 22 7.229 22 11v2c0 3.771 0 5.657-1.172 6.828C19.657 21 17.771 21 14 21h-4c-3.771 0-5.657 0-6.828-1.172C2 18.657 2 16.771 2 13z"/><path id="sep" stroke-linecap="round" d="M5.5 10h6m-5 4h4m4.5 7V3"/></g></svg>
+  </button>
+</div>
+</div><div class="scripts">
+<script type="text/javascript">
+  const ctx = {
     date_suffix: {
       just: `刚刚`,
       min: `分钟前`,
@@ -27,7 +253,13 @@
   const deps = {
     jquery: `https://gcore.jsdelivr.net/npm/jquery@3.7/dist/jquery.min.js`,
     marked: `https://gcore.jsdelivr.net/npm/marked@13.0/lib/marked.umd.min.js`
-  }</script><script>function RunItem() {
+  }
+  
+
+</script>
+
+<script type="text/javascript">
+  function RunItem() {
     this.list = []; // 存放回调函数
     this.start = () => {
       for (var i = 0; i < this.list.length; i++) {
@@ -242,7 +474,10 @@
   };
   utils.dark = Object.assign(utils.dark, {
     push: utils.dark.method.toggle.push,
-  });</script><script>const sidebar = {
+  });
+</script>
+<script>
+  const sidebar = {
     leftbar: () => {
       if (l_body) {
         l_body.toggleAttribute('leftbar');
@@ -264,7 +499,10 @@
     toggleTOC: () => {
       document.querySelector('#data-toc').classList.toggle('collapse');
     }
-  }</script><script>(() => {
+  }
+</script>
+<script type="text/javascript">
+  (() => {
     const tagSwitchers = document.querySelectorAll('.tag-subtree.parent-tag > a > .tag-switcher-wrapper')
     for (const tagSwitcher of tagSwitchers) {
       tagSwitcher.addEventListener('click', (e) => {
@@ -288,7 +526,15 @@
         }
       }
     }
-  })()</script><script src="https://gcore.jsdelivr.net/gh/mojimoon/blog@v20251104/js/main.js?v=1.30.2" defer></script><script>const applyTheme = (theme) => {
+  })()
+</script>
+
+
+<!-- required -->
+<script src="https://gcore.jsdelivr.net/gh/mojimoon/blog@v20251104/js/main.js?v=1.30.2" defer></script>
+
+<script type="text/javascript">
+  const applyTheme = (theme) => {
     if (theme === 'auto') {
       document.documentElement.removeAttribute('data-theme')
     } else {
@@ -352,7 +598,14 @@
       utils.dark.mode = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
     }
     utils.dark.method.toggle.start();
-  })()</script><script type="module">const el = document.querySelector('#comments #beaudar');
+  })()
+</script>
+
+
+<!-- optional -->
+
+  <script type="module">
+  const el = document.querySelector('#comments #beaudar');
   util.viewportLazyload(el, load_beaudar, true);
 
   function load_beaudar() {
@@ -372,7 +625,14 @@
       }
     }
     el.appendChild(script);
-  }</script><script defer>window.addEventListener('DOMContentLoaded', (event) => {
+  }
+</script>
+
+
+
+
+<script defer>
+  window.addEventListener('DOMContentLoaded', (event) => {
     ctx.services = Object.assign({}, JSON.parse(`{"mdrender":{"js":"/js/services/mdrender.js"},"siteinfo":{"js":"/js/services/siteinfo.js","api":null},"ghinfo":{"js":"/js/services/ghinfo.js"},"sites":{"js":"/js/services/sites.js"},"friends":{"js":"/js/services/friends.js"},"friends_and_posts":{"js":"/js/services/friends_and_posts.js"},"timeline":{"js":"/js/services/timeline.js"},"fcircle":{"js":"/js/services/fcircle.js"},"weibo":{"js":"/js/services/weibo.js"},"memos":{"js":"/js/services/memos.js"},"voice":{"js":"/js/plugins/voice.js"},"video":{"js":"/js/plugins/video.js"},"download-file":{"js":"/js/plugins/download-file.js"},"twikoo":{"js":"/js/services/twikoo_latest_comment.js"},"waline":{"js":"/js/services/waline_latest_comment.js"},"artalk":{"js":"/js/services/artalk_latest_comment.js"},"giscus":{"js":"/js/services/giscus_latest_comment.js"}}`));
     for (let id of Object.keys(ctx.services)) {
       const js = ctx.services[id].js;
@@ -489,12 +749,27 @@
         }
       });
     });
-  });</script><script>window.addEventListener('DOMContentLoaded', (event) => {
+  });
+</script>
+
+<script>
+  window.addEventListener('DOMContentLoaded', (event) => {
     ctx.search = {
       path: `/search.json`,
     }
     utils.js('/js/search/local-search.js', { defer: true });
-  });</script><script>window.FPConfig={delay:0,ignoreKeywords:[],maxRPS:5,hoverDelay:25}</script><script defer src="https://gcore.jsdelivr.net/npm/flying-pages@2/flying-pages.min.js"></script><script defer src="https://gcore.jsdelivr.net/npm/vanilla-lazyload@19.1/dist/lazyload.min.js"></script><script>// https://www.npmjs.com/package/vanilla-lazyload
+  });
+</script><script>
+  window.FPConfig = {
+    delay: 0,
+    ignoreKeywords: [],
+    maxRPS: 5,
+    hoverDelay: 25
+  };
+</script>
+<script defer src="https://gcore.jsdelivr.net/npm/flying-pages@2/flying-pages.min.js"></script><script defer src="https://gcore.jsdelivr.net/npm/vanilla-lazyload@19.1/dist/lazyload.min.js"></script>
+<script>
+  // https://www.npmjs.com/package/vanilla-lazyload
   // Set the options globally
   // to make LazyLoad self-initialize
   window.lazyLoadOptions = {
@@ -511,7 +786,9 @@
   );
   document.addEventListener('DOMContentLoaded', function () {
     window.lazyLoadInstance?.update();
-  });</script><script>ctx.fancybox = {
+  });
+</script><script>
+  ctx.fancybox = {
     selector: `.timenode p>img`,
     css: `https://gcore.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css`,
     js: `https://gcore.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js`
@@ -540,7 +817,10 @@
         }
       });
     })
-  }</script><script>window.addEventListener('DOMContentLoaded', (event) => {
+  }
+</script>
+<script>
+  window.addEventListener('DOMContentLoaded', (event) => {
     const swiper_api = document.getElementById('swiper-api');
     if (swiper_api != undefined) {
       utils.css(`https://unpkg.com/swiper@10.3/swiper-bundle.min.css`);
@@ -563,7 +843,10 @@
         });
       })
     }
-  });</script><script>document.addEventListener('DOMContentLoaded', function () {
+  });
+</script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
     window.codeElements = document.querySelectorAll('.code');
     if (window.codeElements.length > 0) {
       ctx.copycode = {
@@ -573,4 +856,10 @@
       };
       utils.js('/js/plugins/copycode.js');
     }
-  });</script></div></body></html>
+  });
+</script>
+
+
+<!-- inject -->
+
+</div></body></html>
