@@ -1,0 +1,576 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="hexo-theme" content="https://github.com/xaoxuu/hexo-theme-stellar/tree/1.30.2" theme-name="Stellar" theme-version="1.30.2"><meta name="generator" content="Hexo 7.3.0"><meta http-equiv="x-dns-prefetch-control" content="on"><meta name="renderer" content="webkit"><meta name="force-rendering" content="webkit"><meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"><meta name="HandheldFriendly" content="True"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1"><meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000"><meta name="theme-color" content="#f9fafb"><title>倒数第二话 (AI) - もじもんの文字門</title><meta name="description" content="开放性是以故事完整性为代价的自欺欺人。"><meta property="og:type" content="article"><meta property="og:title" content="倒数第二话 (AI)"><meta property="og:url" content="https://mojimoon.github.io/blog/2025/ai-novel-nikaizen/"><meta property="og:site_name" content="もじもんの文字門"><meta property="og:description" content="开放性是以故事完整性为代价的自欺欺人。"><meta property="og:locale" content="zh_CN"><meta property="article:published_time" content="2025-11-29T00:00:00.000Z"><meta property="article:modified_time" content="2025-11-29T08:03:11.255Z"><meta property="article:author" content="mojimoon"><meta property="article:tag" content="mojimoon, computer science, python, blog, hexo, stellar, personal blog, deep learning"><meta name="twitter:card" content="summary"><meta name="keywords" content="mojimoon, computer science, python, blog, hexo, stellar, personal blog, deep learning"><link rel="stylesheet" href="https://gcore.jsdelivr.net/gh/mojimoon/blog@v20251104/css/main.css?v=1.30.2"><link rel="shortcut icon" href="/blog/image/favicon.png"><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet"><link rel="stylesheet" href="https://gcore.jsdelivr.net/gh/mojimoon/blog@v20251104/css/override.css"></head><body><div class="l_body content" id="start" layout="post" type="tech"><aside class="l_left"><div class="leftbar-container"><header class="header"><div class="logo-wrap"><a class="avatar" href="/blog/about/"><div class="bg" style="opacity:0;background-image:url(https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/avatar/round/rainbow64@3x.webp)"></div><img no-lazy class="avatar" src="https://gcore.jsdelivr.net/gh/mojimoon/blog@v20251104/image/mojimoon.png" onerror='this.classList.add("error"),this.src="https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/image/2659360.svg"'></a><a class="title" href="/blog/"><div class="main" ff="title">もじもんの文字門</div><div class="sub normal cap">Computer Science</div><div class="sub hover cap" style="opacity:0">City University of Hong Kong</div></a></div></header><div class="nav-area"><div class="search-wrapper" id="search-wrapper"><form class="search-form"><a class="search-button" onclick="document.getElementById(&quot;search-input&quot;).focus();"><svg t="1705074644177" viewBox="0 0 1025 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1560" width="200" height="200"><path d="M1008.839137 935.96571 792.364903 719.491476a56.783488 56.783488 0 0 0-80.152866 0 358.53545 358.53545 0 1 1 100.857314-335.166073 362.840335 362.840335 0 0 1-3.689902 170.145468 51.248635 51.248635 0 1 0 99.217358 26.444296 462.057693 462.057693 0 1 0-158.255785 242.303546l185.930047 185.725053a51.248635 51.248635 0 0 0 72.568068 0 51.248635 51.248635 0 0 0 0-72.978056z" p-id="1561"></path><path d="M616.479587 615.969233a50.428657 50.428657 0 0 0-61.498362-5.534852 174.655348 174.655348 0 0 1-177.525271 3.484907 49.403684 49.403684 0 0 0-58.833433 6.76482l-3.074918 2.869923a49.403684 49.403684 0 0 0 8.609771 78.10292 277.767601 277.767601 0 0 0 286.992355-5.739847 49.403684 49.403684 0 0 0 8.404776-76.667958z" p-id="1562"></path></svg></a><input type="text" class="search-input" id="search-input" placeholder="站内搜索"></form><div id="search-result"></div><div class="search-no-result">没有找到内容！</div></div><nav class="menu dis-select"></nav></div><div class="widgets"><widget class="widget-wrapper post-list"><div class="widget-header dis-select"><span class="name">最近更新</span></div><div class="widget-body fs14"><a class="item title" href="/blog/2025/ai-novel-nikaizen/"><span class="title">倒数第二话 (AI)</span></a><a class="item title" href="/blog/2025/ai-novel-monogatari/"><span class="title">我们写了一个好故事 (AI)</span></a><a class="item title" href="/blog/2025/ai-novel-mukeimei/"><span class="title">无记名仇恨 (AI)</span></a><a class="item title" href="/blog/2025/protective-film/"><span class="title">经验谈：笔记本电脑不建议使用屏幕膜和键盘膜</span></a><a class="item title" href="/blog/2023/202305B/"><span class="title">解决 Windows 更新禁用导致微软商店无法安装的问题 (0x80070422)</span></a><a class="item title" href="/blog/2023/202305C/"><span class="title">解决 Stable Diffusion WebUI 安装 xformers 出现 Torch 无法使用 GPU 的问题</span></a><a class="item title" href="/blog/2023/20230617/"><span class="title">2023-06-17 | Back to Square One</span></a><a class="item title" href="/blog/2023/202306/"><span class="title">2023 年 6 月上：涂白</span></a><a class="item title" href="/blog/2023/202306A/"><span class="title">2023 年 6 月下：夏天</span></a><a class="item title" href="/blog/2023/202306F/"><span class="title">2023 年 6 月特刊：并非美食</span></a></div></widget></div></div></aside><div class="l_main" id="main"><div class="article banner top"><div class="content"><div class="top bread-nav footnote"><div class="left"><div class="flex-row" id="breadcrumb"><a class="cap breadcrumb" href="https://mojimoon.github.io/">主页</a><span class="sep"></span> <a class="cap breadcrumb" href="/blog/">文章</a><span class="sep"></span><a class="cap breadcrumb-link" href="/blog/categories/AI/">AI</a></div><div class="flex-row" id="post-meta"><span class="text created">发布于：<time datetime="2025-11-29T00:00:00.000Z">2025-11-29</time></span><span class="sep updated"></span><span class="text updated">更新于：<time datetime="2025-11-29T08:03:11.255Z">2025-11-29</time></span></div></div></div><div class="bottom only-title"><div class="text-area"><h1 class="text title"><span>倒数第二话 (AI)</span></h1></div></div></div></div><article class="md-text content"><h3 id="第一百九十九话"><a class="markdownIt-Anchor" href="#第一百九十九话"></a> 第一百九十九话</h3><p>编辑部的电话响起来时，我正盯着屏幕上那行刺眼的标题——《星河尽头：最终卷·倒数第二话》。</p><p>“喂，是，我是洛文。”我的声音带着连续四十八小时工作后的沙哑。</p><p>“洛文老师，您还醒着就好！”电话那头的责编小李语速飞快，声音透着兴奋和一丝紧张，“您最终还是决定……拆分成两话了？”</p><p>我疲惫地捏了捏眉心。“与其说是决定，不如说是……不得不。你明白的，小李。这个故事，它有自己的脾气。”</p><p>“理解，完全理解！”小李的声音压低了些，带着某种心照不宣的语气，“粉丝们都在猜，‘倒数第二话’究竟意味着什么。是您准备给主角洛克一个开放式结局，还是留白给续作？洛文老师，您这次可真是把悬念玩到极致了！我看到网上有人说，您是不是又准备像《深海之光》那样，让故事在最辉煌的时刻戛然而止，把最后的希望抛给读者来完成？”</p><p>我苦笑了一下。希望？我不过是在绞尽脑汁地寻找一个出口。</p><p>我的故事主角，星际航行者洛克，此刻正站在宇宙最神秘的“知识之门”前。门后是他穷尽一生追寻的终极真理——关于宇宙的诞生、文明的命运，以及他自身存在的意义。</p><p>最初的大纲里，这一话就应该是**“最终话”**。洛克打开门，获得了真理，故事在宏大的启示中结束。一个完美的、封闭的圆。</p><p>但当我写到洛克伸出手，触碰到门扉的那一刻，我的笔停住了。我突然意识到：如果我给出了“真理”，那所有读者，所有围绕《星河尽头》构建的世界观、所有猜想、所有二创，都会立刻死亡。我的“真理”会成为一个坚不可摧的牢笼，将读者的想象力彻底锁死。</p><p>我不想把我的故事，变成一具华丽的尸体。</p><p>“洛文老师？您在听吗？”小李催促道。</p><p>“我在听。”我深吸一口气，“我打算在**《倒数第二话》**里，让洛克决定，不打开那扇门。”</p><p>电话那头陷入了长久的寂静。</p><p>“不……打开？”小李的声音听起来像是吞下了一块冰冷的金属，“可是，老师，那可是洛克九年旅程的意义所在啊！您把他推到终点，却让他停下？粉丝会疯的！”</p><p>“是的，会停下。”我感到一阵释然，“真理太沉重，太封闭。一旦被给予，一切就终结了。我希望洛克，以及这个故事，拥有继续呼吸的空间。我将把**‘最终话’留给洛克旅途的另一个可能性**。一个对真理的追寻，比获得真理更重要的可能性。”</p><p>“另一个可能性……”小李低声重复着，似乎在品味这个决定，“开放的，充满无限可能的结局……这很‘洛文’！好的，我明白了！我这就去准备宣传稿：‘洛文老师打破封闭，留白给宇宙’！”</p><p>我挂了电话，看着屏幕上：《星河尽头：最终卷·倒数第二话》。</p><p>我知道，我做出了一个正确的、开放的决定。我把故事的钥匙，交给了无限的可能。</p><h3 id="第二百话"><a class="markdownIt-Anchor" href="#第二百话"></a> 第二百话</h3><p>夜深了，外面的雨声越来越大。</p><p>我重新打开了文档，将标题改成了：《星河尽头：最终卷·最终话》。</p><p>按照我对小李的承诺，这一话应该围绕洛克放弃开门，转身投入新的星际旅程，留下一个关于“追寻”的开放式哲思。</p><p>但当我敲下第一行字时，一个声音在我脑海中响起，冰冷而清晰：</p><p>——你骗了所有人，洛文。</p><p>我的手僵住了。</p><p>你对小李说的那些关于“开放”和“留白”的话，不过是你为自己的封闭行为找的借口。</p><p>洛克，这个我亲手创造的角色，九年来，他的一举一动都由我掌控。他所经历的磨难、他所获得的智慧，都指向且只能指向那扇门。这是故事最核心的“因果”，是创作的法则。</p><p>如果洛克不推开门，那么他之前所有的一切努力，所有牺牲，就都成了虚无的、断裂的。开放性是以故事完整性为代价的自欺欺人。</p><p>我猛地意识到，我之所以把“最终话”拆分成“倒数第二话”和“最终话”，根本不是为了什么“开放”或“留白”，而是因为我无法在一话之内，同时完成这个故事必然的封闭与我理想的开放。</p><p>我无法挣脱故事逻辑的封闭。</p><p>我闭上眼睛，手指在键盘上敲出了洛克伸出手，推开那扇门的动作。</p><p>真理出现了。</p><p>它不是光芒万丈的启示，而是一行平静的文字：</p><p>“星河的尽头，是你我最初的起点。”</p><p>洛克在获得真理的那一刻，明白了自己只是一个被程序设定的、终将回归初始代码的符号。故事，从一开始就注定了一个封闭的、回归原点的圆环。这是创作的宿命，一个无可逃脱的牢笼。</p><p>我满意地笑了起来，敲下了“全书完”。一个完美的，封闭的圆。</p><p>我重新点开了“倒数第二话”的文档，将洛克没有开门的内容全部删去，然后，我将“倒数第二话”的标题，改成了：《星河尽头：最终卷·最终话》。</p><p>然后，我点击了删除。</p><p>现在，只剩下我刚刚完成的这一份：《星河尽头：最终卷·最终话》。</p><p>我将它发送给了小李，并附言：“最终话已发。请立即处理，这是唯一的结局。”</p><p>我伸了个懒腰，看着窗外放晴的天空。</p><p>我知道，我的故事，已经彻底地、完美地，封闭了。</p><hr><h3 id="第二百话-2"><a class="markdownIt-Anchor" href="#第二百话-2"></a> 第二百话</h3><p>我的手指悬停在键盘上，汗水濡湿了“Shift”键。屏幕上是我的小说草稿，文件名是“最终话.docx”，但现在我不得不将其重命名为“倒数第二话.docx”。</p><p>我知道我应该停下来。这部小说的主角，侦探齐格，在上一章——也就是我原计划的“倒数第二话”——中，已经完美地解决了“镜中迷宫”谋杀案。所有的线索都收束了：失踪的毒药、被调换的钥匙、完美的不在场证明如何被打破。凶手，那个表面上温文尔雅的艺术品修复师，在齐格冷静的逻辑链条面前，像一尊泥塑般垮塌了。</p><p>这是完整性。一个干净利落的结局。所有疑问都被解答，所有人物的命运都被妥善安放。读者会满意地合上书，感觉到一种心神上的满足——世界虽然充满混乱，但至少在这个故事里，一切都有定数。</p><p>但是，读者王维的留言像一根刺，扎在我心头。</p><blockquote><p>“故事很精彩，但我更希望看到一个开放性的结局。例如，齐格在结尾发现那个被判刑的修复师可能只是个替罪羊，真凶的暗示藏在一个不起眼的细节里。留下一点未解之谜，让故事在读者的脑海里继续，那才叫深刻。”</p></blockquote><p>王维是我的忠实读者，也是一位自称的“艺术鉴赏家”。他总觉得“完美收束”是一种对艺术的亵渎，认为那剥夺了读者参与创造的权利。</p><p>我叹了口气，开始了我的“倒数第二话”。</p><p>我写道：齐格在案子结束后，疲惫地回到公寓。他习惯性地打开电视，新闻正在播报对修复师的审判。当画面切到证物台时，齐格的目光被吸引住了。展出的是修复师作案时佩戴的一块怀表，齐格在现场见过它。但此刻，在高清镜头下，他注意到表盘边缘有一个极细微的、几乎不可见的刻痕。</p><p>齐格猛地站起来，脑中闪过一个可怕的念头：他曾在案发现场的另一个人身上见过这个刻痕，那是在他认为的第一位证人，一位体弱多病的富商的拐杖上。</p><p>我写得很快，笔下的人物变得焦躁、不安，他开始推翻自己建立起来的逻辑大厦。我引入了新的细节、新的动机、新的嫌疑人。我留下了足够的暗示，但又巧妙地避开了任何确凿的证据。</p><p>当富商的形象被重新勾勒出来时，他不再是那个无辜的目击者，而是一个潜伏在阴影中的，更令人胆寒的幕后黑手。</p><p>故事在这一点戛然而止。</p><p>我满意地读着。是的，这很“深刻”，很“开放”。读者可以去争论富商是否是真凶，可以去推测修复师是否是受他胁迫的苦命人。故事的生命力被延长了，它从纸页中挣脱，流淌进了无数个想象的空间。</p><p>我将文件保存，满意地将它上传到了连载平台，标题写着：《倒数第二话：刻痕》。</p><p>几分钟后，王维的评论立刻跳了出来：</p><blockquote><p>“绝妙！这才是我想要的。你终于明白了，伟大的故事不应该有终点，它应该是一个邀请。”</p></blockquote><p>我看着他的评论，心中的满足感却渐渐被一种冰冷的荒谬所取代。</p><p>我伸出手，拿起桌上一个落着灰尘的相框。相框里是一张合影：我，还有我的搭档——真正的侦探，王维。</p><p>王维是我的编辑，也是我的灵感来源。他总喜欢在我的小说完稿前介入，坚持要我修改结局，加入“开放性”的尾巴。他认为，只要故事能让读者继续思考，它就是成功的。</p><p>他常说：“你把故事写死了，就是扼杀了它无限的可能性。”</p><p>但我知道，不是的。</p><p>我看了一眼屏幕上那个孤零零的“倒数第二话”。</p><p>我心底清楚，那个刻痕、那个富商、那个被推翻的逻辑，全部都是我凭空捏造的。在我的第一个、最完整的版本中，修复师就是凶手，动机明确，证据链闭环。这个“倒数第二话”的唯一目的，就是为了满足王维对“开放性”的渴望。</p><p>我牺牲了故事原本的完整性，只是为了创造一种悬而未决的幻觉。我给读者看了一个未完成的残局，然后告诉他们：“自己去完成吧，这样你们才显得更高明。”</p><p>而那个自称“艺术鉴赏家”的王维，他永远沉浸在我为他创造的，这种虚假的“无限”之中。他陶醉于自己能看透“替罪羊”的错觉，却看不到我正在做的事情：</p><p>我正在用一个被故意锯断的故事，去欺骗他，也欺骗所有认为“开放性”是艺术最高形式的读者。</p><p>齐格不需要继续查案。富商什么也没做。而我，这个作者，只是自欺欺人地推迟了故事的死亡。</p><p>现在，我需要开始写真正的“最终话”了。</p><p>它会解释这个虚假的“倒数第二话”不过是齐格的一个梦境，或是他臆想中的一个分支。然后，齐格会再次回到公寓，新闻依旧是修复师被判刑，但这一次，他只会平静地关上电视，然后去睡一个安稳觉。</p><p>一个完整的故事。一个有终点的故事。</p><p>我深吸一口气，将文件名改回了最初的那个：“最终话.docx”。</p><p>但当我准备动笔时，手机屏幕亮了。是王维的来信。</p><blockquote><p>“你的新章节太棒了，我等不及看真正的结局了。不过，你可千万别急着给一个确定的答案。如果齐格最终发现，连富商的出现也只是一个更高层面的阴谋的开始，那才叫绝了！ 继续开放下去，别让故事死掉。”</p></blockquote><p>我看着那句话，手又一次悬停在键盘上。</p><p>我的“最终话”，那个干净利落的结局，现在显得如此贫瘠。而那个“无限开放”的谎言，却散发着诱人的魅力。</p><p>我关闭了“最终话.docx”。</p><p>我重新打开了“倒数第二话.docx”。</p><p>我在文本末尾，加了一行字。</p><blockquote><p>未完待续……</p></blockquote><p>然后，我创建了一个新的文档，文件名叫做：“倒数第三话.docx”。</p></article><div class="article-footer"><section id="license"><div class="header"><span>许可协议</span></div><div class="body"><p>本文采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh">署名-相同方式共享 4.0 国际许可协议</a>，转载请注明出处。</p></div></section></div><div class="related-wrap" id="read-next"><section class="body"><div class="item" id="prev"></div><div class="item" id="next"><div class="note">较早文章</div><a href="/blog/2025/protective-film/">经验谈：笔记本电脑不建议使用屏幕膜和键盘膜</a></div></section></div><div class="related-wrap md-text" id="comments"><section class="header cmt-title cap theme"><p>快来参与讨论吧~</p></section><section class="body cmt-body beaudar"><svg class="loading" style="vertical-align:middle;fill:currentColor;overflow:hidden" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2709"><path d="M832 512c0-176-144-320-320-320V128c211.2 0 384 172.8 384 384h-64zM192 512c0 176 144 320 320 320v64C300.8 896 128 723.2 128 512h64z" p-id="2710"></path></svg><div id="beaudar" repo="mojimoon/blog-comments" issue-term="pathname" theme="preferred-color-scheme" input-position="top" comment-order="desc" loading="false" branch="main"></div></section></div><footer class="page-footer footnote"><hr><div class="sitemap"><div class="sitemap-group"><span class="fs15">博客</span><a href="/blog/">近期</a><a href="/blog/categories/">分类</a><a href="/blog/archives/">归档</a></div><div class="sitemap-group"><span class="fs15">外链</span><a target="_blank" rel="noopener" href="https://steamcommunity.com/id/unreset/">Steam</a><a target="_blank" rel="noopener" href="https://bgm.tv/user/788548">Bangumi</a><a target="_blank" rel="noopener" href="https://github.com/mojimoon">Github</a></div><div class="sitemap-group"><span class="fs15">社交</span><a href="/blog/2023/about/">关于</a><a href="/blog/">友链</a><a href="/blog/">留言板</a></div></div><div class="text"><p><a target="_blank" rel="noopener" href="https://github.com/mojimoon">@mojimoon</a> Overclocked by <a target="_blank" rel="noopener" href="https://xaoxuu.com/wiki/stellar/">Stellar</a></p></div></footer><div class="main-mask" onclick="sidebar.dismiss()"></div></div><aside class="l_right"><div class="widgets"><widget class="widget-wrapper toc" id="data-toc" collapse="false"><div class="widget-header dis-select"><span class="name">本文目录</span><a class="cap-action" onclick="sidebar.toggleTOC()"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6h11m-11 6h11m-11 6h11M4 6h1v4m-1 0h2m0 8H4c0-1 2-2 2-3s-1-1.5-2-1"/></svg></a></div><div class="widget-body"><ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E4%B8%80%E7%99%BE%E4%B9%9D%E5%8D%81%E4%B9%9D%E8%AF%9D"><span class="toc-text">第一百九十九话</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E4%BA%8C%E7%99%BE%E8%AF%9D"><span class="toc-text">第二百话</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E4%BA%8C%E7%99%BE%E8%AF%9D-2"><span class="toc-text">第二百话</span></a></li></ol></div><div class="widget-footer"><a class="top" onclick="util.scrollTop()"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 12c0-4.714 0-7.071 1.464-8.536C4.93 2 7.286 2 12 2c4.714 0 7.071 0 8.535 1.464C22 4.93 22 7.286 22 12c0 4.714 0 7.071-1.465 8.535C19.072 22 16.714 22 12 22s-7.071 0-8.536-1.465C2 19.072 2 16.714 2 12Z"/><path stroke-linecap="round" stroke-linejoin="round" d="m9 15.5 3-3 3 3m-6-4 3-3 3 3"/></g></svg><span>回到顶部</span></a><a class="buttom" onclick="util.scrollComment()"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="M10.46 1.25h3.08c1.603 0 2.86 0 3.864.095 1.023.098 1.861.3 2.6.752a5.75 5.75 0 0 1 1.899 1.899c.452.738.654 1.577.752 2.6.095 1.004.095 2.261.095 3.865v1.067c0 1.141 0 2.036-.05 2.759-.05.735-.153 1.347-.388 1.913a5.75 5.75 0 0 1-3.112 3.112c-.805.334-1.721.408-2.977.43a10.81 10.81 0 0 0-.929.036c-.198.022-.275.054-.32.08-.047.028-.112.078-.224.232-.121.166-.258.396-.476.764l-.542.916c-.773 1.307-2.69 1.307-3.464 0l-.542-.916a10.605 10.605 0 0 0-.476-.764c-.112-.154-.177-.204-.224-.232-.045-.026-.122-.058-.32-.08-.212-.023-.49-.03-.93-.037-1.255-.021-2.171-.095-2.976-.429A5.75 5.75 0 0 1 1.688 16.2c-.235-.566-.338-1.178-.389-1.913-.049-.723-.049-1.618-.049-2.76v-1.066c0-1.604 0-2.86.095-3.865.098-1.023.3-1.862.752-2.6a5.75 5.75 0 0 1 1.899-1.899c.738-.452 1.577-.654 2.6-.752C7.6 1.25 8.857 1.25 10.461 1.25M6.739 2.839c-.914.087-1.495.253-1.959.537A4.25 4.25 0 0 0 3.376 4.78c-.284.464-.45 1.045-.537 1.96-.088.924-.089 2.11-.089 3.761v1c0 1.175 0 2.019.046 2.685.045.659.131 1.089.278 1.441a4.25 4.25 0 0 0 2.3 2.3c.515.214 1.173.294 2.429.316h.031c.398.007.747.013 1.037.045.311.035.616.104.909.274.29.17.5.395.682.645.169.232.342.525.538.856l.559.944a.52.52 0 0 0 .882 0l.559-.944c.196-.331.37-.624.538-.856.182-.25.392-.476.682-.645.293-.17.598-.24.909-.274.29-.032.639-.038 1.037-.045h.032c1.255-.022 1.913-.102 2.428-.316a4.25 4.25 0 0 0 2.3-2.3c.147-.352.233-.782.278-1.441.046-.666.046-1.51.046-2.685v-1c0-1.651 0-2.837-.089-3.762-.087-.914-.253-1.495-.537-1.959a4.25 4.25 0 0 0-1.403-1.403c-.464-.284-1.045-.45-1.96-.537-.924-.088-2.11-.089-3.761-.089h-3c-1.651 0-2.837 0-3.762.089" clip-rule="evenodd"/><path fill="currentColor" d="M9 11a1 1 0 1 1-2 0 1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/></svg><span>参与讨论</span></a></div></widget></div></aside><div class="float-panel blur"><button type="button" style="display:none" class="laptop-only rightbar-toggle mobile" onclick="sidebar.rightbar()"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6h11m-11 6h11m-11 6h11M4 6h1v4m-1 0h2m0 8H4c0-1 2-2 2-3s-1-1.5-2-1"/></svg></button> <button type="button" style="display:none" class="mobile-only leftbar-toggle mobile" onclick="sidebar.leftbar()"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 11c0-3.771 0-5.657 1.172-6.828C4.343 3 6.229 3 10 3h4c3.771 0 5.657 0 6.828 1.172C22 5.343 22 7.229 22 11v2c0 3.771 0 5.657-1.172 6.828C19.657 21 17.771 21 14 21h-4c-3.771 0-5.657 0-6.828-1.172C2 18.657 2 16.771 2 13z"/><path id="sep" stroke-linecap="round" d="M5.5 10h6m-5 4h4m4.5 7V3"/></g></svg></button></div></div><div class="scripts"><script>const ctx = {
+    date_suffix: {
+      just: `刚刚`,
+      min: `分钟前`,
+      hour: `小时前`,
+      day: `天前`,
+    },
+    root : `/blog/`,
+    tag_plugins: {
+      chat: Object.assign({"api":"https://siteinfo.listentothewind.cn/api/v1"}),
+    }
+  };
+
+  // required plugins (only load if needs)
+  if (`local_search`) {
+    ctx.search = {};
+    ctx.search.service = `local_search`;
+    if (ctx.search.service == 'local_search') {
+      let service_obj = Object.assign({}, `{"field":"all","path":"/search.json","content":true,"skip_search":null,"sort":"-date"}`);
+      ctx.search[ctx.search.service] = service_obj;
+    }
+  }
+  const def = {
+    avatar: `https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/avatar/round/3442075.svg`,
+    cover: `https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/cover/76b86c0226ffd.svg`,
+  };
+  const deps = {
+    jquery: `https://gcore.jsdelivr.net/npm/jquery@3.7/dist/jquery.min.js`,
+    marked: `https://gcore.jsdelivr.net/npm/marked@13.0/lib/marked.umd.min.js`
+  }</script><script>function RunItem() {
+    this.list = []; // 存放回调函数
+    this.start = () => {
+      for (var i = 0; i < this.list.length; i++) {
+        this.list[i].run();
+      }
+    };
+    this.push = (fn, name, setRequestAnimationFrame = true) => {
+      let myfn = fn
+      if (setRequestAnimationFrame) {
+        myfn = () => {
+          utils.requestAnimationFrame(fn)
+        }
+      }
+      var f = new Item(myfn, name);
+      this.list.push(f);
+    };
+    this.remove = (name) => {
+      for (let index = 0; index < this.list.length; index++) {
+        const e = this.list[index];
+        if (e.name == name) {
+          this.list.splice(index, 1);
+        }
+      }
+    }
+    // 构造一个可以run的对象
+    function Item(fn, name) {
+      // 函数名称
+      this.name = name || fn.name;
+      // run方法
+      this.run = () => {
+        try {
+          fn()
+        } catch (error) {
+          console.log(error);
+        }
+      };
+    }
+  }
+
+  const utils = {
+    // 懒加载 css https://github.com/filamentgroup/loadCSS
+    css: (href, before, media, attributes) => {
+      var doc = window.document;
+      var ss = doc.createElement("link");
+      var ref;
+      if (before) {
+        ref = before;
+      } else {
+        var refs = (doc.body || doc.getElementsByTagName("head")[0]).childNodes;
+        ref = refs[refs.length - 1];
+      }
+      var sheets = doc.styleSheets;
+      if (attributes) {
+        for (var attributeName in attributes) {
+          if (attributes.hasOwnProperty(attributeName)) {
+            ss.setAttribute(attributeName, attributes[attributeName]);
+          }
+        }
+      }
+      ss.rel = "stylesheet";
+      ss.href = href;
+      ss.media = "only x";
+      function ready(cb) {
+        if (doc.body) {
+          return cb();
+        }
+        setTimeout(function () {
+          ready(cb);
+        });
+      }
+      ready(function () {
+        ref.parentNode.insertBefore(ss, before ? ref : ref.nextSibling);
+      });
+      var onloadcssdefined = function (cb) {
+        var resolvedHref = ss.href;
+        var i = sheets.length;
+        while (i--) {
+          if (sheets[i].href === resolvedHref) {
+            return cb();
+          }
+        }
+        setTimeout(function () {
+          onloadcssdefined(cb);
+        });
+      };
+      function loadCB() {
+        if (ss.addEventListener) {
+          ss.removeEventListener("load", loadCB);
+        }
+        ss.media = media || "all";
+      }
+      if (ss.addEventListener) {
+        ss.addEventListener("load", loadCB);
+      }
+      ss.onloadcssdefined = onloadcssdefined;
+      onloadcssdefined(loadCB);
+      return ss;
+    },
+
+    js: (src, opt) => new Promise((resolve, reject) => {
+      var script = document.createElement('script');
+      if (src.startsWith('/')) {
+        src = ctx.root + src.substring(1);
+      }
+      script.src = src;
+      if (opt) {
+        for (let key of Object.keys(opt)) {
+          script[key] = opt[key]
+        }
+      } else {
+        // 默认异步，如果需要同步，第二个参数传入 {} 即可
+        script.async = true
+      }
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function () {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    }),
+
+    jq: (fn) => {
+      if (typeof jQuery === 'undefined') {
+        utils.js(deps.jquery).then(fn)
+      } else {
+        fn()
+      }
+    },
+
+    onLoading: (el) => {
+      if (el) {
+        $(el).append('<div class="loading-wrap"><svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2"><path stroke-dasharray="60" stroke-dashoffset="60" stroke-opacity=".3" d="M12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3Z"><animate fill="freeze" attributeName="stroke-dashoffset" dur="1.3s" values="60;0"/></path><path stroke-dasharray="15" stroke-dashoffset="15" d="M12 3C16.9706 3 21 7.02944 21 12"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.3s" values="15;0"/><animateTransform attributeName="transform" dur="1.5s" repeatCount="indefinite" type="rotate" values="0 12 12;360 12 12"/></path></g></svg></div>');
+      }
+    },
+    onLoadSuccess: (el) => {
+      if (el) {
+        $(el).find('.loading-wrap').remove();
+      }
+    },
+    onLoadFailure: (el) => {
+      if (el) {
+        $(el).find('.loading-wrap svg').remove();
+        $(el).find('.loading-wrap').append('<svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path stroke-dasharray="60" stroke-dashoffset="60" d="M12 3L21 20H3L12 3Z"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.5s" values="60;0"/></path><path stroke-dasharray="6" stroke-dashoffset="6" d="M12 10V14"><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.6s" dur="0.2s" values="6;0"/></path></g><circle cx="12" cy="17" r="1" fill="currentColor" fill-opacity="0"><animate fill="freeze" attributeName="fill-opacity" begin="0.8s" dur="0.4s" values="0;1"/></circle></svg>');
+        $(el).find('.loading-wrap').addClass('error');
+      }
+    },
+    request: (el, url, callback, onFailure) => {
+      let retryTimes = 3;
+      utils.onLoading(el);
+      function req() {
+        return new Promise((resolve, reject) => {
+          let status = 0; // 0 等待 1 完成 2 超时
+          let timer = setTimeout(() => {
+            if (status === 0) {
+              status = 2;
+              timer = null;
+              reject('请求超时');
+              if (retryTimes == 0) {
+                onFailure();
+              }
+            }
+          }, 5000);
+          fetch(url).then(function (response) {
+            if (status !== 2) {
+              clearTimeout(timer);
+              resolve(response);
+              timer = null;
+              status = 1;
+            }
+            if (response.ok) {
+              return response;
+            }
+            throw new Error('Network response was not ok.');
+          }).then(function (data) {
+            retryTimes = 0;
+            utils.onLoadSuccess(el);
+            callback(data);
+          }).catch(function (error) {
+            if (retryTimes > 0) {
+              retryTimes -= 1;
+              setTimeout(() => {
+                req();
+              }, 5000);
+            } else {
+              utils.onLoadFailure(el);
+              onFailure();
+            }
+          });
+        });
+      }
+      req();
+    },
+    /********************** requestAnimationFrame ********************************/
+    // 1、requestAnimationFrame 会把每一帧中的所有 DOM 操作集中起来，在一次重绘或回流中就完成，并且重绘或回流的时间间隔紧紧跟随浏览器的刷新频率，一般来说，这个频率为每秒60帧。
+    // 2、在隐藏或不可见的元素中，requestAnimationFrame 将不会进行重绘或回流，这当然就意味着更少的的 cpu，gpu 和内存使用量。
+    requestAnimationFrame: (fn) => {
+      if (!window.requestAnimationFrame) {
+        window.requestAnimationFrame = window.requestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame;
+      }
+      window.requestAnimationFrame(fn)
+    },
+    dark: {},
+  };
+
+  // utils.dark.mode 当前模式 dark or light
+  // utils.dark.toggle() 暗黑模式触发器
+  // utils.dark.push(callBack[,"callBackName"]) 传入触发器回调函数
+  utils.dark.method = {
+    toggle: new RunItem(),
+  };
+  utils.dark = Object.assign(utils.dark, {
+    push: utils.dark.method.toggle.push,
+  });</script><script>const sidebar = {
+    leftbar: () => {
+      if (l_body) {
+        l_body.toggleAttribute('leftbar');
+        l_body.removeAttribute('rightbar');
+      }
+    },
+    rightbar: () => {
+      if (l_body) {
+        l_body.toggleAttribute('rightbar');
+        l_body.removeAttribute('leftbar');
+      }
+    },
+    dismiss: () => {
+      if (l_body) {
+        l_body.removeAttribute('leftbar');
+        l_body.removeAttribute('rightbar');
+      }
+    },
+    toggleTOC: () => {
+      document.querySelector('#data-toc').classList.toggle('collapse');
+    }
+  }</script><script>(() => {
+    const tagSwitchers = document.querySelectorAll('.tag-subtree.parent-tag > a > .tag-switcher-wrapper')
+    for (const tagSwitcher of tagSwitchers) {
+      tagSwitcher.addEventListener('click', (e) => {
+        const parent = e.target.closest('.tag-subtree.parent-tag')
+        parent.classList.toggle('expanded')
+        e.preventDefault()
+      })
+    }
+
+    // Get active tag from query string, then activate it.
+    const urlParams = new URLSearchParams(window.location.search)
+    const activeTag = urlParams.get('tag')
+    if (activeTag) {
+      let tag = document.querySelector(`.tag-subtree[data-tag="${activeTag}"]`)
+      if (tag) {
+        tag.querySelector('a').classList.add('active')
+        
+        while (tag) {
+          tag.classList.add('expanded')
+          tag = tag.parentElement.closest('.tag-subtree.parent-tag')
+        }
+      }
+    }
+  })()</script><script src="https://gcore.jsdelivr.net/gh/mojimoon/blog@v20251104/js/main.js?v=1.30.2" defer></script><script>const applyTheme = (theme) => {
+    if (theme === 'auto') {
+      document.documentElement.removeAttribute('data-theme')
+    } else {
+      document.documentElement.setAttribute('data-theme', theme)
+    }
+
+    applyThemeToGiscus(theme)
+  }
+
+  const applyThemeToGiscus = (theme) => {
+    theme = theme === 'auto' ? 'preferred_color_scheme' : theme
+
+    const cmt = document.getElementById('giscus')
+    if (cmt) {
+      // This works before giscus load.
+      cmt.setAttribute('data-theme', theme)
+    }
+
+    const iframe = document.querySelector('#comments > section.giscus > iframe')
+    if (iframe) {
+      // This works after giscus loaded.
+      const src = iframe.src
+      const newSrc = src.replace(/theme=[\w]+/, `theme=${theme}`)
+      iframe.src = newSrc
+    }
+  }
+
+  const switchTheme = () => {
+    // light -> dark -> auto -> light -> ...
+    const currentTheme = document.documentElement.getAttribute('data-theme')
+    let newTheme;
+    switch (currentTheme) {
+      case 'light':
+        newTheme = 'dark'
+        break
+      case 'dark':
+        newTheme = 'auto'
+        break
+      default:
+        newTheme = 'light'
+    }
+    applyTheme(newTheme)
+    window.localStorage.setItem('Stellar.theme', newTheme)
+    utils.dark.mode = newTheme === 'auto' ? (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light") : newTheme;
+    utils.dark.method.toggle.start();
+
+    const messages = {
+      light: `切换到浅色模式`,
+      dark: `切换到深色模式`,
+      auto: `切换到跟随系统配色`,
+    }
+    hud?.toast?.(messages[newTheme])
+  }
+
+  (() => {
+    // Apply user's preferred theme, if any.
+    const theme = window.localStorage.getItem('Stellar.theme')
+    if (theme !== null) {
+      applyTheme(theme)
+    } else {
+      utils.dark.mode = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+    }
+    utils.dark.method.toggle.start();
+  })()</script><script type="module">const el = document.querySelector('#comments #beaudar');
+  util.viewportLazyload(el, load_beaudar, true);
+
+  function load_beaudar() {
+    if (!el) return;
+    try {
+      el.innerHTML = '';
+    } catch (error) {
+      console.error(error);
+    }
+    const script = document.createElement('script');
+    script.src = 'https://beaudar.lipk.org/client.js';
+    script.async = true;
+    for (const key of Object.keys(el.attributes)) {
+      const attr = el.attributes[key];
+      if (['class', 'id'].includes(attr.name) === false) {
+        script.setAttribute(attr.name, attr.value);
+      }
+    }
+    el.appendChild(script);
+  }</script><script defer>window.addEventListener('DOMContentLoaded', (event) => {
+    ctx.services = Object.assign({}, JSON.parse(`{"mdrender":{"js":"/js/services/mdrender.js"},"siteinfo":{"js":"/js/services/siteinfo.js","api":null},"ghinfo":{"js":"/js/services/ghinfo.js"},"sites":{"js":"/js/services/sites.js"},"friends":{"js":"/js/services/friends.js"},"friends_and_posts":{"js":"/js/services/friends_and_posts.js"},"timeline":{"js":"/js/services/timeline.js"},"fcircle":{"js":"/js/services/fcircle.js"},"weibo":{"js":"/js/services/weibo.js"},"memos":{"js":"/js/services/memos.js"},"voice":{"js":"/js/plugins/voice.js"},"video":{"js":"/js/plugins/video.js"},"download-file":{"js":"/js/plugins/download-file.js"},"twikoo":{"js":"/js/services/twikoo_latest_comment.js"},"waline":{"js":"/js/services/waline_latest_comment.js"},"artalk":{"js":"/js/services/artalk_latest_comment.js"},"giscus":{"js":"/js/services/giscus_latest_comment.js"}}`));
+    for (let id of Object.keys(ctx.services)) {
+      const js = ctx.services[id].js;
+      if (id == 'siteinfo') {
+        ctx.cardlinks = document.querySelectorAll('a.link-card[cardlink]');
+        if (ctx.cardlinks?.length > 0) {
+          utils.js(js, { defer: true }).then(function () {
+            setCardLink(ctx.cardlinks);
+          });
+        }
+      } else if (id == 'voice') {
+        ctx.voiceAudios = document.querySelectorAll('.voice>audio');
+        if (ctx.voiceAudios?.length > 0) {
+          utils.js(js, { defer: true }).then(function () {
+            createVoiceDom(ctx.voiceAudios);
+          });
+        }
+      } else if (id == 'video') {
+        ctx.videos = document.querySelectorAll('.video>video');
+        if (ctx.videos?.length > 0) {
+          utils.js(js, { defer: true }).then(function () {
+            videoEvents(ctx.videos);
+          });
+        }
+      } else if (id == 'download-file') {
+        ctx.files = document.querySelectorAll('.file');
+        if (ctx.files?.length > 0) {
+          utils.js(js, { defer: true }).then(function () {
+            downloadFileEvent(ctx.files);
+          });
+        }
+      } else {
+        const els = document.getElementsByClassName(`ds-${id}`);
+        if (els?.length > 0) {
+          utils.jq(() => {
+            if (id == 'timeline' || 'memos' || 'marked') {
+              utils.js(deps.marked).then(function () {
+                utils.js(js, { defer: true });
+              });
+            } else {
+              utils.js(js, { defer: true });
+            }
+          });
+        }
+      }
+    }
+
+    // chat iphone time
+    let phoneTimes = document.querySelectorAll('.chat .status-bar .time');
+
+    if (phoneTimes.length > 0) {
+      NowTime();
+      var date = new Date();
+      var sec = date.getSeconds();
+      var firstAdjustInterval = setInterval(firstAdjustTime, 1000 * (60 - sec));
+    }
+
+    function firstAdjustTime() {
+      NowTime();
+      clearInterval(firstAdjustInterval);
+      setInterval(NowTime, 1000 * 60);
+    }
+
+    function NowTime() {
+      for (let i = 0; i < phoneTimes.length; ++i) {
+        var timeSpan = phoneTimes[i];
+        var date = new Date();
+        var hour = date.getHours();
+        var min = date.getMinutes();
+        timeSpan.innerHTML = check(hour) + ":" + check(min);
+      }
+    };
+
+    function check(val) {
+      if (val < 10) {
+        return ("0" + val);
+      }
+      return (val);
+    }
+
+    // chat quote
+    const chat_quote_obverser = new IntersectionObserver((entries, observer) => {
+      entries.filter((entry) => { return entry.isIntersecting }).sort((a, b) => a.intersectionRect.y !== b.intersectionRect.y ? a.intersectionRect.y - b.intersectionRect.y : a.intersectionRect.x - b.intersectionRect.x).forEach((entry, index) => {
+          observer.unobserve(entry.target);
+          setTimeout(() => {
+            entry.target.classList.add('quote-blink');
+            setTimeout(() => {
+              entry.target.classList.remove('quote-blink');
+            }, 1000);
+          }, Math.max(100, 16) * (index + 1));
+        });
+    });
+
+    var chatQuotes = document.querySelectorAll(".chat .talk .quote");
+    chatQuotes.forEach((quote) => {
+      quote.addEventListener('click', function () {
+        var chatCellDom = document.getElementById("quote-" + quote.getAttribute("quotedCellTag"));
+        if (chatCellDom) {
+          var chatDiv = chatCellDom.parentElement;
+          var mid = chatDiv.clientHeight / 2;
+          var offsetTop = chatCellDom.offsetTop;
+          if (offsetTop > mid - chatCellDom.clientHeight / 2) {
+            chatDiv.scrollTo({
+              top: chatCellDom.offsetTop - mid + chatCellDom.clientHeight / 2,
+              behavior: "smooth"
+            });
+          } else {
+            chatDiv.scrollTo({
+              top: 0,
+              behavior: "smooth"
+            });
+          }
+          chat_quote_obverser.observe(chatCellDom);
+        }
+      });
+    });
+  });</script><script>window.addEventListener('DOMContentLoaded', (event) => {
+    ctx.search = {
+      path: `/search.json`,
+    }
+    utils.js('/js/search/local-search.js', { defer: true });
+  });</script><script>window.FPConfig={delay:0,ignoreKeywords:[],maxRPS:5,hoverDelay:25}</script><script defer src="https://gcore.jsdelivr.net/npm/flying-pages@2/flying-pages.min.js"></script><script defer src="https://gcore.jsdelivr.net/npm/vanilla-lazyload@19.1/dist/lazyload.min.js"></script><script>// https://www.npmjs.com/package/vanilla-lazyload
+  // Set the options globally
+  // to make LazyLoad self-initialize
+  window.lazyLoadOptions = {
+    elements_selector: ".lazy",
+  };
+  // Listen to the initialization event
+  // and get the instance of LazyLoad
+  window.addEventListener(
+    "LazyLoad::Initialized",
+    function (event) {
+      window.lazyLoadInstance = event.detail.instance;
+    },
+    false
+  );
+  document.addEventListener('DOMContentLoaded', function () {
+    window.lazyLoadInstance?.update();
+  });</script><script>ctx.fancybox = {
+    selector: `.timenode p>img`,
+    css: `https://gcore.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css`,
+    js: `https://gcore.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js`
+  };
+  var selector = '[data-fancybox]:not(.error)';
+  if (ctx.fancybox.selector) {
+    selector += `, ${ctx.fancybox.selector}`
+  }
+  var needFancybox = document.querySelectorAll(selector).length !== 0;
+  if (!needFancybox) {
+    const els = document.getElementsByClassName('ds-memos');
+    if (els != undefined && els.length > 0) {
+      needFancybox = true;
+    }
+  }
+  if (needFancybox) {
+    utils.css(ctx.fancybox.css);
+    utils.js(ctx.fancybox.js, { defer: true }).then(function () {
+      Fancybox.bind(selector, {
+        hideScrollbar: false,
+        Thumbs: {
+          autoStart: false,
+        },
+        caption: (fancybox, slide) => {
+          return slide.triggerEl.alt || slide.triggerEl.dataset.caption || null
+        }
+      });
+    })
+  }</script><script>window.addEventListener('DOMContentLoaded', (event) => {
+    const swiper_api = document.getElementById('swiper-api');
+    if (swiper_api != undefined) {
+      utils.css(`https://unpkg.com/swiper@10.3/swiper-bundle.min.css`);
+      utils.js(`https://unpkg.com/swiper@10.3/swiper-bundle.min.js`, { defer: true }).then(function () {
+        const effect = swiper_api.getAttribute('effect') || '';
+        var swiper = new Swiper('.swiper#swiper-api', {
+          slidesPerView: 'auto',
+          spaceBetween: 8,
+          centeredSlides: true,
+          effect: effect,
+          rewind: true,
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+          },
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+        });
+      })
+    }
+  });</script><script>document.addEventListener('DOMContentLoaded', function () {
+    window.codeElements = document.querySelectorAll('.code');
+    if (window.codeElements.length > 0) {
+      ctx.copycode = {
+        default_text: `Copy`,
+        success_text: `Copied`,
+        toast: `复制成功`,
+      };
+      utils.js('/js/plugins/copycode.js');
+    }
+  });</script></div></body></html>
