@@ -1,0 +1,576 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="hexo-theme" content="https://github.com/xaoxuu/hexo-theme-stellar/tree/1.30.2" theme-name="Stellar" theme-version="1.30.2"><meta name="generator" content="Hexo 7.3.0"><meta http-equiv="x-dns-prefetch-control" content="on"><meta name="renderer" content="webkit"><meta name="force-rendering" content="webkit"><meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"><meta name="HandheldFriendly" content="True"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1"><meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000"><meta name="theme-color" content="#f9fafb"><title>最后一章之前：访谈“祁北” (AI) - もじもんの文字門</title><meta name="description" content="运用叙述性诡计，写一篇与一本悬疑小说作者访谈的文章。逐渐揭示出这位作者的真实身份其实是小说中的一个角色，而访谈本身也是小说情节的一部分。展现对创作者如何看待自己作品、与读者互动的深刻思考。"><meta property="og:type" content="article"><meta property="og:title" content="最后一章之前：访谈“祁北” (AI)"><meta property="og:url" content="https://mojimoon.github.io/blog/2025/ai-novel-qibei/"><meta property="og:site_name" content="もじもんの文字門"><meta property="og:description" content="运用叙述性诡计，写一篇与一本悬疑小说作者访谈的文章。逐渐揭示出这位作者的真实身份其实是小说中的一个角色，而访谈本身也是小说情节的一部分。展现对创作者如何看待自己作品、与读者互动的深刻思考。"><meta property="og:locale" content="zh_CN"><meta property="article:published_time" content="2025-12-01T00:00:00.000Z"><meta property="article:modified_time" content="2025-11-30T14:48:20.075Z"><meta property="article:author" content="mojimoon"><meta property="article:tag" content="mojimoon, computer science, python, blog, hexo, stellar, personal blog, deep learning"><meta name="twitter:card" content="summary"><meta name="keywords" content="mojimoon, computer science, python, blog, hexo, stellar, personal blog, deep learning"><link rel="stylesheet" href="https://gcore.jsdelivr.net/gh/mojimoon/blog@v20251104/css/main.css?v=1.30.2"><link rel="shortcut icon" href="/blog/image/favicon.png"><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet"><link rel="stylesheet" href="https://gcore.jsdelivr.net/gh/mojimoon/blog@v20251104/css/override.css"></head><body><div class="l_body content" id="start" layout="post" type="tech"><aside class="l_left"><div class="leftbar-container"><header class="header"><div class="logo-wrap"><a class="avatar" href="/blog/about/"><div class="bg" style="opacity:0;background-image:url(https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/avatar/round/rainbow64@3x.webp)"></div><img no-lazy class="avatar" src="https://gcore.jsdelivr.net/gh/mojimoon/blog@v20251104/image/mojimoon.png" onerror='this.classList.add("error"),this.src="https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/image/2659360.svg"'></a><a class="title" href="/blog/"><div class="main" ff="title">もじもんの文字門</div><div class="sub normal cap">Computer Science</div><div class="sub hover cap" style="opacity:0">City University of Hong Kong</div></a></div></header><div class="nav-area"><div class="search-wrapper" id="search-wrapper"><form class="search-form"><a class="search-button" onclick="document.getElementById(&quot;search-input&quot;).focus();"><svg t="1705074644177" viewBox="0 0 1025 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1560" width="200" height="200"><path d="M1008.839137 935.96571 792.364903 719.491476a56.783488 56.783488 0 0 0-80.152866 0 358.53545 358.53545 0 1 1 100.857314-335.166073 362.840335 362.840335 0 0 1-3.689902 170.145468 51.248635 51.248635 0 1 0 99.217358 26.444296 462.057693 462.057693 0 1 0-158.255785 242.303546l185.930047 185.725053a51.248635 51.248635 0 0 0 72.568068 0 51.248635 51.248635 0 0 0 0-72.978056z" p-id="1561"></path><path d="M616.479587 615.969233a50.428657 50.428657 0 0 0-61.498362-5.534852 174.655348 174.655348 0 0 1-177.525271 3.484907 49.403684 49.403684 0 0 0-58.833433 6.76482l-3.074918 2.869923a49.403684 49.403684 0 0 0 8.609771 78.10292 277.767601 277.767601 0 0 0 286.992355-5.739847 49.403684 49.403684 0 0 0 8.404776-76.667958z" p-id="1562"></path></svg></a><input type="text" class="search-input" id="search-input" placeholder="站内搜索"></form><div id="search-result"></div><div class="search-no-result">没有找到内容！</div></div><nav class="menu dis-select"></nav></div><div class="widgets"><widget class="widget-wrapper post-list"><div class="widget-header dis-select"><span class="name">最近更新</span></div><div class="widget-body fs14"><a class="item title" href="/blog/2025/ai-novel-qibei/"><span class="title">最后一章之前：访谈“祁北” (AI)</span></a><a class="item title" href="/blog/2025/ai-novel-/"><span class="title">‎‎ (AI)</span></a><a class="item title" href="/blog/2025/ai-novel-nikaizen/"><span class="title">倒数第二话 (AI)</span></a><a class="item title" href="/blog/2025/ai-novel-monogatari/"><span class="title">我们写了一个好故事 (AI)</span></a><a class="item title" href="/blog/2025/ai-novel-mukeimei/"><span class="title">无记名仇恨 (AI)</span></a><a class="item title" href="/blog/2025/protective-film/"><span class="title">经验谈：笔记本电脑不建议使用屏幕膜和键盘膜</span></a><a class="item title" href="/blog/2023/202305B/"><span class="title">解决 Windows 更新禁用导致微软商店无法安装的问题 (0x80070422)</span></a><a class="item title" href="/blog/2023/202305C/"><span class="title">解决 Stable Diffusion WebUI 安装 xformers 出现 Torch 无法使用 GPU 的问题</span></a><a class="item title" href="/blog/2023/202306/"><span class="title">2023 年 6 月上：涂白</span></a><a class="item title" href="/blog/2023/20230617/"><span class="title">2023-06-17 | Back to Square One</span></a></div></widget></div></div></aside><div class="l_main" id="main"><div class="article banner top"><div class="content"><div class="top bread-nav footnote"><div class="left"><div class="flex-row" id="breadcrumb"><a class="cap breadcrumb" href="https://mojimoon.github.io/">主页</a><span class="sep"></span> <a class="cap breadcrumb" href="/blog/">文章</a><span class="sep"></span><a class="cap breadcrumb-link" href="/blog/categories/AI/">AI</a></div><div class="flex-row" id="post-meta"><span class="text created">发布于：<time datetime="2025-12-01T00:00:00.000Z">2025-12-01</time></span><span class="sep updated"></span><span class="text updated">更新于：<time datetime="2025-11-30T14:48:20.075Z">2025-11-30</time></span></div></div></div><div class="bottom only-title"><div class="text-area"><h1 class="text title"><span>最后一章之前：访谈“祁北” (AI)</span></h1></div></div></div></div><article class="md-text content"><p>我第一次见到他，是在一间极不适合访谈的房间里。</p><p>那是家旧出版社腾出来的会议室，墙皮起翘，窗户关不严，十一月的风像在刻意偷听。编辑部说，这位近两年爆红的悬疑小说作者“祁北”，一向不露面，不上节目，不开签售，只通过一只专门的邮箱和外界联系。我们约了三次访谈，都被他以各种理由推掉。直到他的新书《最后一章之前》上市，销售部门给了他一份冷冰冰的数据报表，他才同意见一下面。</p><p>“就当是为读者做点额外内容。”他在邮件里这样说。</p><p>我到得有点早，桌上已经摆好了两杯纸杯咖啡和一只录音笔。编辑说，“祁北”不愿提前透露长相，只让我到时看着门口来的人里，谁像是“说话比较慢”的那一个——这当然称不上线索，但我也确实在一些场合见过说话很快的作家，那种急切有点像在逃跑。</p><p>门开的时候，我下意识看了眼时间：14:06，较约定时间晚了一分钟。那个人站在门口，穿一件颜色模糊的呢子大衣，脸瘦得有些过分，眼神却极安静。</p><p>“你是……”我刚问出口，又觉得这句是多余的。</p><p>“我是。”他点点头，“你可以叫我祁北。”</p><p>他坐下的时候，微微皱眉，像是在确认椅子是否承受得住什么重量。或者说，他本人是否承受得住这场谈话。</p><p>录音笔亮起红灯，我习惯性地报了时间、地点和对象。那一刻我并不知道，这串简陋的口述，会在他的新书增订版中被几乎原封不动地印进去，只删掉了时间里的年份。</p><hr><h3 id="一、从结局开始谈起">一、从结局开始谈起</h3><p>我先问他最俗套的问题：<br>“你相信‘完美结局’吗？”</p><p>他笑了一下，那笑容像在人群中拿起一本自己写的书，翻开，又合上。</p><p>“你是指故事里的，还是人生里的？”他反问。</p><p>“你小说里的结局，总是留一条缝。”我说，“读者以为一切大白，但总有一个细节像没被解释完，你是刻意为之吗？”</p><p>“我只是不太相信‘完完全全的真相’。”他说，“尤其是面对读者的时候。”</p><p>“为什么？”</p><p>“因为读者是一个很可怕的角色。”他轻描淡写地说，“他们见过的凶手太多，猜过的反转太早。你如果给他们一个看上去‘没有缝’的结局，他们会自己撕开一条缝，把你原本没写的东西塞进去。”</p><p>“那你怎么办？”</p><p>“那就干脆把缝写进去。”他耸耸肩，“我只是提前把他们的工作，做了一部分而已。”</p><p>他说这话的时候，手指无意识地在纸杯上敲节奏。那是一个很轻的动作，却让我突然想到他新书里一个反复出现的细节：嫌疑人在审讯室里敲桌面的频率，正好对应受害者电脑密码的节拍。</p><p>“你知道，”我说，“你这么说的时候——”</p><p>“很像是在审讯室里吗？”他替我接了下去，“你不是第一个这么说的。有人形容我的书像漫长的审讯，我不太介意这个比喻。”</p><p>“那你写的时候，”我问，“你觉得你是在审讯谁？”</p><p>他沉默了一会儿。</p><p>“读者，也包括我自己。”他说，“有时候，我写一本书，是为了逼自己承认一些事情。”</p><p>“比如？”</p><p>“比如我可能根本没你以为的那么聪明。”他淡淡地说，“有些‘高明的布局’，我也是写到一半才发现原来可以这么解释，然后装作一切尽在掌握之中。”</p><p>这是一次访谈里少见的坦白。多数作者宁愿夸大自己的预谋，而不是承认偶然性。我在笔记本上记下“偶然—装作预谋”，在心里给它画了两道下划线。</p><p>多年以后，当我第一次读到《最后一章之前》的手稿时，我才发现他这句话并不完全是在自嘲——至少，其中一部分，是某种别有用心的铺垫。</p><hr><h3 id="二、写作，像一次对读者的预谋">二、写作，像一次对读者的预谋</h3><p>“你曾经说过，”我翻看准备好的问题，“你写作是为了制造一种‘阅读犯罪现场’的体验。这个比喻挺新鲜的，可以展开说说吗？”</p><p>“你有没有这种感受，”他问我，“读完一本推理小说，再翻回第一页的时候，会有一点愧疚？”</p><p>我想了想。</p><p>“好像有。”我说，“那种感觉像是，你已经知道了所有秘密，再回来，觉得自己在窥视那些不知情的角色。”</p><p>“那就是犯罪现场感。”他点点头，“你站在一个时间之上，知道将要发生的惨剧，再去看那些尚未发生前的碎片。你会不自觉地带着‘已知的恶’去重读一切善意，这是很残忍的事情。”</p><p>“但读者似乎乐在其中。”</p><p>“对，所以我说读者其实很可怕。”他笑了笑，“他们乐于一遍遍重温自己的残忍，只要这一切发生在虚构的世界里。”</p><p>“那你呢？你是那个‘造现场的人’吗？”</p><p>“我更像是那个布置现场，顺便把自己也困在里面的人。”他停顿了一下，“很多读者以为我站在上帝视角，安排所有人的命运。但其实，大部分时候，我只是先决定结局——一个我自己也不愿承认的结局——然后一点点把自己逼到那一步。”</p><p>“逼到那一步？”</p><p>“你会发现，所有你以为是为了读者的反转，其实很多时候，是作者给自己的封锁路线。”他说，“我写推理，本质上是在防止自己往容易的地方逃。”</p><p>“容易的地方，是指？”</p><p>“是那些‘一切只是意外’、‘其实他是好人’、‘罪魁祸首另有其人’这种轻易 absolve 角色的解释。”他抬眼看向我，“读者很喜欢这种解释，因为这样他们可以继续相信世界大致是善的。但现实里很多悲剧，就是因为‘稍微坏一点点’而无法赎回。”</p><p>“所以你更愿意写‘没那么坏、但也没那么无辜’的人？”</p><p>“我更愿意写被自己故事困住的人。”他说，“包括作者。”</p><p>这时我并没有察觉，他在这句“包括作者”里，稍稍加重了一下语气。回听录音时，我才发现这个几乎听不出的重音像一个符号，悄无声息地插进了我随后提的所有问题中。</p><hr><h3 id="三、角色，会不会讨厌自己的作者？">三、角色，会不会讨厌自己的作者？</h3><p>“你小说里的主角，”我说，“经常是那种被案件反复拷问的人。他们一开始看似理性冷静，后来却露出非常私人的裂缝。你有想过，如果这些角色是真的，他们会不会讨厌你？”</p><p>他笑得很轻，像是早就等着这个问题。</p><p>“会的。”他说，“我基本可以确定，他们讨厌我。”</p><p>“为什么这么确定？”</p><p>“因为我总是剥夺他们最喜欢用来解释自己行为的那一套话术。”他解释，“我不让他们用‘童年阴影’来解释一切，不让他们用‘一时冲动’来洗白，也不轻易给他们安排‘为了保护别人’这种高尚动机。”</p><p>“那你给他们什么？”</p><p>“给他们反复被问‘那你为什么要这么做’的处境。”他顿了顿，“以及一个永远不会真正给出答案的作者。”</p><p>这句话让我有一瞬间的恍惚。我在许多访谈里听作者谈角色，谈到最后，多少会流露一种“他们是我的孩子”的姿态，骄傲而温柔。祁北显然不是。他更像一个冷静的手术医生，承认那是自己的手，却不会装出太多心软。</p><p>“那他们有没有反过来，影响你？”我问。</p><p>“当然有。”他说，“有时候，一个角色会长成你没有计划过的样子。你本来只想让他出现在第三章，负责提供一个线索。结果写着写着，他开始拥有自己的历史、口癖、习惯，慢慢从边缘往中心挤。”</p><p>“那你会让他挤吗？”</p><p>“如果他要挤，那就说明原本站在中心的人，可能地基不稳。”他若有所思，“我一般会顺势让他挤进来，然后在后面某一章，安排一个情节，让他为此付出代价。”</p><p>“听上去，你对自己的角色有点残忍。”</p><p>“你不觉得，创作者如果对角色太温柔，那其实是在对读者残忍吗？”他反问，“因为你把读者留在一个被粉饰过的世界里，甚至不允许他们看见角色的某些真相。”</p><p>“可是，读者真的想看见吗？”我问，“他们会不会只是想要一个故事，而不是一场审判？”</p><p>“那倒未必是审判。”他摇头，“更多时候，我只是希望他们意识到，自己对故事的参与，比他们以为的要深得多。”</p><p>“你是说，读者在阅读里也有责任？”</p><p>“当然。”他直视我，“你想啊，你在翻页的每一刻，都在选择相信哪个版本的真相。你选择相信‘他其实没那么坏’，选择忽略某个不太舒服的细节，这些都是决策。本质上，你是和我一起，共谋了这个故事。”</p><p>“共谋？”我重复了一遍这个词。</p><p>“对。”他说，“你们骂作者‘刀子手’的时候，其实很少有人承认，自己翻页翻得那么快，是心甘情愿的。”</p><p>我低头看了一眼录音笔，红灯仍在闪。那一刻我没有意识到，这段对话将来被很多读者用来自嘲，说是“就算知道是共谋，也还愿意被骗一次”。更没人会想到，这段谈话本身，其实也属于另一个更大的“共谋”之中。</p><hr><h3 id="四、关于“祁北”这个名字">四、关于“祁北”这个名字</h3><p>聊到一半，我忍不住问了一个或许不太礼貌的问题：</p><p>“‘祁北’是笔名，对吗？”</p><p>“是。”他没犹豫。</p><p>“方便透露一点由来吗？总不会是起名软件取出来的？”</p><p>“如果我说是呢？”他笑，“你会失望吗？”</p><p>“我会怀疑你在给自己制造一个看上去‘没什么故事’的故事。”我说，“你小说里的人，名字往往不太普通，但又不会到特别醒目。像是经过精心校准，不至于让人一眼看出用意，又足够在读完之后回想起来。”</p><p>“那是因为，我不希望读者太早把注意力放在名字上。”他说，“名字是标签，如果太花哨，就会变成一种提示。我希望他们先把人当作‘人’，而不是一个符号。”</p><p>“那‘祁北’这个符号，对你来说意味着什么？”</p><p>他想了几秒，像在选择词语，或是在衡量暴露的程度。</p><p>“‘祁’这个字，本来是姓。”他说，“我很喜欢它，因为写起来有种‘左右失衡’的感觉，左边是礼，右边是示。像是在提醒我，写故事要在‘礼节性的安慰’和‘残酷的揭示’之间摇晃。”</p><p>“那‘北’呢？”</p><p>“‘北’是个很有趣的方向。”他说，“很多人说‘迷路了’会说‘南辕北辙’，但很少有人认真去过‘北’那个方向。‘北’有时候不仅是一个方向，也是一种偏离，是一种明知道可能走错，还是要去的地方。”</p><p>我突然想到一个挺俗套但忍不住要问的问题：</p><p>“你会不会有一天也写一个，叫‘祁北’的角色？”</p><p>他抬眼看了我一眼，那一瞬间我有一种被某种目光“翻页”的错觉——像是我从采访者变成了被采访的人。</p><p>“你确定我现在没有吗？”他问。</p><p>这句反问让我愣住了几秒。</p><p>“你是说，在你已经出版的小说里？”我试着确认。</p><p>“或者，”他耸耸肩，“在你正在写的这篇访谈里。”</p><p>现场沉默了一小会儿。风从窗缝里灌进来，吹得录音笔旁的纸张微微颤动。那一刻，我本能地在笔记上记下了这句：“你确定我现在没有吗？”当时我只觉得这是个颇有“作家腔”的回答，并没有想太多。</p><p>直到几个月后，在出版社寄给我的那本《最后一章之前》样书里，我翻到中段的一个章节标题——《访谈记录：祁北》——才第一次感到一种从纸页里渗出的寒意。</p><hr><h3 id="五、访谈，被写进小说之后">五、访谈，被写进小说之后</h3><p>在这次访谈之后的几周，祁北给我发来一封很短的邮件：</p><blockquote><p>“感谢你那天的问题。有些问题我之前从没想过，有些是想过但一直没回答。</p><p>我在新书里，借给了一个角色一点你的身份。<br>如果你介意，我可以改掉名字。”</p></blockquote><p>我当时以为他只是出于礼貌，小说里借用了一点采访者角色，并没太在意。直到出版社把新书电子稿发给我，征求我是否愿意在腰封上写一两句推荐语，我才意识到事情远比我想的复杂。</p><p>新书的中段，有一章名为《访谈记录：祁北》。那一章的文字，与我录音里这一天的对话，几乎逐句对应——连我中途停顿、重复、追问的习惯都被保留了下来，只是我的名字被替换成了一个不算醒目的女性记者名：“沈祎”。</p><p>更让我不安的，是这一章并不是简单的“访谈实录”。在小说的叙事里，这份访谈被发现于一桩命案的现场——死者房间的碎纸篓里，被警察拼凑还原。访谈被当作关键证据，用来推断“祁北”这个作者，是否可能与案情有关。</p><p>而在那篇“虚构的访谈”里，“祁北”说过一句极其危险的话：</p><blockquote><p>“有时候，我觉得自己根本不是在写故事，而是在提前向某个人发出预告。<br>我写完的那一刻，我就成了第一个读者。<br>而实际上，第一个被怀疑的人，往往就是第一个读到案情的人。”</p></blockquote><p>我在屏幕前，盯着这几行字看了很久。因为我清楚记得，这句话，他并没有在那天的访谈中说过。</p><p>或者说，他没有“出声”说过。</p><p>我开始一段一段比对小说里的访谈和我手里的录音，发现一个诡异的事实：小说中那篇“访谈”的前半部分，几乎百分之九十和现实重合——包括我此刻正在写下的那些他谈角色、谈读者残忍、谈“祁北”这个名字由来的段落。而从中段开始，小说里的“我”在提问的方式、语气上，开始发生了些微偏移。</p><p>一些我没问出口的问题，被替换成了更尖锐的版本；一些我当时出于顾虑删掉的追问，被补上了；更重要的是，“祁北”的回答，开始变得越来越像在“供述”，而不是“分享”。</p><p>在小说的情节里，这份访谈被认定是破案的关键。警方怀疑，这个总爱把“犯罪现场感”挂在嘴边的作者，可能早已参与到现实案件之中。读者则被引导去猜：<br>这段访谈到底是单纯的“创作访谈”，还是谋杀前的心理排练？</p><p>而沉迷于“阅读犯罪现场感”的他们，很自然地，开始一遍遍重读这篇访谈，就像当初我一遍遍回放那段录音，只是目的不同。</p><p>我第一次读完那一章时，有一种强烈的不适感——因为我意识到，在读者的视角里，“我”也成了证据的一部分。</p><hr><h3 id="六、谁采访了谁？">六、谁采访了谁？</h3><p>事情真正开始变得不可思议，是在我第二次与祁北见面的时候。</p><p>那是新书上市之后，一个小范围的内部分享会。编辑说，既然书里用了我的访谈，不如再做一次“对谈”，看能不能碰撞出更多内容，顺便给后续宣传剪点视频素材。说这话的时候，他完全不知道，在读完那本书之后，我其实很长一段时间不想再见到“祁北”。</p><p>但出于职业习惯，我还是去了。</p><p>这一次见面地点换成了出版社楼下的一家咖啡馆，灯光比上次柔和许多，也多了几位旁听的同事。我们彼此客套地打过招呼，他仍旧穿一件不显眼的深色外套，只是看上去比上次更瘦了一点。</p><p>录音设备换成了更专业的摄像机和枪式麦克，灯光师在一旁调整补光板的角度。我对这些不陌生，但那天有一个细节让我印象很深：在正式录之前，摄影师为了对焦，让我们各自举起了一下手——那一瞬间，我看到他手背上有一条不太明显的旧疤，是那种早已愈合却留下颜色差异的伤痕。</p><p>而在他的小说《最后一章之前》第三章里，死者手背上，也有一条来历不明的旧疤，形容几乎一模一样。</p><p>灯光到位后，他先是被编辑问了一些常规问题：销量、读者反馈、是否考虑影视化改编等等。等轮到我接棒提问时，我忍不住直接问：</p><p>“你在小说里，把我们的那次访谈写进去了。你觉得那还是‘同一次访谈’吗？”</p><p>他看着我，微微一笑。</p><p>“你觉得呢？”他反问。</p><p>“我觉得那更像是——”我想了想，“一场你对读者的‘审讯排演’。”</p><p>他没有否认。</p><p>“你是不是很早就决定，要写一章这样的访谈？”我问，“还是说，看到了我们那天录下来的材料之后，才起了念头？”</p><p>“你希望是哪一种？”他把问题抛了回来，“哪一种会让你觉得自己更安全？”</p><p>我被这个反问噎了一下。</p><p>“对你来说，有区别吗？”我反问。</p><p>“其实没有。”他平静地说，“因为不管是先有访谈，还是先有小说，在读者的阅读顺序里，他们只会看见一个成品。他们会忘记真实发生的那一段，就像你刚刚问我这个问题的时候，其实也多少遗忘了，那天我们原本是要来谈你——而不是我。”</p><p>“谈我？”我愣了一下。</p><p>他偏了偏头，看向摄像机的方向。</p><p>“你还记得吗？”他语气很轻，“第一天见面的时候，是你先说，那篇稿子里希望少写一点你自己，多写一点‘故事’，所以你把很多关于你如何进入记者行业、如何看待职业伦理的部分都删掉了，只保留了和小说直接相关的。”</p><p>我一时说不出话来。</p><p>因为他说得没错。第一次访谈的初稿里，我写过几段关于自己为什么会选择做文化记者的缘由，写过自己如何在一宗真实案件的现场，第一次感到“叙述的力量可能会伤人”；也写过自己为什么会偏爱悬疑小说——因为那是一种在安全距离内，重新触碰现实暴力的方式。</p><p>而在交稿前，我几乎把所有和“我”有关的内容都删掉了，只留下了围绕“祁北”的部分。编辑也没多说什么，只夸了一句“焦点很集中”。</p><p>“你说过，你不希望读者在读那篇访谈时，看到太多你的影子。”他继续说，“你觉得那样会‘抢镜’。”</p><p>我隐约明白他要说什么，却不太愿意顺着想下去。</p><p>“所以，我就帮你完成了这件事。”他笑了笑，“在小说里，我把那个采访者的名字换了，性别换了，工作背景换了，连她为什么对犯罪叙事感兴趣，都给了一个和你不太一样的理由。”</p><p>“你这是在——替我虚构了一个更适合出现在故事里的版本？”我问。</p><p>“可以这么说。”他说，“你看，你原来担心自己抢了作品的焦点，现在读者看见的是一个叫‘沈祎’的记者，她在书里承担着推动案情、提出关键问题、甚至可能被怀疑的角色。而真正的你，就退到了故事之外，你安全多了。”</p><p>“可你有没有想过，”我压着声音问，“当你把这场访谈写进小说的时候，我也不再只是一个在场的人，而成了某种‘证词’的一部分。读者在读那一章的时候，难道不会有一瞬间，把现实中的我和角色混在一起？”</p><p>“那不刚好说明，”他微笑，“读者也被拉进来了么？”</p><p>我们对视了一会儿。那一刻，我突然意识到，这场“二次访谈”本身，也正在被某种叙述框架包裹起来——灯光、摄影机、准备好的问题单、剪辑师日后会删掉的停顿与口误……所有的一切，不过是另一个“待重构的现场”。</p><p>“你为什么这么执着于把一切都写进故事？”我问，“包括采访者、读者、你自己。”</p><p>“因为这样的话，”他轻声说，“我就不必只做那个被指认的作者，可以顺便做几个别的角色。”</p><p>“比如？”</p><p>“比如目击者。”他看着我，“比如嫌疑人。”</p><p>“再比如？”</p><p>他沉默了一下，像是在衡量该不该说出口，或者其实早就写好了台词。</p><p>“比如，”他慢慢说，“一个根本就不存在的名字。”</p><p>“你是说——”</p><p>“‘祁北’当然是一个角色。”他打断我，“只是多数人误会了，以为只有小说里的才算。”</p><hr><h3 id="七、真实身份，或者说：谁先开口，谁就输了">七、真实身份，或者说：谁先开口，谁就输了</h3><p>在那之后的一些日子里，我一直在思考一个看上去很无聊却挥之不去的问题：</p><p><strong>如果一个作者，在自己的小说里以角色的身份出现，那么，究竟是作者借用了角色的壳，还是角色借用了作者的壳？</strong></p><p>这个问题在遇到祁北之前，对我来说只是一个写书评时偶尔玩的概念游戏：村上春树可以在小说里写一个“作家A”；保罗·奥斯特可以写一个叫“保罗·奥斯特”的角色；博尔赫斯可以在故事里遇见年轻时的自己。这都无伤大雅，最多构成一点元叙事的趣味而已。</p><p>但祁北的做法，似乎有点不一样。</p><p>他没有直接把一个叫“祁北”的人写成小说角色，而是把“祁北”这个作者，放进小说世界的证据链里——通过一本书、一场访谈、几封邮件，慢慢让他变成案情的一部分。换句话说，他并不是简单地“客串”自己的书，而是把作者身份本身当成了一个可疑的叙述视角。</p><p>这让我开始重新听那段最初的录音。</p><p>在反复回放中，我注意到一个此前被我忽略的细节：在访谈一开始，当我问他为什么总把“缝隙”留在结局时，他说了一句听起来很轻的话：</p><blockquote><p>“我只是不太相信‘完完全全的真相’，尤其是面对读者的时候。”</p></blockquote><p>我当时以为，他只是指不愿意说太多创作细节，保留一点神秘感。现在回头想，这句话的对象或许并没有那么单一。</p><p><strong>“读者”这个词，在他的语境里，到底指的是谁？</strong></p><p>是拿着书翻页的人？是采访他的记者？是出版方的编辑？还是另一个更远处的、尚未被点名的对象？</p><p>在《最后一章之前》的结尾，案子被“临时性地”告一段落——凶手似乎被锁定，动机看起来也说得过去。但在最后一节里，作者安排了一个看似无关紧要的场景：一个读者在深夜写了一封邮件，发给“祁北”的公开邮箱，邮件内容只有一句话：</p><blockquote><p>“你写的那场访谈，我也在场。”</p></blockquote><p>小说到这里戛然而止。读者在社交网络上疯狂讨论：<br>这封邮件是谁发的？<br>是书里的某个角色？是凶手？是受害者的亲属？<br>还是那个被写进小说里的记者？<br>抑或，根本就是现实中的某个“我们”？</p><p>而我坐在屏幕前，盯着那句话，突然意识到一件更诡异的事：</p><p><strong>我从来没有见过“祁北”的身份证。</strong></p><p>我们所有的联系，都通过那只邮箱完成；出版社给他打的稿费，也是通过一个没有真实姓名信息的账户转出；合同上的签名，是一串看不太出笔画的潦草线条——当然，这在出版圈并不罕见，有不少作者照样隐藏身份写了十几年。</p><p>但在读完那本书之后，这些原本合理的“隐身术”，忽然开始变得值得怀疑：</p><p>——如果“祁北”不是他的本名，那么是谁的？<br>——如果“祁北”在小说里只是一个角色，现实里也只是一个角色呢？<br>——有没有可能，我见到的那个人，本身就是某个故事里的“代行者”，一个被推到台前来，与我们进行这场访谈的“替身”？</p><p>这些问题听上去荒唐，甚至有点阴谋论气质。我本可以把它们全部归类为“职业病”，或者说“被小说骗得太深的后遗症”。但有一天，我尝试给他发一封略带私人性质的邮件——问问他是否考虑举办一次小型读者见面会，顺便提了两句自己对新书结尾的看法——那只邮箱却提示我：<strong>收件人地址不存在</strong>。</p><p>我以为是键入错误，去翻旧邮件想复制一遍地址，却发现所有来自“祁北”的邮件里，发件人一栏只剩下一个灰色的问号，内容仍在，但源头似乎被从某个系统里抹去了。</p><p>我联系了编辑，编辑说他也刚发现类似情况，最近准备和技术部门确认。但在那之前，他给我看了一段聊天记录，是几个月前“祁北”发给他的最后一条消息：</p><blockquote><p>“新书之后，我可能不会再写推理了。<br>故事已经写完，角色也该下场了。<br>至于作者——他原来也只是一个角色而已。”</p></blockquote><p>“你觉得，他是在开玩笑吗？”编辑问我。</p><p>我无法回答。</p><hr><h3 id="八、创作者，如何看待自己的“消失”？">八、创作者，如何看待自己的“消失”？</h3><p>从那以后，“祁北”再也没有出现过。<br>没有新书消息，没有社交媒体更新，没有公开露面。</p><p>对于市场来说，这够制造出一阵可观的“神秘失踪”话题。但对我这个和他有过几次直接接触的人来说，这种消失更像是一个迟到的反转——一个在读完小说之后，才缓慢延伸到现实中的尾声。</p><p>我开始回想那两次访谈他对“创作者身份”的种种说法，尤其是一句话：</p><blockquote><p>“写推理，本质上是在防止自己往容易的地方逃。”</p></blockquote><p>在传统的理解里，创作者对自己作品的态度，大多会围绕以下问题展开：<br>——我想表达什么？<br>——我希望读者如何理解？<br>——我和角色之间的关系是什么？</p><p>而在祁北这里，这几个问题似乎被反复拆解、折叠，最后变成了一个更难缠的命题：</p><p><strong>——当我以“作者”之名出现的时候，我到底是在保护谁？又在出卖谁？</strong></p><p>在访谈中，他曾说过，他对角色的“残忍”，其实是为了对读者诚实——不轻易给出粉饰性的解释，不主动帮角色洗白。可是，当我们把这个逻辑套回到他自己身上，会得出一个更刺耳的结论：</p><p>如果“祁北”这个名字既是作者，也是角色，那么他在书中对“祁北”的书写，就同时构成了对“作者自我形象”的拆解。换句话说，他不仅在拆解角色，也在主动拆解“作者”这一职业身上最方便使用的那层保护膜——权威感、距离感、控制叙事的特权。</p><p>这也许能解释，为什么他愿意把一整章“访谈”写进小说，而且不介意暴露许多创作过程的“机密”。<br>因为在他看来，<strong>“控制解释权”本身，就是一种需要被怀疑的权力。</strong></p><p>一旦读者相信“只要知道作者怎么想的，就能破解作品”，那么作者就变成了叙事世界里<strong>唯一可信的证人</strong>。而祁北显然不愿意扮演这个角色——他宁愿让作者也成为“嫌疑人之一”。</p><p>这是一种极其激进的创作立场：<br>他放弃了许多作者视若珍宝的话语优势，宁愿把自己拉进故事里接受审问。</p><p>某种意义上，他对自己比对任何角色都更“残忍”。</p><hr><h3 id="九、读者，究竟站在第几重现场？">九、读者，究竟站在第几重现场？</h3><p>还有一个在访谈之外反复萦绕的问题，是读者的位置。</p><p>在传统叙事模式里，读者被默认站在故事之外，是一个安全的旁观者。他们有权决定读不读、读到哪里停下、如何解读；他们承担的“风险”，最多是情绪上的——被结局击中、被角色安慰、被反转惊到。</p><p>但从祁北设计“访谈章节”那一刻起，读者似乎被轻微推了一下，站位发生了变化。</p><p>他先是让读者读到一篇看上去“真实”的访谈，建立一种“我在阅读一份现实世界的资料”的错觉；接着，他在小说中暗示这份访谈可能是案件证据；再然后，他在结尾安排那封“我也在场”的邮件，把读者从旁观者位置推向“可能的在场人”。<br>——于是，读者不再只是看案情的人，而是不得不怀疑：<strong>自己，会不会也在某个叙述版本中被写进故事？</strong></p><p>更进一步，当他们知道这篇小说里的访谈，是基于现实中的一次真实访谈改写的，那个“在场”感又多了一层：<br>现实中的我，在采访他；小说中的“我”，在被他写；而屏幕前的读者，在阅读我写下这篇被访谈包裹的访谈——<br>每一个人，都在别人的叙述里，被当作“角色”。</p><p>这也是我后来越来越强烈的一种感受：<br><strong>在祁北的世界里，很少有人真正在“作品之外”。</strong></p><p>作者不在，编辑不在，记者不在，读者也不在。<br>每个人都被拉进某种叙述构造里，成为某种“证词”、“证人”或“证物”。</p><p>这听上去像是一个巨大的叙事诡计：<br>他用一部悬疑小说，把所有与之相关的人——哪怕只是读过、谈论过、转述过它的人——都轻轻地推入了故事之中。</p><p>而这一切，似乎又都指向那个看似轻描淡写的决定：<br>——用“祁北”这个名字写书，以“祁北”的身份接受访谈，再把“祁北”写进小说。</p><hr><h3 id="十、写在“最后一章之前”">十、写在“最后一章之前”</h3><p>写到这里，我忽然意识到一件事情：</p><p>严格来说，<strong>这篇文章本身，也逃不开那个诡计。</strong></p><p>你此刻读到的，是一篇关于悬疑小说作者的访谈稿——它看上去记录了两次会面、若干封邮件，一些围绕创作、角色、读者的讨论，以及一个逐渐暴露出来的事实：<br>——这位作者，其实早已将“自己”写进小说，甚至将我们这些与他有关的人，一一纳入叙述的版图之中。</p><p>从传统报道角度看，这篇稿子完成了任务：<br>它提供了足够的细节，让你对“祁北”这个人有了更复杂的印象；<br>它也抛出了若干开放式的问题，让你有兴趣回头去读那本《最后一章之前》，或者至少在某个平台上搜一搜相关讨论。</p><p>但如果我们再往前走一步，会发现另一个更难以忽略的事实：</p><p><strong>——你对“祁北”的所有了解，都来自一段“叙述”。</strong></p><p>这段叙述由我提供，由你的阅读完成；<br>它声称记录了一个真实存在的作者，和他的作品、他的态度、他的消失。<br>我们在这里谈论的“真实身份”，其实从未离开过语言的框架。</p><p>而如果我们相信祁北曾经说过的那句话——</p><blockquote><p>“故事已经写完，角色也该下场了。<br>至于作者——他原来也只是一个角色而已。”</p></blockquote><p>——那么，我们就不得不承认一个略显刺耳的可能性：<br><strong>在这整篇访谈里，“真实的那一个”，也许从来没有出现过。</strong></p><p>我们看到的是一个名字，一个声音，一个在录音里、在纸面上、在书页中反复被唤起的影子。<br>他自称是作者，也被他人当作作者；<br>他谈作品，谈角色，谈读者，谈创作者的责任与残忍；<br>他把自己的“存在”当作一种叙事工具，任意地出入虚构与现实的边界。</p><p>可是，你我对他的“认识”，无非来自几层包装好的文本。</p><p>那么在这样的前提下，<br>当我们说“他其实是小说里的一个角色”时，<br>这句话究竟是在揭露一个诡计，<br>还是在补上一个早就该承认的常识？</p><p>——每一个被写下名字的人，每一个说出话的人，<br>只要被叙述，就已经是角色了。</p><p>包括他。<br>包括我。<br>也包括，此刻正在读完这篇文章、准备翻到下一页的你。</p><p>而这篇文章，就像他那本书的名字所暗示的那样：<br>我们现在所在的，大概也不过是<strong>最后一章之前</strong>。</p><p>真正的结局，从来不在页面之内。<br>它更可能发生在你合上页面之后——在你决定是否，<br>把这场访谈，当成一次单纯的阅读经历，<br>还是当成一个你亲自参与的<strong>犯罪现场</strong>。</p><p>你看，故事到这里，缝隙已经留好了。<br>至于要不要往里塞进别的东西，就不再是作者，<br>而是——<strong>读者</strong>的选择了。</p></article><div class="article-footer"><section id="license"><div class="header"><span>许可协议</span></div><div class="body"><p>本文采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh">署名-相同方式共享 4.0 国际许可协议</a>，转载请注明出处。</p></div></section></div><div class="related-wrap" id="read-next"><section class="body"><div class="item" id="prev"></div><div class="item" id="next"><div class="note">较早文章</div><a href="/blog/2025/ai-novel-/">‎‎ (AI)</a></div></section></div><div class="related-wrap md-text" id="comments"><section class="header cmt-title cap theme"><p>快来参与讨论吧~</p></section><section class="body cmt-body beaudar"><svg class="loading" style="vertical-align:middle;fill:currentColor;overflow:hidden" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2709"><path d="M832 512c0-176-144-320-320-320V128c211.2 0 384 172.8 384 384h-64zM192 512c0 176 144 320 320 320v64C300.8 896 128 723.2 128 512h64z" p-id="2710"></path></svg><div id="beaudar" repo="mojimoon/blog-comments" issue-term="pathname" theme="preferred-color-scheme" input-position="top" comment-order="desc" loading="false" branch="main"></div></section></div><footer class="page-footer footnote"><hr><div class="sitemap"><div class="sitemap-group"><span class="fs15">博客</span><a href="/blog/">近期</a><a href="/blog/categories/">分类</a><a href="/blog/archives/">归档</a></div><div class="sitemap-group"><span class="fs15">外链</span><a target="_blank" rel="noopener" href="https://steamcommunity.com/id/unreset/">Steam</a><a target="_blank" rel="noopener" href="https://bgm.tv/user/788548">Bangumi</a><a target="_blank" rel="noopener" href="https://github.com/mojimoon">Github</a></div><div class="sitemap-group"><span class="fs15">社交</span><a href="/blog/2023/about/">关于</a><a href="/blog/">友链</a><a href="/blog/">留言板</a></div></div><div class="text"><p><a target="_blank" rel="noopener" href="https://github.com/mojimoon">@mojimoon</a> Overclocked by <a target="_blank" rel="noopener" href="https://xaoxuu.com/wiki/stellar/">Stellar</a></p></div></footer><div class="main-mask" onclick="sidebar.dismiss()"></div></div><aside class="l_right"><div class="widgets"><widget class="widget-wrapper toc" id="data-toc" collapse="false"><div class="widget-header dis-select"><span class="name">本文目录</span><a class="cap-action" onclick="sidebar.toggleTOC()"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6h11m-11 6h11m-11 6h11M4 6h1v4m-1 0h2m0 8H4c0-1 2-2 2-3s-1-1.5-2-1"/></svg></a></div><div class="widget-body"><ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E4%BB%8E%E7%BB%93%E5%B1%80%E5%BC%80%E5%A7%8B%E8%B0%88%E8%B5%B7"><span class="toc-text">一、从结局开始谈起</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%8C%E3%80%81%E5%86%99%E4%BD%9C%EF%BC%8C%E5%83%8F%E4%B8%80%E6%AC%A1%E5%AF%B9%E8%AF%BB%E8%80%85%E7%9A%84%E9%A2%84%E8%B0%8B"><span class="toc-text">二、写作，像一次对读者的预谋</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%89%E3%80%81%E8%A7%92%E8%89%B2%EF%BC%8C%E4%BC%9A%E4%B8%8D%E4%BC%9A%E8%AE%A8%E5%8E%8C%E8%87%AA%E5%B7%B1%E7%9A%84%E4%BD%9C%E8%80%85%EF%BC%9F"><span class="toc-text">三、角色，会不会讨厌自己的作者？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9B%9B%E3%80%81%E5%85%B3%E4%BA%8E%E2%80%9C%E7%A5%81%E5%8C%97%E2%80%9D%E8%BF%99%E4%B8%AA%E5%90%8D%E5%AD%97"><span class="toc-text">四、关于“祁北”这个名字</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%94%E3%80%81%E8%AE%BF%E8%B0%88%EF%BC%8C%E8%A2%AB%E5%86%99%E8%BF%9B%E5%B0%8F%E8%AF%B4%E4%B9%8B%E5%90%8E"><span class="toc-text">五、访谈，被写进小说之后</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%85%AD%E3%80%81%E8%B0%81%E9%87%87%E8%AE%BF%E4%BA%86%E8%B0%81%EF%BC%9F"><span class="toc-text">六、谁采访了谁？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%83%E3%80%81%E7%9C%9F%E5%AE%9E%E8%BA%AB%E4%BB%BD%EF%BC%8C%E6%88%96%E8%80%85%E8%AF%B4%EF%BC%9A%E8%B0%81%E5%85%88%E5%BC%80%E5%8F%A3%EF%BC%8C%E8%B0%81%E5%B0%B1%E8%BE%93%E4%BA%86"><span class="toc-text">七、真实身份，或者说：谁先开口，谁就输了</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%85%AB%E3%80%81%E5%88%9B%E4%BD%9C%E8%80%85%EF%BC%8C%E5%A6%82%E4%BD%95%E7%9C%8B%E5%BE%85%E8%87%AA%E5%B7%B1%E7%9A%84%E2%80%9C%E6%B6%88%E5%A4%B1%E2%80%9D%EF%BC%9F"><span class="toc-text">八、创作者，如何看待自己的“消失”？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B9%9D%E3%80%81%E8%AF%BB%E8%80%85%EF%BC%8C%E7%A9%B6%E7%AB%9F%E7%AB%99%E5%9C%A8%E7%AC%AC%E5%87%A0%E9%87%8D%E7%8E%B0%E5%9C%BA%EF%BC%9F"><span class="toc-text">九、读者，究竟站在第几重现场？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8D%81%E3%80%81%E5%86%99%E5%9C%A8%E2%80%9C%E6%9C%80%E5%90%8E%E4%B8%80%E7%AB%A0%E4%B9%8B%E5%89%8D%E2%80%9D"><span class="toc-text">十、写在“最后一章之前”</span></a></li></ol></div><div class="widget-footer"><a class="top" onclick="util.scrollTop()"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 12c0-4.714 0-7.071 1.464-8.536C4.93 2 7.286 2 12 2c4.714 0 7.071 0 8.535 1.464C22 4.93 22 7.286 22 12c0 4.714 0 7.071-1.465 8.535C19.072 22 16.714 22 12 22s-7.071 0-8.536-1.465C2 19.072 2 16.714 2 12Z"/><path stroke-linecap="round" stroke-linejoin="round" d="m9 15.5 3-3 3 3m-6-4 3-3 3 3"/></g></svg><span>回到顶部</span></a><a class="buttom" onclick="util.scrollComment()"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="M10.46 1.25h3.08c1.603 0 2.86 0 3.864.095 1.023.098 1.861.3 2.6.752a5.75 5.75 0 0 1 1.899 1.899c.452.738.654 1.577.752 2.6.095 1.004.095 2.261.095 3.865v1.067c0 1.141 0 2.036-.05 2.759-.05.735-.153 1.347-.388 1.913a5.75 5.75 0 0 1-3.112 3.112c-.805.334-1.721.408-2.977.43a10.81 10.81 0 0 0-.929.036c-.198.022-.275.054-.32.08-.047.028-.112.078-.224.232-.121.166-.258.396-.476.764l-.542.916c-.773 1.307-2.69 1.307-3.464 0l-.542-.916a10.605 10.605 0 0 0-.476-.764c-.112-.154-.177-.204-.224-.232-.045-.026-.122-.058-.32-.08-.212-.023-.49-.03-.93-.037-1.255-.021-2.171-.095-2.976-.429A5.75 5.75 0 0 1 1.688 16.2c-.235-.566-.338-1.178-.389-1.913-.049-.723-.049-1.618-.049-2.76v-1.066c0-1.604 0-2.86.095-3.865.098-1.023.3-1.862.752-2.6a5.75 5.75 0 0 1 1.899-1.899c.738-.452 1.577-.654 2.6-.752C7.6 1.25 8.857 1.25 10.461 1.25M6.739 2.839c-.914.087-1.495.253-1.959.537A4.25 4.25 0 0 0 3.376 4.78c-.284.464-.45 1.045-.537 1.96-.088.924-.089 2.11-.089 3.761v1c0 1.175 0 2.019.046 2.685.045.659.131 1.089.278 1.441a4.25 4.25 0 0 0 2.3 2.3c.515.214 1.173.294 2.429.316h.031c.398.007.747.013 1.037.045.311.035.616.104.909.274.29.17.5.395.682.645.169.232.342.525.538.856l.559.944a.52.52 0 0 0 .882 0l.559-.944c.196-.331.37-.624.538-.856.182-.25.392-.476.682-.645.293-.17.598-.24.909-.274.29-.032.639-.038 1.037-.045h.032c1.255-.022 1.913-.102 2.428-.316a4.25 4.25 0 0 0 2.3-2.3c.147-.352.233-.782.278-1.441.046-.666.046-1.51.046-2.685v-1c0-1.651 0-2.837-.089-3.762-.087-.914-.253-1.495-.537-1.959a4.25 4.25 0 0 0-1.403-1.403c-.464-.284-1.045-.45-1.96-.537-.924-.088-2.11-.089-3.761-.089h-3c-1.651 0-2.837 0-3.762.089" clip-rule="evenodd"/><path fill="currentColor" d="M9 11a1 1 0 1 1-2 0 1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/></svg><span>参与讨论</span></a></div></widget></div></aside><div class="float-panel blur"><button type="button" style="display:none" class="laptop-only rightbar-toggle mobile" onclick="sidebar.rightbar()"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6h11m-11 6h11m-11 6h11M4 6h1v4m-1 0h2m0 8H4c0-1 2-2 2-3s-1-1.5-2-1"/></svg></button> <button type="button" style="display:none" class="mobile-only leftbar-toggle mobile" onclick="sidebar.leftbar()"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 11c0-3.771 0-5.657 1.172-6.828C4.343 3 6.229 3 10 3h4c3.771 0 5.657 0 6.828 1.172C22 5.343 22 7.229 22 11v2c0 3.771 0 5.657-1.172 6.828C19.657 21 17.771 21 14 21h-4c-3.771 0-5.657 0-6.828-1.172C2 18.657 2 16.771 2 13z"/><path id="sep" stroke-linecap="round" d="M5.5 10h6m-5 4h4m4.5 7V3"/></g></svg></button></div></div><div class="scripts"><script>const ctx = {
+    date_suffix: {
+      just: `刚刚`,
+      min: `分钟前`,
+      hour: `小时前`,
+      day: `天前`,
+    },
+    root : `/blog/`,
+    tag_plugins: {
+      chat: Object.assign({"api":"https://siteinfo.listentothewind.cn/api/v1"}),
+    }
+  };
+
+  // required plugins (only load if needs)
+  if (`local_search`) {
+    ctx.search = {};
+    ctx.search.service = `local_search`;
+    if (ctx.search.service == 'local_search') {
+      let service_obj = Object.assign({}, `{"field":"all","path":"/search.json","content":true,"skip_search":null,"sort":"-date"}`);
+      ctx.search[ctx.search.service] = service_obj;
+    }
+  }
+  const def = {
+    avatar: `https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/avatar/round/3442075.svg`,
+    cover: `https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/cover/76b86c0226ffd.svg`,
+  };
+  const deps = {
+    jquery: `https://gcore.jsdelivr.net/npm/jquery@3.7/dist/jquery.min.js`,
+    marked: `https://gcore.jsdelivr.net/npm/marked@13.0/lib/marked.umd.min.js`
+  }</script><script>function RunItem() {
+    this.list = []; // 存放回调函数
+    this.start = () => {
+      for (var i = 0; i < this.list.length; i++) {
+        this.list[i].run();
+      }
+    };
+    this.push = (fn, name, setRequestAnimationFrame = true) => {
+      let myfn = fn
+      if (setRequestAnimationFrame) {
+        myfn = () => {
+          utils.requestAnimationFrame(fn)
+        }
+      }
+      var f = new Item(myfn, name);
+      this.list.push(f);
+    };
+    this.remove = (name) => {
+      for (let index = 0; index < this.list.length; index++) {
+        const e = this.list[index];
+        if (e.name == name) {
+          this.list.splice(index, 1);
+        }
+      }
+    }
+    // 构造一个可以run的对象
+    function Item(fn, name) {
+      // 函数名称
+      this.name = name || fn.name;
+      // run方法
+      this.run = () => {
+        try {
+          fn()
+        } catch (error) {
+          console.log(error);
+        }
+      };
+    }
+  }
+
+  const utils = {
+    // 懒加载 css https://github.com/filamentgroup/loadCSS
+    css: (href, before, media, attributes) => {
+      var doc = window.document;
+      var ss = doc.createElement("link");
+      var ref;
+      if (before) {
+        ref = before;
+      } else {
+        var refs = (doc.body || doc.getElementsByTagName("head")[0]).childNodes;
+        ref = refs[refs.length - 1];
+      }
+      var sheets = doc.styleSheets;
+      if (attributes) {
+        for (var attributeName in attributes) {
+          if (attributes.hasOwnProperty(attributeName)) {
+            ss.setAttribute(attributeName, attributes[attributeName]);
+          }
+        }
+      }
+      ss.rel = "stylesheet";
+      ss.href = href;
+      ss.media = "only x";
+      function ready(cb) {
+        if (doc.body) {
+          return cb();
+        }
+        setTimeout(function () {
+          ready(cb);
+        });
+      }
+      ready(function () {
+        ref.parentNode.insertBefore(ss, before ? ref : ref.nextSibling);
+      });
+      var onloadcssdefined = function (cb) {
+        var resolvedHref = ss.href;
+        var i = sheets.length;
+        while (i--) {
+          if (sheets[i].href === resolvedHref) {
+            return cb();
+          }
+        }
+        setTimeout(function () {
+          onloadcssdefined(cb);
+        });
+      };
+      function loadCB() {
+        if (ss.addEventListener) {
+          ss.removeEventListener("load", loadCB);
+        }
+        ss.media = media || "all";
+      }
+      if (ss.addEventListener) {
+        ss.addEventListener("load", loadCB);
+      }
+      ss.onloadcssdefined = onloadcssdefined;
+      onloadcssdefined(loadCB);
+      return ss;
+    },
+
+    js: (src, opt) => new Promise((resolve, reject) => {
+      var script = document.createElement('script');
+      if (src.startsWith('/')) {
+        src = ctx.root + src.substring(1);
+      }
+      script.src = src;
+      if (opt) {
+        for (let key of Object.keys(opt)) {
+          script[key] = opt[key]
+        }
+      } else {
+        // 默认异步，如果需要同步，第二个参数传入 {} 即可
+        script.async = true
+      }
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function () {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    }),
+
+    jq: (fn) => {
+      if (typeof jQuery === 'undefined') {
+        utils.js(deps.jquery).then(fn)
+      } else {
+        fn()
+      }
+    },
+
+    onLoading: (el) => {
+      if (el) {
+        $(el).append('<div class="loading-wrap"><svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2"><path stroke-dasharray="60" stroke-dashoffset="60" stroke-opacity=".3" d="M12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3Z"><animate fill="freeze" attributeName="stroke-dashoffset" dur="1.3s" values="60;0"/></path><path stroke-dasharray="15" stroke-dashoffset="15" d="M12 3C16.9706 3 21 7.02944 21 12"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.3s" values="15;0"/><animateTransform attributeName="transform" dur="1.5s" repeatCount="indefinite" type="rotate" values="0 12 12;360 12 12"/></path></g></svg></div>');
+      }
+    },
+    onLoadSuccess: (el) => {
+      if (el) {
+        $(el).find('.loading-wrap').remove();
+      }
+    },
+    onLoadFailure: (el) => {
+      if (el) {
+        $(el).find('.loading-wrap svg').remove();
+        $(el).find('.loading-wrap').append('<svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path stroke-dasharray="60" stroke-dashoffset="60" d="M12 3L21 20H3L12 3Z"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.5s" values="60;0"/></path><path stroke-dasharray="6" stroke-dashoffset="6" d="M12 10V14"><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.6s" dur="0.2s" values="6;0"/></path></g><circle cx="12" cy="17" r="1" fill="currentColor" fill-opacity="0"><animate fill="freeze" attributeName="fill-opacity" begin="0.8s" dur="0.4s" values="0;1"/></circle></svg>');
+        $(el).find('.loading-wrap').addClass('error');
+      }
+    },
+    request: (el, url, callback, onFailure) => {
+      let retryTimes = 3;
+      utils.onLoading(el);
+      function req() {
+        return new Promise((resolve, reject) => {
+          let status = 0; // 0 等待 1 完成 2 超时
+          let timer = setTimeout(() => {
+            if (status === 0) {
+              status = 2;
+              timer = null;
+              reject('请求超时');
+              if (retryTimes == 0) {
+                onFailure();
+              }
+            }
+          }, 5000);
+          fetch(url).then(function (response) {
+            if (status !== 2) {
+              clearTimeout(timer);
+              resolve(response);
+              timer = null;
+              status = 1;
+            }
+            if (response.ok) {
+              return response;
+            }
+            throw new Error('Network response was not ok.');
+          }).then(function (data) {
+            retryTimes = 0;
+            utils.onLoadSuccess(el);
+            callback(data);
+          }).catch(function (error) {
+            if (retryTimes > 0) {
+              retryTimes -= 1;
+              setTimeout(() => {
+                req();
+              }, 5000);
+            } else {
+              utils.onLoadFailure(el);
+              onFailure();
+            }
+          });
+        });
+      }
+      req();
+    },
+    /********************** requestAnimationFrame ********************************/
+    // 1、requestAnimationFrame 会把每一帧中的所有 DOM 操作集中起来，在一次重绘或回流中就完成，并且重绘或回流的时间间隔紧紧跟随浏览器的刷新频率，一般来说，这个频率为每秒60帧。
+    // 2、在隐藏或不可见的元素中，requestAnimationFrame 将不会进行重绘或回流，这当然就意味着更少的的 cpu，gpu 和内存使用量。
+    requestAnimationFrame: (fn) => {
+      if (!window.requestAnimationFrame) {
+        window.requestAnimationFrame = window.requestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame;
+      }
+      window.requestAnimationFrame(fn)
+    },
+    dark: {},
+  };
+
+  // utils.dark.mode 当前模式 dark or light
+  // utils.dark.toggle() 暗黑模式触发器
+  // utils.dark.push(callBack[,"callBackName"]) 传入触发器回调函数
+  utils.dark.method = {
+    toggle: new RunItem(),
+  };
+  utils.dark = Object.assign(utils.dark, {
+    push: utils.dark.method.toggle.push,
+  });</script><script>const sidebar = {
+    leftbar: () => {
+      if (l_body) {
+        l_body.toggleAttribute('leftbar');
+        l_body.removeAttribute('rightbar');
+      }
+    },
+    rightbar: () => {
+      if (l_body) {
+        l_body.toggleAttribute('rightbar');
+        l_body.removeAttribute('leftbar');
+      }
+    },
+    dismiss: () => {
+      if (l_body) {
+        l_body.removeAttribute('leftbar');
+        l_body.removeAttribute('rightbar');
+      }
+    },
+    toggleTOC: () => {
+      document.querySelector('#data-toc').classList.toggle('collapse');
+    }
+  }</script><script>(() => {
+    const tagSwitchers = document.querySelectorAll('.tag-subtree.parent-tag > a > .tag-switcher-wrapper')
+    for (const tagSwitcher of tagSwitchers) {
+      tagSwitcher.addEventListener('click', (e) => {
+        const parent = e.target.closest('.tag-subtree.parent-tag')
+        parent.classList.toggle('expanded')
+        e.preventDefault()
+      })
+    }
+
+    // Get active tag from query string, then activate it.
+    const urlParams = new URLSearchParams(window.location.search)
+    const activeTag = urlParams.get('tag')
+    if (activeTag) {
+      let tag = document.querySelector(`.tag-subtree[data-tag="${activeTag}"]`)
+      if (tag) {
+        tag.querySelector('a').classList.add('active')
+        
+        while (tag) {
+          tag.classList.add('expanded')
+          tag = tag.parentElement.closest('.tag-subtree.parent-tag')
+        }
+      }
+    }
+  })()</script><script src="https://gcore.jsdelivr.net/gh/mojimoon/blog@v20251104/js/main.js?v=1.30.2" defer></script><script>const applyTheme = (theme) => {
+    if (theme === 'auto') {
+      document.documentElement.removeAttribute('data-theme')
+    } else {
+      document.documentElement.setAttribute('data-theme', theme)
+    }
+
+    applyThemeToGiscus(theme)
+  }
+
+  const applyThemeToGiscus = (theme) => {
+    theme = theme === 'auto' ? 'preferred_color_scheme' : theme
+
+    const cmt = document.getElementById('giscus')
+    if (cmt) {
+      // This works before giscus load.
+      cmt.setAttribute('data-theme', theme)
+    }
+
+    const iframe = document.querySelector('#comments > section.giscus > iframe')
+    if (iframe) {
+      // This works after giscus loaded.
+      const src = iframe.src
+      const newSrc = src.replace(/theme=[\w]+/, `theme=${theme}`)
+      iframe.src = newSrc
+    }
+  }
+
+  const switchTheme = () => {
+    // light -> dark -> auto -> light -> ...
+    const currentTheme = document.documentElement.getAttribute('data-theme')
+    let newTheme;
+    switch (currentTheme) {
+      case 'light':
+        newTheme = 'dark'
+        break
+      case 'dark':
+        newTheme = 'auto'
+        break
+      default:
+        newTheme = 'light'
+    }
+    applyTheme(newTheme)
+    window.localStorage.setItem('Stellar.theme', newTheme)
+    utils.dark.mode = newTheme === 'auto' ? (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light") : newTheme;
+    utils.dark.method.toggle.start();
+
+    const messages = {
+      light: `切换到浅色模式`,
+      dark: `切换到深色模式`,
+      auto: `切换到跟随系统配色`,
+    }
+    hud?.toast?.(messages[newTheme])
+  }
+
+  (() => {
+    // Apply user's preferred theme, if any.
+    const theme = window.localStorage.getItem('Stellar.theme')
+    if (theme !== null) {
+      applyTheme(theme)
+    } else {
+      utils.dark.mode = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+    }
+    utils.dark.method.toggle.start();
+  })()</script><script type="module">const el = document.querySelector('#comments #beaudar');
+  util.viewportLazyload(el, load_beaudar, true);
+
+  function load_beaudar() {
+    if (!el) return;
+    try {
+      el.innerHTML = '';
+    } catch (error) {
+      console.error(error);
+    }
+    const script = document.createElement('script');
+    script.src = 'https://beaudar.lipk.org/client.js';
+    script.async = true;
+    for (const key of Object.keys(el.attributes)) {
+      const attr = el.attributes[key];
+      if (['class', 'id'].includes(attr.name) === false) {
+        script.setAttribute(attr.name, attr.value);
+      }
+    }
+    el.appendChild(script);
+  }</script><script defer>window.addEventListener('DOMContentLoaded', (event) => {
+    ctx.services = Object.assign({}, JSON.parse(`{"mdrender":{"js":"/js/services/mdrender.js"},"siteinfo":{"js":"/js/services/siteinfo.js","api":null},"ghinfo":{"js":"/js/services/ghinfo.js"},"sites":{"js":"/js/services/sites.js"},"friends":{"js":"/js/services/friends.js"},"friends_and_posts":{"js":"/js/services/friends_and_posts.js"},"timeline":{"js":"/js/services/timeline.js"},"fcircle":{"js":"/js/services/fcircle.js"},"weibo":{"js":"/js/services/weibo.js"},"memos":{"js":"/js/services/memos.js"},"voice":{"js":"/js/plugins/voice.js"},"video":{"js":"/js/plugins/video.js"},"download-file":{"js":"/js/plugins/download-file.js"},"twikoo":{"js":"/js/services/twikoo_latest_comment.js"},"waline":{"js":"/js/services/waline_latest_comment.js"},"artalk":{"js":"/js/services/artalk_latest_comment.js"},"giscus":{"js":"/js/services/giscus_latest_comment.js"}}`));
+    for (let id of Object.keys(ctx.services)) {
+      const js = ctx.services[id].js;
+      if (id == 'siteinfo') {
+        ctx.cardlinks = document.querySelectorAll('a.link-card[cardlink]');
+        if (ctx.cardlinks?.length > 0) {
+          utils.js(js, { defer: true }).then(function () {
+            setCardLink(ctx.cardlinks);
+          });
+        }
+      } else if (id == 'voice') {
+        ctx.voiceAudios = document.querySelectorAll('.voice>audio');
+        if (ctx.voiceAudios?.length > 0) {
+          utils.js(js, { defer: true }).then(function () {
+            createVoiceDom(ctx.voiceAudios);
+          });
+        }
+      } else if (id == 'video') {
+        ctx.videos = document.querySelectorAll('.video>video');
+        if (ctx.videos?.length > 0) {
+          utils.js(js, { defer: true }).then(function () {
+            videoEvents(ctx.videos);
+          });
+        }
+      } else if (id == 'download-file') {
+        ctx.files = document.querySelectorAll('.file');
+        if (ctx.files?.length > 0) {
+          utils.js(js, { defer: true }).then(function () {
+            downloadFileEvent(ctx.files);
+          });
+        }
+      } else {
+        const els = document.getElementsByClassName(`ds-${id}`);
+        if (els?.length > 0) {
+          utils.jq(() => {
+            if (id == 'timeline' || 'memos' || 'marked') {
+              utils.js(deps.marked).then(function () {
+                utils.js(js, { defer: true });
+              });
+            } else {
+              utils.js(js, { defer: true });
+            }
+          });
+        }
+      }
+    }
+
+    // chat iphone time
+    let phoneTimes = document.querySelectorAll('.chat .status-bar .time');
+
+    if (phoneTimes.length > 0) {
+      NowTime();
+      var date = new Date();
+      var sec = date.getSeconds();
+      var firstAdjustInterval = setInterval(firstAdjustTime, 1000 * (60 - sec));
+    }
+
+    function firstAdjustTime() {
+      NowTime();
+      clearInterval(firstAdjustInterval);
+      setInterval(NowTime, 1000 * 60);
+    }
+
+    function NowTime() {
+      for (let i = 0; i < phoneTimes.length; ++i) {
+        var timeSpan = phoneTimes[i];
+        var date = new Date();
+        var hour = date.getHours();
+        var min = date.getMinutes();
+        timeSpan.innerHTML = check(hour) + ":" + check(min);
+      }
+    };
+
+    function check(val) {
+      if (val < 10) {
+        return ("0" + val);
+      }
+      return (val);
+    }
+
+    // chat quote
+    const chat_quote_obverser = new IntersectionObserver((entries, observer) => {
+      entries.filter((entry) => { return entry.isIntersecting }).sort((a, b) => a.intersectionRect.y !== b.intersectionRect.y ? a.intersectionRect.y - b.intersectionRect.y : a.intersectionRect.x - b.intersectionRect.x).forEach((entry, index) => {
+          observer.unobserve(entry.target);
+          setTimeout(() => {
+            entry.target.classList.add('quote-blink');
+            setTimeout(() => {
+              entry.target.classList.remove('quote-blink');
+            }, 1000);
+          }, Math.max(100, 16) * (index + 1));
+        });
+    });
+
+    var chatQuotes = document.querySelectorAll(".chat .talk .quote");
+    chatQuotes.forEach((quote) => {
+      quote.addEventListener('click', function () {
+        var chatCellDom = document.getElementById("quote-" + quote.getAttribute("quotedCellTag"));
+        if (chatCellDom) {
+          var chatDiv = chatCellDom.parentElement;
+          var mid = chatDiv.clientHeight / 2;
+          var offsetTop = chatCellDom.offsetTop;
+          if (offsetTop > mid - chatCellDom.clientHeight / 2) {
+            chatDiv.scrollTo({
+              top: chatCellDom.offsetTop - mid + chatCellDom.clientHeight / 2,
+              behavior: "smooth"
+            });
+          } else {
+            chatDiv.scrollTo({
+              top: 0,
+              behavior: "smooth"
+            });
+          }
+          chat_quote_obverser.observe(chatCellDom);
+        }
+      });
+    });
+  });</script><script>window.addEventListener('DOMContentLoaded', (event) => {
+    ctx.search = {
+      path: `/search.json`,
+    }
+    utils.js('/js/search/local-search.js', { defer: true });
+  });</script><script>window.FPConfig={delay:0,ignoreKeywords:[],maxRPS:5,hoverDelay:25}</script><script defer src="https://gcore.jsdelivr.net/npm/flying-pages@2/flying-pages.min.js"></script><script defer src="https://gcore.jsdelivr.net/npm/vanilla-lazyload@19.1/dist/lazyload.min.js"></script><script>// https://www.npmjs.com/package/vanilla-lazyload
+  // Set the options globally
+  // to make LazyLoad self-initialize
+  window.lazyLoadOptions = {
+    elements_selector: ".lazy",
+  };
+  // Listen to the initialization event
+  // and get the instance of LazyLoad
+  window.addEventListener(
+    "LazyLoad::Initialized",
+    function (event) {
+      window.lazyLoadInstance = event.detail.instance;
+    },
+    false
+  );
+  document.addEventListener('DOMContentLoaded', function () {
+    window.lazyLoadInstance?.update();
+  });</script><script>ctx.fancybox = {
+    selector: `.timenode p>img`,
+    css: `https://gcore.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css`,
+    js: `https://gcore.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js`
+  };
+  var selector = '[data-fancybox]:not(.error)';
+  if (ctx.fancybox.selector) {
+    selector += `, ${ctx.fancybox.selector}`
+  }
+  var needFancybox = document.querySelectorAll(selector).length !== 0;
+  if (!needFancybox) {
+    const els = document.getElementsByClassName('ds-memos');
+    if (els != undefined && els.length > 0) {
+      needFancybox = true;
+    }
+  }
+  if (needFancybox) {
+    utils.css(ctx.fancybox.css);
+    utils.js(ctx.fancybox.js, { defer: true }).then(function () {
+      Fancybox.bind(selector, {
+        hideScrollbar: false,
+        Thumbs: {
+          autoStart: false,
+        },
+        caption: (fancybox, slide) => {
+          return slide.triggerEl.alt || slide.triggerEl.dataset.caption || null
+        }
+      });
+    })
+  }</script><script>window.addEventListener('DOMContentLoaded', (event) => {
+    const swiper_api = document.getElementById('swiper-api');
+    if (swiper_api != undefined) {
+      utils.css(`https://unpkg.com/swiper@10.3/swiper-bundle.min.css`);
+      utils.js(`https://unpkg.com/swiper@10.3/swiper-bundle.min.js`, { defer: true }).then(function () {
+        const effect = swiper_api.getAttribute('effect') || '';
+        var swiper = new Swiper('.swiper#swiper-api', {
+          slidesPerView: 'auto',
+          spaceBetween: 8,
+          centeredSlides: true,
+          effect: effect,
+          rewind: true,
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+          },
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+        });
+      })
+    }
+  });</script><script>document.addEventListener('DOMContentLoaded', function () {
+    window.codeElements = document.querySelectorAll('.code');
+    if (window.codeElements.length > 0) {
+      ctx.copycode = {
+        default_text: `Copy`,
+        success_text: `Copied`,
+        toast: `复制成功`,
+      };
+      utils.js('/js/plugins/copycode.js');
+    }
+  });</script></div></body></html>
