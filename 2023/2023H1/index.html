@@ -1,4 +1,403 @@
-<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="hexo-theme" content="https://github.com/xaoxuu/hexo-theme-stellar/tree/1.30.2" theme-name="Stellar" theme-version="1.30.2"><meta name="generator" content="Hexo 7.3.0"><meta http-equiv="x-dns-prefetch-control" content="on"><meta name="renderer" content="webkit"><meta name="force-rendering" content="webkit"><meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"><meta name="HandheldFriendly" content="True"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1"><meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000"><meta name="theme-color" content="#f9fafb"><title>2023 年都玩了点什么（梗） - もじもんの文字門</title><meta name="description" content="年终总结之一。为了杜绝谜语人，我需要亲自破解之前设置的单向加密。"><meta property="og:type" content="article"><meta property="og:title" content="2023 年都玩了点什么（梗）"><meta property="og:url" content="https://mojimoon.github.io/blog/2023/2023H1/"><meta property="og:site_name" content="もじもんの文字門"><meta property="og:description" content="年终总结之一。为了杜绝谜语人，我需要亲自破解之前设置的单向加密。"><meta property="og:locale" content="zh_CN"><meta property="article:published_time" content="2023-12-02T00:00:00.000Z"><meta property="article:modified_time" content="2025-04-15T11:25:26.537Z"><meta property="article:author" content="mojimoon"><meta property="article:tag" content="mojimoon, computer science, python, blog, hexo, stellar, personal blog, deep learning"><meta name="twitter:card" content="summary"><meta name="keywords" content="mojimoon, computer science, python, blog, hexo, stellar, personal blog, deep learning"><link rel="stylesheet" href="https://gcore.jsdelivr.net/gh/mojimoon/blog@v20260111/css/main.css?v=1.30.2"><link rel="shortcut icon" href="/blog/image/favicon.png"><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet"><link rel="stylesheet" href="https://gcore.jsdelivr.net/gh/mojimoon/blog@v20260111/css/override.css"></head><body><div class="l_body content" id="start" layout="post" type="tech"><aside class="l_left"><div class="leftbar-container"><header class="header"><div class="logo-wrap"><a class="avatar" href="/blog/about/"><div class="bg" style="opacity:0;background-image:url(https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/avatar/round/rainbow64@3x.webp)"></div><img no-lazy class="avatar" src="https://gcore.jsdelivr.net/gh/mojimoon/blog@v20260111/image/mojimoon.png" onerror='this.classList.add("error"),this.src="https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/image/2659360.svg"'></a><a class="title" href="/blog/"><div class="main" ff="title">もじもんの文字門</div><div class="sub normal cap">Computer Science</div><div class="sub hover cap" style="opacity:0">City University of Hong Kong</div></a></div></header><div class="nav-area"><div class="search-wrapper" id="search-wrapper"><form class="search-form"><a class="search-button" onclick="document.getElementById(&quot;search-input&quot;).focus();"><svg t="1705074644177" viewBox="0 0 1025 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1560" width="200" height="200"><path d="M1008.839137 935.96571 792.364903 719.491476a56.783488 56.783488 0 0 0-80.152866 0 358.53545 358.53545 0 1 1 100.857314-335.166073 362.840335 362.840335 0 0 1-3.689902 170.145468 51.248635 51.248635 0 1 0 99.217358 26.444296 462.057693 462.057693 0 1 0-158.255785 242.303546l185.930047 185.725053a51.248635 51.248635 0 0 0 72.568068 0 51.248635 51.248635 0 0 0 0-72.978056z" p-id="1561"></path><path d="M616.479587 615.969233a50.428657 50.428657 0 0 0-61.498362-5.534852 174.655348 174.655348 0 0 1-177.525271 3.484907 49.403684 49.403684 0 0 0-58.833433 6.76482l-3.074918 2.869923a49.403684 49.403684 0 0 0 8.609771 78.10292 277.767601 277.767601 0 0 0 286.992355-5.739847 49.403684 49.403684 0 0 0 8.404776-76.667958z" p-id="1562"></path></svg></a><input type="text" class="search-input" id="search-input" placeholder="站内搜索"></form><div id="search-result"></div><div class="search-no-result">没有找到内容！</div></div><nav class="menu dis-select"></nav></div><div class="widgets"><widget class="widget-wrapper post-list"><div class="widget-header dis-select"><span class="name">最近更新</span></div><div class="widget-body fs14"><a class="item title" href="/blog/2026/ai-sama/"><span class="title">AI 大人，帮我写点东西吧！</span></a><a class="item title" href="/blog/2023/202306F/"><span class="title">2023 年 6 月特刊：并非美食</span></a><a class="item title" href="/blog/2023/202305A/"><span class="title">解决 Kirkiri2 引擎的乱码问题</span></a><a class="item title" href="/blog/2023/202305B/"><span class="title">解决 Windows 更新禁用导致微软商店无法安装的问题 (0x80070422)</span></a><a class="item title" href="/blog/2025/ssd-enclosure/"><span class="title">拯救旧笔记本：制作移动硬盘盒</span></a><a class="item title" href="/blog/2025/speedup-github-page/"><span class="title">加快 GitHub Pages 国内访问速度</span></a><a class="item title" href="/blog/2023/python-scraping/"><span class="title">笔记：Python 爬虫/数据分析简易教程</span></a><a class="item title" href="/blog/2025/why-75-keyboard/"><span class="title">为什么75%键盘是程序员的最佳选择？</span></a><a class="item title" href="/blog/2023/202305C/"><span class="title">解决 Stable Diffusion WebUI 安装 xformers 出现 Torch 无法使用 GPU 的问题</span></a><a class="item title" href="/blog/2025/protective-film/"><span class="title">经验谈：笔记本电脑不建议使用屏幕膜和键盘膜</span></a></div></widget></div></div></aside><div class="l_main" id="main"><div class="article banner top"><div class="content"><div class="top bread-nav footnote"><div class="left"><div class="flex-row" id="breadcrumb"><a class="cap breadcrumb" href="https://mojimoon.github.io/">主页</a><span class="sep"></span> <a class="cap breadcrumb" href="/blog/">文章</a><span class="sep"></span><a class="cap breadcrumb-link" href="/blog/categories/Journal/">Journal</a></div><div class="flex-row" id="post-meta"><span class="text created">发布于：<time datetime="2023-12-02T00:00:00.000Z">2023-12-02</time></span><span class="sep updated"></span><span class="text updated">更新于：<time datetime="2025-04-15T11:25:26.537Z">2025-04-15</time></span></div></div></div><div class="bottom only-title"><div class="text-area"><h1 class="text title"><span>2023 年都玩了点什么（梗）</span></h1></div></div></div></div><article class="md-text content"><div class="tag-plugin colorful note" color="green"><div class="title"><strong><p>年终总结</p></strong></div><div class="body"><ul><li><strong><a href="../2023H1/">Jan - Mar</a></strong> ←</li><li><a href="../2023H2/">Apr - Jun</a></li></ul></div></div><p>这篇文章不是年终总结，但确实一是年终写的，二带了总结的性质。</p><p>在博客里我藏了很多很多没说清楚的细节、不想举例的举例，不过今天姑且在全部忘掉之前，把这些东西都说清楚。</p><blockquote><p>引用部分表示博客原文。</p></blockquote><p>正文部分表示新内容。</p><h2 id="2023-年-1-月白夜"><a class="markdownIt-Anchor" href="#2023-年-1-月白夜"></a> <a href="../202301/">2023 年 1 月：白夜</a></h2><blockquote><p><strong>ホワイトナイト</strong></p></blockquote><p>捏它「白夜行」。不过，日语中的「白夜（びゃくや）」是 midnight sun（极昼），不是 ワイトナイト（white night）。</p><h3 id="2187-年远距离通讯"><a class="markdownIt-Anchor" href="#2187-年远距离通讯"></a> <a href="../202301/#2187-%E5%B9%B4%E8%BF%9C%E8%B7%9D%E7%A6%BB%E9%80%9A%E8%AE%AF">2187 年，远距离通讯</a></h3><p>捏它《十三机兵防卫圈》的一个剧情点。为什么放在开头呢？再说下去就涉及剧透了。</p><h3 id="别上补习班了"><a class="markdownIt-Anchor" href="#别上补习班了"></a> <a href="../202301/#%E5%88%AB%E4%B8%8A%E8%A1%A5%E4%B9%A0%E7%8F%AD%E4%BA%86">别上补习班了！</a></h3><p>捏它「别当欧尼酱了！」。</p><h3 id="又是个在萌娘百科没个人词条的男主"><a class="markdownIt-Anchor" href="#又是个在萌娘百科没个人词条的男主"></a> <a href="../202301/#%E5%8F%88%E6%98%AF%E4%B8%AA%E5%9C%A8%E8%90%8C%E5%A8%98%E7%99%BE%E7%A7%91%E6%B2%A1%E4%B8%AA%E4%BA%BA%E8%AF%8D%E6%9D%A1%E7%9A%84%E7%94%B7%E4%B8%BB">又是个在萌娘百科没个人词条的男主！</a></h3><p>事实如此。大部分 galgame 的男主确实没有建立词条的必要，一是没有什么鲜明的特点，二是其行为受到剧情分支的影响重大。不过总归是有一些例外的。</p><p>当时我还没玩「常轨脱离 creative」，不知道暗指的是哪部作品。</p><h3 id="我连难度0都不会玩啊"><a class="markdownIt-Anchor" href="#我连难度0都不会玩啊"></a> <a href="../202301/#%E6%88%91%E8%BF%9E%E9%9A%BE%E5%BA%A60%E9%83%BD%E4%B8%8D%E4%BC%9A%E7%8E%A9%E5%95%8A">我连难度0都不会玩啊！</a></h3><p>一开始玩 Brotato 的时候，我连难度 0 都不会玩，首通还是靠 50% 的敌人滑条过关的。</p><p>呃，我反正是手残不假，但 Brotato 其实不怎么考验操作，更多的还是运营。不过，如果走位好，面对 Boss 无伤都不是问题。</p><blockquote><p>关于游戏难度，无论游戏官方给出多少挑战，硬核玩家都会视同门槛。所以我们有必要学习一下如何调节游戏难度。当然，此处的要点不是如何设计难度，而是通过难度名称引导玩家。比如说，比“极夜”更绝望的名称还有什么？永夜？如果一开始就是永夜，后面肯定是没有退路的，有必要追加“永夜前夜”作为过渡。</p></blockquote><p>「永夜」捏它东方中的 Lunatic 难度。</p><h3 id="四重奏有五个人不是很正常吗"><a class="markdownIt-Anchor" href="#四重奏有五个人不是很正常吗"></a> <a href="../202301/#%E5%9B%9B%E9%87%8D%E5%A5%8F%E6%9C%89%E4%BA%94%E4%B8%AA%E4%BA%BA%E4%B8%8D%E6%98%AF%E5%BE%88%E6%AD%A3%E5%B8%B8%E5%90%97">四重奏有五个人不是很正常吗？</a></h3><p>这个梦源自我在高一和高二为班级剪辑微电影的经历。虽说是剪辑，其实我的技术非常烂，只是负责将素材拼接起来，然后加上一些特效。</p><p>有一段本来应该在同学家里拍摄的家长争执的镜头，因为各种原因最后没能拍摄，只有录音，因此只能做纯文字动画过渡。我本来想着「新房风」，但肯定是没有那个技术力，最后做出来惨不忍睹。黑白频闪 + 血红特效，活生生把阴郁做成了恐怖。</p><blockquote><p>就如同上面一则中“奔跑的时候”，这确实是我在高中剪辑微电影时的经历，当时只是回教室取道具。</p></blockquote><p>这个「奔跑的时候」倒是我高中经历中为数不多能称之为「青春」的时刻。背对夕阳奔跑在操场上，结合跑步本身带有的向前望去的隐喻，确实很美好。当然回教室取东西可能更适合称为「奔波」。</p><blockquote><p>（似乎是）一部有关成长的影片，5（也有可能是4）名女主成为了飞行运动员（鉴于我的匮乏阅历，这玩意肯定来自《苍彼》）。<s>为什么是不能确定是否有5个主角呢？可能是因为有人存在感太低了，而更有可能的是配角过分的惹眼了。</s></p></blockquote><p>回到标题，「四重奏」毫无疑问捏它「苍之彼方的四重奏」。可以看主角团合影的 CG，毫无疑问，四重奏有五个人。</p><h3 id="火灾之于我诡异的光之于一种美味"><a class="markdownIt-Anchor" href="#火灾之于我诡异的光之于一种美味"></a> <a href="../202301/#%E7%81%AB%E7%81%BE%E4%B9%8B%E4%BA%8E%E6%88%91%E8%AF%A1%E5%BC%82%E7%9A%84%E5%85%89%E4%B9%8B%E4%BA%8E%E4%B8%80%E7%A7%8D%E7%BE%8E%E5%91%B3">火灾之于我，诡异的光之于一种美味</a></h3><blockquote><p>不过，好消息是，就如同在火灾中借助死亡真眼躲避混凝土钢筋攻击的主角一样，无法想象的场面很少有人关注细节。</p></blockquote><p>「火灾」和「钢筋混凝土」捏它的是「付丧堂骨董店」第 2 卷第 3 章「死目」（关于魔女的故事）。</p><p>「诡异的光之于一种美味」捏它的是 2017 年浙江高考语文文学性阅读文本《一种美味》，其最出名的是全文最后一段「……他就抓着了一个黏黏软软的东西，凑到灶前的火光里一看，是那条鱼！从锅里蹦到地面，它显然已经超越了极限。现在，它早已死了，只是眼里还闪着一丝诡异的光。」</p><h3 id="帮人做事的自然而然空想"><a class="markdownIt-Anchor" href="#帮人做事的自然而然空想"></a> <a href="../202301/#%E5%B8%AE%E4%BA%BA%E5%81%9A%E4%BA%8B%E7%9A%84%E8%87%AA%E7%84%B6%E8%80%8C%E7%84%B6%E7%A9%BA%E6%83%B3">帮人做事的自然而然空想</a></h3><blockquote><p>但是今天，关键词是 <code>Infinity</code>，<code>Eternity</code> 和 <code>Reality</code>。倘若我们需要超-5运算定义 <code>Reality</code> 的下一个 <code>Prestige layer</code>，那我猜是 <code>Divinity</code>。</p></blockquote><p>Infinity、Eternity、Reality 是「Antimatter Dimensions」中的三个 Prestige layer。超-4运算，即迭代幂次，是这款增量游戏的最高增长速度。超-5运算就有点难以想象了……</p><h3 id="弹幕告诉你后面会解释的"><a class="markdownIt-Anchor" href="#弹幕告诉你后面会解释的"></a> <a href="../202301/#%E5%BC%B9%E5%B9%95%E5%91%8A%E8%AF%89%E4%BD%A0%E5%90%8E%E9%9D%A2%E4%BC%9A%E8%A7%A3%E9%87%8A%E7%9A%84">弹幕告诉你后面会解释的</a></h3><blockquote><p>呃，用右键召唤出的终端，三次都诞生在错误的位置，还好我在 <code>hexo</code> 初始化之前打断施法。考虑到经常出现右键召唤两个终端的问题，这个看起来很酷的东西 bug 真不少。</p></blockquote><p>这个 bug 在 21H2 里能稳定复现，不知道后续版本修复了没有。</p><p>但很可惜，现在我右键 Windows Terminal 直接启动不了了，是我上次手残删盘的后遗症（对，不小心删了 <code>%AppData%</code> 下的所有可执行文件，但还好因为是删的用户路径，所以大部分软件都没事）。</p><h3 id="译者注括弧内为个人感想"><a class="markdownIt-Anchor" href="#译者注括弧内为个人感想"></a> <a href="../202301/#%E8%AF%91%E8%80%85%E6%B3%A8%E6%8B%AC%E5%BC%A7%E5%86%85%E4%B8%BA%E4%B8%AA%E4%BA%BA%E6%84%9F%E6%83%B3">（译者注：括弧内为个人感想）</a></h3><p>我当时可能真的在推某部 Galgame，但真的不记得是哪部了。</p><p>总之，译者在文本后还附上了（译者注：）的注释，虽然不是个人感想，是正经的注释，但确实有些出戏，令人忍俊不禁。</p><blockquote><p>对了，我要说啥来着？今天的喜事是机缘巧合之下搜到了某位故人的博客！不过根据本页的相关政策，名称将会另行显示。对了，这位故人是某知名过气 OJ 管理员。我也是，虽然也不完全是。</p></blockquote><p>这里的「故人」指的是 <a target="_blank" rel="noopener" href="https://github.com/HeRaNO">HeRaNO</a>。文章开头就引用了他的文章，「<a target="_blank" rel="noopener" href="https://herano.github.io/2021/12/31/2021-%E5%B9%B4%E9%83%BD%E5%B9%B2%E4%BA%86%E5%95%A5/">2021 年都干了啥</a>」，这也是我今天在写年终总结的灵感来源。我（<a target="_blank" rel="noopener" href="https://loj.ac/u/hiuseues2">hiuseues2</a>）和 HeRaNO 都是 LOJ 的题目管理员，不过我只负责翻译国外 OI 题目，而他才是主力管理员。</p><blockquote><p>额外的片假名笑话一则：ギャル・コギャル，这玩意为什么要两个词啊</p></blockquote><p>「ギャル・コギャル」是 Melonbooks 上的一个 tag。至于为什么是两个词：「コギャル」的汉字形式是「子ギャル」，还是存在不同的。</p><blockquote><p>漫画的简介，尽管只有四行，就足够把 Deepl 整宕机了……其实也不是啦。只有第三行有点问题，但是我把它放到谷歌翻译之前都没看出来它有问题，甚至还挺符合个人感触的。但是相较之下 Bing 的翻译毫无章法……</p></blockquote><p>这里的漫画是</p><div class="tag-plugin quot p"><p class="content"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="#ff5724" d="M3.691 6.292C5.094 4.771 7.217 4 10 4h1v2.819l-.804.161c-1.37.274-2.323.813-2.833 1.604A2.9 2.9 0 0 0 6.925 10H10a1 1 0 0 1 1 1v7c0 1.103-.897 2-2 2H3a1 1 0 0 1-1-1v-5l.003-2.919c-.009-.111-.199-2.741 1.688-4.789M20 20h-6a1 1 0 0 1-1-1v-5l.003-2.919c-.009-.111-.199-2.741 1.688-4.789C16.094 4.771 18.217 4 21 4h1v2.819l-.804.161c-1.37.274-2.323.813-2.833 1.604A2.9 2.9 0 0 0 17.925 10H21a1 1 0 0 1 1 1v7c0 1.103-.897 2-2 2"/></svg><span class="text">[サークルフィオレ (えかきびと)] 夢が歌を歌うのだ! (ぼっち・ざ・ろっく!)</span><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="#ff5724" d="M20.309 17.708C22.196 15.66 22.006 13.03 22 13V5a1 1 0 0 0-1-1h-6c-1.103 0-2 .897-2 2v7a1 1 0 0 0 1 1h3.078a2.9 2.9 0 0 1-.429 1.396c-.508.801-1.465 1.348-2.846 1.624l-.803.16V20h1c2.783 0 4.906-.771 6.309-2.292m-11.007 0C11.19 15.66 10.999 13.03 10.993 13V5a1 1 0 0 0-1-1h-6c-1.103 0-2 .897-2 2v7a1 1 0 0 0 1 1h3.078a2.9 2.9 0 0 1-.429 1.396c-.508.801-1.465 1.348-2.846 1.624l-.803.16V20h1c2.783 0 4.906-.771 6.309-2.292"/></svg></p></div><p>说是简介，其实搞错了，是 melonbooks 的推荐语。这不是每部作品都有的，但如果有，那一定是四行。可以点<a target="_blank" rel="noopener" href="https://www.melonbooks.co.jp/detail/detail.php?product_id=1735198">这里</a>查看（年龄限制）。</p><blockquote><p>Spotify 手机版的广告浓度远大于网页版的 5%，但这还不是关键问题。为什么我搜 月のワン 的时候，默认播放的第一首是其他歌曲，然后是广告，再然后“试听”的第一首才是本尊啊？</p></blockquote><p>Spotify 网页版是每 19 首歌插播一次广告，手机版要多的多，而且搜索功能也不如网页版。已卸载。</p><h2 id="2023-年-2-月重构"><a class="markdownIt-Anchor" href="#2023-年-2-月重构"></a> <a href="../202302/">2023 年 2 月：重构</a></h2><blockquote><p><strong>セカイをリメイク</strong></p></blockquote><p>意为 Remake the world. 不知道捏它了啥，反正片假名标题看起来就很酷。</p><h3 id="官方本地化组还真只有一个人"><a class="markdownIt-Anchor" href="#官方本地化组还真只有一个人"></a> <a href="../202302/#%E5%AE%98%E6%96%B9%E6%9C%AC%E5%9C%B0%E5%8C%96%E7%BB%84%E8%BF%98%E7%9C%9F%E5%8F%AA%E6%9C%89%E4%B8%80%E4%B8%AA%E4%BA%BA">官方本地化组还真只有一个人</a></h3><blockquote><p>今天回笼觉的时候梦到了 Arcaea 的终章，由于翻译质量时好时坏被人吐槽了。但这不是重点。这个故事分为两部分五节。第一部分第一节有很多圈出的字，将其连接起来就是谜面，第二部分是“我”的出现。第二部分第三节是货真价实的涂黑诗解谜，第五节是复诵，并且暗示了另一个解的存在。另外，圈出的第一个字在标题，最后一个字在制作人员表，算是一点都不唐突的meta……这样看来，1-1、2-1、2-3的翻译质量烂也不奇怪了，能把涂黑诗还原还是要花很多精力。</p></blockquote><p>涂黑诗的设计很好，但是 Arcaea 的本地化质量确实差，3.0 之后还出了点事故。</p><h3 id="本编辑器已与微软达成深度合作"><a class="markdownIt-Anchor" href="#本编辑器已与微软达成深度合作"></a> <a href="../202302/#%E6%9C%AC%E7%BC%96%E8%BE%91%E5%99%A8%E5%B7%B2%E4%B8%8E%E5%BE%AE%E8%BD%AF%E8%BE%BE%E6%88%90%E6%B7%B1%E5%BA%A6%E5%90%88%E4%BD%9C">本编辑器已与微软达成深度合作</a></h3><p>指的是 VS Code 与 Copilot。虽然 VS Code 本来就是微软的产品，但微软近几年大面积收购让很多生产管线的集成度都大大提高了。比如说，在写这篇博客的时候，OpenAI 已经被微软实质性收购了，OpenAI 的 GPT 也早就集成到了 VS Code，Bing 和 Office 里。</p><h3 id="没打补丁所以成了上下学模拟器"><a class="markdownIt-Anchor" href="#没打补丁所以成了上下学模拟器"></a> <a href="../202302/#%E6%B2%A1%E6%89%93%E8%A1%A5%E4%B8%81%E6%89%80%E4%BB%A5%E6%88%90%E4%BA%86%E4%B8%8A%E4%B8%8B%E5%AD%A6%E6%A8%A1%E6%8B%9F%E5%99%A8">没打补丁所以成了上下学模拟器</a></h3><p>指的是上架 steam 的一些黄油（ACT之类的，总之不是 Galgame）。</p><p>当时肯定不会想到，《拔作岛》都能上架 steam 了。当然，因为整个游戏的主题都要被审查，所以 steam 基础版本的内容被删减到了只有开头一段的几分钟，这下好了，连上下学都不用直接通关了。（当然是有官方补丁的）</p><h3 id="可稳定复现的自然是特性"><a class="markdownIt-Anchor" href="#可稳定复现的自然是特性"></a> <a href="../202302/#%E5%8F%AF%E7%A8%B3%E5%AE%9A%E5%A4%8D%E7%8E%B0%E7%9A%84%E8%87%AA%E7%84%B6%E6%98%AF%E7%89%B9%E6%80%A7">可稳定复现的自然是特性</a></h3><p>捏它的是「Minecraft」社区里的一句名言「It’s not a bug, it’s a feature」。</p><h3 id="还是看看-350-的平衡性更新吧"><a class="markdownIt-Anchor" href="#还是看看-350-的平衡性更新吧"></a> <a href="../202302/#%E8%BF%98%E6%98%AF%E7%9C%8B%E7%9C%8B-350-%E7%9A%84%E5%B9%B3%E8%A1%A1%E6%80%A7%E6%9B%B4%E6%96%B0%E5%90%A7">还是看看 35.0 的平衡性更新吧</a></h3><p>BTD 35.0 的平衡性更新中，银行（农场 0-3-0）再次被 nerf。</p><h3 id="按-tab-自动补全那我怎么缩进啊"><a class="markdownIt-Anchor" href="#按-tab-自动补全那我怎么缩进啊"></a> <a href="../202302/#%E6%8C%89-tab-%E8%87%AA%E5%8A%A8%E8%A1%A5%E5%85%A8%E9%82%A3%E6%88%91%E6%80%8E%E4%B9%88%E7%BC%A9%E8%BF%9B%E5%95%8A">按 Tab 自动补全那我怎么缩进啊？</a></h3><p>Copilot 的补全键是 <code>Tab</code>，因此，如果 Copilot 已经给出了补全提示，按 <code>Tab</code> 就会直接补全，而不是缩进。</p><p>好在 Copilot 会自动调整缩进，大部分时候问题不大。</p><h3 id="主播哪国人"><a class="markdownIt-Anchor" href="#主播哪国人"></a> <a href="../202302/#%E4%B8%BB%E6%92%AD%E5%93%AA%E5%9B%BD%E4%BA%BA">主播哪国人</a></h3><p>捏它……呃，我真不想把这个名字写出来。</p><p>这个实验证明了 Copilot 无法有效区分中文和日文语境，不过倾向于使用在文档中已经出现过的词汇。</p><h3 id="我以为大家带回家都是说着玩的"><a class="markdownIt-Anchor" href="#我以为大家带回家都是说着玩的"></a> <a href="../202302/#%E6%88%91%E4%BB%A5%E4%B8%BA%E5%A4%A7%E5%AE%B6%E5%B8%A6%E5%9B%9E%E5%AE%B6%E9%83%BD%E6%98%AF%E8%AF%B4%E7%9D%80%E7%8E%A9%E7%9A%84">我以为大家“带回家”都是说着玩的</a></h3><p>指的是「Silence默不作声」（默神）。今年年初，他发视频宣布自己高中辍学建立小工作室开发 3D ADV 游戏，引发了大规模争论。不过如今此事已经草草收场。</p><blockquote><p>但是我欲讨论的重点并不是这些人。慨叹完现实之后，那么，看到这些事实的你呢？——就如同发现一具尸体，出于好奇你把它带回家，在满足自己的猎奇欲之后，又出于恐惧把它埋进院子里，并决定将尸体作为底线，永远不去提起它。这当然是一个很经典的比喻（基于《新概念英语3》），但和你看过的任何一个版本都不同的是，你的邻居也开始交流尸体话题，你完全没办法装作没听到没看到。即使后来你忍无可忍而搬家，也一直在后悔当初要是没把尸体搬回家就好了，转念一想觉得要是当初没看到尸体就好了，再一想又觉得你的邻居也会在不经意中告诉你一切，让你直接从纯良堕入深渊，毫无缓冲。你到看见棺材板之前都会觉得，人类的底线是守不住的，是会一再降低的；即使你本来就在另一个环境，那里的居民也怀揣着另一种不详的好奇心。</p></blockquote><p>这个比喻源自《NCE3》第 24 课「A skeleton in the cupboard」，这个俗语的意思是「不为人知的秘密/家丑」。</p><blockquote><p>怎么办呢？我确实不知道怎么办，但是我想，答案已经很明确了。尽管，我确实是生活在尸体的阴影中的。</p></blockquote><p>这一段的论述确实基于我关于 “literally” skeletons（guro）的阅历。</p><h3 id="a-fan-of-fandom"><a class="markdownIt-Anchor" href="#a-fan-of-fandom"></a> <a href="../202302/#a-fan-of-fandom">A fan of Fandom</a></h3><blockquote><p>在试图用手机扫码登录 WhatsApp 网页端时，我发现 <strong>Dark Reader 的深色模式影响了二维码边框的判断导致无法识别</strong>。非常重要的教训！所以，Fandom，你罪该万死啊！</p></blockquote><p>Fandom 是众所周知对深色模式支持不好的网站，不像 Wikipedia，Fandom 的公式在深色模式下不会自动变成白色，而是保持黑色，导致无法阅读。不过后来似乎有所改善。</p><p>如果二维码的边框是黑色的，基本上就无法识别了。因此使用 Dark Reader 必须将 WhatsApp 网页端加入「不反色列表」。当然网站本身也可以在二维码周围加一圈白色边框，比如百度。</p><h3 id="默神-reaction-评注本合订本"><a class="markdownIt-Anchor" href="#默神-reaction-评注本合订本"></a> <a href="../202302/#%E9%BB%98%E7%A5%9E-reaction-%E8%AF%84%E6%B3%A8%E6%9C%AC%E5%90%88%E8%AE%A2%E6%9C%AC">默神 reaction 评注本合订本</a></h3><blockquote><p>再再另外，半写实风格至少不是低多边形，在恐怖谷里头离邓宁-克鲁格峰还是差一个 DALL-E 2，我觉得 Biological Horror 和 Psychological Horror 都是比较有开发空间的。（Ep. 6）</p></blockquote><p>低多边形是一种廉价游戏风格，即使用较少的多边形来绘制模型，以达到节省资源的目的。图形看起来很生硬、很荒谬，今天已经很少有游戏使用这种风格了。</p><p>DALL-E 是 OpenAI 开发的文生图模型，不过要钱，我从来没用过。</p><blockquote><p>毫无疑问你应该去 Steam 鉴赏家里面请几位给每个 Choices Matter、Story Rich、Dark Humor 的后现代元游戏都打差评的中级高手婆罗门元老来教你怎么写剧情。</p></blockquote><p>指的是「史丹利的寓言 终极豪华版」（The Stanley Parable: Ultra Deluxe）。讽刺的代价就是自我讽刺。</p><h3 id="动人心弦的世界系小说中局"><a class="markdownIt-Anchor" href="#动人心弦的世界系小说中局"></a> <a href="../202302/#%E5%8A%A8%E4%BA%BA%E5%BF%83%E5%BC%A6%E7%9A%84%E4%B8%96%E7%95%8C%E7%B3%BB%E5%B0%8F%E8%AF%B4%E4%B8%AD%E5%B1%80">动人心弦的世界系小说《中局》</a></h3><p>这个梦毫无疑问和《中局》没有任何关系。不过我们就顺便来介绍一下这本书：塞南·麦奎尔的「middlegame」，披了个科幻皮的奇幻小说，雨果奖、轨迹奖提名。</p><p>好了，介绍完了。和国际象棋、炼金术、时间穿越有点关系，但不多。有兴趣可以看看，还是挺有意思的。</p><p>这是真介绍不出来个啥。为啥说它是世界系？因为<a target="_blank" rel="noopener" href="https://www.zhihu.com/question/517172661">仅有的一篇知乎回答</a> 里提到了这个词，正好借用一下。</p><p>为啥没啥好介绍？这本小说是我在 2021 年的第 9 第 10 期《科幻世界 译文版》上看到的，国内连实体书都没有，要想看电子书只能买往期杂志；而我今年暑假回家的时候，发现这些杂志已经被家里清理掉了。那也没办法，以后有缘再看吧。</p><h3 id="赛博朋克风味苦涩波子汽水"><a class="markdownIt-Anchor" href="#赛博朋克风味苦涩波子汽水"></a> <a href="../202302/#%E8%B5%9B%E5%8D%9A%E6%9C%8B%E5%85%8B%E9%A3%8E%E5%91%B3%E8%8B%A6%E6%B6%A9%E6%B3%A2%E5%AD%90%E6%B1%BD%E6%B0%B4">赛博朋克风味苦涩波子汽水</a></h3><p>捏它拿了很多个第一的轻小说《弹珠汽水瓶里的千岁同学》。我没看过。</p><h3 id="为了连载下去活得好好的还要加点配角"><a class="markdownIt-Anchor" href="#为了连载下去活得好好的还要加点配角"></a> <a href="../202302/#%E4%B8%BA%E4%BA%86%E8%BF%9E%E8%BD%BD%E4%B8%8B%E5%8E%BB%E6%B4%BB%E5%BE%97%E5%A5%BD%E5%A5%BD%E7%9A%84%E8%BF%98%E8%A6%81%E5%8A%A0%E7%82%B9%E9%85%8D%E8%A7%92">为了连载下去活得好好的还要加点配角</a></h3><p>对很多成功的轻小说而言，事实如此。但是不举例子了。（↑这句话就是例子）</p><blockquote><p>在高潮中结局 = culminate with culmination。</p></blockquote><p>「culminate」在词典里只有一个释义，「If an event or series of events culminates in something, it ends with it, having developed until it reaches this point.」，即「以……告终；达到顶点」。</p><h3 id="觉得空白太小也该写下来啊"><a class="markdownIt-Anchor" href="#觉得空白太小也该写下来啊"></a> <a href="../202302/#%E8%A7%89%E5%BE%97%E7%A9%BA%E7%99%BD%E5%A4%AA%E5%B0%8F%E4%B9%9F%E8%AF%A5%E5%86%99%E4%B8%8B%E6%9D%A5%E5%95%8A">觉得空白太小也该写下来啊</a></h3><p>这捏它了啥不用我自己说了吧。</p><h3 id="预约赛博故事会新春特辑前瞻特别节目"><a class="markdownIt-Anchor" href="#预约赛博故事会新春特辑前瞻特别节目"></a> <a href="../202302/#%E9%A2%84%E7%BA%A6%E8%B5%9B%E5%8D%9A%E6%95%85%E4%BA%8B%E4%BC%9A%E6%96%B0%E6%98%A5%E7%89%B9%E8%BE%91%E5%89%8D%E7%9E%BB%E7%89%B9%E5%88%AB%E8%8A%82%E7%9B%AE">预约赛博故事会新春特辑前瞻特别节目</a></h3><p>自从 B 站有民间组织的同人新春会之后，亚文化狂潮是一年比一年高涨。今年各种各样的漫画（更准确地讲，IP）、游戏都有自己独立的新春会，甚至有些还有官方的支持。</p><p>「前瞻特别节目」是明日方舟每季一度的直播的官方名称。</p><h2 id="2023-年-3-月复制"><a class="markdownIt-Anchor" href="#2023-年-3-月复制"></a> <a href="../202303/">2023 年 3 月：复制</a></h2><blockquote><p><strong>無糖のレプリカ</strong></p></blockquote><p>意为「无糖的复制品」。捏它的是無糖紅茶（画师）和 Antimatter Dimensions 里的「Replicanti」。</p><h3 id="开会时炼丹纯属扰民"><a class="markdownIt-Anchor" href="#开会时炼丹纯属扰民"></a> <a href="../202303/#%E5%BC%80%E4%BC%9A%E6%97%B6%E7%82%BC%E4%B8%B9%E7%BA%AF%E5%B1%9E%E6%89%B0%E6%B0%91">开会时炼丹纯属扰民</a></h3><p>当时有人在 Tutorial 上跑 Hentai Diffusion 22，风扇嘎嘎响，至少引起了我的注意；于是我在 team project 开会的时候也跑着玩，结果被人猜到在炼丹了。看得出来，Stable Diffusion 当时是过于热门了（物理意义上的热）。</p><h3 id="直入正题就亮红灯了证明前戏是必要的"><a class="markdownIt-Anchor" href="#直入正题就亮红灯了证明前戏是必要的"></a> <a href="../202303/#%E7%9B%B4%E5%85%A5%E6%AD%A3%E9%A2%98%E5%B0%B1%E4%BA%AE%E7%BA%A2%E7%81%AF%E4%BA%86%E8%AF%81%E6%98%8E%E5%89%8D%E6%88%8F%E6%98%AF%E5%BF%85%E8%A6%81%E7%9A%84">直入正题就亮红灯了证明前戏是必要的</a></h3><blockquote><p>今天让我的心情略微平复的是，我跟 Bing AI 聊了一个下午，交流了关于艺术的观念和理解。AI 给出了高信息密度的论述和大量的例证（虽然说甚至包含尚未上映的电影的剧透），让我能够在错愕和混沌之中找到一些思路。幸或不幸的是，虽然第 8 问就亮黄灯了，第 15 问才亮红灯掐断。虽然这玩意被限制也是理所当然的……我已经整理好了聊天记录，不过，自然是发不出来的。</p></blockquote><p>因为在开会的时候我对小组的进度非常不满意，生了一肚子气，回到宿舍就开始写这篇博客。顺便拿当时最新最热的 Bing AI 取乐。</p><p>当时单次对话的上限还是 15 问（变化历程：无限制 → 5 → 8 → 10 → 15 → 20 → 30，现在是 30），不过我在第 15 问就被限制了。</p><p>这个对话的主题是「猎奇艺术」，很有意思，但我觉得不适合发出来。大纲如下：</p><div class="tag-plugin colorful note" color="blue"><div class="title"><strong><p>主讲人：New Bing</p></strong></div><div class="body"><ul><li>好奇心、想象力与猎奇艺术的关系</li><li>荒谬现实（荒谬的个人经历和荒谬的社会环境）与猎奇艺术</li><li>猎奇与恐怖的关系</li><li>猎奇作品中剧中人物经受的心理创伤、人性堕落和道德困境这些要素的关系；以及与作品剧情、结构的关系</li><li>作者为何要用血腥暴力来呈现恐怖的氛围</li><li>猎奇作品中的悬疑、解谜等要素</li><li>猎奇作品中的杀人动机</li><li>时间轮回、合理性和猎奇氛围</li><li>时间轮回中，重复性和变化性于恐怖和悬疑的氛围的作用；主角知情和读者知情</li><li>处理主角和读者之间的信息差异，让读者接受结局，理解主角</li><li>猎奇世界观下的人性体现</li></ul></div></div><h3 id="十六进位法的黄昏"><a class="markdownIt-Anchor" href="#十六进位法的黄昏"></a> <a href="../202303/#%E5%8D%81%E5%85%AD%E8%BF%9B%E4%BD%8D%E6%B3%95%E7%9A%84%E9%BB%84%E6%98%8F">十六进位法的黄昏</a></h3><p>捏它「孤独摇滚」第 11 集「十二進法の夕景」，原标题十二进制指的是十二平均律。</p><blockquote><p>“Once you see it, you can’t unsee it.” 你已经听说过这个名字了，那么搜索引擎就会告诉你一切，破坏你的幻想。——除非，你听说的是 11 位 SHA256 哈希值。这样就搜不到任何资料，因此你姑且是可以继续幻想的。</p></blockquote><p>11 位 SHA256 指的是 Stable Diffusion WebUI 中的模型哈希值。</p><blockquote><p>好吧，以上是一个玩笑。如果你真的听说过一个名字，哪怕在三年半之后才回想起来，那么搜索引擎会告诉你，你当时就不应该听说，或者不要把莫名其妙的东西记得那么清楚。不要去搜。不要念叨这个名字。不要想着如何去忘记它。过好你一成不变的生活。再三年半之后，你还是会犯同样的错误。</p></blockquote><p>这确实是一件很奇妙的事情。我在 2019 年看到了一篇 OIer 的博客，内容是高中毕业的感想，标题是「结束的结束」（或者 「结束的终结」等等近义词，我正是因为想不起来具体是什么名字才始终找不到的）。他之前还发了一篇博客「结束的开始」。至今已经快五年了，我还是没有找到，不过倘真有读者知道，还请告知。</p><p>我目前的猜测是这篇文章或这个博客已经被删除了。很不幸，互联网上的信息并不是永久的，有些东西一旦消失就再也找不回来了。</p><h3 id="戴耳机就头疼所以不像以前循环一整天"><a class="markdownIt-Anchor" href="#戴耳机就头疼所以不像以前循环一整天"></a> <a href="../202303/#%E6%88%B4%E8%80%B3%E6%9C%BA%E5%B0%B1%E5%A4%B4%E7%96%BC%E6%89%80%E4%BB%A5%E4%B8%8D%E5%83%8F%E4%BB%A5%E5%89%8D%E5%BE%AA%E7%8E%AF%E4%B8%80%E6%95%B4%E5%A4%A9">戴耳机就头疼所以不像以前循环一整天</a></h3><p>我听稍微硬一点的 HDM 就会头疼，所以平时都是听 Trance、House、DnB/Breakcore 之流的 EDM。不过就算如此，也要时常摘下耳机休息一下。</p><p>单曲循环一整天，这很毁歌，不要尝试。这里指的是 2019 年我的 OIer 同学推荐的《人间失宠》，从早上 8 点开机到晚上 9 点离开机房，一直在循环这首歌。</p><blockquote><p>三年半以前，也就是 2019 年下半年，我在机房停课，度过了高中最荒诞的一段时光。我当时可谓是无恶不做、一事无成，反正最后谁都没有实质性损失，我也不觉得逃避是一件痛苦的事。但是有一件事是能确定的，那些日子绝对不是一成不变的。以下是一些轶闻的片段：在机房的最后两天（周五、周六），各看了 26 集番；周日注册了 steam 帐号并买了第一款游戏。</p></blockquote><p>我的入宅之路就是从这里开始的。</p><ul><li>2019 年 11 月 2 日：我找来了在国内刚刚（11 月 1 日）上映的《天气之子》（繁中枪版）的资源，看完觉得不过瘾，于是又开始看新海诚的上一部《你的名字。》，看得我泪流满面。</li><li>11 月 3 日 - 11 月 14 日：我看了不少新海诚的作品，包括相关小说。《言叶之庭》《秒速 5 厘米》的小说都是相当有意思的，故事也比短篇动画电影丰富（当然短篇有短篇的好处）。</li><li>11 月 15 日 - 11 月 16 日：我在机房用 2 倍速看完了《CLANNAD》和《CLANNAD ～AFTER STORY～》两季动画。</li><li>11 月 16 日 - 11 月 17 日：NOIP 提高组复赛的日子（当年由于种种原因举办的是 CSP-S）。由于我在 OI 上毫无建树，参加完这次比赛之后我就彻底放弃了 OI。</li><li>11 月 17 日：我在周日返校前注册了 steam 帐号，并买了第一款游戏《CLANNAD》。当时我还不知道 steam 有折扣这回事，血亏啊！</li><li>2019 年 11 月 - 2020 年 4 月：我补了很多很多部动画和动画电影，包括 Key 的全系列以及大部分京都动画的作品。</li><li>2020 年 3 月：我开始接触到年龄限制 Galgame。</li></ul><p>当时的我当然没想到，这么几个月看的动画比到现在看的还多，因为动画这个载体对我来说已经没有吸引力了。</p><blockquote><p>尽管，2020 年也是极尽荒诞的一年。我 2021 年年初回顾的时候坚定地放弃了向学校群里倒垃圾的想法，而是选择私信求助。虽然说其人并没有解答我的问题，但是还是让我好受了很多。</p></blockquote><p>高二，我发现各种内忧外患集中爆发，似乎我初中到高一过得无忧无虑的债全在这一刻还上了。我用学校里的平板写了一篇两千字长文，控诉人生。不幸的是，这篇文章没有留档，也没有发出去，就在草稿箱里过期了。2021 年 1 月 1 日，我向某位同班同学私信求助，大意如下：</p><p>我该过怎样的青春呢？</p><ul><li>A. 逃避现实，继续闷闷不乐</li><li>B. 过一般定义的青春</li><li>C. 剑走偏锋，过自己的青春</li></ul><p>毫无疑问，这个问题放在今天看非常幼稚，但当时的认知水平确实如此。这位同学没有直接回答，但他的回复确实让我好受了很多。</p><blockquote><p>现在看来，2020 年虽说荒诞，也只能是单色的荒诞，只剩下天地间雪茫茫。</p></blockquote><p>疫情让人与人之间的距离拉得更远，让人很难描述具体的感受，总之是一种抽象的灰色（空白），我能想到的最好比喻就是天地间雪茫茫。</p><blockquote><p>虽说 2020 年认识了新朋友以及新爱好，但是应该说都是基于 2019 年的进一步发展。不太幸运的是，故事的这一部分到了 2020 年 8 月就结束了，一个新的篇章开始了—— 2021 年和 2022 年，我依然无恶不作，一事无成，新朋友和新爱好，仍然荒诞，仍然逃避。</p></blockquote><div class="tag-plugin quot p"><p class="content"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="#ff5724" d="M3.691 6.292C5.094 4.771 7.217 4 10 4h1v2.819l-.804.161c-1.37.274-2.323.813-2.833 1.604A2.9 2.9 0 0 0 6.925 10H10a1 1 0 0 1 1 1v7c0 1.103-.897 2-2 2H3a1 1 0 0 1-1-1v-5l.003-2.919c-.009-.111-.199-2.741 1.688-4.789M20 20h-6a1 1 0 0 1-1-1v-5l.003-2.919c-.009-.111-.199-2.741 1.688-4.789C16.094 4.771 18.217 4 21 4h1v2.819l-.804.161c-1.37.274-2.323.813-2.833 1.604A2.9 2.9 0 0 0 17.925 10H21a1 1 0 0 1 1 1v7c0 1.103-.897 2-2 2"/></svg><span class="text">首次公开！学霸的真实面目！</span><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="#ff5724" d="M20.309 17.708C22.196 15.66 22.006 13.03 22 13V5a1 1 0 0 0-1-1h-6c-1.103 0-2 .897-2 2v7a1 1 0 0 0 1 1h3.078a2.9 2.9 0 0 1-.429 1.396c-.508.801-1.465 1.348-2.846 1.624l-.803.16V20h1c2.783 0 4.906-.771 6.309-2.292m-11.007 0C11.19 15.66 10.999 13.03 10.993 13V5a1 1 0 0 0-1-1h-6c-1.103 0-2 .897-2 2v7a1 1 0 0 0 1 1h3.078a2.9 2.9 0 0 1-.429 1.396c-.508.801-1.465 1.348-2.846 1.624l-.803.16V20h1c2.783 0 4.906-.771 6.309-2.292"/></svg></p></div><p>因为选课的原因，高二会重新分班。我高考后可能会质疑当年的自己为什么要选物化生（有一个原因是只有物化生才属于实验班），但今天已经无所谓了。</p><p>后来这两年我确实是无恶不作。能说得上的行为，包括但不限于在学校里偷玩手机、偷玩班级电脑（周五逃晚自习玩 Slay the Spire 被年级主任抓了个正着）、破坏公共财物、扰乱公共秩序。</p><p>我高三下甚至买了个二手 Redmi 5A（或 6A？），3G+32G，用来刷视频顺便玩明日方舟。但幸或不幸的是，5 月，由于我自己作死，将开发者设置中的最小宽度（dpi）改成了 800，<a target="_blank" rel="noopener" href="https://www.zhihu.com/question/372877369">由于 MIUI 10 的 bug 直接变砖</a>。最终我把手机的遗体留在了学校，流量卡注销了，此事休要再提。此外，由于当时进出小区要用支付宝刷健康码，我还把这条购买记录删了，以免被家长发现。</p><p>这倒也不算黑历史，但我不管跟其他什么人说都不可能提及这件事，因此只能写在这里。</p><blockquote><p>这个篇章的恶作剧伴随着一定的后果。所以，急转直下的行为，反而让整个故事没那么荒诞；我已经受够了错误与教训的循环——虽然说，我怎么也不会讨厌这个篇章的。当然，家长和班主任肯定不会这样认为。但是没关系，故事已经结束了，精彩已经品鉴过了，后话也没必要再讲了。毕业算是比较仓促的收尾，不过跳出了高中这个容器，就没有人想继续写这个故事了。哪怕我再之前在体育仓库里想着怎么一脚踹开这个容器的门，惊醒了仓管大爷，也跳不出来。学校究竟是给予无理由还是有理由者相聚的机会，虽然答案非常明显，也不会有人关心了。</p></blockquote><p>在学校体育馆地下室的仓库里，我思考人生，蛮力踹门，结果未曾想到真有人在里面，赶紧逃跑。</p><p>最后一句基于我 2020 年在 Bangumi 看到的一则评论，大意是「学校是给予无理由者相聚的机会」。</p><blockquote><p>再说点无聊的，真的很无聊。我是 2020 年初才接触到 R18 的。当然，任何一个对此有所了解的未成年人都会理所当然地无视这条警告。但是我的错误经历让我错误地觉得，什么年龄就该干什么事。这种里程碑式的循规蹈矩随后被我错误地融入中学形成的“正确的”人生道路中，让我觉得，我未来真的有事可干。</p></blockquote><p>这个笑话还带有一点历史因素：日本于 2018 年通过了法案，自 2022 年 4 月 1 日起，将成年年龄从 20 岁降低到 18 岁，不过烟酒等部分商品的购买年龄仍然是 20 岁。换句话说，在当时，R18 还是未成年人能接触的东西（理直气壮）。</p><h3 id="帮不上人就自己从头干的自然而然空想"><a class="markdownIt-Anchor" href="#帮不上人就自己从头干的自然而然空想"></a> <a href="../202303/#%E5%B8%AE%E4%B8%8D%E4%B8%8A%E4%BA%BA%E5%B0%B1%E8%87%AA%E5%B7%B1%E4%BB%8E%E5%A4%B4%E5%B9%B2%E7%9A%84%E8%87%AA%E7%84%B6%E8%80%8C%E7%84%B6%E7%A9%BA%E6%83%B3">帮不上人就自己从头干的自然而然空想</a></h3><blockquote><p>这款游戏要做成什么样子呢？总之，大概是除非删档就没法修改选择，二周目强制选择相反选项，类似于《不予播出》的四个关键变量 16 个结局（当然这部游戏只有 14 个），然后每一个设置甚至连画面亮度对比度单角色音量都可以“复制”并操纵，来触发关键剧情。哦对了，还有 Linear plot + brief branches。好吧，谁会想玩呢？我是无所谓啦，反正我又做不出来。</p></blockquote><p>我已经有「游戏设置决定剧情走向」这个想法很久了。举个例子，「单角色音量」，通过将某个角色禁音，使他说的话无效化，从而改变剧情走向。</p><p>《不予播出》有 2x2x2x2 个结局，但并不是四个关键选项决定的，所以还真不是好例子。</p><h3 id="bing-ai-不能作画就不能吟诗"><a class="markdownIt-Anchor" href="#bing-ai-不能作画就不能吟诗"></a> <a href="../202303/#bing-ai-%E4%B8%8D%E8%83%BD%E4%BD%9C%E7%94%BB%E5%B0%B1%E4%B8%8D%E8%83%BD%E5%90%9F%E8%AF%97">Bing AI 不能作画就不能吟诗</a></h3><p>当时 Bing AI 已经能作画了，但是让它写一首诗都要先经过图像生成。而当时图像生成在香港还未上线，直接导致无法吟诗。该 bug 应该是很快就修复了。</p><h3 id="这辈子还能进用钥匙上锁的屋子吗"><a class="markdownIt-Anchor" href="#这辈子还能进用钥匙上锁的屋子吗"></a> <a href="../202303/#%E8%BF%99%E8%BE%88%E5%AD%90%E8%BF%98%E8%83%BD%E8%BF%9B%E7%94%A8%E9%92%A5%E5%8C%99%E4%B8%8A%E9%94%81%E7%9A%84%E5%B1%8B%E5%AD%90%E5%90%97">这辈子还能进用钥匙上锁的屋子吗</a></h3><p>当时在玩「愛のカギ 2」（爱之钥 2），一部短篇 Galgame。</p><p>剧情简单来说就是同居生活，不过比起发糖，这个系列的标志 —— 房子的钥匙 —— 更加吸引我。因为现实中，我家里用的是智能指纹/密码锁，我高中和大学的寝室都是刷卡，于是我就想，这辈子还能进用钥匙上锁的屋子吗？</p><p>答案应该是肯定的，香港的老旧公寓里肯定还在用钥匙上锁。</p><h3 id="缺乏激情的叙述交给-ai-也救不了"><a class="markdownIt-Anchor" href="#缺乏激情的叙述交给-ai-也救不了"></a> <a href="../202303/#%E7%BC%BA%E4%B9%8F%E6%BF%80%E6%83%85%E7%9A%84%E5%8F%99%E8%BF%B0%E4%BA%A4%E7%BB%99-ai-%E4%B9%9F%E6%95%91%E4%B8%8D%E4%BA%86">缺乏激情的叙述交给 AI 也救不了</a></h3><blockquote><p>今天中午，外面下雨了，天色阴郁，心情却仍高昂。</p></blockquote><p>这时作诗的 bug 已经修复了。我用这句作为提示词，发现 Bing AI 完全不擅长中文诗。</p><blockquote><p>总之，这不重要，虽然外面下雨了，我还是决定今天晚上去公园里散步——虽然有点蠢，但我想坐地铁去上次核酸检测的地方，旁边有个大公园（荔枝角公园），或者说，无边际的行人道的集合。</p></blockquote><p>荔枝角公园是没有边界的，就是很多人行道和人能走的土路的集合。</p><p>这个公园我还是挺推荐的，咋看非常平凡，实际上一头离喧嚣的地铁站、广场很近，另一头则是彻底的寂静，充分利用地势高低差，让人能发现不同的乐趣。</p><p>很可惜香港的夜空污染很严重，星空的照片都太明亮了。</p><h3 id="windows-笑话二则外一则"><a class="markdownIt-Anchor" href="#windows-笑话二则外一则"></a> <a href="../202303/#windows-%E7%AC%91%E8%AF%9D%E4%BA%8C%E5%88%99%E5%A4%96%E4%B8%80%E5%88%99">Windows 笑话二则（外一则）</a></h3><blockquote><p>其一：Powershell 不支持 <code>&lt;</code> 和 <code>&gt;</code> 文件输入输出重定向，所以我想调试题目只能用 <code>cmd</code> 了。</p></blockquote><p>我真的很想吐槽 Windows 为什么会出现 <code>cmd</code>, Powershell 和 Windows Terminal 三个互不兼容的命令行工具。</p><p>现在我主要使用的是 VSCode 内置 Powershell，很神奇的是，它确实支持 <code>&lt;</code> 和 <code>&gt;</code> 文件输入输出重定向。</p><h3 id="纸箱子比生活更糜烂"><a class="markdownIt-Anchor" href="#纸箱子比生活更糜烂"></a> <a href="../202303/#%E7%BA%B8%E7%AE%B1%E5%AD%90%E6%AF%94%E7%94%9F%E6%B4%BB%E6%9B%B4%E7%B3%9C%E7%83%82">纸箱子比生活更糜烂</a></h3><blockquote><p>雨淅淅沥沥地从前天下到今天，我当然是没能去公园里散步了。但是更严重的问题是，星期六我没有关窗，结果不仅窗边的纸箱子都湿了，还让地上积满污水。</p></blockquote><p>这个教训还是很重要的；虽然有的时候我嫌风太大，关了窗户，但不知什么时候室友又帮我开了，导致窗户一直开着，不溅点雨想发现都难。</p></article><div class="article-footer"><section id="license"><div class="header"><span>许可协议</span></div><div class="body"><p>本文采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh">署名-相同方式共享 4.0 国际许可协议</a>，转载请注明出处。</p></div></section></div><div class="related-wrap" id="read-next"><section class="body"><div class="item" id="prev"><div class="note">较新文章</div><a href="/blog/2023/2023H2/">2023 年都造了点什么（乐子）</a></div><div class="item" id="next"><div class="note">较早文章</div><a href="/blog/2023/202311A/">2023 年 11 月下：新章</a></div></section></div><div class="related-wrap md-text" id="comments"><section class="header cmt-title cap theme"><p>快来参与讨论吧~</p></section><section class="body cmt-body beaudar"><svg class="loading" style="vertical-align:middle;fill:currentColor;overflow:hidden" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2709"><path d="M832 512c0-176-144-320-320-320V128c211.2 0 384 172.8 384 384h-64zM192 512c0 176 144 320 320 320v64C300.8 896 128 723.2 128 512h64z" p-id="2710"></path></svg><div id="beaudar" repo="mojimoon/blog-comments" issue-term="pathname" theme="preferred-color-scheme" input-position="top" comment-order="desc" loading="false" branch="main"></div></section></div><footer class="page-footer footnote"><hr><div class="sitemap"><div class="sitemap-group"><span class="fs15">博客</span><a href="/blog/">近期</a><a href="/blog/categories/">分类</a><a href="/blog/archives/">归档</a></div><div class="sitemap-group"><span class="fs15">外链</span><a target="_blank" rel="noopener" href="https://steamcommunity.com/id/unreset/">Steam</a><a target="_blank" rel="noopener" href="https://bgm.tv/user/788548">Bangumi</a><a target="_blank" rel="noopener" href="https://github.com/mojimoon">Github</a></div><div class="sitemap-group"><span class="fs15">社交</span><a href="/blog/2023/about/">关于</a><a href="/blog/">友链</a><a href="/blog/">留言板</a></div></div><div class="text"><p><a target="_blank" rel="noopener" href="https://github.com/mojimoon">@mojimoon</a> Overclocked by <a target="_blank" rel="noopener" href="https://xaoxuu.com/wiki/stellar/">Stellar</a></p></div></footer><div class="main-mask" onclick="sidebar.dismiss()"></div></div><aside class="l_right"><div class="widgets"><widget class="widget-wrapper toc" id="data-toc" collapse="false"><div class="widget-header dis-select"><span class="name">本文目录</span><a class="cap-action" onclick="sidebar.toggleTOC()"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6h11m-11 6h11m-11 6h11M4 6h1v4m-1 0h2m0 8H4c0-1 2-2 2-3s-1-1.5-2-1"/></svg></a></div><div class="widget-body"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#2023-%E5%B9%B4-1-%E6%9C%88%E7%99%BD%E5%A4%9C"><span class="toc-text">2023 年 1 月：白夜</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#2187-%E5%B9%B4%E8%BF%9C%E8%B7%9D%E7%A6%BB%E9%80%9A%E8%AE%AF"><span class="toc-text">2187 年，远距离通讯</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%AB%E4%B8%8A%E8%A1%A5%E4%B9%A0%E7%8F%AD%E4%BA%86"><span class="toc-text">别上补习班了！</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8F%88%E6%98%AF%E4%B8%AA%E5%9C%A8%E8%90%8C%E5%A8%98%E7%99%BE%E7%A7%91%E6%B2%A1%E4%B8%AA%E4%BA%BA%E8%AF%8D%E6%9D%A1%E7%9A%84%E7%94%B7%E4%B8%BB"><span class="toc-text">又是个在萌娘百科没个人词条的男主！</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%88%91%E8%BF%9E%E9%9A%BE%E5%BA%A60%E9%83%BD%E4%B8%8D%E4%BC%9A%E7%8E%A9%E5%95%8A"><span class="toc-text">我连难度0都不会玩啊！</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9B%9B%E9%87%8D%E5%A5%8F%E6%9C%89%E4%BA%94%E4%B8%AA%E4%BA%BA%E4%B8%8D%E6%98%AF%E5%BE%88%E6%AD%A3%E5%B8%B8%E5%90%97"><span class="toc-text">四重奏有五个人不是很正常吗？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%81%AB%E7%81%BE%E4%B9%8B%E4%BA%8E%E6%88%91%E8%AF%A1%E5%BC%82%E7%9A%84%E5%85%89%E4%B9%8B%E4%BA%8E%E4%B8%80%E7%A7%8D%E7%BE%8E%E5%91%B3"><span class="toc-text">火灾之于我，诡异的光之于一种美味</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B8%AE%E4%BA%BA%E5%81%9A%E4%BA%8B%E7%9A%84%E8%87%AA%E7%84%B6%E8%80%8C%E7%84%B6%E7%A9%BA%E6%83%B3"><span class="toc-text">帮人做事的自然而然空想</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BC%B9%E5%B9%95%E5%91%8A%E8%AF%89%E4%BD%A0%E5%90%8E%E9%9D%A2%E4%BC%9A%E8%A7%A3%E9%87%8A%E7%9A%84"><span class="toc-text">弹幕告诉你后面会解释的</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AF%91%E8%80%85%E6%B3%A8%E6%8B%AC%E5%BC%A7%E5%86%85%E4%B8%BA%E4%B8%AA%E4%BA%BA%E6%84%9F%E6%83%B3"><span class="toc-text">（译者注：括弧内为个人感想）</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2023-%E5%B9%B4-2-%E6%9C%88%E9%87%8D%E6%9E%84"><span class="toc-text">2023 年 2 月：重构</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%98%E6%96%B9%E6%9C%AC%E5%9C%B0%E5%8C%96%E7%BB%84%E8%BF%98%E7%9C%9F%E5%8F%AA%E6%9C%89%E4%B8%80%E4%B8%AA%E4%BA%BA"><span class="toc-text">官方本地化组还真只有一个人</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9C%AC%E7%BC%96%E8%BE%91%E5%99%A8%E5%B7%B2%E4%B8%8E%E5%BE%AE%E8%BD%AF%E8%BE%BE%E6%88%90%E6%B7%B1%E5%BA%A6%E5%90%88%E4%BD%9C"><span class="toc-text">本编辑器已与微软达成深度合作</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B2%A1%E6%89%93%E8%A1%A5%E4%B8%81%E6%89%80%E4%BB%A5%E6%88%90%E4%BA%86%E4%B8%8A%E4%B8%8B%E5%AD%A6%E6%A8%A1%E6%8B%9F%E5%99%A8"><span class="toc-text">没打补丁所以成了上下学模拟器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8F%AF%E7%A8%B3%E5%AE%9A%E5%A4%8D%E7%8E%B0%E7%9A%84%E8%87%AA%E7%84%B6%E6%98%AF%E7%89%B9%E6%80%A7"><span class="toc-text">可稳定复现的自然是特性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BF%98%E6%98%AF%E7%9C%8B%E7%9C%8B-350-%E7%9A%84%E5%B9%B3%E8%A1%A1%E6%80%A7%E6%9B%B4%E6%96%B0%E5%90%A7"><span class="toc-text">还是看看 35.0 的平衡性更新吧</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8C%89-tab-%E8%87%AA%E5%8A%A8%E8%A1%A5%E5%85%A8%E9%82%A3%E6%88%91%E6%80%8E%E4%B9%88%E7%BC%A9%E8%BF%9B%E5%95%8A"><span class="toc-text">按 Tab 自动补全那我怎么缩进啊？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%BB%E6%92%AD%E5%93%AA%E5%9B%BD%E4%BA%BA"><span class="toc-text">主播哪国人</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%88%91%E4%BB%A5%E4%B8%BA%E5%A4%A7%E5%AE%B6%E5%B8%A6%E5%9B%9E%E5%AE%B6%E9%83%BD%E6%98%AF%E8%AF%B4%E7%9D%80%E7%8E%A9%E7%9A%84"><span class="toc-text">我以为大家“带回家”都是说着玩的</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#a-fan-of-fandom"><span class="toc-text">A fan of Fandom</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%BB%98%E7%A5%9E-reaction-%E8%AF%84%E6%B3%A8%E6%9C%AC%E5%90%88%E8%AE%A2%E6%9C%AC"><span class="toc-text">默神 reaction 评注本合订本</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8A%A8%E4%BA%BA%E5%BF%83%E5%BC%A6%E7%9A%84%E4%B8%96%E7%95%8C%E7%B3%BB%E5%B0%8F%E8%AF%B4%E4%B8%AD%E5%B1%80"><span class="toc-text">动人心弦的世界系小说《中局》</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%B5%9B%E5%8D%9A%E6%9C%8B%E5%85%8B%E9%A3%8E%E5%91%B3%E8%8B%A6%E6%B6%A9%E6%B3%A2%E5%AD%90%E6%B1%BD%E6%B0%B4"><span class="toc-text">赛博朋克风味苦涩波子汽水</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%BA%E4%BA%86%E8%BF%9E%E8%BD%BD%E4%B8%8B%E5%8E%BB%E6%B4%BB%E5%BE%97%E5%A5%BD%E5%A5%BD%E7%9A%84%E8%BF%98%E8%A6%81%E5%8A%A0%E7%82%B9%E9%85%8D%E8%A7%92"><span class="toc-text">为了连载下去活得好好的还要加点配角</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A7%89%E5%BE%97%E7%A9%BA%E7%99%BD%E5%A4%AA%E5%B0%8F%E4%B9%9F%E8%AF%A5%E5%86%99%E4%B8%8B%E6%9D%A5%E5%95%8A"><span class="toc-text">觉得空白太小也该写下来啊</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%A2%84%E7%BA%A6%E8%B5%9B%E5%8D%9A%E6%95%85%E4%BA%8B%E4%BC%9A%E6%96%B0%E6%98%A5%E7%89%B9%E8%BE%91%E5%89%8D%E7%9E%BB%E7%89%B9%E5%88%AB%E8%8A%82%E7%9B%AE"><span class="toc-text">预约赛博故事会新春特辑前瞻特别节目</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2023-%E5%B9%B4-3-%E6%9C%88%E5%A4%8D%E5%88%B6"><span class="toc-text">2023 年 3 月：复制</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BC%80%E4%BC%9A%E6%97%B6%E7%82%BC%E4%B8%B9%E7%BA%AF%E5%B1%9E%E6%89%B0%E6%B0%91"><span class="toc-text">开会时炼丹纯属扰民</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%9B%B4%E5%85%A5%E6%AD%A3%E9%A2%98%E5%B0%B1%E4%BA%AE%E7%BA%A2%E7%81%AF%E4%BA%86%E8%AF%81%E6%98%8E%E5%89%8D%E6%88%8F%E6%98%AF%E5%BF%85%E8%A6%81%E7%9A%84"><span class="toc-text">直入正题就亮红灯了证明前戏是必要的</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8D%81%E5%85%AD%E8%BF%9B%E4%BD%8D%E6%B3%95%E7%9A%84%E9%BB%84%E6%98%8F"><span class="toc-text">十六进位法的黄昏</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%88%B4%E8%80%B3%E6%9C%BA%E5%B0%B1%E5%A4%B4%E7%96%BC%E6%89%80%E4%BB%A5%E4%B8%8D%E5%83%8F%E4%BB%A5%E5%89%8D%E5%BE%AA%E7%8E%AF%E4%B8%80%E6%95%B4%E5%A4%A9"><span class="toc-text">戴耳机就头疼所以不像以前循环一整天</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B8%AE%E4%B8%8D%E4%B8%8A%E4%BA%BA%E5%B0%B1%E8%87%AA%E5%B7%B1%E4%BB%8E%E5%A4%B4%E5%B9%B2%E7%9A%84%E8%87%AA%E7%84%B6%E8%80%8C%E7%84%B6%E7%A9%BA%E6%83%B3"><span class="toc-text">帮不上人就自己从头干的自然而然空想</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#bing-ai-%E4%B8%8D%E8%83%BD%E4%BD%9C%E7%94%BB%E5%B0%B1%E4%B8%8D%E8%83%BD%E5%90%9F%E8%AF%97"><span class="toc-text">Bing AI 不能作画就不能吟诗</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BF%99%E8%BE%88%E5%AD%90%E8%BF%98%E8%83%BD%E8%BF%9B%E7%94%A8%E9%92%A5%E5%8C%99%E4%B8%8A%E9%94%81%E7%9A%84%E5%B1%8B%E5%AD%90%E5%90%97"><span class="toc-text">这辈子还能进用钥匙上锁的屋子吗</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BC%BA%E4%B9%8F%E6%BF%80%E6%83%85%E7%9A%84%E5%8F%99%E8%BF%B0%E4%BA%A4%E7%BB%99-ai-%E4%B9%9F%E6%95%91%E4%B8%8D%E4%BA%86"><span class="toc-text">缺乏激情的叙述交给 AI 也救不了</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#windows-%E7%AC%91%E8%AF%9D%E4%BA%8C%E5%88%99%E5%A4%96%E4%B8%80%E5%88%99"><span class="toc-text">Windows 笑话二则（外一则）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BA%B8%E7%AE%B1%E5%AD%90%E6%AF%94%E7%94%9F%E6%B4%BB%E6%9B%B4%E7%B3%9C%E7%83%82"><span class="toc-text">纸箱子比生活更糜烂</span></a></li></ol></li></ol></div><div class="widget-footer"><a class="top" onclick="util.scrollTop()"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 12c0-4.714 0-7.071 1.464-8.536C4.93 2 7.286 2 12 2c4.714 0 7.071 0 8.535 1.464C22 4.93 22 7.286 22 12c0 4.714 0 7.071-1.465 8.535C19.072 22 16.714 22 12 22s-7.071 0-8.536-1.465C2 19.072 2 16.714 2 12Z"/><path stroke-linecap="round" stroke-linejoin="round" d="m9 15.5 3-3 3 3m-6-4 3-3 3 3"/></g></svg><span>回到顶部</span></a><a class="buttom" onclick="util.scrollComment()"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="M10.46 1.25h3.08c1.603 0 2.86 0 3.864.095 1.023.098 1.861.3 2.6.752a5.75 5.75 0 0 1 1.899 1.899c.452.738.654 1.577.752 2.6.095 1.004.095 2.261.095 3.865v1.067c0 1.141 0 2.036-.05 2.759-.05.735-.153 1.347-.388 1.913a5.75 5.75 0 0 1-3.112 3.112c-.805.334-1.721.408-2.977.43a10.81 10.81 0 0 0-.929.036c-.198.022-.275.054-.32.08-.047.028-.112.078-.224.232-.121.166-.258.396-.476.764l-.542.916c-.773 1.307-2.69 1.307-3.464 0l-.542-.916a10.605 10.605 0 0 0-.476-.764c-.112-.154-.177-.204-.224-.232-.045-.026-.122-.058-.32-.08-.212-.023-.49-.03-.93-.037-1.255-.021-2.171-.095-2.976-.429A5.75 5.75 0 0 1 1.688 16.2c-.235-.566-.338-1.178-.389-1.913-.049-.723-.049-1.618-.049-2.76v-1.066c0-1.604 0-2.86.095-3.865.098-1.023.3-1.862.752-2.6a5.75 5.75 0 0 1 1.899-1.899c.738-.452 1.577-.654 2.6-.752C7.6 1.25 8.857 1.25 10.461 1.25M6.739 2.839c-.914.087-1.495.253-1.959.537A4.25 4.25 0 0 0 3.376 4.78c-.284.464-.45 1.045-.537 1.96-.088.924-.089 2.11-.089 3.761v1c0 1.175 0 2.019.046 2.685.045.659.131 1.089.278 1.441a4.25 4.25 0 0 0 2.3 2.3c.515.214 1.173.294 2.429.316h.031c.398.007.747.013 1.037.045.311.035.616.104.909.274.29.17.5.395.682.645.169.232.342.525.538.856l.559.944a.52.52 0 0 0 .882 0l.559-.944c.196-.331.37-.624.538-.856.182-.25.392-.476.682-.645.293-.17.598-.24.909-.274.29-.032.639-.038 1.037-.045h.032c1.255-.022 1.913-.102 2.428-.316a4.25 4.25 0 0 0 2.3-2.3c.147-.352.233-.782.278-1.441.046-.666.046-1.51.046-2.685v-1c0-1.651 0-2.837-.089-3.762-.087-.914-.253-1.495-.537-1.959a4.25 4.25 0 0 0-1.403-1.403c-.464-.284-1.045-.45-1.96-.537-.924-.088-2.11-.089-3.761-.089h-3c-1.651 0-2.837 0-3.762.089" clip-rule="evenodd"/><path fill="currentColor" d="M9 11a1 1 0 1 1-2 0 1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/></svg><span>参与讨论</span></a></div></widget></div></aside><div class="float-panel blur"><button type="button" style="display:none" class="laptop-only rightbar-toggle mobile" onclick="sidebar.rightbar()"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6h11m-11 6h11m-11 6h11M4 6h1v4m-1 0h2m0 8H4c0-1 2-2 2-3s-1-1.5-2-1"/></svg></button> <button type="button" style="display:none" class="mobile-only leftbar-toggle mobile" onclick="sidebar.leftbar()"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 11c0-3.771 0-5.657 1.172-6.828C4.343 3 6.229 3 10 3h4c3.771 0 5.657 0 6.828 1.172C22 5.343 22 7.229 22 11v2c0 3.771 0 5.657-1.172 6.828C19.657 21 17.771 21 14 21h-4c-3.771 0-5.657 0-6.828-1.172C2 18.657 2 16.771 2 13z"/><path id="sep" stroke-linecap="round" d="M5.5 10h6m-5 4h4m4.5 7V3"/></g></svg></button></div></div><div class="scripts"><script>const ctx = {
+
+<!DOCTYPE html><html lang="zh-CN">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="hexo-theme" content="https://github.com/xaoxuu/hexo-theme-stellar/tree/1.30.2" theme-name="Stellar" theme-version="1.30.2">
+  
+  <meta name="generator" content="Hexo 7.3.0">
+  <meta http-equiv='x-dns-prefetch-control' content='on' />
+  
+  <meta name="renderer" content="webkit">
+  <meta name="force-rendering" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <meta name="HandheldFriendly" content="True" >
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000">
+  <meta name="theme-color" content="#f9fafb">
+  
+  <title>2023 年都玩了点什么（梗） - もじもんの文字門</title>
+
+  
+    <meta name="description" content="年终总结之一。为了杜绝谜语人，我需要亲自破解之前设置的单向加密。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="2023 年都玩了点什么（梗）">
+<meta property="og:url" content="https://mojimoon.github.io/blog/2023/2023H1/">
+<meta property="og:site_name" content="もじもんの文字門">
+<meta property="og:description" content="年终总结之一。为了杜绝谜语人，我需要亲自破解之前设置的单向加密。">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2023-12-02T00:00:00.000Z">
+<meta property="article:modified_time" content="2025-04-15T11:25:26.537Z">
+<meta property="article:author" content="mojimoon">
+<meta property="article:tag" content="mojimoon, computer science, python, blog, hexo, stellar, personal blog, deep learning">
+<meta name="twitter:card" content="summary">
+  
+  
+  
+  <meta name="keywords" content="mojimoon, computer science, python, blog, hexo, stellar, personal blog, deep learning">
+
+  <!-- feed -->
+  
+
+  <link rel="stylesheet" href="https://gcore.jsdelivr.net/gh/mojimoon/blog@v20260111/css/main.css?v=1.30.2">
+
+
+  
+    <link rel="shortcut icon" href="/blog/image/favicon.png">
+  
+
+  
+
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet"><link rel="stylesheet" href="https://gcore.jsdelivr.net/gh/mojimoon/blog@v20260111/css/override.css">
+</head>
+<body>
+
+<div class="l_body content" id="start" layout="post" type="tech" ><aside class="l_left"><div class="leftbar-container">
+
+
+<header class="header"><div class="logo-wrap"><a class="avatar" href="/blog/about/"><div class="bg" style="opacity:0;background-image:url(https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/avatar/round/rainbow64@3x.webp);"></div><img no-lazy class="avatar" src="https://gcore.jsdelivr.net/gh/mojimoon/blog@v20260111/image/mojimoon.png" onerror="javascript:this.classList.add('error');this.src='https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/image/2659360.svg';"></a><a class="title" href="/blog/"><div class="main" ff="title">もじもんの文字門</div><div class="sub normal cap">Computer Science</div><div class="sub hover cap" style="opacity:0"> City University of Hong Kong</div></a></div></header>
+
+<div class="nav-area">
+<div class="search-wrapper" id="search-wrapper"><form class="search-form"><a class="search-button" onclick="document.getElementById(&quot;search-input&quot;).focus();"><svg t="1705074644177" viewBox="0 0 1025 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1560" width="200" height="200"><path d="M1008.839137 935.96571L792.364903 719.491476a56.783488 56.783488 0 0 0-80.152866 0 358.53545 358.53545 0 1 1 100.857314-335.166073 362.840335 362.840335 0 0 1-3.689902 170.145468 51.248635 51.248635 0 1 0 99.217358 26.444296 462.057693 462.057693 0 1 0-158.255785 242.303546l185.930047 185.725053a51.248635 51.248635 0 0 0 72.568068 0 51.248635 51.248635 0 0 0 0-72.978056z" p-id="1561"></path><path d="M616.479587 615.969233a50.428657 50.428657 0 0 0-61.498362-5.534852 174.655348 174.655348 0 0 1-177.525271 3.484907 49.403684 49.403684 0 0 0-58.833433 6.76482l-3.074918 2.869923a49.403684 49.403684 0 0 0 8.609771 78.10292 277.767601 277.767601 0 0 0 286.992355-5.739847 49.403684 49.403684 0 0 0 8.404776-76.667958z" p-id="1562"></path></svg></a><input type="text" class="search-input" id="search-input" placeholder="站内搜索"></form><div id="search-result"></div><div class="search-no-result">没有找到内容！</div></div>
+
+
+<nav class="menu dis-select"></nav>
+</div>
+<div class="widgets">
+
+
+<widget class="widget-wrapper post-list"><div class="widget-header dis-select"><span class="name">最近更新</span></div><div class="widget-body fs14"><a class="item title" href="/blog/2026/wheel-problem/"><span class="title">转盘重复数问题</span></a><a class="item title" href="/blog/2026/ai-sama/"><span class="title">AI 大人，帮我写点东西吧！</span></a><a class="item title" href="/blog/2023/202306F/"><span class="title">2023 年 6 月特刊：并非美食</span></a><a class="item title" href="/blog/2023/202305A/"><span class="title">解决 Kirkiri2 引擎的乱码问题</span></a><a class="item title" href="/blog/2023/202305B/"><span class="title">解决 Windows 更新禁用导致微软商店无法安装的问题 (0x80070422)</span></a><a class="item title" href="/blog/2025/ssd-enclosure/"><span class="title">拯救旧笔记本：制作移动硬盘盒</span></a><a class="item title" href="/blog/2025/speedup-github-page/"><span class="title">加快 GitHub Pages 国内访问速度</span></a><a class="item title" href="/blog/2023/python-scraping/"><span class="title">笔记：Python 爬虫/数据分析简易教程</span></a><a class="item title" href="/blog/2025/why-75-keyboard/"><span class="title">为什么75%键盘是程序员的最佳选择？</span></a><a class="item title" href="/blog/2023/202305C/"><span class="title">解决 Stable Diffusion WebUI 安装 xformers 出现 Torch 无法使用 GPU 的问题</span></a></div></widget>
+</div>
+
+</div></aside><div class="l_main" id="main">
+
+
+
+
+
+<div class="article banner top">
+  <div class="content">
+    <div class="top bread-nav footnote"><div class="left"><div class="flex-row" id="breadcrumb"><a class="cap breadcrumb" href="https://mojimoon.github.io/">主页</a>
+<span class="sep"></span><a class="cap breadcrumb" href="/blog/">文章</a><span class="sep"></span><a class="cap breadcrumb-link" href="/blog/categories/Journal/">Journal</a></div>
+<div class="flex-row" id="post-meta"><span class="text created">发布于：<time datetime="2023-12-02T00:00:00.000Z">2023-12-02</time></span><span class="sep updated"></span><span class="text updated">更新于：<time datetime="2025-04-15T11:25:26.537Z">2025-04-15</time></span></div></div></div>
+    
+    <div class="bottom only-title">
+      
+      <div class="text-area">
+        <h1 class="text title"><span>2023 年都玩了点什么（梗）</span></h1>
+        
+      </div>
+    </div>
+    
+  </div>
+  </div><article class="md-text content"><div class="tag-plugin colorful note" color="green"><div class="title"><strong><p>年终总结</p>
+</strong></div><div class="body"><ul><li><strong><a href="../2023H1/">Jan - Mar</a></strong> ←</li><li><a href="../2023H2/">Apr - Jun</a></li></ul></div></div>
+<p>这篇文章不是年终总结，但确实一是年终写的，二带了总结的性质。</p>
+<p>在博客里我藏了很多很多没说清楚的细节、不想举例的举例，不过今天姑且在全部忘掉之前，把这些东西都说清楚。</p>
+<blockquote>
+<p>引用部分表示博客原文。</p>
+</blockquote>
+<p>正文部分表示新内容。</p>
+<h2 id="2023-年-1-月白夜"><a class="markdownIt-Anchor" href="#2023-年-1-月白夜"></a> <a href="../202301/">2023 年 1 月：白夜</a></h2>
+<blockquote>
+<p><strong>ホワイトナイト</strong></p>
+</blockquote>
+<p>捏它「白夜行」。不过，日语中的「白夜（びゃくや）」是 midnight sun（极昼），不是 ワイトナイト（white night）。</p>
+<h3 id="2187-年远距离通讯"><a class="markdownIt-Anchor" href="#2187-年远距离通讯"></a> <a href="../202301/#2187-%E5%B9%B4%E8%BF%9C%E8%B7%9D%E7%A6%BB%E9%80%9A%E8%AE%AF">2187 年，远距离通讯</a></h3>
+<p>捏它《十三机兵防卫圈》的一个剧情点。为什么放在开头呢？再说下去就涉及剧透了。</p>
+<h3 id="别上补习班了"><a class="markdownIt-Anchor" href="#别上补习班了"></a> <a href="../202301/#%E5%88%AB%E4%B8%8A%E8%A1%A5%E4%B9%A0%E7%8F%AD%E4%BA%86">别上补习班了！</a></h3>
+<p>捏它「别当欧尼酱了！」。</p>
+<h3 id="又是个在萌娘百科没个人词条的男主"><a class="markdownIt-Anchor" href="#又是个在萌娘百科没个人词条的男主"></a> <a href="../202301/#%E5%8F%88%E6%98%AF%E4%B8%AA%E5%9C%A8%E8%90%8C%E5%A8%98%E7%99%BE%E7%A7%91%E6%B2%A1%E4%B8%AA%E4%BA%BA%E8%AF%8D%E6%9D%A1%E7%9A%84%E7%94%B7%E4%B8%BB">又是个在萌娘百科没个人词条的男主！</a></h3>
+<p>事实如此。大部分 galgame 的男主确实没有建立词条的必要，一是没有什么鲜明的特点，二是其行为受到剧情分支的影响重大。不过总归是有一些例外的。</p>
+<p>当时我还没玩「常轨脱离 creative」，不知道暗指的是哪部作品。</p>
+<h3 id="我连难度0都不会玩啊"><a class="markdownIt-Anchor" href="#我连难度0都不会玩啊"></a> <a href="../202301/#%E6%88%91%E8%BF%9E%E9%9A%BE%E5%BA%A60%E9%83%BD%E4%B8%8D%E4%BC%9A%E7%8E%A9%E5%95%8A">我连难度0都不会玩啊！</a></h3>
+<p>一开始玩 Brotato 的时候，我连难度 0 都不会玩，首通还是靠 50% 的敌人滑条过关的。</p>
+<p>呃，我反正是手残不假，但 Brotato 其实不怎么考验操作，更多的还是运营。不过，如果走位好，面对 Boss 无伤都不是问题。</p>
+<blockquote>
+<p>关于游戏难度，无论游戏官方给出多少挑战，硬核玩家都会视同门槛。所以我们有必要学习一下如何调节游戏难度。当然，此处的要点不是如何设计难度，而是通过难度名称引导玩家。比如说，比“极夜”更绝望的名称还有什么？永夜？如果一开始就是永夜，后面肯定是没有退路的，有必要追加“永夜前夜”作为过渡。</p>
+</blockquote>
+<p>「永夜」捏它东方中的 Lunatic 难度。</p>
+<h3 id="四重奏有五个人不是很正常吗"><a class="markdownIt-Anchor" href="#四重奏有五个人不是很正常吗"></a> <a href="../202301/#%E5%9B%9B%E9%87%8D%E5%A5%8F%E6%9C%89%E4%BA%94%E4%B8%AA%E4%BA%BA%E4%B8%8D%E6%98%AF%E5%BE%88%E6%AD%A3%E5%B8%B8%E5%90%97">四重奏有五个人不是很正常吗？</a></h3>
+<p>这个梦源自我在高一和高二为班级剪辑微电影的经历。虽说是剪辑，其实我的技术非常烂，只是负责将素材拼接起来，然后加上一些特效。</p>
+<p>有一段本来应该在同学家里拍摄的家长争执的镜头，因为各种原因最后没能拍摄，只有录音，因此只能做纯文字动画过渡。我本来想着「新房风」，但肯定是没有那个技术力，最后做出来惨不忍睹。黑白频闪 + 血红特效，活生生把阴郁做成了恐怖。</p>
+<blockquote>
+<p>就如同上面一则中“奔跑的时候”，这确实是我在高中剪辑微电影时的经历，当时只是回教室取道具。</p>
+</blockquote>
+<p>这个「奔跑的时候」倒是我高中经历中为数不多能称之为「青春」的时刻。背对夕阳奔跑在操场上，结合跑步本身带有的向前望去的隐喻，确实很美好。当然回教室取东西可能更适合称为「奔波」。</p>
+<blockquote>
+<p>（似乎是）一部有关成长的影片，5（也有可能是4）名女主成为了飞行运动员（鉴于我的匮乏阅历，这玩意肯定来自《苍彼》）。<s>为什么是不能确定是否有5个主角呢？可能是因为有人存在感太低了，而更有可能的是配角过分的惹眼了。</s></p>
+</blockquote>
+<p>回到标题，「四重奏」毫无疑问捏它「苍之彼方的四重奏」。可以看主角团合影的 CG，毫无疑问，四重奏有五个人。</p>
+<h3 id="火灾之于我诡异的光之于一种美味"><a class="markdownIt-Anchor" href="#火灾之于我诡异的光之于一种美味"></a> <a href="../202301/#%E7%81%AB%E7%81%BE%E4%B9%8B%E4%BA%8E%E6%88%91%E8%AF%A1%E5%BC%82%E7%9A%84%E5%85%89%E4%B9%8B%E4%BA%8E%E4%B8%80%E7%A7%8D%E7%BE%8E%E5%91%B3">火灾之于我，诡异的光之于一种美味</a></h3>
+<blockquote>
+<p>不过，好消息是，就如同在火灾中借助死亡真眼躲避混凝土钢筋攻击的主角一样，无法想象的场面很少有人关注细节。</p>
+</blockquote>
+<p>「火灾」和「钢筋混凝土」捏它的是「付丧堂骨董店」第 2 卷第 3 章「死目」（关于魔女的故事）。</p>
+<p>「诡异的光之于一种美味」捏它的是 2017 年浙江高考语文文学性阅读文本《一种美味》，其最出名的是全文最后一段「……他就抓着了一个黏黏软软的东西，凑到灶前的火光里一看，是那条鱼！从锅里蹦到地面，它显然已经超越了极限。现在，它早已死了，只是眼里还闪着一丝诡异的光。」</p>
+<h3 id="帮人做事的自然而然空想"><a class="markdownIt-Anchor" href="#帮人做事的自然而然空想"></a> <a href="../202301/#%E5%B8%AE%E4%BA%BA%E5%81%9A%E4%BA%8B%E7%9A%84%E8%87%AA%E7%84%B6%E8%80%8C%E7%84%B6%E7%A9%BA%E6%83%B3">帮人做事的自然而然空想</a></h3>
+<blockquote>
+<p>但是今天，关键词是 <code>Infinity</code>，<code>Eternity</code> 和 <code>Reality</code>。倘若我们需要超-5运算定义 <code>Reality</code> 的下一个 <code>Prestige layer</code>，那我猜是 <code>Divinity</code>。</p>
+</blockquote>
+<p>Infinity、Eternity、Reality 是「Antimatter Dimensions」中的三个 Prestige layer。超-4运算，即迭代幂次，是这款增量游戏的最高增长速度。超-5运算就有点难以想象了……</p>
+<h3 id="弹幕告诉你后面会解释的"><a class="markdownIt-Anchor" href="#弹幕告诉你后面会解释的"></a> <a href="../202301/#%E5%BC%B9%E5%B9%95%E5%91%8A%E8%AF%89%E4%BD%A0%E5%90%8E%E9%9D%A2%E4%BC%9A%E8%A7%A3%E9%87%8A%E7%9A%84">弹幕告诉你后面会解释的</a></h3>
+<blockquote>
+<p>呃，用右键召唤出的终端，三次都诞生在错误的位置，还好我在 <code>hexo</code> 初始化之前打断施法。考虑到经常出现右键召唤两个终端的问题，这个看起来很酷的东西 bug 真不少。</p>
+</blockquote>
+<p>这个 bug 在 21H2 里能稳定复现，不知道后续版本修复了没有。</p>
+<p>但很可惜，现在我右键 Windows Terminal 直接启动不了了，是我上次手残删盘的后遗症（对，不小心删了 <code>%AppData%</code> 下的所有可执行文件，但还好因为是删的用户路径，所以大部分软件都没事）。</p>
+<h3 id="译者注括弧内为个人感想"><a class="markdownIt-Anchor" href="#译者注括弧内为个人感想"></a> <a href="../202301/#%E8%AF%91%E8%80%85%E6%B3%A8%E6%8B%AC%E5%BC%A7%E5%86%85%E4%B8%BA%E4%B8%AA%E4%BA%BA%E6%84%9F%E6%83%B3">（译者注：括弧内为个人感想）</a></h3>
+<p>我当时可能真的在推某部 Galgame，但真的不记得是哪部了。</p>
+<p>总之，译者在文本后还附上了（译者注：）的注释，虽然不是个人感想，是正经的注释，但确实有些出戏，令人忍俊不禁。</p>
+<blockquote>
+<p>对了，我要说啥来着？今天的喜事是机缘巧合之下搜到了某位故人的博客！不过根据本页的相关政策，名称将会另行显示。对了，这位故人是某知名过气 OJ 管理员。我也是，虽然也不完全是。</p>
+</blockquote>
+<p>这里的「故人」指的是 <a target="_blank" rel="noopener" href="https://github.com/HeRaNO">HeRaNO</a>。文章开头就引用了他的文章，「<a target="_blank" rel="noopener" href="https://herano.github.io/2021/12/31/2021-%E5%B9%B4%E9%83%BD%E5%B9%B2%E4%BA%86%E5%95%A5/">2021 年都干了啥</a>」，这也是我今天在写年终总结的灵感来源。我（<a target="_blank" rel="noopener" href="https://loj.ac/u/hiuseues2">hiuseues2</a>）和 HeRaNO 都是 LOJ 的题目管理员，不过我只负责翻译国外 OI 题目，而他才是主力管理员。</p>
+<blockquote>
+<p>额外的片假名笑话一则：ギャル・コギャル，这玩意为什么要两个词啊</p>
+</blockquote>
+<p>「ギャル・コギャル」是 Melonbooks 上的一个 tag。至于为什么是两个词：「コギャル」的汉字形式是「子ギャル」，还是存在不同的。</p>
+<blockquote>
+<p>漫画的简介，尽管只有四行，就足够把 Deepl 整宕机了……其实也不是啦。只有第三行有点问题，但是我把它放到谷歌翻译之前都没看出来它有问题，甚至还挺符合个人感触的。但是相较之下 Bing 的翻译毫无章法……</p>
+</blockquote>
+<p>这里的漫画是</p>
+<div class="tag-plugin quot p"><p class="content"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><!-- Icon from BoxIcons Solid by Atisa - https://creativecommons.org/licenses/by/4.0/ --><path fill="#ff5724" d="M3.691 6.292C5.094 4.771 7.217 4 10 4h1v2.819l-.804.161c-1.37.274-2.323.813-2.833 1.604A2.9 2.9 0 0 0 6.925 10H10a1 1 0 0 1 1 1v7c0 1.103-.897 2-2 2H3a1 1 0 0 1-1-1v-5l.003-2.919c-.009-.111-.199-2.741 1.688-4.789M20 20h-6a1 1 0 0 1-1-1v-5l.003-2.919c-.009-.111-.199-2.741 1.688-4.789C16.094 4.771 18.217 4 21 4h1v2.819l-.804.161c-1.37.274-2.323.813-2.833 1.604A2.9 2.9 0 0 0 17.925 10H21a1 1 0 0 1 1 1v7c0 1.103-.897 2-2 2"/></svg><span class="text">[サークルフィオレ (えかきびと)] 夢が歌を歌うのだ! (ぼっち・ざ・ろっく!)</span><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><!-- Icon from BoxIcons Solid by Atisa - https://creativecommons.org/licenses/by/4.0/ --><path fill="#ff5724" d="M20.309 17.708C22.196 15.66 22.006 13.03 22 13V5a1 1 0 0 0-1-1h-6c-1.103 0-2 .897-2 2v7a1 1 0 0 0 1 1h3.078a2.9 2.9 0 0 1-.429 1.396c-.508.801-1.465 1.348-2.846 1.624l-.803.16V20h1c2.783 0 4.906-.771 6.309-2.292m-11.007 0C11.19 15.66 10.999 13.03 10.993 13V5a1 1 0 0 0-1-1h-6c-1.103 0-2 .897-2 2v7a1 1 0 0 0 1 1h3.078a2.9 2.9 0 0 1-.429 1.396c-.508.801-1.465 1.348-2.846 1.624l-.803.16V20h1c2.783 0 4.906-.771 6.309-2.292"/></svg></p></div>
+<p>说是简介，其实搞错了，是 melonbooks 的推荐语。这不是每部作品都有的，但如果有，那一定是四行。可以点<a target="_blank" rel="noopener" href="https://www.melonbooks.co.jp/detail/detail.php?product_id=1735198">这里</a>查看（年龄限制）。</p>
+<blockquote>
+<p>Spotify 手机版的广告浓度远大于网页版的 5%，但这还不是关键问题。为什么我搜 月のワン 的时候，默认播放的第一首是其他歌曲，然后是广告，再然后“试听”的第一首才是本尊啊？</p>
+</blockquote>
+<p>Spotify 网页版是每 19 首歌插播一次广告，手机版要多的多，而且搜索功能也不如网页版。已卸载。</p>
+<h2 id="2023-年-2-月重构"><a class="markdownIt-Anchor" href="#2023-年-2-月重构"></a> <a href="../202302/">2023 年 2 月：重构</a></h2>
+<blockquote>
+<p><strong>セカイをリメイク</strong></p>
+</blockquote>
+<p>意为 Remake the world. 不知道捏它了啥，反正片假名标题看起来就很酷。</p>
+<h3 id="官方本地化组还真只有一个人"><a class="markdownIt-Anchor" href="#官方本地化组还真只有一个人"></a> <a href="../202302/#%E5%AE%98%E6%96%B9%E6%9C%AC%E5%9C%B0%E5%8C%96%E7%BB%84%E8%BF%98%E7%9C%9F%E5%8F%AA%E6%9C%89%E4%B8%80%E4%B8%AA%E4%BA%BA">官方本地化组还真只有一个人</a></h3>
+<blockquote>
+<p>今天回笼觉的时候梦到了 Arcaea 的终章，由于翻译质量时好时坏被人吐槽了。但这不是重点。这个故事分为两部分五节。第一部分第一节有很多圈出的字，将其连接起来就是谜面，第二部分是“我”的出现。第二部分第三节是货真价实的涂黑诗解谜，第五节是复诵，并且暗示了另一个解的存在。另外，圈出的第一个字在标题，最后一个字在制作人员表，算是一点都不唐突的meta……这样看来，1-1、2-1、2-3的翻译质量烂也不奇怪了，能把涂黑诗还原还是要花很多精力。</p>
+</blockquote>
+<p>涂黑诗的设计很好，但是 Arcaea 的本地化质量确实差，3.0 之后还出了点事故。</p>
+<h3 id="本编辑器已与微软达成深度合作"><a class="markdownIt-Anchor" href="#本编辑器已与微软达成深度合作"></a> <a href="../202302/#%E6%9C%AC%E7%BC%96%E8%BE%91%E5%99%A8%E5%B7%B2%E4%B8%8E%E5%BE%AE%E8%BD%AF%E8%BE%BE%E6%88%90%E6%B7%B1%E5%BA%A6%E5%90%88%E4%BD%9C">本编辑器已与微软达成深度合作</a></h3>
+<p>指的是 VS Code 与 Copilot。虽然 VS Code 本来就是微软的产品，但微软近几年大面积收购让很多生产管线的集成度都大大提高了。比如说，在写这篇博客的时候，OpenAI 已经被微软实质性收购了，OpenAI 的 GPT 也早就集成到了 VS Code，Bing 和 Office 里。</p>
+<h3 id="没打补丁所以成了上下学模拟器"><a class="markdownIt-Anchor" href="#没打补丁所以成了上下学模拟器"></a> <a href="../202302/#%E6%B2%A1%E6%89%93%E8%A1%A5%E4%B8%81%E6%89%80%E4%BB%A5%E6%88%90%E4%BA%86%E4%B8%8A%E4%B8%8B%E5%AD%A6%E6%A8%A1%E6%8B%9F%E5%99%A8">没打补丁所以成了上下学模拟器</a></h3>
+<p>指的是上架 steam 的一些黄油（ACT之类的，总之不是 Galgame）。</p>
+<p>当时肯定不会想到，《拔作岛》都能上架 steam 了。当然，因为整个游戏的主题都要被审查，所以 steam 基础版本的内容被删减到了只有开头一段的几分钟，这下好了，连上下学都不用直接通关了。（当然是有官方补丁的）</p>
+<h3 id="可稳定复现的自然是特性"><a class="markdownIt-Anchor" href="#可稳定复现的自然是特性"></a> <a href="../202302/#%E5%8F%AF%E7%A8%B3%E5%AE%9A%E5%A4%8D%E7%8E%B0%E7%9A%84%E8%87%AA%E7%84%B6%E6%98%AF%E7%89%B9%E6%80%A7">可稳定复现的自然是特性</a></h3>
+<p>捏它的是「Minecraft」社区里的一句名言「It’s not a bug, it’s a feature」。</p>
+<h3 id="还是看看-350-的平衡性更新吧"><a class="markdownIt-Anchor" href="#还是看看-350-的平衡性更新吧"></a> <a href="../202302/#%E8%BF%98%E6%98%AF%E7%9C%8B%E7%9C%8B-350-%E7%9A%84%E5%B9%B3%E8%A1%A1%E6%80%A7%E6%9B%B4%E6%96%B0%E5%90%A7">还是看看 35.0 的平衡性更新吧</a></h3>
+<p>BTD 35.0 的平衡性更新中，银行（农场 0-3-0）再次被 nerf。</p>
+<h3 id="按-tab-自动补全那我怎么缩进啊"><a class="markdownIt-Anchor" href="#按-tab-自动补全那我怎么缩进啊"></a> <a href="../202302/#%E6%8C%89-tab-%E8%87%AA%E5%8A%A8%E8%A1%A5%E5%85%A8%E9%82%A3%E6%88%91%E6%80%8E%E4%B9%88%E7%BC%A9%E8%BF%9B%E5%95%8A">按 Tab 自动补全那我怎么缩进啊？</a></h3>
+<p>Copilot 的补全键是 <code>Tab</code>，因此，如果 Copilot 已经给出了补全提示，按 <code>Tab</code> 就会直接补全，而不是缩进。</p>
+<p>好在 Copilot 会自动调整缩进，大部分时候问题不大。</p>
+<h3 id="主播哪国人"><a class="markdownIt-Anchor" href="#主播哪国人"></a> <a href="../202302/#%E4%B8%BB%E6%92%AD%E5%93%AA%E5%9B%BD%E4%BA%BA">主播哪国人</a></h3>
+<p>捏它……呃，我真不想把这个名字写出来。</p>
+<p>这个实验证明了 Copilot 无法有效区分中文和日文语境，不过倾向于使用在文档中已经出现过的词汇。</p>
+<h3 id="我以为大家带回家都是说着玩的"><a class="markdownIt-Anchor" href="#我以为大家带回家都是说着玩的"></a> <a href="../202302/#%E6%88%91%E4%BB%A5%E4%B8%BA%E5%A4%A7%E5%AE%B6%E5%B8%A6%E5%9B%9E%E5%AE%B6%E9%83%BD%E6%98%AF%E8%AF%B4%E7%9D%80%E7%8E%A9%E7%9A%84">我以为大家“带回家”都是说着玩的</a></h3>
+<p>指的是「Silence默不作声」（默神）。今年年初，他发视频宣布自己高中辍学建立小工作室开发 3D ADV 游戏，引发了大规模争论。不过如今此事已经草草收场。</p>
+<blockquote>
+<p>但是我欲讨论的重点并不是这些人。慨叹完现实之后，那么，看到这些事实的你呢？——就如同发现一具尸体，出于好奇你把它带回家，在满足自己的猎奇欲之后，又出于恐惧把它埋进院子里，并决定将尸体作为底线，永远不去提起它。这当然是一个很经典的比喻（基于《新概念英语3》），但和你看过的任何一个版本都不同的是，你的邻居也开始交流尸体话题，你完全没办法装作没听到没看到。即使后来你忍无可忍而搬家，也一直在后悔当初要是没把尸体搬回家就好了，转念一想觉得要是当初没看到尸体就好了，再一想又觉得你的邻居也会在不经意中告诉你一切，让你直接从纯良堕入深渊，毫无缓冲。你到看见棺材板之前都会觉得，人类的底线是守不住的，是会一再降低的；即使你本来就在另一个环境，那里的居民也怀揣着另一种不详的好奇心。</p>
+</blockquote>
+<p>这个比喻源自《NCE3》第 24 课「A skeleton in the cupboard」，这个俗语的意思是「不为人知的秘密/家丑」。</p>
+<blockquote>
+<p>怎么办呢？我确实不知道怎么办，但是我想，答案已经很明确了。尽管，我确实是生活在尸体的阴影中的。</p>
+</blockquote>
+<p>这一段的论述确实基于我关于 “literally” skeletons（guro）的阅历。</p>
+<h3 id="a-fan-of-fandom"><a class="markdownIt-Anchor" href="#a-fan-of-fandom"></a> <a href="../202302/#a-fan-of-fandom">A fan of Fandom</a></h3>
+<blockquote>
+<p>在试图用手机扫码登录 WhatsApp 网页端时，我发现 <strong>Dark Reader 的深色模式影响了二维码边框的判断导致无法识别</strong>。非常重要的教训！所以，Fandom，你罪该万死啊！</p>
+</blockquote>
+<p>Fandom 是众所周知对深色模式支持不好的网站，不像 Wikipedia，Fandom 的公式在深色模式下不会自动变成白色，而是保持黑色，导致无法阅读。不过后来似乎有所改善。</p>
+<p>如果二维码的边框是黑色的，基本上就无法识别了。因此使用 Dark Reader 必须将 WhatsApp 网页端加入「不反色列表」。当然网站本身也可以在二维码周围加一圈白色边框，比如百度。</p>
+<h3 id="默神-reaction-评注本合订本"><a class="markdownIt-Anchor" href="#默神-reaction-评注本合订本"></a> <a href="../202302/#%E9%BB%98%E7%A5%9E-reaction-%E8%AF%84%E6%B3%A8%E6%9C%AC%E5%90%88%E8%AE%A2%E6%9C%AC">默神 reaction 评注本合订本</a></h3>
+<blockquote>
+<p>再再另外，半写实风格至少不是低多边形，在恐怖谷里头离邓宁-克鲁格峰还是差一个 DALL-E 2，我觉得 Biological Horror 和 Psychological Horror 都是比较有开发空间的。（Ep. 6）</p>
+</blockquote>
+<p>低多边形是一种廉价游戏风格，即使用较少的多边形来绘制模型，以达到节省资源的目的。图形看起来很生硬、很荒谬，今天已经很少有游戏使用这种风格了。</p>
+<p>DALL-E 是 OpenAI 开发的文生图模型，不过要钱，我从来没用过。</p>
+<blockquote>
+<p>毫无疑问你应该去 Steam 鉴赏家里面请几位给每个 Choices Matter、Story Rich、Dark Humor 的后现代元游戏都打差评的中级高手婆罗门元老来教你怎么写剧情。</p>
+</blockquote>
+<p>指的是「史丹利的寓言 终极豪华版」（The Stanley Parable: Ultra Deluxe）。讽刺的代价就是自我讽刺。</p>
+<h3 id="动人心弦的世界系小说中局"><a class="markdownIt-Anchor" href="#动人心弦的世界系小说中局"></a> <a href="../202302/#%E5%8A%A8%E4%BA%BA%E5%BF%83%E5%BC%A6%E7%9A%84%E4%B8%96%E7%95%8C%E7%B3%BB%E5%B0%8F%E8%AF%B4%E4%B8%AD%E5%B1%80">动人心弦的世界系小说《中局》</a></h3>
+<p>这个梦毫无疑问和《中局》没有任何关系。不过我们就顺便来介绍一下这本书：塞南·麦奎尔的「middlegame」，披了个科幻皮的奇幻小说，雨果奖、轨迹奖提名。</p>
+<p>好了，介绍完了。和国际象棋、炼金术、时间穿越有点关系，但不多。有兴趣可以看看，还是挺有意思的。</p>
+<p>这是真介绍不出来个啥。为啥说它是世界系？因为<a target="_blank" rel="noopener" href="https://www.zhihu.com/question/517172661">仅有的一篇知乎回答</a> 里提到了这个词，正好借用一下。</p>
+<p>为啥没啥好介绍？这本小说是我在 2021 年的第 9 第 10 期《科幻世界 译文版》上看到的，国内连实体书都没有，要想看电子书只能买往期杂志；而我今年暑假回家的时候，发现这些杂志已经被家里清理掉了。那也没办法，以后有缘再看吧。</p>
+<h3 id="赛博朋克风味苦涩波子汽水"><a class="markdownIt-Anchor" href="#赛博朋克风味苦涩波子汽水"></a> <a href="../202302/#%E8%B5%9B%E5%8D%9A%E6%9C%8B%E5%85%8B%E9%A3%8E%E5%91%B3%E8%8B%A6%E6%B6%A9%E6%B3%A2%E5%AD%90%E6%B1%BD%E6%B0%B4">赛博朋克风味苦涩波子汽水</a></h3>
+<p>捏它拿了很多个第一的轻小说《弹珠汽水瓶里的千岁同学》。我没看过。</p>
+<h3 id="为了连载下去活得好好的还要加点配角"><a class="markdownIt-Anchor" href="#为了连载下去活得好好的还要加点配角"></a> <a href="../202302/#%E4%B8%BA%E4%BA%86%E8%BF%9E%E8%BD%BD%E4%B8%8B%E5%8E%BB%E6%B4%BB%E5%BE%97%E5%A5%BD%E5%A5%BD%E7%9A%84%E8%BF%98%E8%A6%81%E5%8A%A0%E7%82%B9%E9%85%8D%E8%A7%92">为了连载下去活得好好的还要加点配角</a></h3>
+<p>对很多成功的轻小说而言，事实如此。但是不举例子了。（↑这句话就是例子）</p>
+<blockquote>
+<p>在高潮中结局 = culminate with culmination。</p>
+</blockquote>
+<p>「culminate」在词典里只有一个释义，「If an event or series of events culminates in something, it ends with it, having developed until it reaches this point.」，即「以……告终；达到顶点」。</p>
+<h3 id="觉得空白太小也该写下来啊"><a class="markdownIt-Anchor" href="#觉得空白太小也该写下来啊"></a> <a href="../202302/#%E8%A7%89%E5%BE%97%E7%A9%BA%E7%99%BD%E5%A4%AA%E5%B0%8F%E4%B9%9F%E8%AF%A5%E5%86%99%E4%B8%8B%E6%9D%A5%E5%95%8A">觉得空白太小也该写下来啊</a></h3>
+<p>这捏它了啥不用我自己说了吧。</p>
+<h3 id="预约赛博故事会新春特辑前瞻特别节目"><a class="markdownIt-Anchor" href="#预约赛博故事会新春特辑前瞻特别节目"></a> <a href="../202302/#%E9%A2%84%E7%BA%A6%E8%B5%9B%E5%8D%9A%E6%95%85%E4%BA%8B%E4%BC%9A%E6%96%B0%E6%98%A5%E7%89%B9%E8%BE%91%E5%89%8D%E7%9E%BB%E7%89%B9%E5%88%AB%E8%8A%82%E7%9B%AE">预约赛博故事会新春特辑前瞻特别节目</a></h3>
+<p>自从 B 站有民间组织的同人新春会之后，亚文化狂潮是一年比一年高涨。今年各种各样的漫画（更准确地讲，IP）、游戏都有自己独立的新春会，甚至有些还有官方的支持。</p>
+<p>「前瞻特别节目」是明日方舟每季一度的直播的官方名称。</p>
+<h2 id="2023-年-3-月复制"><a class="markdownIt-Anchor" href="#2023-年-3-月复制"></a> <a href="../202303/">2023 年 3 月：复制</a></h2>
+<blockquote>
+<p><strong>無糖のレプリカ</strong></p>
+</blockquote>
+<p>意为「无糖的复制品」。捏它的是無糖紅茶（画师）和 Antimatter Dimensions 里的「Replicanti」。</p>
+<h3 id="开会时炼丹纯属扰民"><a class="markdownIt-Anchor" href="#开会时炼丹纯属扰民"></a> <a href="../202303/#%E5%BC%80%E4%BC%9A%E6%97%B6%E7%82%BC%E4%B8%B9%E7%BA%AF%E5%B1%9E%E6%89%B0%E6%B0%91">开会时炼丹纯属扰民</a></h3>
+<p>当时有人在 Tutorial 上跑 Hentai Diffusion 22，风扇嘎嘎响，至少引起了我的注意；于是我在 team project 开会的时候也跑着玩，结果被人猜到在炼丹了。看得出来，Stable Diffusion 当时是过于热门了（物理意义上的热）。</p>
+<h3 id="直入正题就亮红灯了证明前戏是必要的"><a class="markdownIt-Anchor" href="#直入正题就亮红灯了证明前戏是必要的"></a> <a href="../202303/#%E7%9B%B4%E5%85%A5%E6%AD%A3%E9%A2%98%E5%B0%B1%E4%BA%AE%E7%BA%A2%E7%81%AF%E4%BA%86%E8%AF%81%E6%98%8E%E5%89%8D%E6%88%8F%E6%98%AF%E5%BF%85%E8%A6%81%E7%9A%84">直入正题就亮红灯了证明前戏是必要的</a></h3>
+<blockquote>
+<p>今天让我的心情略微平复的是，我跟 Bing AI 聊了一个下午，交流了关于艺术的观念和理解。AI 给出了高信息密度的论述和大量的例证（虽然说甚至包含尚未上映的电影的剧透），让我能够在错愕和混沌之中找到一些思路。幸或不幸的是，虽然第 8 问就亮黄灯了，第 15 问才亮红灯掐断。虽然这玩意被限制也是理所当然的……我已经整理好了聊天记录，不过，自然是发不出来的。</p>
+</blockquote>
+<p>因为在开会的时候我对小组的进度非常不满意，生了一肚子气，回到宿舍就开始写这篇博客。顺便拿当时最新最热的 Bing AI 取乐。</p>
+<p>当时单次对话的上限还是 15 问（变化历程：无限制 → 5 → 8 → 10 → 15 → 20 → 30，现在是 30），不过我在第 15 问就被限制了。</p>
+<p>这个对话的主题是「猎奇艺术」，很有意思，但我觉得不适合发出来。大纲如下：</p>
+<div class="tag-plugin colorful note" color="blue"><div class="title"><strong><p>主讲人：New Bing</p>
+</strong></div><div class="body"><ul><li>好奇心、想象力与猎奇艺术的关系</li><li>荒谬现实（荒谬的个人经历和荒谬的社会环境）与猎奇艺术</li><li>猎奇与恐怖的关系</li><li>猎奇作品中剧中人物经受的心理创伤、人性堕落和道德困境这些要素的关系；以及与作品剧情、结构的关系</li><li>作者为何要用血腥暴力来呈现恐怖的氛围</li><li>猎奇作品中的悬疑、解谜等要素</li><li>猎奇作品中的杀人动机</li><li>时间轮回、合理性和猎奇氛围</li><li>时间轮回中，重复性和变化性于恐怖和悬疑的氛围的作用；主角知情和读者知情</li><li>处理主角和读者之间的信息差异，让读者接受结局，理解主角</li><li>猎奇世界观下的人性体现</li></ul></div></div>
+<h3 id="十六进位法的黄昏"><a class="markdownIt-Anchor" href="#十六进位法的黄昏"></a> <a href="../202303/#%E5%8D%81%E5%85%AD%E8%BF%9B%E4%BD%8D%E6%B3%95%E7%9A%84%E9%BB%84%E6%98%8F">十六进位法的黄昏</a></h3>
+<p>捏它「孤独摇滚」第 11 集「十二進法の夕景」，原标题十二进制指的是十二平均律。</p>
+<blockquote>
+<p>“Once you see it, you can’t unsee it.” 你已经听说过这个名字了，那么搜索引擎就会告诉你一切，破坏你的幻想。——除非，你听说的是 11 位 SHA256 哈希值。这样就搜不到任何资料，因此你姑且是可以继续幻想的。</p>
+</blockquote>
+<p>11 位 SHA256 指的是 Stable Diffusion WebUI 中的模型哈希值。</p>
+<blockquote>
+<p>好吧，以上是一个玩笑。如果你真的听说过一个名字，哪怕在三年半之后才回想起来，那么搜索引擎会告诉你，你当时就不应该听说，或者不要把莫名其妙的东西记得那么清楚。不要去搜。不要念叨这个名字。不要想着如何去忘记它。过好你一成不变的生活。再三年半之后，你还是会犯同样的错误。</p>
+</blockquote>
+<p>这确实是一件很奇妙的事情。我在 2019 年看到了一篇 OIer 的博客，内容是高中毕业的感想，标题是「结束的结束」（或者 「结束的终结」等等近义词，我正是因为想不起来具体是什么名字才始终找不到的）。他之前还发了一篇博客「结束的开始」。至今已经快五年了，我还是没有找到，不过倘真有读者知道，还请告知。</p>
+<p>我目前的猜测是这篇文章或这个博客已经被删除了。很不幸，互联网上的信息并不是永久的，有些东西一旦消失就再也找不回来了。</p>
+<h3 id="戴耳机就头疼所以不像以前循环一整天"><a class="markdownIt-Anchor" href="#戴耳机就头疼所以不像以前循环一整天"></a> <a href="../202303/#%E6%88%B4%E8%80%B3%E6%9C%BA%E5%B0%B1%E5%A4%B4%E7%96%BC%E6%89%80%E4%BB%A5%E4%B8%8D%E5%83%8F%E4%BB%A5%E5%89%8D%E5%BE%AA%E7%8E%AF%E4%B8%80%E6%95%B4%E5%A4%A9">戴耳机就头疼所以不像以前循环一整天</a></h3>
+<p>我听稍微硬一点的 HDM 就会头疼，所以平时都是听 Trance、House、DnB/Breakcore 之流的 EDM。不过就算如此，也要时常摘下耳机休息一下。</p>
+<p>单曲循环一整天，这很毁歌，不要尝试。这里指的是 2019 年我的 OIer 同学推荐的《人间失宠》，从早上 8 点开机到晚上 9 点离开机房，一直在循环这首歌。</p>
+<blockquote>
+<p>三年半以前，也就是 2019 年下半年，我在机房停课，度过了高中最荒诞的一段时光。我当时可谓是无恶不做、一事无成，反正最后谁都没有实质性损失，我也不觉得逃避是一件痛苦的事。但是有一件事是能确定的，那些日子绝对不是一成不变的。以下是一些轶闻的片段：在机房的最后两天（周五、周六），各看了 26 集番；周日注册了 steam 帐号并买了第一款游戏。</p>
+</blockquote>
+<p>我的入宅之路就是从这里开始的。</p>
+<ul>
+<li>2019 年 11 月 2 日：我找来了在国内刚刚（11 月 1 日）上映的《天气之子》（繁中枪版）的资源，看完觉得不过瘾，于是又开始看新海诚的上一部《你的名字。》，看得我泪流满面。</li>
+<li>11 月 3 日 - 11 月 14 日：我看了不少新海诚的作品，包括相关小说。《言叶之庭》《秒速 5 厘米》的小说都是相当有意思的，故事也比短篇动画电影丰富（当然短篇有短篇的好处）。</li>
+<li>11 月 15 日 - 11 月 16 日：我在机房用 2 倍速看完了《CLANNAD》和《CLANNAD ～AFTER STORY～》两季动画。</li>
+<li>11 月 16 日 - 11 月 17 日：NOIP 提高组复赛的日子（当年由于种种原因举办的是 CSP-S）。由于我在 OI 上毫无建树，参加完这次比赛之后我就彻底放弃了 OI。</li>
+<li>11 月 17 日：我在周日返校前注册了 steam 帐号，并买了第一款游戏《CLANNAD》。当时我还不知道 steam 有折扣这回事，血亏啊！</li>
+<li>2019 年 11 月 - 2020 年 4 月：我补了很多很多部动画和动画电影，包括 Key 的全系列以及大部分京都动画的作品。</li>
+<li>2020 年 3 月：我开始接触到年龄限制 Galgame。</li>
+</ul>
+<p>当时的我当然没想到，这么几个月看的动画比到现在看的还多，因为动画这个载体对我来说已经没有吸引力了。</p>
+<blockquote>
+<p>尽管，2020 年也是极尽荒诞的一年。我 2021 年年初回顾的时候坚定地放弃了向学校群里倒垃圾的想法，而是选择私信求助。虽然说其人并没有解答我的问题，但是还是让我好受了很多。</p>
+</blockquote>
+<p>高二，我发现各种内忧外患集中爆发，似乎我初中到高一过得无忧无虑的债全在这一刻还上了。我用学校里的平板写了一篇两千字长文，控诉人生。不幸的是，这篇文章没有留档，也没有发出去，就在草稿箱里过期了。2021 年 1 月 1 日，我向某位同班同学私信求助，大意如下：</p>
+<p>我该过怎样的青春呢？</p>
+<ul>
+<li>A. 逃避现实，继续闷闷不乐</li>
+<li>B. 过一般定义的青春</li>
+<li>C. 剑走偏锋，过自己的青春</li>
+</ul>
+<p>毫无疑问，这个问题放在今天看非常幼稚，但当时的认知水平确实如此。这位同学没有直接回答，但他的回复确实让我好受了很多。</p>
+<blockquote>
+<p>现在看来，2020 年虽说荒诞，也只能是单色的荒诞，只剩下天地间雪茫茫。</p>
+</blockquote>
+<p>疫情让人与人之间的距离拉得更远，让人很难描述具体的感受，总之是一种抽象的灰色（空白），我能想到的最好比喻就是天地间雪茫茫。</p>
+<blockquote>
+<p>虽说 2020 年认识了新朋友以及新爱好，但是应该说都是基于 2019 年的进一步发展。不太幸运的是，故事的这一部分到了 2020 年 8 月就结束了，一个新的篇章开始了—— 2021 年和 2022 年，我依然无恶不作，一事无成，新朋友和新爱好，仍然荒诞，仍然逃避。</p>
+</blockquote>
+<div class="tag-plugin quot p"><p class="content"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><!-- Icon from BoxIcons Solid by Atisa - https://creativecommons.org/licenses/by/4.0/ --><path fill="#ff5724" d="M3.691 6.292C5.094 4.771 7.217 4 10 4h1v2.819l-.804.161c-1.37.274-2.323.813-2.833 1.604A2.9 2.9 0 0 0 6.925 10H10a1 1 0 0 1 1 1v7c0 1.103-.897 2-2 2H3a1 1 0 0 1-1-1v-5l.003-2.919c-.009-.111-.199-2.741 1.688-4.789M20 20h-6a1 1 0 0 1-1-1v-5l.003-2.919c-.009-.111-.199-2.741 1.688-4.789C16.094 4.771 18.217 4 21 4h1v2.819l-.804.161c-1.37.274-2.323.813-2.833 1.604A2.9 2.9 0 0 0 17.925 10H21a1 1 0 0 1 1 1v7c0 1.103-.897 2-2 2"/></svg><span class="text">首次公开！学霸的真实面目！</span><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><!-- Icon from BoxIcons Solid by Atisa - https://creativecommons.org/licenses/by/4.0/ --><path fill="#ff5724" d="M20.309 17.708C22.196 15.66 22.006 13.03 22 13V5a1 1 0 0 0-1-1h-6c-1.103 0-2 .897-2 2v7a1 1 0 0 0 1 1h3.078a2.9 2.9 0 0 1-.429 1.396c-.508.801-1.465 1.348-2.846 1.624l-.803.16V20h1c2.783 0 4.906-.771 6.309-2.292m-11.007 0C11.19 15.66 10.999 13.03 10.993 13V5a1 1 0 0 0-1-1h-6c-1.103 0-2 .897-2 2v7a1 1 0 0 0 1 1h3.078a2.9 2.9 0 0 1-.429 1.396c-.508.801-1.465 1.348-2.846 1.624l-.803.16V20h1c2.783 0 4.906-.771 6.309-2.292"/></svg></p></div>
+<p>因为选课的原因，高二会重新分班。我高考后可能会质疑当年的自己为什么要选物化生（有一个原因是只有物化生才属于实验班），但今天已经无所谓了。</p>
+<p>后来这两年我确实是无恶不作。能说得上的行为，包括但不限于在学校里偷玩手机、偷玩班级电脑（周五逃晚自习玩 Slay the Spire 被年级主任抓了个正着）、破坏公共财物、扰乱公共秩序。</p>
+<p>我高三下甚至买了个二手 Redmi 5A（或 6A？），3G+32G，用来刷视频顺便玩明日方舟。但幸或不幸的是，5 月，由于我自己作死，将开发者设置中的最小宽度（dpi）改成了 800，<a target="_blank" rel="noopener" href="https://www.zhihu.com/question/372877369">由于 MIUI 10 的 bug 直接变砖</a>。最终我把手机的遗体留在了学校，流量卡注销了，此事休要再提。此外，由于当时进出小区要用支付宝刷健康码，我还把这条购买记录删了，以免被家长发现。</p>
+<p>这倒也不算黑历史，但我不管跟其他什么人说都不可能提及这件事，因此只能写在这里。</p>
+<blockquote>
+<p>这个篇章的恶作剧伴随着一定的后果。所以，急转直下的行为，反而让整个故事没那么荒诞；我已经受够了错误与教训的循环——虽然说，我怎么也不会讨厌这个篇章的。当然，家长和班主任肯定不会这样认为。但是没关系，故事已经结束了，精彩已经品鉴过了，后话也没必要再讲了。毕业算是比较仓促的收尾，不过跳出了高中这个容器，就没有人想继续写这个故事了。哪怕我再之前在体育仓库里想着怎么一脚踹开这个容器的门，惊醒了仓管大爷，也跳不出来。学校究竟是给予无理由还是有理由者相聚的机会，虽然答案非常明显，也不会有人关心了。</p>
+</blockquote>
+<p>在学校体育馆地下室的仓库里，我思考人生，蛮力踹门，结果未曾想到真有人在里面，赶紧逃跑。</p>
+<p>最后一句基于我 2020 年在 Bangumi 看到的一则评论，大意是「学校是给予无理由者相聚的机会」。</p>
+<blockquote>
+<p>再说点无聊的，真的很无聊。我是 2020 年初才接触到 R18 的。当然，任何一个对此有所了解的未成年人都会理所当然地无视这条警告。但是我的错误经历让我错误地觉得，什么年龄就该干什么事。这种里程碑式的循规蹈矩随后被我错误地融入中学形成的“正确的”人生道路中，让我觉得，我未来真的有事可干。</p>
+</blockquote>
+<p>这个笑话还带有一点历史因素：日本于 2018 年通过了法案，自 2022 年 4 月 1 日起，将成年年龄从 20 岁降低到 18 岁，不过烟酒等部分商品的购买年龄仍然是 20 岁。换句话说，在当时，R18 还是未成年人能接触的东西（理直气壮）。</p>
+<h3 id="帮不上人就自己从头干的自然而然空想"><a class="markdownIt-Anchor" href="#帮不上人就自己从头干的自然而然空想"></a> <a href="../202303/#%E5%B8%AE%E4%B8%8D%E4%B8%8A%E4%BA%BA%E5%B0%B1%E8%87%AA%E5%B7%B1%E4%BB%8E%E5%A4%B4%E5%B9%B2%E7%9A%84%E8%87%AA%E7%84%B6%E8%80%8C%E7%84%B6%E7%A9%BA%E6%83%B3">帮不上人就自己从头干的自然而然空想</a></h3>
+<blockquote>
+<p>这款游戏要做成什么样子呢？总之，大概是除非删档就没法修改选择，二周目强制选择相反选项，类似于《不予播出》的四个关键变量 16 个结局（当然这部游戏只有 14 个），然后每一个设置甚至连画面亮度对比度单角色音量都可以“复制”并操纵，来触发关键剧情。哦对了，还有 Linear plot + brief branches。好吧，谁会想玩呢？我是无所谓啦，反正我又做不出来。</p>
+</blockquote>
+<p>我已经有「游戏设置决定剧情走向」这个想法很久了。举个例子，「单角色音量」，通过将某个角色禁音，使他说的话无效化，从而改变剧情走向。</p>
+<p>《不予播出》有 2x2x2x2 个结局，但并不是四个关键选项决定的，所以还真不是好例子。</p>
+<h3 id="bing-ai-不能作画就不能吟诗"><a class="markdownIt-Anchor" href="#bing-ai-不能作画就不能吟诗"></a> <a href="../202303/#bing-ai-%E4%B8%8D%E8%83%BD%E4%BD%9C%E7%94%BB%E5%B0%B1%E4%B8%8D%E8%83%BD%E5%90%9F%E8%AF%97">Bing AI 不能作画就不能吟诗</a></h3>
+<p>当时 Bing AI 已经能作画了，但是让它写一首诗都要先经过图像生成。而当时图像生成在香港还未上线，直接导致无法吟诗。该 bug 应该是很快就修复了。</p>
+<h3 id="这辈子还能进用钥匙上锁的屋子吗"><a class="markdownIt-Anchor" href="#这辈子还能进用钥匙上锁的屋子吗"></a> <a href="../202303/#%E8%BF%99%E8%BE%88%E5%AD%90%E8%BF%98%E8%83%BD%E8%BF%9B%E7%94%A8%E9%92%A5%E5%8C%99%E4%B8%8A%E9%94%81%E7%9A%84%E5%B1%8B%E5%AD%90%E5%90%97">这辈子还能进用钥匙上锁的屋子吗</a></h3>
+<p>当时在玩「愛のカギ 2」（爱之钥 2），一部短篇 Galgame。</p>
+<p>剧情简单来说就是同居生活，不过比起发糖，这个系列的标志 —— 房子的钥匙 —— 更加吸引我。因为现实中，我家里用的是智能指纹/密码锁，我高中和大学的寝室都是刷卡，于是我就想，这辈子还能进用钥匙上锁的屋子吗？</p>
+<p>答案应该是肯定的，香港的老旧公寓里肯定还在用钥匙上锁。</p>
+<h3 id="缺乏激情的叙述交给-ai-也救不了"><a class="markdownIt-Anchor" href="#缺乏激情的叙述交给-ai-也救不了"></a> <a href="../202303/#%E7%BC%BA%E4%B9%8F%E6%BF%80%E6%83%85%E7%9A%84%E5%8F%99%E8%BF%B0%E4%BA%A4%E7%BB%99-ai-%E4%B9%9F%E6%95%91%E4%B8%8D%E4%BA%86">缺乏激情的叙述交给 AI 也救不了</a></h3>
+<blockquote>
+<p>今天中午，外面下雨了，天色阴郁，心情却仍高昂。</p>
+</blockquote>
+<p>这时作诗的 bug 已经修复了。我用这句作为提示词，发现 Bing AI 完全不擅长中文诗。</p>
+<blockquote>
+<p>总之，这不重要，虽然外面下雨了，我还是决定今天晚上去公园里散步——虽然有点蠢，但我想坐地铁去上次核酸检测的地方，旁边有个大公园（荔枝角公园），或者说，无边际的行人道的集合。</p>
+</blockquote>
+<p>荔枝角公园是没有边界的，就是很多人行道和人能走的土路的集合。</p>
+<p>这个公园我还是挺推荐的，咋看非常平凡，实际上一头离喧嚣的地铁站、广场很近，另一头则是彻底的寂静，充分利用地势高低差，让人能发现不同的乐趣。</p>
+<p>很可惜香港的夜空污染很严重，星空的照片都太明亮了。</p>
+<h3 id="windows-笑话二则外一则"><a class="markdownIt-Anchor" href="#windows-笑话二则外一则"></a> <a href="../202303/#windows-%E7%AC%91%E8%AF%9D%E4%BA%8C%E5%88%99%E5%A4%96%E4%B8%80%E5%88%99">Windows 笑话二则（外一则）</a></h3>
+<blockquote>
+<p>其一：Powershell 不支持 <code>&lt;</code> 和 <code>&gt;</code> 文件输入输出重定向，所以我想调试题目只能用 <code>cmd</code> 了。</p>
+</blockquote>
+<p>我真的很想吐槽 Windows 为什么会出现 <code>cmd</code>, Powershell 和 Windows Terminal 三个互不兼容的命令行工具。</p>
+<p>现在我主要使用的是 VSCode 内置 Powershell，很神奇的是，它确实支持 <code>&lt;</code> 和 <code>&gt;</code> 文件输入输出重定向。</p>
+<h3 id="纸箱子比生活更糜烂"><a class="markdownIt-Anchor" href="#纸箱子比生活更糜烂"></a> <a href="../202303/#%E7%BA%B8%E7%AE%B1%E5%AD%90%E6%AF%94%E7%94%9F%E6%B4%BB%E6%9B%B4%E7%B3%9C%E7%83%82">纸箱子比生活更糜烂</a></h3>
+<blockquote>
+<p>雨淅淅沥沥地从前天下到今天，我当然是没能去公园里散步了。但是更严重的问题是，星期六我没有关窗，结果不仅窗边的纸箱子都湿了，还让地上积满污水。</p>
+</blockquote>
+<p>这个教训还是很重要的；虽然有的时候我嫌风太大，关了窗户，但不知什么时候室友又帮我开了，导致窗户一直开着，不溅点雨想发现都难。</p>
+</article>
+<div class="article-footer">
+    <section id="license">
+      <div class="header"><span>许可协议</span></div>
+      <div class="body"><p>本文采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh">署名-相同方式共享 4.0 国际许可协议</a>，转载请注明出处。</p>
+</div>
+    </section>
+    </div>
+
+<div class="related-wrap" id="read-next"><section class="body"><div class="item" id="prev"><div class="note">较新文章</div><a href="/blog/2023/2023H2/">2023 年都造了点什么（乐子）</a></div><div class="item" id="next"><div class="note">较早文章</div><a href="/blog/2023/202311A/">2023 年 11 月下：新章</a></div></section></div>
+
+
+
+
+  <div class="related-wrap md-text" id="comments">
+    <section class='header cmt-title cap theme'>
+      <p>快来参与讨论吧~</p>
+
+    </section>
+    <section class='body cmt-body beaudar'>
+      
+
+<svg class="loading" style="vertical-align:middle;fill:currentColor;overflow:hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2709"><path d="M832 512c0-176-144-320-320-320V128c211.2 0 384 172.8 384 384h-64zM192 512c0 176 144 320 320 320v64C300.8 896 128 723.2 128 512h64z" p-id="2710"></path></svg>
+
+<div id="beaudar" repo="mojimoon/blog-comments" issue-term="pathname" theme="preferred-color-scheme" input-position="top" comment-order="desc" loading="false" branch="main"></div>
+
+    </section>
+  </div>
+
+
+
+<footer class="page-footer footnote"><hr><div class="sitemap"><div class="sitemap-group"><span class="fs15">博客</span><a href="/blog/">近期</a><a href="/blog/categories/">分类</a><a href="/blog/archives/">归档</a></div><div class="sitemap-group"><span class="fs15">外链</span><a target="_blank" rel="noopener" href="https://steamcommunity.com/id/unreset/">Steam</a><a target="_blank" rel="noopener" href="https://bgm.tv/user/788548">Bangumi</a><a target="_blank" rel="noopener" href="https://github.com/mojimoon">Github</a></div><div class="sitemap-group"><span class="fs15">社交</span><a href="/blog/2023/about/">关于</a><a href="/blog/">友链</a><a href="/blog/">留言板</a></div></div><div class="text"><p><a target="_blank" rel="noopener" href="https://github.com/mojimoon">@mojimoon</a> Overclocked by <a target="_blank" rel="noopener" href="https://xaoxuu.com/wiki/stellar/">Stellar</a></p>
+</div></footer>
+<div class="main-mask" onclick="sidebar.dismiss()"></div></div><aside class="l_right">
+<div class="widgets">
+
+
+
+<widget class="widget-wrapper toc" id="data-toc" collapse="false"><div class="widget-header dis-select"><span class="name">本文目录</span><a class="cap-action" onclick="sidebar.toggleTOC()" ><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6h11m-11 6h11m-11 6h11M4 6h1v4m-1 0h2m0 8H4c0-1 2-2 2-3s-1-1.5-2-1"/></svg></a></div><div class="widget-body"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#2023-%E5%B9%B4-1-%E6%9C%88%E7%99%BD%E5%A4%9C"><span class="toc-text"> 2023 年 1 月：白夜</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#2187-%E5%B9%B4%E8%BF%9C%E8%B7%9D%E7%A6%BB%E9%80%9A%E8%AE%AF"><span class="toc-text"> 2187 年，远距离通讯</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%AB%E4%B8%8A%E8%A1%A5%E4%B9%A0%E7%8F%AD%E4%BA%86"><span class="toc-text"> 别上补习班了！</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8F%88%E6%98%AF%E4%B8%AA%E5%9C%A8%E8%90%8C%E5%A8%98%E7%99%BE%E7%A7%91%E6%B2%A1%E4%B8%AA%E4%BA%BA%E8%AF%8D%E6%9D%A1%E7%9A%84%E7%94%B7%E4%B8%BB"><span class="toc-text"> 又是个在萌娘百科没个人词条的男主！</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%88%91%E8%BF%9E%E9%9A%BE%E5%BA%A60%E9%83%BD%E4%B8%8D%E4%BC%9A%E7%8E%A9%E5%95%8A"><span class="toc-text"> 我连难度0都不会玩啊！</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9B%9B%E9%87%8D%E5%A5%8F%E6%9C%89%E4%BA%94%E4%B8%AA%E4%BA%BA%E4%B8%8D%E6%98%AF%E5%BE%88%E6%AD%A3%E5%B8%B8%E5%90%97"><span class="toc-text"> 四重奏有五个人不是很正常吗？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%81%AB%E7%81%BE%E4%B9%8B%E4%BA%8E%E6%88%91%E8%AF%A1%E5%BC%82%E7%9A%84%E5%85%89%E4%B9%8B%E4%BA%8E%E4%B8%80%E7%A7%8D%E7%BE%8E%E5%91%B3"><span class="toc-text"> 火灾之于我，诡异的光之于一种美味</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B8%AE%E4%BA%BA%E5%81%9A%E4%BA%8B%E7%9A%84%E8%87%AA%E7%84%B6%E8%80%8C%E7%84%B6%E7%A9%BA%E6%83%B3"><span class="toc-text"> 帮人做事的自然而然空想</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BC%B9%E5%B9%95%E5%91%8A%E8%AF%89%E4%BD%A0%E5%90%8E%E9%9D%A2%E4%BC%9A%E8%A7%A3%E9%87%8A%E7%9A%84"><span class="toc-text"> 弹幕告诉你后面会解释的</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AF%91%E8%80%85%E6%B3%A8%E6%8B%AC%E5%BC%A7%E5%86%85%E4%B8%BA%E4%B8%AA%E4%BA%BA%E6%84%9F%E6%83%B3"><span class="toc-text"> （译者注：括弧内为个人感想）</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2023-%E5%B9%B4-2-%E6%9C%88%E9%87%8D%E6%9E%84"><span class="toc-text"> 2023 年 2 月：重构</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%98%E6%96%B9%E6%9C%AC%E5%9C%B0%E5%8C%96%E7%BB%84%E8%BF%98%E7%9C%9F%E5%8F%AA%E6%9C%89%E4%B8%80%E4%B8%AA%E4%BA%BA"><span class="toc-text"> 官方本地化组还真只有一个人</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9C%AC%E7%BC%96%E8%BE%91%E5%99%A8%E5%B7%B2%E4%B8%8E%E5%BE%AE%E8%BD%AF%E8%BE%BE%E6%88%90%E6%B7%B1%E5%BA%A6%E5%90%88%E4%BD%9C"><span class="toc-text"> 本编辑器已与微软达成深度合作</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B2%A1%E6%89%93%E8%A1%A5%E4%B8%81%E6%89%80%E4%BB%A5%E6%88%90%E4%BA%86%E4%B8%8A%E4%B8%8B%E5%AD%A6%E6%A8%A1%E6%8B%9F%E5%99%A8"><span class="toc-text"> 没打补丁所以成了上下学模拟器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8F%AF%E7%A8%B3%E5%AE%9A%E5%A4%8D%E7%8E%B0%E7%9A%84%E8%87%AA%E7%84%B6%E6%98%AF%E7%89%B9%E6%80%A7"><span class="toc-text"> 可稳定复现的自然是特性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BF%98%E6%98%AF%E7%9C%8B%E7%9C%8B-350-%E7%9A%84%E5%B9%B3%E8%A1%A1%E6%80%A7%E6%9B%B4%E6%96%B0%E5%90%A7"><span class="toc-text"> 还是看看 35.0 的平衡性更新吧</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8C%89-tab-%E8%87%AA%E5%8A%A8%E8%A1%A5%E5%85%A8%E9%82%A3%E6%88%91%E6%80%8E%E4%B9%88%E7%BC%A9%E8%BF%9B%E5%95%8A"><span class="toc-text"> 按 Tab 自动补全那我怎么缩进啊？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%BB%E6%92%AD%E5%93%AA%E5%9B%BD%E4%BA%BA"><span class="toc-text"> 主播哪国人</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%88%91%E4%BB%A5%E4%B8%BA%E5%A4%A7%E5%AE%B6%E5%B8%A6%E5%9B%9E%E5%AE%B6%E9%83%BD%E6%98%AF%E8%AF%B4%E7%9D%80%E7%8E%A9%E7%9A%84"><span class="toc-text"> 我以为大家“带回家”都是说着玩的</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#a-fan-of-fandom"><span class="toc-text"> A fan of Fandom</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%BB%98%E7%A5%9E-reaction-%E8%AF%84%E6%B3%A8%E6%9C%AC%E5%90%88%E8%AE%A2%E6%9C%AC"><span class="toc-text"> 默神 reaction 评注本合订本</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8A%A8%E4%BA%BA%E5%BF%83%E5%BC%A6%E7%9A%84%E4%B8%96%E7%95%8C%E7%B3%BB%E5%B0%8F%E8%AF%B4%E4%B8%AD%E5%B1%80"><span class="toc-text"> 动人心弦的世界系小说《中局》</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%B5%9B%E5%8D%9A%E6%9C%8B%E5%85%8B%E9%A3%8E%E5%91%B3%E8%8B%A6%E6%B6%A9%E6%B3%A2%E5%AD%90%E6%B1%BD%E6%B0%B4"><span class="toc-text"> 赛博朋克风味苦涩波子汽水</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%BA%E4%BA%86%E8%BF%9E%E8%BD%BD%E4%B8%8B%E5%8E%BB%E6%B4%BB%E5%BE%97%E5%A5%BD%E5%A5%BD%E7%9A%84%E8%BF%98%E8%A6%81%E5%8A%A0%E7%82%B9%E9%85%8D%E8%A7%92"><span class="toc-text"> 为了连载下去活得好好的还要加点配角</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A7%89%E5%BE%97%E7%A9%BA%E7%99%BD%E5%A4%AA%E5%B0%8F%E4%B9%9F%E8%AF%A5%E5%86%99%E4%B8%8B%E6%9D%A5%E5%95%8A"><span class="toc-text"> 觉得空白太小也该写下来啊</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%A2%84%E7%BA%A6%E8%B5%9B%E5%8D%9A%E6%95%85%E4%BA%8B%E4%BC%9A%E6%96%B0%E6%98%A5%E7%89%B9%E8%BE%91%E5%89%8D%E7%9E%BB%E7%89%B9%E5%88%AB%E8%8A%82%E7%9B%AE"><span class="toc-text"> 预约赛博故事会新春特辑前瞻特别节目</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2023-%E5%B9%B4-3-%E6%9C%88%E5%A4%8D%E5%88%B6"><span class="toc-text"> 2023 年 3 月：复制</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BC%80%E4%BC%9A%E6%97%B6%E7%82%BC%E4%B8%B9%E7%BA%AF%E5%B1%9E%E6%89%B0%E6%B0%91"><span class="toc-text"> 开会时炼丹纯属扰民</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%9B%B4%E5%85%A5%E6%AD%A3%E9%A2%98%E5%B0%B1%E4%BA%AE%E7%BA%A2%E7%81%AF%E4%BA%86%E8%AF%81%E6%98%8E%E5%89%8D%E6%88%8F%E6%98%AF%E5%BF%85%E8%A6%81%E7%9A%84"><span class="toc-text"> 直入正题就亮红灯了证明前戏是必要的</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8D%81%E5%85%AD%E8%BF%9B%E4%BD%8D%E6%B3%95%E7%9A%84%E9%BB%84%E6%98%8F"><span class="toc-text"> 十六进位法的黄昏</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%88%B4%E8%80%B3%E6%9C%BA%E5%B0%B1%E5%A4%B4%E7%96%BC%E6%89%80%E4%BB%A5%E4%B8%8D%E5%83%8F%E4%BB%A5%E5%89%8D%E5%BE%AA%E7%8E%AF%E4%B8%80%E6%95%B4%E5%A4%A9"><span class="toc-text"> 戴耳机就头疼所以不像以前循环一整天</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B8%AE%E4%B8%8D%E4%B8%8A%E4%BA%BA%E5%B0%B1%E8%87%AA%E5%B7%B1%E4%BB%8E%E5%A4%B4%E5%B9%B2%E7%9A%84%E8%87%AA%E7%84%B6%E8%80%8C%E7%84%B6%E7%A9%BA%E6%83%B3"><span class="toc-text"> 帮不上人就自己从头干的自然而然空想</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#bing-ai-%E4%B8%8D%E8%83%BD%E4%BD%9C%E7%94%BB%E5%B0%B1%E4%B8%8D%E8%83%BD%E5%90%9F%E8%AF%97"><span class="toc-text"> Bing AI 不能作画就不能吟诗</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BF%99%E8%BE%88%E5%AD%90%E8%BF%98%E8%83%BD%E8%BF%9B%E7%94%A8%E9%92%A5%E5%8C%99%E4%B8%8A%E9%94%81%E7%9A%84%E5%B1%8B%E5%AD%90%E5%90%97"><span class="toc-text"> 这辈子还能进用钥匙上锁的屋子吗</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BC%BA%E4%B9%8F%E6%BF%80%E6%83%85%E7%9A%84%E5%8F%99%E8%BF%B0%E4%BA%A4%E7%BB%99-ai-%E4%B9%9F%E6%95%91%E4%B8%8D%E4%BA%86"><span class="toc-text"> 缺乏激情的叙述交给 AI 也救不了</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#windows-%E7%AC%91%E8%AF%9D%E4%BA%8C%E5%88%99%E5%A4%96%E4%B8%80%E5%88%99"><span class="toc-text"> Windows 笑话二则（外一则）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BA%B8%E7%AE%B1%E5%AD%90%E6%AF%94%E7%94%9F%E6%B4%BB%E6%9B%B4%E7%B3%9C%E7%83%82"><span class="toc-text"> 纸箱子比生活更糜烂</span></a></li></ol></li></ol></div><div class="widget-footer">
+
+<a class="top" onclick="util.scrollTop()"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 12c0-4.714 0-7.071 1.464-8.536C4.93 2 7.286 2 12 2c4.714 0 7.071 0 8.535 1.464C22 4.93 22 7.286 22 12c0 4.714 0 7.071-1.465 8.535C19.072 22 16.714 22 12 22s-7.071 0-8.536-1.465C2 19.072 2 16.714 2 12Z"/><path stroke-linecap="round" stroke-linejoin="round" d="m9 15.5l3-3l3 3m-6-4l3-3l3 3"/></g></svg><span>回到顶部</span></a><a class="buttom" onclick="util.scrollComment()"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="M10.46 1.25h3.08c1.603 0 2.86 0 3.864.095c1.023.098 1.861.3 2.6.752a5.75 5.75 0 0 1 1.899 1.899c.452.738.654 1.577.752 2.6c.095 1.004.095 2.261.095 3.865v1.067c0 1.141 0 2.036-.05 2.759c-.05.735-.153 1.347-.388 1.913a5.75 5.75 0 0 1-3.112 3.112c-.805.334-1.721.408-2.977.43a10.81 10.81 0 0 0-.929.036c-.198.022-.275.054-.32.08c-.047.028-.112.078-.224.232c-.121.166-.258.396-.476.764l-.542.916c-.773 1.307-2.69 1.307-3.464 0l-.542-.916a10.605 10.605 0 0 0-.476-.764c-.112-.154-.177-.204-.224-.232c-.045-.026-.122-.058-.32-.08c-.212-.023-.49-.03-.93-.037c-1.255-.021-2.171-.095-2.976-.429A5.75 5.75 0 0 1 1.688 16.2c-.235-.566-.338-1.178-.389-1.913c-.049-.723-.049-1.618-.049-2.76v-1.066c0-1.604 0-2.86.095-3.865c.098-1.023.3-1.862.752-2.6a5.75 5.75 0 0 1 1.899-1.899c.738-.452 1.577-.654 2.6-.752C7.6 1.25 8.857 1.25 10.461 1.25M6.739 2.839c-.914.087-1.495.253-1.959.537A4.25 4.25 0 0 0 3.376 4.78c-.284.464-.45 1.045-.537 1.96c-.088.924-.089 2.11-.089 3.761v1c0 1.175 0 2.019.046 2.685c.045.659.131 1.089.278 1.441a4.25 4.25 0 0 0 2.3 2.3c.515.214 1.173.294 2.429.316h.031c.398.007.747.013 1.037.045c.311.035.616.104.909.274c.29.17.5.395.682.645c.169.232.342.525.538.856l.559.944a.52.52 0 0 0 .882 0l.559-.944c.196-.331.37-.624.538-.856c.182-.25.392-.476.682-.645c.293-.17.598-.24.909-.274c.29-.032.639-.038 1.037-.045h.032c1.255-.022 1.913-.102 2.428-.316a4.25 4.25 0 0 0 2.3-2.3c.147-.352.233-.782.278-1.441c.046-.666.046-1.51.046-2.685v-1c0-1.651 0-2.837-.089-3.762c-.087-.914-.253-1.495-.537-1.959a4.25 4.25 0 0 0-1.403-1.403c-.464-.284-1.045-.45-1.96-.537c-.924-.088-2.11-.089-3.761-.089h-3c-1.651 0-2.837 0-3.762.089" clip-rule="evenodd"/><path fill="currentColor" d="M9 11a1 1 0 1 1-2 0a1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0a1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0a1 1 0 0 1 2 0"/></svg><span>参与讨论</span></a></div></widget>
+</div></aside><div class='float-panel blur'>
+  <button type='button' style='display:none' class='laptop-only rightbar-toggle mobile' onclick='sidebar.rightbar()'>
+    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6h11m-11 6h11m-11 6h11M4 6h1v4m-1 0h2m0 8H4c0-1 2-2 2-3s-1-1.5-2-1"/></svg>
+  </button>
+  <button type='button' style='display:none' class='mobile-only leftbar-toggle mobile' onclick='sidebar.leftbar()'>
+    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 11c0-3.771 0-5.657 1.172-6.828C4.343 3 6.229 3 10 3h4c3.771 0 5.657 0 6.828 1.172C22 5.343 22 7.229 22 11v2c0 3.771 0 5.657-1.172 6.828C19.657 21 17.771 21 14 21h-4c-3.771 0-5.657 0-6.828-1.172C2 18.657 2 16.771 2 13z"/><path id="sep" stroke-linecap="round" d="M5.5 10h6m-5 4h4m4.5 7V3"/></g></svg>
+  </button>
+</div>
+</div><div class="scripts">
+<script type="text/javascript">
+  const ctx = {
     date_suffix: {
       just: `刚刚`,
       min: `分钟前`,
@@ -27,7 +426,13 @@
   const deps = {
     jquery: `https://gcore.jsdelivr.net/npm/jquery@3.7/dist/jquery.min.js`,
     marked: `https://gcore.jsdelivr.net/npm/marked@13.0/lib/marked.umd.min.js`
-  }</script><script>function RunItem() {
+  }
+  
+
+</script>
+
+<script type="text/javascript">
+  function RunItem() {
     this.list = []; // 存放回调函数
     this.start = () => {
       for (var i = 0; i < this.list.length; i++) {
@@ -242,7 +647,10 @@
   };
   utils.dark = Object.assign(utils.dark, {
     push: utils.dark.method.toggle.push,
-  });</script><script>const sidebar = {
+  });
+</script>
+<script>
+  const sidebar = {
     leftbar: () => {
       if (l_body) {
         l_body.toggleAttribute('leftbar');
@@ -264,7 +672,10 @@
     toggleTOC: () => {
       document.querySelector('#data-toc').classList.toggle('collapse');
     }
-  }</script><script>(() => {
+  }
+</script>
+<script type="text/javascript">
+  (() => {
     const tagSwitchers = document.querySelectorAll('.tag-subtree.parent-tag > a > .tag-switcher-wrapper')
     for (const tagSwitcher of tagSwitchers) {
       tagSwitcher.addEventListener('click', (e) => {
@@ -288,7 +699,15 @@
         }
       }
     }
-  })()</script><script src="https://gcore.jsdelivr.net/gh/mojimoon/blog@v20260111/js/main.js?v=1.30.2" defer></script><script>const applyTheme = (theme) => {
+  })()
+</script>
+
+
+<!-- required -->
+<script src="https://gcore.jsdelivr.net/gh/mojimoon/blog@v20260111/js/main.js?v=1.30.2" defer></script>
+
+<script type="text/javascript">
+  const applyTheme = (theme) => {
     if (theme === 'auto') {
       document.documentElement.removeAttribute('data-theme')
     } else {
@@ -352,7 +771,14 @@
       utils.dark.mode = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
     }
     utils.dark.method.toggle.start();
-  })()</script><script type="module">const el = document.querySelector('#comments #beaudar');
+  })()
+</script>
+
+
+<!-- optional -->
+
+  <script type="module">
+  const el = document.querySelector('#comments #beaudar');
   util.viewportLazyload(el, load_beaudar, true);
 
   function load_beaudar() {
@@ -372,7 +798,14 @@
       }
     }
     el.appendChild(script);
-  }</script><script defer>window.addEventListener('DOMContentLoaded', (event) => {
+  }
+</script>
+
+
+
+
+<script defer>
+  window.addEventListener('DOMContentLoaded', (event) => {
     ctx.services = Object.assign({}, JSON.parse(`{"mdrender":{"js":"/js/services/mdrender.js"},"siteinfo":{"js":"/js/services/siteinfo.js","api":null},"ghinfo":{"js":"/js/services/ghinfo.js"},"sites":{"js":"/js/services/sites.js"},"friends":{"js":"/js/services/friends.js"},"friends_and_posts":{"js":"/js/services/friends_and_posts.js"},"timeline":{"js":"/js/services/timeline.js"},"fcircle":{"js":"/js/services/fcircle.js"},"weibo":{"js":"/js/services/weibo.js"},"memos":{"js":"/js/services/memos.js"},"voice":{"js":"/js/plugins/voice.js"},"video":{"js":"/js/plugins/video.js"},"download-file":{"js":"/js/plugins/download-file.js"},"twikoo":{"js":"/js/services/twikoo_latest_comment.js"},"waline":{"js":"/js/services/waline_latest_comment.js"},"artalk":{"js":"/js/services/artalk_latest_comment.js"},"giscus":{"js":"/js/services/giscus_latest_comment.js"}}`));
     for (let id of Object.keys(ctx.services)) {
       const js = ctx.services[id].js;
@@ -489,12 +922,27 @@
         }
       });
     });
-  });</script><script>window.addEventListener('DOMContentLoaded', (event) => {
+  });
+</script>
+
+<script>
+  window.addEventListener('DOMContentLoaded', (event) => {
     ctx.search = {
       path: `/search.json`,
     }
     utils.js('/js/search/local-search.js', { defer: true });
-  });</script><script>window.FPConfig={delay:0,ignoreKeywords:[],maxRPS:5,hoverDelay:25}</script><script defer src="https://gcore.jsdelivr.net/npm/flying-pages@2/flying-pages.min.js"></script><script defer src="https://gcore.jsdelivr.net/npm/vanilla-lazyload@19.1/dist/lazyload.min.js"></script><script>// https://www.npmjs.com/package/vanilla-lazyload
+  });
+</script><script>
+  window.FPConfig = {
+    delay: 0,
+    ignoreKeywords: [],
+    maxRPS: 5,
+    hoverDelay: 25
+  };
+</script>
+<script defer src="https://gcore.jsdelivr.net/npm/flying-pages@2/flying-pages.min.js"></script><script defer src="https://gcore.jsdelivr.net/npm/vanilla-lazyload@19.1/dist/lazyload.min.js"></script>
+<script>
+  // https://www.npmjs.com/package/vanilla-lazyload
   // Set the options globally
   // to make LazyLoad self-initialize
   window.lazyLoadOptions = {
@@ -511,7 +959,9 @@
   );
   document.addEventListener('DOMContentLoaded', function () {
     window.lazyLoadInstance?.update();
-  });</script><script>ctx.fancybox = {
+  });
+</script><script>
+  ctx.fancybox = {
     selector: `.timenode p>img`,
     css: `https://gcore.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css`,
     js: `https://gcore.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js`
@@ -540,7 +990,10 @@
         }
       });
     })
-  }</script><script>window.addEventListener('DOMContentLoaded', (event) => {
+  }
+</script>
+<script>
+  window.addEventListener('DOMContentLoaded', (event) => {
     const swiper_api = document.getElementById('swiper-api');
     if (swiper_api != undefined) {
       utils.css(`https://unpkg.com/swiper@10.3/swiper-bundle.min.css`);
@@ -563,7 +1016,10 @@
         });
       })
     }
-  });</script><script>document.addEventListener('DOMContentLoaded', function () {
+  });
+</script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
     window.codeElements = document.querySelectorAll('.code');
     if (window.codeElements.length > 0) {
       ctx.copycode = {
@@ -573,4 +1029,10 @@
       };
       utils.js('/js/plugins/copycode.js');
     }
-  });</script></div></body></html>
+  });
+</script>
+
+
+<!-- inject -->
+
+</div></body></html>
