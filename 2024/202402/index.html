@@ -1,0 +1,660 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="hexo-theme" content="https://github.com/xaoxuu/hexo-theme-stellar/tree/1.33.1" theme-name="Stellar" theme-version="1.33.1"><meta name="generator" content="Hexo 7.3.0"><meta http-equiv="x-dns-prefetch-control" content="on"><meta name="renderer" content="webkit"><meta name="force-rendering" content="webkit"><meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"><meta name="HandheldFriendly" content="True"><meta name="mobile-web-app-capable" content="yes"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1"><meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000"><meta name="theme-color" content="#f9fafb"><title>2024 年 2 月：翻译人生 - もじもんの文字門</title><meta name="description" content="bxs:quote-left-orange翻译不仅是件苦力活，还很需要灵感满溢的时刻。bxs:quote-right-orange"><meta property="og:type" content="article"><meta property="og:title" content="2024 年 2 月：翻译人生"><meta property="og:url" content="https://mojimoon.github.io/blog/2024/202402/"><meta property="og:site_name" content="もじもんの文字門"><meta property="og:description" content="bxs:quote-left-orange翻译不仅是件苦力活，还很需要灵感满溢的时刻。bxs:quote-right-orange"><meta property="og:locale" content="zh_CN"><meta property="og:image" content="https://gcore.jsdelivr.net/gh/mojimoon/blog@v20260111/image/mojimoon.png"><meta property="article:published_time" content="2024-02-25T00:00:00.000Z"><meta property="article:modified_time" content="2026-07-05T04:48:02.066Z"><meta property="article:author" content="mojimoon"><meta property="article:tag" content="mojimoon, computer science, python, blog, hexo, stellar, personal blog, deep learning"><meta name="twitter:card" content="summary"><meta name="twitter:image" content="https://gcore.jsdelivr.net/gh/mojimoon/blog@v20260111/image/mojimoon.png"><meta name="keywords" content="mojimoon, computer science, python, blog, hexo, stellar, personal blog, deep learning"><link rel="stylesheet" href="https://gcore.jsdelivr.net/gh/mojimoon/blog@v20260111/css/main.css?v=1.33.1"><link rel="shortcut icon" href="/blog/image/favicon.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"mojimoon","sameAs":[],"image":"https://gcore.jsdelivr.net/gh/mojimoon/blog@v20260111/image/mojimoon.png"},"dateCreated":"2024-02-25T08:00:00+08:00","dateModified":"2026-07-05T12:48:02+08:00","datePublished":"2024-02-25T08:00:00+08:00","description":"bxs:quote-left-orange翻译不仅是件苦力活，还很需要灵感满溢的时刻。bxs:quote-right-orange","headline":"2024 年 2 月：翻译人生","mainEntityOfPage":{"@type":"WebPage","@id":"https://mojimoon.github.io/blog/2024/202402/"},"publisher":{"@type":"Organization","name":"mojimoon","sameAs":[],"image":"https://gcore.jsdelivr.net/gh/mojimoon/blog@v20260111/image/mojimoon.png","logo":{"@type":"ImageObject","url":"https://gcore.jsdelivr.net/gh/mojimoon/blog@v20260111/image/mojimoon.png"}},"url":"https://mojimoon.github.io/blog/2024/202402/","image":[]}</script><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet"><link rel="stylesheet" href="https://gcore.jsdelivr.net/gh/mojimoon/blog@v20260111/css/override.css"></head><body><div class="l_body content" id="start" layout="post" type="tech"><aside class="l_left"><div class="sidebg"></div><div class="leftbar-container"><header class="header"><div class="logo-wrap"><a class="avatar" href="/blog/about/"><div class="bg" style="opacity:0;background-image:url(https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/avatar/round/rainbow64@3x.webp)"></div><img no-lazy class="avatar" src="https://gcore.jsdelivr.net/gh/mojimoon/blog@v20260111/image/mojimoon.png" onerror='this.classList.add("error"),this.src="https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/image/2659360.svg"'></a><a class="title" href="/blog/"><div class="main">もじもんの文字門</div><div class="sub normal cap">Computer Science</div><div class="sub hover cap" style="opacity:0">City University of Hong Kong</div></a></div></header><div class="nav-area"><nav class="menu dis-select"></nav></div><div class="widgets"><div class="search-wrapper" id="search-wrapper"><form class="search-form"><a class="search-button" onclick="document.getElementById(&quot;search-input&quot;).focus();"><svg t="1705074644177" viewBox="0 0 1025 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1560" width="200" height="200"><path d="M1008.839137 935.96571 792.364903 719.491476a56.783488 56.783488 0 0 0-80.152866 0 358.53545 358.53545 0 1 1 100.857314-335.166073 362.840335 362.840335 0 0 1-3.689902 170.145468 51.248635 51.248635 0 1 0 99.217358 26.444296 462.057693 462.057693 0 1 0-158.255785 242.303546l185.930047 185.725053a51.248635 51.248635 0 0 0 72.568068 0 51.248635 51.248635 0 0 0 0-72.978056z" p-id="1561"></path><path d="M616.479587 615.969233a50.428657 50.428657 0 0 0-61.498362-5.534852 174.655348 174.655348 0 0 1-177.525271 3.484907 49.403684 49.403684 0 0 0-58.833433 6.76482l-3.074918 2.869923a49.403684 49.403684 0 0 0 8.609771 78.10292 277.767601 277.767601 0 0 0 286.992355-5.739847 49.403684 49.403684 0 0 0 8.404776-76.667958z" p-id="1562"></path></svg></a><input type="text" class="search-input" id="search-input" placeholder="站内搜索"></form><div id="search-result"></div><div class="search-no-result">没有找到内容！</div></div><widget class="widget-wrapper recent post-list"><div class="widget-header dis-select"><span class="name">最近更新</span></div><div class="widget-body fs14"><a class="item title" href="/blog/2025/protective-film/"><span class="title">经验谈：笔记本电脑不建议使用屏幕膜和键盘膜</span></a><a class="item title" href="/blog/2025/novel-yomei/"><span class="title">冰冷的余命化为了温暖的数字</span></a><a class="item title" href="/blog/2023/python-scraping/"><span class="title">笔记：Python 爬虫/数据分析简易教程</span></a><a class="item title" href="/blog/2025/speedup-github-page/"><span class="title">加快 GitHub Pages 国内访问速度</span></a><a class="item title" href="/blog/2025/ssd-enclosure/"><span class="title">拯救旧笔记本：制作移动硬盘盒</span></a><a class="item title" href="/blog/2025/though-unintentional/"><span class="title">2025 年 3 月：虽非本意（一）</span></a><a class="item title" href="/blog/2025/understanding-promise/"><span class="title">理解 Promise</span></a><a class="item title" href="/blog/2026/wheel-problem/"><span class="title">转盘重复数问题</span></a><a class="item title" href="/blog/2025/why-75-keyboard/"><span class="title">为什么75%键盘是程序员的最佳选择？</span></a><a class="item title" href="/blog/2025/novel-mukeimei/"><span class="title">无记名仇恨</span></a></div></widget></div></div></aside><div class="l_main" id="main"><div class="article banner top"><div class="content"><div class="top bread-nav footnote"><div class="left"><div class="flex-row" id="breadcrumb"><a class="cap breadcrumb" href="/blog/blog/">主页</a><span class="sep"></span> <a class="cap breadcrumb" href="/blog/">文章</a><span class="sep"></span><a class="cap breadcrumb-link" href="/blog/categories/Journal/">Journal</a></div><div class="flex-row" id="post-meta"><span class="text created">发布于：<time datetime="2024-02-25T00:00:00.000Z">2024-02-25</time></span><span class="sep updated"></span><span class="text updated">更新于：<time datetime="2026-07-05T04:48:02.066Z">2026-07-05</time></span></div></div></div><div class="bottom only-title"><div class="text-area"><h1 class="text title"><span>2024 年 2 月：翻译人生</span></h1></div></div></div></div><article class="md-text content"><div class="tag-plugin quot p"><p class="content">bxs:quote-left-orange<span class="text">翻译不仅是件苦力活，还很需要灵感满溢的时刻。</span>bxs:quote-right-orange</p></div><span id="more"></span><p>上个月我翻译了なる的几篇感想，虽然基本相当于机翻润色（参考了 DeepL、有道和 GPT），但我还是很享受在翻译过程中「发现」作者想法的过程。</p><p>只不过，我现在很不满意。原因也很简单：翻译得实在是太差了。主要表现在语序和词汇两个方面：</p><ul><li>语序上，好似直接将日文表达通过繁简转换输出为中文，经常出现难以理解的省略和定语后置。</li><li>词汇上，有很多词汇直接使用了日文汉字，显得很生硬；但更多的是为了追求句式自然而使用了不太恰当的词汇。</li></ul><p>因此，我着手修正了这些翻译，并将双语对照版独立发布，方便读者参考。</p><p>笔者并不能保证新版翻译做到了信达雅，因为笔者并未受过专业的翻译训练，且有意保留了一定的意译。但新版翻译应该会更容易理解，更符合中文的表达习惯。</p><p>以下分享一些趣事。请务必注意，包含了 SPRB 的完整剧透。</p><h2 id="alka"><a class="markdownIt-Anchor" href="#alka"></a> <a href="../Alka/">ALKA</a></h2><blockquote><p>未来の羽依里は、（ある1枚を除いて）しろはの写っている写真を全て処分していました。それに加えて、うみへの対応を避けているように見えます。しろはの顔を見るのも辛い羽依里は、<strong>うみの顔を見るとその母親であるしろはのことをどうしても思い出してしまった</strong>のではないでしょうか。</p></blockquote><p>旧译：未来的羽依里把所有出现了白羽的照片（除了一张）都扔掉了。而且，他似乎也在逃避和羽未的交流。这是因为只要看到白羽的脸就会很难过的羽依里，<strong>一看到羽未的脸就会想起白羽</strong>吧。</p><p>新译：除了那一张照片之外，未来的羽依里已经扔掉了所有白羽的照片。而且他似乎一直避免与羽未交谈。这是因为，他既然舍得扔掉了白羽的照片，说明他只要看到白羽的容貌就非常痛苦；与此同时，<strong>羽未的脸总是让他回想起白羽</strong>。</p><p>日文文章中经常出现像这样跳跃式的省略 —— 就像我之前写的博客一样 —— 在中文中未免显得有些奇怪。新译中我尽量模仿作者的语气补充了逻辑。</p><hr><blockquote><p><strong>幼い頃に両親を亡くし、2人に会いたくて未来に行きたいとさえ願ったことのあるしろはは、おかーさんに会いたいと願ううみの気持ちが痛いほどにわかった</strong>のでしょう。</p></blockquote><p>旧译：对于自幼父母双亡、甚至曾经渴望过穿越到未来见父母的白羽来说，她很能够理解羽未想见妈妈的心情。</p><p>新译：自幼失去父母，无比怀念他们，甚至曾经希望能够去未来见他们的白羽，能切身体会到羽未渴望见到妈妈的心情。</p><p>首先，「亡くす」是「失去」的意思，并不一定是「死亡」。结合原文，「自幼父母双亡」也是不准确的。</p><p>其次，机翻会把「痛いほどにわかった」翻成「她很痛苦地理解……」，这也有误。</p><p>根据 <a target="_blank" rel="noopener" href="https://zh.hinative.com/questions/24746081">HiNative</a> 上的一则问答，</p><blockquote><p>「痛いほどわかる」これは精神的な痛みなんかではなくて実際の体の苦痛を比喩した表現です。<br>「身に染みるほど」と言う言葉がありますが、身に染みて体が苦痛を感じるほどわかる、痛切に感じるという表現です。<br>言い回しですから大げさな面はありましが気持ちとしては「非常に」というレベルではなく、もっと上の深刻さを表したい時に使います。</p></blockquote><p>「痛いほどわかる」并不是强调「痛苦」，而是强调「深刻（地感受到）」。比「身に染みるほど」（深深感到，铭刻于心）语义更强烈。</p><p>此处翻译成「切身体会到」，因为实在很难想到更简洁的表达方式。</p><hr><blockquote><p>人見知りを発動し合うしろはとうみの距離を縮めるために羽依里はある提案をします。それはうみにこの夏休みの日記を書いてもらうことでした。未来のことを書けば、それが本当のことになる、そんな魔法の絵日記。そんな存在をうみはともかく、しろはも信じてしまうのが可愛い。この2人、<strong>仮初めではなく本当に母娘の親子</strong>なんだよな…って。</p></blockquote><p>旧译：为了缩短彼此都很怕生的白羽和羽未之间的距离，羽依里提出了一个建议，让羽未写下这个暑假的日记。但这不是普通的日记，而是只要写下未来的事就会实现的魔法日记。羽未和白羽都相信魔法的存在，真是可爱。这两个人，<strong>不是临时母女，而是真正的母女</strong>啊……</p><p>新译：白羽和羽未都很怕生。为了缩短她们之间的距离，羽依里提议让羽未写下这个暑假的日记。这不是普通的日记，而是只要写下未来的事就会实现的魔法日记。而羽未和白羽都相信了魔法的存在，真是可爱。这两个人，<strong>并非临时扮演母女，而是真正的母女</strong>啊……</p><p>由于中文中重复出现「的」字会显得很啰嗦，有时将句子拆分成两句会更通顺。</p><p>「仮初め」是「临时」的意思并没有错，但是「临时母女」这种说法很奇怪。如果想到类似于过家家的场景，会觉得「扮演母女」更贴切。</p><hr><blockquote><p>魚釣りで羽依里が大きな魚を釣る度に悔しそうな顔を見せていましたし、実のところしろはは<strong>かなり負けず嫌い</strong>なんですよね。そんなところも可愛い。</p></blockquote><p>旧译：钓鱼的时候，每次羽依里钓到大鱼的时候，白羽都会露出不甘心的表情，其实她是<strong>很好强</strong>的。这一点也很可爱。</p><p>新译：钓鱼时，每当羽依里钓到大鱼，白羽都会露出不甘心的表情 —— 其实她是<strong>很好胜</strong>的。这一点也很可爱。</p><blockquote><p>絵本なんてこの島には売ってないし、どうしようと悩む羽依里に対し、偶然居合わせた鴎は「羽依里が作ってしまえばいい」と提案するのでした。</p></blockquote><p>旧译：正当羽依里为这座岛上没有绘本卖而烦恼的时候，偶然路过的鸥提出了「干脆由羽依里来亲手制作一本」的建议。</p><p>新译：正当羽依里为这座岛上没有绘本卖发愁时，偶然路过的鸥提议「干脆由羽依里来亲手制作一本」。</p><p>这两个例子虽然简单，却是体现日文表达与中文表达差异的典型。</p><hr><blockquote><p>ここで「どうして鴎はここまで絵本に対しての造詣が深いんだろう？」と一瞬考えましたが、<strong>鴎の母親は人気のある児童小説家</strong>だったことを思い出して納得しました。そもそも鴎√の冒険の題材は鴎母が書いた小説であり、その内容は鴎本人が考えたものでしたから。</p></blockquote><p>旧译：这时我突然想到，<strong>鸥为什么对绘本的造诣这么深呢？<strong>然后我想起了鸥的母亲是</strong>人气儿童小说家</strong>这件事，就解释得通了。毕竟鸥线的冒险故事的题材就是鸥母亲写的小说，而且内容也是鸥自己想出来的。</p><p>新译：<strong>鸥为什么对绘本的造诣这么深呢？</strong> 回想起 <strong>鸥的母亲是人气儿童小说家</strong>就能明白。毕竟鸥线的冒险故事取自她母亲的小说，而这个故事也是鸥自己想象出来的。</p><p>原文通过自问自答的方式表达了作者的思考过程，但因为显得累赘而在新译中没有保留。</p><p>因为鸥的冒险故事 <strong>就是</strong> 小说的内容（具体），而非 <strong>基于</strong> 小说的演绎（抽象）；尽管中文中的「题材」既可以指抽象的主题，也可以指具体的内容，但毕竟是前者更常见；因此翻译成「题材」不太合适（但并不构成错误）。</p><hr><blockquote><p>しろはがうみの母親役を引き受けたことに対し、蒼は心底嬉しそうな反応を見せます。例の事件以降、他の人から遠ざかるようになってしまったしろはが誰かと一緒にいて、誰かのために行動を起こしたことがとても嬉しいみたいです。蒼√の感想でも書きましたが、この子は<strong>本当に面倒見がいい</strong>んですよね。蒼だって抱えているものがあるのに…。</p></blockquote><p>旧译：对于白羽接受了羽未母亲的角色，苍看起来很开心。自从 4 年前的那件事之后，白羽就开始疏远他人。所以现在的白羽能够和别人在一起，为了别人而行动，对苍来说是很开心的事情。我在苍线的感想里也写过，<strong>这个孩子真的很会照顾人</strong>。虽然她也有自己的烦恼……</p><p>新译：苍对于白羽接受「羽未的母亲」这一角色由衷地喜悦。自从 4 年前的那件事之后，白羽就开始疏远他人。因此，现在的白羽能够和别人在一起，为了别人而行动，对苍来说是值得高兴的事情。我在苍线的感想里也提到过，<strong>这个孩子真的很会照顾人</strong>。虽然她也有自己的烦恼……</p><p>「に対して」这种表达在日文中如此常用，以至于如果读者看到旧译这种不通顺的表达，基本可以断定为机翻。</p><p>另外，我也无法理解机翻在「蒼は心底嬉しそうな反応を見せます」这句中，为什么省略了「心底」而强调了「そうな」。（直译：让我看到了苍内心深处喜悦的反应。基本可以简化成心底嬉しみ，所以「そうな」完全没有必要。）</p><hr><blockquote><p>そしてこの<strong>しろはとうみの屈託のない笑顔、永遠に守ってあげたい</strong>なと思ってしまいます。本当にもう、柔らかくなってしまって…。</p></blockquote><p>旧译：然后，<strong>白羽和羽未无忧无虑的笑容，真的好想永远保护下去</strong>。软得我的心都要化了……</p><p>新译：然后，<strong>我真的好想永远守护白羽和羽未无忧无虑的笑容</strong>。软得我的心都要化了……</p><p>我之前看到一种说法，日文的「下さい」和中文的「下去」是有渊源的，尽管后者已经失去了其尊敬的意味。但无论如何，这句读起来不像中文。</p><hr><blockquote><p>次の日記にはうみがウォータースライダーと流れるプールで遊んでいる絵が描いてありました。流石にこの島じゃ無理だし、本州に行くのかな…なんて想像してしまいましたが、そんなことはなかったです。</p></blockquote><p>旧译：在接下来的日记（8 月 11 日）中，羽未画了自己在水上滑梯和水会流动的泳池中嬉戏的画面。我想，这个岛果然没有这样的设施，羽未是不是要去本州玩呢……但是事实并非如此。</p><p>新译：在 8 月 11 日的日记中，羽未描绘了自己在水上滑梯和流水泳池中嬉戏的画面。鸟白岛毕竟没有这样的设施，是不是要去本州玩呢……并非如此。</p><p>「流石に」有两个意思，一是 as one would expect; naturally; indeed（果然），二是 still; all the same; after all​（毕竟）。语义还是有些许差别的。</p><hr><blockquote><p>ここまでの幸せな日常は、少しの歯車のズレで壊れてしまいます。うみは、しろはが他の誰にも言ったことのない夏鳥の儀のお役目について知っていました。これまでも、うみが日記に書いた未来は「天気も含め」全て当たっていました。しろはは、自分が見てしまった未来（夏鳥の儀の日に海底で溺れ苦しむ）は変えられるとどこか思っていましたが、結局は変えられないんだと現実を突き付けられたような気持ちになってしまったのです。</p></blockquote><p>旧译：如此幸福的日常，因为一点小小的偏差而崩坏了。8 月 15 日，白羽发现羽未居然知道她在夏鸟之仪式的职责，而这件事她从来没有告诉过任何人。到目前为止，羽未写在日记里的未来事件，<strong>包括天气</strong>，都一一应验了。白羽觉得自己之前看到的未来 —— 在夏鸟之仪式那天溺水而死 —— 是可以改变的，但是现实却告诉她，这是不可能的。</p><p>新译：维系日常转动的齿轮稍稍地偏离，如此幸福的生活走向了崩坏。8 月 15 日。尽管白羽从来没有对任何人提起，但羽未却对她在夏鸟之仪式上的职责了如指掌。迄今为止，羽未在日记里写下的未来事件，<strong>包括天气</strong>，都一一应验了。白羽觉得自己之前看到的未来 —— 在夏鸟之仪式那天溺水挣扎 —— 是可以改变的，但是这一事实却将她打回了现实。</p><p>最难翻译的段落之一。</p><p>「突き付ける」是「（把证据）摆在眼前」的意思。「結局は変えられないんだと現実を突き付けられたような気持ちになってしまったのです」直译就是「产生了『（未来）最终无法改变』这一现实摆在眼前的感觉」，简化一下就是「面对『未来最终无法改变』的现实」。</p><hr><p>剩下的部分还有待修订。</p></article><div class="article-footer"><section id="license"><div class="header"><span>许可协议</span></div><div class="body"><p>本文采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh">署名-相同方式共享 4.0 国际许可协议</a>，转载请注明出处。</p></div></section></div><div class="related-wrap" id="read-next"><section class="body"><div class="item" id="prev"><div class="note">较新文章</div><a href="/blog/2024/202403/">2024 年 3 月：解密通信</a></div><div class="item" id="next"><div class="note">较早文章</div><a href="/blog/2024/PW/">Playing With / Literal-Minded Horror</a></div></section></div><div class="related-wrap md-text" id="comments"><section class="header cmt-title cap theme"><p>快来参与讨论吧~</p></section><section class="body cmt-body beaudar"><svg class="loading" style="vertical-align:middle;fill:currentColor;overflow:hidden" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2709"><path d="M832 512c0-176-144-320-320-320V128c211.2 0 384 172.8 384 384h-64zM192 512c0 176 144 320 320 320v64C300.8 896 128 723.2 128 512h64z" p-id="2710"></path></svg><div id="beaudar" repo="mojimoon/blog-comments" issue-term="pathname" theme="preferred-color-scheme" input-position="top" comment-order="desc" loading="false" branch="main"></div></section></div><footer class="page-footer footnote"><hr><div class="text"><p><a target="_blank" rel="noopener" href="https://github.com/mojimoon">@mojimoon</a> Overclocked by <a target="_blank" rel="noopener" href="https://xaoxuu.com/wiki/stellar/">Stellar</a></p></div></footer><div class="main-mask" onclick="sidebar.dismiss()"></div></div><aside class="l_right"><div class="widgets"><widget class="widget-wrapper toc" id="data-toc" collapse="false"><div class="widget-header dis-select"><span class="name">本文目录</span><a class="cap-action" onclick="sidebar.toggleTOC()"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6h11m-11 6h11m-11 6h11M4 6h1v4m-1 0h2m0 8H4c0-1 2-2 2-3s-1-1.5-2-1"/></svg></a></div><div class="widget-body"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#alka"><span class="toc-text">ALKA</span></a></li></ol></div><div class="widget-footer"><a class="top" onclick="util.scrollTop()"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.5"><path stroke-linejoin="round" d="m9 15.5 3-3 3 3-6-4 3-3 3 3"/><path d="M7 3.338A9.95 9.95 0 0 1 12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12c0-1.821.487-3.53 1.338-5"/></g></svg><span>回到顶部</span></a><a class="buttom" onclick="util.scrollComment()"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.5" d="M8 10.5h8M8 14h5.5M17 3.338A9.95 9.95 0 0 0 12 2C6.477 2 2 6.477 2 12c0 1.6.376 3.112 1.043 4.453.178.356.237.763.134 1.148l-.595 2.226a1.3 1.3 0 0 0 1.591 1.592l2.226-.596a1.63 1.63 0 0 1 1.149.133A9.96 9.96 0 0 0 12 22c5.523 0 10-4.477 10-10 0-1.821-.487-3.53-1.338-5"/></svg><span>参与讨论</span></a></div></widget></div></aside><div class="float-panel"><button type="button" style="display:none" class="laptop-only rightbar-toggle mobile" onclick="sidebar.rightbar()"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6h11m-11 6h11m-11 6h11M4 6h1v4m-1 0h2m0 8H4c0-1 2-2 2-3s-1-1.5-2-1"/></svg></button> <button type="button" style="display:none" class="mobile-only leftbar-toggle mobile" onclick="sidebar.leftbar()"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 11c0-3.771 0-5.657 1.172-6.828C4.343 3 6.229 3 10 3h4c3.771 0 5.657 0 6.828 1.172C22 5.343 22 7.229 22 11v2c0 3.771 0 5.657-1.172 6.828C19.657 21 17.771 21 14 21h-4c-3.771 0-5.657 0-6.828-1.172C2 18.657 2 16.771 2 13z"/><path id="sep" stroke-linecap="round" d="M5.5 10h6m-5 4h4m4.5 7V3"/></g></svg></button></div></div><div class="scripts"><script>window.canonical = {"originalHost":null,"officialHosts":["localhost"],"encoded":""};
+  const ctx = {
+    date_suffix: {
+      just: `刚刚`,
+      min: `分钟前`,
+      hour: `小时前`,
+      day: `天前`,
+    },
+    root : `/blog/`,
+    tag_plugins: {
+      chat: Object.assign({"api":"https://siteinfo.listentothewind.cn/api/v1"}),
+    }
+  };
+
+  // required plugins (only load if needs)
+  if (`local_search`) {
+    ctx.search = {};
+    ctx.search.service = `local_search`;
+    if (ctx.search.service == 'local_search') {
+      let service_obj = Object.assign({}, `{"field":"all","path":"/search.json","content":true,"skip_search":null,"sort":"-date"}`);
+      ctx.search[ctx.search.service] = service_obj;
+    }
+  }
+  const def = {
+    avatar: `https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/avatar/round/3442075.svg`,
+    cover: `https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/cover/76b86c0226ffd.svg`,
+    loading: `https://api.iconify.design/eos-icons:three-dots-loading.svg?color=%231cd0fd`,
+  };
+  const deps = {
+    jquery: `https://gcore.jsdelivr.net/npm/jquery@3.7/dist/jquery.min.js`,
+    marked: `https://gcore.jsdelivr.net/npm/marked@13.0/lib/marked.umd.min.js`,
+    lazyload: `/blog/%5Bobject%20Object%5D`
+  }</script><script>function RunItem() {
+    this.list = []; // 存放回调函数
+    this.start = () => {
+      for (var i = 0; i < this.list.length; i++) {
+        this.list[i].run();
+      }
+    };
+    this.push = (fn, name, setRequestAnimationFrame = true) => {
+      let myfn = fn
+      if (setRequestAnimationFrame) {
+        myfn = () => {
+          utils.requestAnimationFrame(fn)
+        }
+      }
+      var f = new Item(myfn, name);
+      this.list.push(f);
+    };
+    this.remove = (name) => {
+      for (let index = 0; index < this.list.length; index++) {
+        const e = this.list[index];
+        if (e.name == name) {
+          this.list.splice(index, 1);
+        }
+      }
+    }
+    // 构造一个可以run的对象
+    function Item(fn, name) {
+      // 函数名称
+      this.name = name || fn.name;
+      // run方法
+      this.run = () => {
+        try {
+          fn()
+        } catch (error) {
+          console.log(error);
+        }
+      };
+    }
+  }
+
+  const utils = {
+    // 懒加载 css https://github.com/filamentgroup/loadCSS
+    css: (href, before, media, attributes) => {
+      var doc = window.document;
+      var ss = doc.createElement("link");
+      var ref;
+      if (before) {
+        ref = before;
+      } else {
+        var refs = (doc.body || doc.getElementsByTagName("head")[0]).childNodes;
+        ref = refs[refs.length - 1];
+      }
+      var sheets = doc.styleSheets;
+      if (attributes) {
+        for (var attributeName in attributes) {
+          if (attributes.hasOwnProperty(attributeName)) {
+            ss.setAttribute(attributeName, attributes[attributeName]);
+          }
+        }
+      }
+      ss.rel = "stylesheet";
+      ss.href = href;
+      ss.media = "only x";
+      function ready(cb) {
+        if (doc.body) {
+          return cb();
+        }
+        setTimeout(function () {
+          ready(cb);
+        });
+      }
+      ready(function () {
+        ref.parentNode.insertBefore(ss, before ? ref : ref.nextSibling);
+      });
+      var onloadcssdefined = function (cb) {
+        var resolvedHref = ss.href;
+        var i = sheets.length;
+        while (i--) {
+          if (sheets[i].href === resolvedHref) {
+            return cb();
+          }
+        }
+        setTimeout(function () {
+          onloadcssdefined(cb);
+        });
+      };
+      function loadCB() {
+        if (ss.addEventListener) {
+          ss.removeEventListener("load", loadCB);
+        }
+        ss.media = media || "all";
+      }
+      if (ss.addEventListener) {
+        ss.addEventListener("load", loadCB);
+      }
+      ss.onloadcssdefined = onloadcssdefined;
+      onloadcssdefined(loadCB);
+      return ss;
+    },
+
+    js: (src, opt) => new Promise((resolve, reject) => {
+      var script = document.createElement('script');
+      if (src.startsWith('/')) {
+        src = ctx.root + src.substring(1);
+      }
+      script.src = src;
+      if (opt) {
+        for (let key of Object.keys(opt)) {
+          script[key] = opt[key]
+        }
+      } else {
+        // 默认异步，如果需要同步，第二个参数传入 {} 即可
+        script.async = true
+      }
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function () {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    }),
+
+    jq: (fn) => {
+      if (typeof jQuery === 'undefined') {
+        utils.js(deps.jquery).then(fn)
+      } else {
+        fn()
+      }
+    },
+
+    onLoading: (el) => {
+      if (el) {
+        $(el).append('<div class="loading-wrap"><svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2"><path stroke-dasharray="60" stroke-dashoffset="60" stroke-opacity=".3" d="M12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3Z"><animate fill="freeze" attributeName="stroke-dashoffset" dur="1.3s" values="60;0"/></path><path stroke-dasharray="15" stroke-dashoffset="15" d="M12 3C16.9706 3 21 7.02944 21 12"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.3s" values="15;0"/><animateTransform attributeName="transform" dur="1.5s" repeatCount="indefinite" type="rotate" values="0 12 12;360 12 12"/></path></g></svg></div>');
+      }
+    },
+    onLoadSuccess: (el) => {
+      if (el) {
+        $(el).find('.loading-wrap').remove();
+      }
+    },
+    onLoadFailure: (el) => {
+      if (el) {
+        $(el).find('.loading-wrap svg').remove();
+        $(el).find('.loading-wrap').append('<svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path stroke-dasharray="60" stroke-dashoffset="60" d="M12 3L21 20H3L12 3Z"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.5s" values="60;0"/></path><path stroke-dasharray="6" stroke-dashoffset="6" d="M12 10V14"><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.6s" dur="0.2s" values="6;0"/></path></g><circle cx="12" cy="17" r="1" fill="currentColor" fill-opacity="0"><animate fill="freeze" attributeName="fill-opacity" begin="0.8s" dur="0.4s" values="0;1"/></circle></svg>');
+        $(el).find('.loading-wrap').addClass('error');
+      }
+    },
+    request: (el, url, callback, onFailure) => {
+      const maxRetry = 3;
+      let retryCount = 0;
+
+      return new Promise((resolve, reject) => {
+        const load = () => {
+          utils.onLoading?.(el);
+
+          let timedOut = false;
+          const timeout = setTimeout(() => {
+            timedOut = true;
+            console.warn('[request] 超时:', url);
+
+            if (++retryCount >= maxRetry) {
+              utils.onLoadFailure?.(el);
+              onFailure?.();
+              reject('请求超时');
+            } else {
+              setTimeout(load, 1000);
+            }
+          }, 5000);
+
+          fetch(url).then(resp => {
+            if (timedOut) return;
+            clearTimeout(timeout);
+
+            if (!resp.ok) throw new Error('响应失败');
+            return resp;
+          }).then(data => {
+            if (timedOut) return;
+            utils.onLoadSuccess?.(el);
+            callback(data);
+            resolve(data);
+          }).catch(err => {
+            clearTimeout(timeout);
+            console.warn('[request] 错误:', err);
+
+            if (++retryCount >= maxRetry) {
+              utils.onLoadFailure?.(el);
+              onFailure?.();
+              reject(err);
+            } else {
+              setTimeout(load, 1000);
+            }
+          });
+        };
+
+        load();
+      });
+    },
+    requestWithoutLoading: (url, options = {}, maxRetry = 2, timeout = 5000) => {
+      return new Promise((resolve, reject) => {
+        let retryCount = 0;
+
+        const tryRequest = () => {
+          let timedOut = false;
+          const timer = setTimeout(() => {
+            timedOut = true;
+            if (++retryCount > maxRetry) reject('timeout');
+            else tryRequest();
+          }, timeout);
+
+          fetch(url, options)
+            .then(resp => {
+              clearTimeout(timer);
+              if (!resp.ok) throw new Error('bad response');
+              resolve(resp);
+            })
+            .catch(err => {
+              clearTimeout(timer);
+              if (++retryCount > maxRetry) reject(err);
+              else setTimeout(tryRequest, 500);
+            });
+        };
+
+        tryRequest();
+      });
+    },
+    /********************** requestAnimationFrame ********************************/
+    // 1、requestAnimationFrame 会把每一帧中的所有 DOM 操作集中起来，在一次重绘或回流中就完成，并且重绘或回流的时间间隔紧紧跟随浏览器的刷新频率，一般来说，这个频率为每秒60帧。
+    // 2、在隐藏或不可见的元素中，requestAnimationFrame 将不会进行重绘或回流，这当然就意味着更少的的 cpu，gpu 和内存使用量。
+    requestAnimationFrame: (fn) => {
+      if (!window.requestAnimationFrame) {
+        window.requestAnimationFrame = window.requestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame;
+      }
+      window.requestAnimationFrame(fn)
+    },
+    dark: {},
+  };
+
+  // utils.dark.mode 当前模式 dark or light
+  // utils.dark.toggle() 暗黑模式触发器
+  // utils.dark.push(callBack[,"callBackName"]) 传入触发器回调函数
+  utils.dark.method = {
+    toggle: new RunItem(),
+  };
+  utils.dark = Object.assign(utils.dark, {
+    push: utils.dark.method.toggle.push,
+  });</script><script>const sidebar = {
+    leftbar: () => {
+      if (l_body) {
+        l_body.toggleAttribute('leftbar');
+        l_body.removeAttribute('rightbar');
+      }
+    },
+    rightbar: () => {
+      if (l_body) {
+        l_body.toggleAttribute('rightbar');
+        l_body.removeAttribute('leftbar');
+      }
+    },
+    dismiss: () => {
+      if (l_body) {
+        l_body.removeAttribute('leftbar');
+        l_body.removeAttribute('rightbar');
+      }
+    },
+    toggleTOC: () => {
+      document.querySelector('#data-toc').classList.toggle('collapse');
+    }
+  }</script><script>(() => {
+    const tagSwitchers = document.querySelectorAll('.tag-subtree.parent-tag > a > .tag-switcher-wrapper')
+    for (const tagSwitcher of tagSwitchers) {
+      tagSwitcher.addEventListener('click', (e) => {
+        const parent = e.target.closest('.tag-subtree.parent-tag')
+        parent.classList.toggle('expanded')
+        e.preventDefault()
+      })
+    }
+
+    // Get active tag from query string, then activate it.
+    const urlParams = new URLSearchParams(window.location.search)
+    const activeTag = urlParams.get('tag')
+    if (activeTag) {
+      let tag = document.querySelector(`.tag-subtree[data-tag="${activeTag}"]`)
+      if (tag) {
+        tag.querySelector('a').classList.add('active')
+        
+        while (tag) {
+          tag.classList.add('expanded')
+          tag = tag.parentElement.closest('.tag-subtree.parent-tag')
+        }
+      }
+    }
+  })()</script><script async src="https://gcore.jsdelivr.net/npm/vanilla-lazyload@19.1/dist/lazyload.min.js"></script><script>// https://www.npmjs.com/package/vanilla-lazyload
+  // Set the options globally
+  // to make LazyLoad self-initialize
+  window.lazyLoadOptions = {
+    elements_selector: ".lazy",
+    callback_loaded: (el) => {
+      el.classList.add('loaded');
+      const wrapper = el.closest('.lazy-box');
+      const icon = wrapper?.querySelector('.lazy-icon');
+      if (icon) icon.remove();
+    }
+  };
+  // Listen to the initialization event
+  // and get the instance of LazyLoad
+  window.addEventListener(
+    "LazyLoad::Initialized",
+    function (event) {
+      window.lazyLoadInstance = event.detail.instance;
+    },
+    false
+  );
+  document.addEventListener('DOMContentLoaded', function () {
+    window.lazyLoadInstance?.update();
+  });
+
+  window.wrapLazyloadImages = (container) => {
+    if (typeof container === 'string') {
+      container = document.querySelector(container);
+    }
+    if (!container) return;
+    
+    const images = container.querySelectorAll('img');
+    images.forEach((img) => {
+      if (img.classList.contains('lazy')) return;
+
+      const src = img.getAttribute('src');
+      if (!src) return;
+
+      const wrapper = document.createElement('div');
+      wrapper.className = 'lazy-box';
+
+      const newImg = img.cloneNode();
+      newImg.removeAttribute('src');
+      newImg.setAttribute('data-src', src);
+      newImg.classList.add('lazy');
+
+      const icon = document.createElement('div');
+      icon.className = 'lazy-icon';
+      if (def.loading) {
+        icon.style.backgroundImage = `url("${def.loading}")`;
+      }
+
+      wrapper.appendChild(newImg);
+      wrapper.appendChild(icon);
+
+      img.replaceWith(wrapper);
+    });
+
+    // 通知 LazyLoad 更新
+    if (window.lazyLoadInstance?.update) {
+      window.lazyLoadInstance.update();
+    }
+  }</script><script src="https://gcore.jsdelivr.net/gh/mojimoon/blog@v20260111/js/main.js?v=1.33.1" defer></script><script>const applyTheme = (theme) => {
+    if (theme === 'auto') {
+      document.documentElement.removeAttribute('data-theme')
+    } else {
+      document.documentElement.setAttribute('data-theme', theme)
+    }
+
+    // applyThemeToGiscus(theme)
+  }
+
+  // FIXME: 这会导致无法使用 preferred_color_scheme 以外的主题
+  const applyThemeToGiscus = (theme) => {
+    // theme = theme === 'auto' ? 'preferred_color_scheme' : theme
+    const cmt = document.getElementById('giscus')
+    if (cmt) {
+      // This works before giscus load.
+      cmt.setAttribute('data-theme', theme)
+    }
+
+    const iframe = document.querySelector('#comments > section.giscus > iframe')
+    if (iframe) {
+      // This works after giscus loaded.
+      const src = iframe.src
+      const newSrc = src.replace(/theme=[\w]+/, `theme=${theme}`)
+      iframe.src = newSrc
+    }
+  }
+
+  const switchTheme = () => {
+    // light -> dark -> auto -> light -> ...
+    const currentTheme = document.documentElement.getAttribute('data-theme')
+    let newTheme;
+    switch (currentTheme) {
+      case 'light':
+        newTheme = 'dark'
+        break
+      case 'dark':
+        newTheme = 'auto'
+        break
+      default:
+        newTheme = 'light'
+    }
+    applyTheme(newTheme)
+    window.localStorage.setItem('Stellar.theme', newTheme)
+    utils.dark.mode = newTheme === 'auto' ? (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light") : newTheme;
+    utils.dark.method.toggle.start();
+
+    const messages = {
+      light: `切换到浅色模式`,
+      dark: `切换到深色模式`,
+      auto: `切换到跟随系统配色`,
+    }
+    hud?.toast?.(messages[newTheme])
+  }
+
+  (() => {
+    // Apply user's preferred theme, if any.
+    const theme = window.localStorage.getItem('Stellar.theme')
+    if (theme !== null) {
+      applyTheme(theme)
+    } else {
+      utils.dark.mode = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+    }
+    utils.dark.method.toggle.start();
+  })()</script><script type="module">const el = document.querySelector('#comments #beaudar');
+  util.viewportLazyload(el, load_beaudar, true);
+
+  function load_beaudar() {
+    if (!el) return;
+    try {
+      el.innerHTML = '';
+    } catch (error) {
+      console.error(error);
+    }
+    const script = document.createElement('script');
+    script.src = 'https://beaudar.lipk.org/client.js';
+    script.async = true;
+    for (const key of Object.keys(el.attributes)) {
+      const attr = el.attributes[key];
+      if (['class', 'id'].includes(attr.name) === false) {
+        script.setAttribute(attr.name, attr.value);
+      }
+    }
+    el.appendChild(script);
+  }</script><script defer>window.addEventListener('DOMContentLoaded', (event) => {
+    ctx.services = Object.assign({}, JSON.parse(`{"mdrender":{"js":"/js/services/mdrender.js"},"siteinfo":{"js":"/js/services/siteinfo.js","api":null},"ghinfo":{"js":"/js/services/ghinfo.js"},"rating":{"js":"/js/services/rating.js","api":"https://star-vote.xaox.cc/api/rating"},"vote":{"js":"/js/services/vote.js","api":"https://star-vote.xaox.cc/api/vote"},"sites":{"js":"/js/services/sites.js"},"friends":{"js":"/js/services/friends.js"},"friends_and_posts":{"js":"/js/services/friends_and_posts.js"},"timeline":{"js":"/js/services/timeline.js"},"fcircle":{"js":"/js/services/fcircle.js"},"weibo":{"js":"/js/services/weibo.js"},"memos":{"js":"/js/services/memos.js"},"voice":{"js":"/js/plugins/voice.js"},"video":{"js":"/js/plugins/video.js"},"download-file":{"js":"/js/plugins/download-file.js"},"twikoo":{"js":"/js/services/twikoo_latest_comment.js"},"waline":{"js":"/js/services/waline_latest_comment.js"},"artalk":{"js":"/js/services/artalk_latest_comment.js"},"giscus":{"js":"/js/services/giscus_latest_comment.js"},"contributors":{"edit_this_page":{"_posts/":null,"wiki/stellar/":"https://github.com/xaoxuu/hexo-theme-stellar-docs/blob/main/"},"js":"/js/services/contributors.js"}}`));
+    for (let id of Object.keys(ctx.services)) {
+      const js = ctx.services[id].js;
+      if (id == 'siteinfo') {
+        ctx.cardlinks = document.querySelectorAll('a.link-card[cardlink]');
+        if (ctx.cardlinks?.length > 0) {
+          utils.js(js, { defer: true }).then(function () {
+            setCardLink(ctx.cardlinks);
+          });
+        }
+      } else if (id == 'voice') {
+        ctx.voiceAudios = document.querySelectorAll('.voice>audio');
+        if (ctx.voiceAudios?.length > 0) {
+          utils.js(js, { defer: true }).then(function () {
+            createVoiceDom(ctx.voiceAudios);
+          });
+        }
+      } else if (id == 'video') {
+        ctx.videos = document.querySelectorAll('.video>video');
+        if (ctx.videos?.length > 0) {
+          utils.js(js, { defer: true }).then(function () {
+            videoEvents(ctx.videos);
+          });
+        }
+      } else if (id == 'download-file') {
+        ctx.files = document.querySelectorAll('.file');
+        if (ctx.files?.length > 0) {
+          utils.js(js, { defer: true }).then(function () {
+            downloadFileEvent(ctx.files);
+          });
+        }
+      } else {
+        const els = document.getElementsByClassName(`ds-${id}`);
+        if (els?.length > 0) {
+          utils.jq(() => {
+            if (id == 'timeline' || 'memos' || 'marked') {
+              utils.js(deps.marked).then(function () {
+                utils.js(js, { defer: true });
+              });
+            } else {
+              utils.js(js, { defer: true });
+            }
+          });
+        }
+      }
+    }
+
+    // chat iphone time
+    let phoneTimes = document.querySelectorAll('.chat .status-bar .time');
+
+    if (phoneTimes.length > 0) {
+      NowTime();
+      var date = new Date();
+      var sec = date.getSeconds();
+      var firstAdjustInterval = setInterval(firstAdjustTime, 1000 * (60 - sec));
+    }
+
+    function firstAdjustTime() {
+      NowTime();
+      clearInterval(firstAdjustInterval);
+      setInterval(NowTime, 1000 * 60);
+    }
+
+    function NowTime() {
+      for (let i = 0; i < phoneTimes.length; ++i) {
+        var timeSpan = phoneTimes[i];
+        var date = new Date();
+        var hour = date.getHours();
+        var min = date.getMinutes();
+        timeSpan.innerHTML = check(hour) + ":" + check(min);
+      }
+    };
+
+    function check(val) {
+      if (val < 10) {
+        return ("0" + val);
+      }
+      return (val);
+    }
+
+    // chat quote
+    const chat_quote_obverser = new IntersectionObserver((entries, observer) => {
+      entries.filter((entry) => { return entry.isIntersecting }).sort((a, b) => a.intersectionRect.y !== b.intersectionRect.y ? a.intersectionRect.y - b.intersectionRect.y : a.intersectionRect.x - b.intersectionRect.x).forEach((entry, index) => {
+          observer.unobserve(entry.target);
+          setTimeout(() => {
+            entry.target.classList.add('quote-blink');
+            setTimeout(() => {
+              entry.target.classList.remove('quote-blink');
+            }, 1000);
+          }, Math.max(100, 16) * (index + 1));
+        });
+    });
+
+    var chatQuotes = document.querySelectorAll(".chat .talk .quote");
+    chatQuotes.forEach((quote) => {
+      quote.addEventListener('click', function () {
+        var chatCellDom = document.getElementById("quote-" + quote.getAttribute("quotedCellTag"));
+        if (chatCellDom) {
+          var chatDiv = chatCellDom.parentElement;
+          var mid = chatDiv.clientHeight / 2;
+          var offsetTop = chatCellDom.offsetTop;
+          if (offsetTop > mid - chatCellDom.clientHeight / 2) {
+            chatDiv.scrollTo({
+              top: chatCellDom.offsetTop - mid + chatCellDom.clientHeight / 2,
+              behavior: "smooth"
+            });
+          } else {
+            chatDiv.scrollTo({
+              top: 0,
+              behavior: "smooth"
+            });
+          }
+          chat_quote_obverser.observe(chatCellDom);
+        }
+      });
+    });
+  });</script><script>window.addEventListener('DOMContentLoaded', (event) => {
+    ctx.search = {
+      path: `/search.json`,
+    }
+    utils.js('/js/search/local-search.js', { defer: true });
+  });</script><script>window.FPConfig={delay:0,ignoreKeywords:[],maxRPS:5,hoverDelay:25}</script><script defer src="https://gcore.jsdelivr.net/npm/flying-pages@2/flying-pages.min.js"></script><script>ctx.fancybox = {
+    selector: `.timenode p>img`,
+    css: `https://gcore.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css`,
+    js: `https://gcore.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js`
+  };
+  var selector = '[data-fancybox]:not(.error), .with-fancybox .atk-content img:not([atk-emoticon])';
+  if (ctx.fancybox.selector) {
+    selector += `, ${ctx.fancybox.selector}`
+  }
+  var needFancybox = document.querySelectorAll(selector).length !== 0;
+  if (!needFancybox) {
+    const memos = document.getElementsByClassName('ds-memos');
+    if (memos != undefined && memos.length > 0) {
+      needFancybox = true;
+    }
+    const fancybox = document.getElementsByClassName('with-fancybox');
+    if (fancybox != undefined && fancybox.length > 0) {
+      needFancybox = true;
+    }
+  }
+  if (needFancybox) {
+    utils.css(ctx.fancybox.css);
+    utils.js(ctx.fancybox.js, { defer: true }).then(function () {
+      Fancybox.bind(selector, {
+        hideScrollbar: false,
+        Thumbs: {
+          autoStart: false,
+        },
+        caption: (fancybox, slide) => {
+          return slide.triggerEl.alt || slide.triggerEl.dataset.caption || null
+        }
+      });
+    })
+  }</script><script>window.addEventListener('DOMContentLoaded', (event) => {
+    const swiper_api = document.getElementById('swiper-api');
+    if (swiper_api != undefined) {
+      utils.css(`https://unpkg.com/swiper@10.3/swiper-bundle.min.css`);
+      utils.js(`https://unpkg.com/swiper@10.3/swiper-bundle.min.js`, { defer: true }).then(function () {
+        const effect = swiper_api.getAttribute('effect') || '';
+        var swiper = new Swiper('.swiper#swiper-api', {
+          slidesPerView: 'auto',
+          spaceBetween: 8,
+          centeredSlides: true,
+          effect: effect,
+          rewind: true,
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+          },
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+        });
+      })
+    }
+  });</script><script>document.addEventListener('DOMContentLoaded', function () {
+    window.codeElements = document.querySelectorAll('.code');
+    if (window.codeElements.length > 0) {
+      ctx.copycode = {
+        default_text: `Copy`,
+        success_text: `Copied`,
+        toast: `复制成功`,
+      };
+      utils.js('/js/plugins/copycode.js');
+    }
+  });</script></div></body></html>
