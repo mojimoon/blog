@@ -1,302 +1,4 @@
-
-<!DOCTYPE html><html lang="zh-CN">
-
-<head>
-  <meta charset="utf-8">
-  <meta name="hexo-theme" content="https://github.com/xaoxuu/hexo-theme-stellar/tree/1.33.1" theme-name="Stellar" theme-version="1.33.1">
-  
-  
-  <meta name="generator" content="Hexo 7.3.0">
-  <meta http-equiv='x-dns-prefetch-control' content='on' />
-  
-  <meta name="renderer" content="webkit">
-  <meta name="force-rendering" content="webkit">
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
-  <meta name="HandheldFriendly" content="True" >
-  <meta name="mobile-web-app-capable" content="yes">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000">
-  <meta name="theme-color" content="#f9fafb">
-  <title>2024 年 8 月：三元悖论 - もじもんの文字門</title>
-
-  
-    <meta name="description" content="bxs:quote-left-orange在既要、又要和外部制约构成的不可能三角中，通常不会放弃外部制约。bxs:quote-right-orange">
-<meta property="og:type" content="article">
-<meta property="og:title" content="2024 年 8 月：三元悖论">
-<meta property="og:url" content="https://blog.mojimoon.top/2024/202408/">
-<meta property="og:site_name" content="もじもんの文字門">
-<meta property="og:description" content="bxs:quote-left-orange在既要、又要和外部制约构成的不可能三角中，通常不会放弃外部制约。bxs:quote-right-orange">
-<meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://gcore.jsdelivr.net/gh/mojimoon/blog@v20260814/image/mojimoon.png">
-<meta property="article:published_time" content="2024-08-26T00:00:00.000Z">
-<meta property="article:modified_time" content="2024-12-31T03:32:52.778Z">
-<meta property="article:author" content="mojimoon">
-<meta property="article:tag" content="mojimoon, computer science, python, blog, hexo, stellar, personal blog, deep learning">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://gcore.jsdelivr.net/gh/mojimoon/blog@v20260814/image/mojimoon.png">
-  
-  
-  
-  <meta name="keywords" content="mojimoon, computer science, python, blog, hexo, stellar, personal blog, deep learning">
-
-  <!-- feed -->
-  
-
-  <link rel="stylesheet" href="https://gcore.jsdelivr.net/gh/mojimoon/blog@v20260814/css/main.css?v=1.33.1">
-
-
-  
-    <link rel="shortcut icon" href="/image/favicon.png">
-  
-
-  
-
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"mojimoon","sameAs":[],"image":"https://gcore.jsdelivr.net/gh/mojimoon/blog@v20260814/image/mojimoon.png"},"dateCreated":"2024-08-26T08:00:00+08:00","dateModified":"2024-12-31T11:32:52+08:00","datePublished":"2024-08-26T08:00:00+08:00","description":"bxs:quote-left-orange在既要、又要和外部制约构成的不可能三角中，通常不会放弃外部制约。bxs:quote-right-orange","headline":"2024 年 8 月：三元悖论","mainEntityOfPage":{"@type":"WebPage","@id":"https://blog.mojimoon.top/2024/202408/"},"publisher":{"@type":"Organization","name":"mojimoon","sameAs":[],"image":"https://gcore.jsdelivr.net/gh/mojimoon/blog@v20260814/image/mojimoon.png","logo":{"@type":"ImageObject","url":"https://gcore.jsdelivr.net/gh/mojimoon/blog@v20260814/image/mojimoon.png"}},"url":"https://blog.mojimoon.top/2024/202408/","image":[]}</script>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet"><link rel="stylesheet" href="https://gcore.jsdelivr.net/gh/mojimoon/blog@v20260814/css/override.css">
-</head>
-<body>
-
-<div class="l_body content" id="start" layout="post" type="tech" ><aside class="l_left"><div class="sidebg"></div><div class="leftbar-container">
-
-
-<header class="header"><div class="logo-wrap"><a class="avatar" href="/about/"><div class="bg" style="opacity:0;background-image:url(https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/avatar/round/rainbow64@3x.webp);"></div><img no-lazy class="avatar" src="https://gcore.jsdelivr.net/gh/mojimoon/blog@v20260814/image/mojimoon.png" onerror="javascript:this.classList.add('error');this.src='https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/image/2659360.svg';"></a><a class="title" href="/"><div class="main">もじもんの文字門</div><div class="sub normal cap">Computer Science</div><div class="sub hover cap" style="opacity:0"> City University of Hong Kong</div></a></div></header>
-
-<div class="nav-area">
-
-<nav class="menu dis-select"></nav>
-</div>
-<div class="widgets">
-<div class="search-wrapper" id="search-wrapper"><form class="search-form"><a class="search-button" onclick="document.getElementById(&quot;search-input&quot;).focus();"><svg t="1705074644177" viewBox="0 0 1025 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1560" width="200" height="200"><path d="M1008.839137 935.96571L792.364903 719.491476a56.783488 56.783488 0 0 0-80.152866 0 358.53545 358.53545 0 1 1 100.857314-335.166073 362.840335 362.840335 0 0 1-3.689902 170.145468 51.248635 51.248635 0 1 0 99.217358 26.444296 462.057693 462.057693 0 1 0-158.255785 242.303546l185.930047 185.725053a51.248635 51.248635 0 0 0 72.568068 0 51.248635 51.248635 0 0 0 0-72.978056z" p-id="1561"></path><path d="M616.479587 615.969233a50.428657 50.428657 0 0 0-61.498362-5.534852 174.655348 174.655348 0 0 1-177.525271 3.484907 49.403684 49.403684 0 0 0-58.833433 6.76482l-3.074918 2.869923a49.403684 49.403684 0 0 0 8.609771 78.10292 277.767601 277.767601 0 0 0 286.992355-5.739847 49.403684 49.403684 0 0 0 8.404776-76.667958z" p-id="1562"></path></svg></a><input type="text" class="search-input" id="search-input" placeholder="站内搜索"></form><div id="search-result"></div><div class="search-no-result">没有找到内容！</div></div>
-
-
-
-<widget class="widget-wrapper recent post-list"><div class="widget-header dis-select"><span class="name">最近更新</span></div><div class="widget-body fs14"><a class="item title" href="/2025/protective-film/"><span class="title">经验谈：笔记本电脑不建议使用屏幕膜和键盘膜</span></a><a class="item title" href="/2025/ssd-enclosure/"><span class="title">拯救旧笔记本：制作移动硬盘盒</span></a><a class="item title" href="/2025/speedup-github-page/"><span class="title">加快 GitHub Pages 国内访问速度</span></a><a class="item title" href="/2023/python-scraping/"><span class="title">笔记：Python 爬虫/数据分析简易教程</span></a><a class="item title" href="/2025/why-75-keyboard/"><span class="title">为什么75%键盘是程序员的最佳选择？</span></a><a class="item title" href="/2025/keyboard-layout-1/"><span class="title">键盘配列图文详解（61、64、68、75%）</span></a><a class="item title" href="/2025/keyboard-layout-2/"><span class="title">键盘配列图文详解（87、96、98、104、108 键）</span></a><a class="item title" href="/2023/Javaweb/"><span class="title">笔记：JavaWeb 项目环境配置</span></a><a class="item title" href="/2023/20230617/"><span class="title">2023-06-17 | Back to Square One</span></a><a class="item title" href="/2023/202306/"><span class="title">2023 年 6 月上：涂白</span></a></div></widget>
-</div>
-
-</div></aside><div class="l_main" id="main">
-
-
-
-
-
-<div class="article banner top">
-  <div class="content">
-    <div class="top bread-nav footnote"><div class="left"><div class="flex-row" id="breadcrumb"><a class="cap breadcrumb" href="/">主页</a>
-<span class="sep"></span><a class="cap breadcrumb" href="/">文章</a><span class="sep"></span><a class="cap breadcrumb-link" href="/categories/Journal/">Journal</a></div>
-<div class="flex-row" id="post-meta"><span class="text created">发布于：<time datetime="2024-08-26T00:00:00.000Z">2024-08-26</time></span><span class="sep updated"></span><span class="text updated">更新于：<time datetime="2024-12-31T03:32:52.778Z">2024-12-31</time></span></div></div></div>
-    
-    <div class="bottom only-title">
-      
-      <div class="text-area">
-        <h1 class="text title"><span>2024 年 8 月：三元悖论</span></h1>
-        
-      </div>
-    </div>
-    
-  </div>
-  </div><article class="md-text content"><div class="tag-plugin quot p"><p class="content">bxs:quote-left-orange<span class="text">在既要、又要和外部制约构成的不可能三角中，通常不会放弃外部制约。</span>bxs:quote-right-orange</p></div>
-<span id="more"></span>
-<h2 id="楔子"><a class="markdownIt-Anchor" href="#楔子"></a> 楔子</h2>
-<p>本文的背景之一是画师<a target="_blank" rel="noopener" href="https://x.com/So_shi_te_">奏詞そして</a>。</p>
-<p>其人非常勤奋 —— 勤奋到了你根本不会想要关注这个推特。截至本文写作时，该帐号已经发布了 21.6 万推文，其中包括 1.1 万张图像，且绝大多数都是插画和漫画（而非生活照和晒卡）。关注这样的推特已经超过了污染时间线的范畴，因为其本身就是时间线。</p>
-<p>这让我不禁想到，对画师而言，开个小号或者 misskey 记录生活恐怕是十分有必要的，但并不一定有所帮助。</p>
-<p>此外，奏詞そして在 Comiket 上的社团名为「そして物語が終わる」。这正是由麻枝准制作、Riya 演唱的《Love Song》（2005）中的 EP12 的歌曲名。这一专辑最出名的 EP13《Love Song》，经历了将近 20 年的重编曲和 Key 社三代歌姬的演绎，如今还可以在 HBR 中听到它的旋律；而 EP4《走る》也在 LBEX 中被重编曲为沙耶的主题曲《駆ける》，这也是我极为喜欢的 BGM 之一。</p>
-<p>难以想象，事物的联系如此之紧密，以至于它们间隔着时间与媒介的差异，却仍然得以遥相呼应。而这种无关紧要的小小发现，却足以给我巨大的喜悦。</p>
-<h2 id="题外话"><a class="markdownIt-Anchor" href="#题外话"></a> 题外话</h2>
-<p>作为正题前的开胃菜，请看<a target="_blank" rel="noopener" href="https://x.com/So_shi_te_/status/1739284964234170371/photo/1">VCR</a>。</p>
-<p>这张图最值得注意的是「NL成人向け」这个标签。</p>
-<p>NL 是什么意思呢？如果你 Google 一下，会发现 NL 这个词和 BL/GL 之类的并列。借此，你也可以通过上下文推断其意义。</p>
-<p>—— 我是这样想的，但当我把这个问题抛到群里时，却没有人能够给出正确答案。</p>
-<details class="tag-plugin colorful folding" ><summary><p>所以 NL 到底是什么？</p>
-</summary><div class="body"><p>NL = ノーマルラブ = Normal Love，即「传统意义上男女搭配」。约等于 BG。</p> <p>在某些圈子里使用 NL 而非 BG 确有其理由 —— 也可以说是语言陌生化的结果。</p> <p>P.S. 并不是 ノンケラブ = Nonke Love。</p> </div></details>
-<p>由此可见，不要低估日本人的语言创造力 —— 字面意思上的创造，创造意义不明的缩写，甚至创造出一种新的语言。</p>
-<h2 id="紫藤花下"><a class="markdownIt-Anchor" href="#紫藤花下"></a> 紫藤花下</h2>
-<p>花语终究是人赋予的象征意义。花本身并不会有所期待，也不会有所感受。它们只是依据自己的生命周期，绽放、凋零，然后再次绽放。</p>
-<p>紫藤花是一种藤本植物。藤本植物由于其茎干细长，不能直立生长，只能依附于其他物体上。也因此，它一年之中只有在开花期能够夺人眼球 —— 不过就在这几周时间里，它能做到遮天蔽日，为庭院带来一片紫色的海洋。</p>
-<p>因此，在文化中，紫藤花也就与其依附于他人的意义相联系。虽然紫藤花原产于东亚和北美诸地，但由于其 18-19 世纪才出口到欧洲等地，此时各原产地早已形成了多种不同的花语，因此其在不同文化中的象征很不相同。在维多利亚时代，紫藤花由于其可以依附于其他树生长，被赋予了「我依附于你」的含义，进而演变为「steadfastness（坚贞）」的花语。在东亚，其鲜明的色调让紫藤花与「浪漫」等亘古不变的主题相联系，不过具体而言，在日本还有「长寿」与「好运」之意，在中国，下垂的花穗则被赋予了「谦卑」的含义。（<a target="_blank" rel="noopener" href="https://www.petalrepublic.com/wisteria-flower-meaning/">参考资料</a>）</p>
-<p>不过这些含义是否准确可考，不必深究。更加重要的是，紫藤花因其充满激情的短暂的花期而为人所珍惜，意味着人性化的象征意义 —— 无论是坚贞、浪漫、谦卑还是好运 —— 都基于「客观的存在」这一事实。进一步地，基于「客观的存续」，人们赋予了这种植物以「主观的意义」，并以此来表达自己的情感。正因为其存在的时日有限，人类才将期许赋予「现在仍在存在」的紫藤花，而不问其何日凋零。</p>
-<p>生活是连续的存在 —— 我们正因为知道生活仍将继续，且必将继续，才会有所期许。</p>
-<p>而虚构是断续的存在。其一，虚构是人的创作，意味着它的存在是有限且不连续的，并且由于创作的速度远小于消费的速度，意味着这个问题迟早会成为现实 —— 只不过大部分时候我们将其直接抛到脑后。其二，虚构是有所基础的。原创的虚构受制于现实，而衍生的虚构受制于原创。因循旧例，我们称之为二创。原创受制于现实 —— 这是一个十分现实的问题，需要具体问题具体分析。而二创受制于原创 —— 意味着二创只有在原创存续的情况下才有意义。此处的存续并不是指「作者仍在创作」，而是指「作品仍在被消费」；这是个容易被混淆的概念，只不过对于某些媒介，这两者是等价的。二创受制于原创同时也引入了一个不可能三角：模式、内容和原作，只能同时满足其中两个。</p>
-<h2 id="不可能三角"><a class="markdownIt-Anchor" href="#不可能三角"></a> 不可能三角</h2>
-<p>不可能三角指的是在同时存在的三个条件中，只能满足其中两个。这个概念最早出现在经济学中，用于描述货币政策的三个目标：固定汇率、自由资本流动和独立货币政策。这三个目标之间存在矛盾，无法同时实现。利率变化导致汇率变化，因此在不管控资本流动的情况下，无法同时实现固定汇率和独立货币政策，于是只能放弃其中一个。</p>
-<p>回到正题。我们有必要先定义一下这几个名词：</p>
-<ul>
-<li>模式是「二创得以被作为独立作品消费」的方式
-<ul>
-<li>媒介：漫画、小说、动画剧场</li>
-<li>形式：短篇、长篇分割、长期连载</li>
-<li>风格</li>
-</ul>
-</li>
-<li>内容，字面意思
-<ul>
-<li>故事</li>
-<li>人物</li>
-<li>设定：对设定的延伸和再创作，及不言自明的设定（headcanon）</li>
-</ul>
-</li>
-<li>原作，还是字面意思
-<ul>
-<li>与原作的关系</li>
-<li>受众的认知</li>
-<li>内容预设</li>
-</ul>
-</li>
-</ul>
-<p>为什么这三者之间会存在矛盾呢？</p>
-<ul>
-<li>同时具有模式和原作，则内容无法充分表达。
-<ul>
-<li>内容可能受制于原作带来的预设，无法将作者创作独立作品的意图充分表达。（原作→模式→内容）</li>
-<li>内容可能受制于二创作为独立作品带来的创作能力限制，比如「受篇幅所限」。（模式→原作→内容）</li>
-</ul>
-</li>
-<li>同时具有内容与原作，则模式无法充分利用。
-<ul>
-<li>现存的模式可能无法满足内容的需求，越接近专业创作的内容，越难以找到合适的模式。尽管存在各种工具辅助创作，但其主要目的是提高效率，而非提高质量。（内容→原作→模式）</li>
-<li>虽说二创的风格未必要与原作一致，但为了保持基于内容预设的连续性，通常会选择与原作相近的模式。（原作→内容→模式）</li>
-</ul>
-</li>
-<li>同时具有模式和内容，则原作无法充分表达。
-<ul>
-<li>在专业的模式和独特的内容下，创作者很有可能带来一个全新的故事，此时原作的存在除了提供认知只剩下负担。（模式→内容→原作）</li>
-<li>考虑实际的原创创作，从内容出发的创作应该是最为常见的；但在二创中用同样的方式创作就会显得有些多余。（内容→模式→原作）</li>
-</ul>
-</li>
-</ul>
-<p>在既要、又要和外部制约构成的不可能三角中，通常不会放弃外部制约。外部制约不受创作者本身意图的影响，但正因此能够附加高于原创创作的价值。如果把原作丢掉，确实解决了矛盾，但作品也就失去了关注度。其本质矛盾 —— 「独立创作」应该是「原创」的，因为原创能够自由调剂内容与模式；但与此同时，原创的独立创作是不受到外部支持的，也即作者必须自己承担风险。</p>
-<p>所以，归根到底，二创的意义是什么，或者说，可以是什么？单纯从其不能抛弃原作，所以必须要在内容与模式中二选一的角度来看：</p>
-<table>
-<thead>
-<tr>
-<th></th>
-<th>内容纯粹</th>
-<th>内容中立</th>
-<th>内容自由</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>模式纯粹</td>
-<td>-</td>
-<td>“我本应做到”</td>
-<td>“我想做到”</td>
-</tr>
-<tr>
-<td>模式中立</td>
-<td>“我确信会看到”</td>
-<td>“我看着呢”</td>
-<td>“我也许会看到”</td>
-</tr>
-<tr>
-<td>模式自由</td>
-<td>“我刷推特想到”</td>
-<td>“我在别处想到”</td>
-<td>“我在梦里想到”</td>
-</tr>
-</tbody>
-</table>
-<p>还是稍微解释一下：</p>
-<ul>
-<li>“我本应做到”：“正是因为没有这样的作品，我才要创作”（模式→原作→内容）</li>
-<li>“我想做到”：“作者不敢写的，我帮他写”</li>
-<li>“我确信会看到”：“如果我是作者，我也会这样写”（内容→原作→模式）</li>
-<li>“我看着呢”：“我觉得这样的故事很有趣”</li>
-<li>“我也许会看到”：“读者肯定知道是谁写的”</li>
-<li>“我刷推特想到”：“肯定有人会这样写”</li>
-<li>“我在别处想到”：“把别的故事化为己用”</li>
-<li>“我在梦里想到”：“你喜欢就好”</li>
-</ul>
-<p>顺便一提，各种各样的二创都存在，至于哪个区域是大众认可的，可能永远不会有定论。但这并不妨碍我们去创作，因为创作本身就是一种乐趣。</p>
-<p>不同的作者也有截然不同的创作方式。奏詞そして否定了“我想做到”这种普遍的模式，而是选择了“我本应做到”。正是因为存在这样一个角色塑造的缺位 —— 无论原创还是二创，都未尝有这样的作品 —— 才让他得以创作。</p>
-<p>这倒并不是说“我想做到”不好 —— 而是指出了其关键矛盾，通过牺牲内容的独立性来传递模式和原作的信息。继承原作的衣钵，却又忽略了其戏剧冲突和角色塑造的重要性，往往会显得平淡无奇 —— 哪怕在模式上有所创新。但与此同时，其一大优势就在于弱化内容门槛，让生产和消费都变得更加容易。</p>
-<p>但如果想要往更高的地方走，就必然会受到体裁的限制。作为一部完整、独立的作品，作者受到创作时间、分发成本和宣传渠道的多重制约，不可能说面面俱到、页数多多。这也就是为何很多二创作品都会显得「不够看」，因为它们的内容实际上是为了模式服务的 —— 或者说，哪怕模式尽善尽美，也无法呈现足够的内容。</p>
-<p>但确有必要如此去做，因为山就在那里。一部「既要」已经完成了极致的内容呈现，虽然牺牲了一些节奏与节制，却更能让读者感受到其真意；一部「又要」打通了模式的瓶颈，恰到好处地提供了应有的氛围和情绪，为美好的故事画上了完美的句号。那么你现在需要的恰恰就是，「既要又要」。虽然没有人这样做过，也没有人能够做到 —— 但在前人的肩膀上，你还是可以勇攀高峰。</p>
-<h2 id="世界染上单色"><a class="markdownIt-Anchor" href="#世界染上单色"></a> 世界染上单色</h2>
-<p>通常所谓的「黑白」，实际上是灰度图像。毕竟 1bit 的黑白世界实在是太过枯燥，8bit 的灰阶则在黑白之间增加了 254 种可能性。（当然，实际上并没有这么简单；由于人眼对亮度的感知并非线性，因此无论灰度还是 RGB 都需要进行 gamma 校正。）</p>
-<p>而给黑色增加一种颜色 —— 就会使世界变得更加丰富。这种颜色通常是洋红色、青色或黄色，其原因也是显然的：这种「双色图像」最早出现在印刷中，它的成本要低于 CMYK 四色印刷。有趣的是，很多人根本不清楚「双色印刷」这个概念；拿一本青色+黑色的练习册给他们，他们会认为这是一本「单色」的书。黑色难道不是颜色吗？</p>
-<p>当然，我们今天要讨论的不是印刷工艺，而是人类的认知。</p>
-<p>每一位作者都有其独特的艺术风格，可以用线条、色彩和构图来描述。</p>
-<ul>
-<li>线条
-<ul>
-<li>笔触：最直观的「风格」、精细程度</li>
-<li>形状：框架和结构</li>
-</ul>
-</li>
-<li>色彩
-<ul>
-<li>明度：氛围、情绪</li>
-<li>对比度：强调、分层</li>
-</ul>
-</li>
-<li>构图
-<ul>
-<li>突出重点、引导视线</li>
-<li>整体和局部的关系</li>
-</ul>
-</li>
-</ul>
-<p>在全彩绘画中，色彩的作用是最为显著的。甚至可以说，由于鲜艳色彩对人眼的刺激，构图的问题都容易被轻易忽略，而线条则是不放大就看不清的细节。而当色彩被限制到两种时，构图成了最主要的构造元素。线条变得十分重要，因为它们是唯一的分界线；而明与暗、彩色与黑色的对比仍然承载着重要的信息。进一步地，当色彩只剩下灰度，色彩只剩下明与暗的对比。此外，很多时候也会用线条不同形式的组合或堆砌来表现这种对比，与其将画布填满，不如留下一些空白。</p>
-<p>我们通常所说，黑白和彩色漫画的思路完全不同，就是这个道理。将彩色的画面转换为灰度，信息量会下降，读者要从五彩斑斓的灰中寻找线索，未免有些困难。而另一方面，将灰度的画面转换为彩色，信息量会增加，增加到了冗余的程度，让读者受到颜色的干扰而无法专注于线条和构图。尽管背后的技巧和思路是相通的，但实际操作起来却是两种完全不同的体验。进一步地，将灰白漫画改编为动画，就要考虑整体的视听效果，而不仅仅是画面的表现 —— 原封不动地复刻漫画分镜，通常会让观众感到枯燥乏味，因为其他感官没有得到足够的刺激。（当然，实际上还有很多考量，诸如镜头运动、SFX、BGM 等等。）</p>
-<p>典型的例子是 <a target="_blank" rel="noopener" href="https://tvtropes.org/pmwiki/pmwiki.php/Main/SplashOfColor">Splash of Color</a>，将灰度画面中的某一物体染上颜色，以突出其重要性。《辛德勒的名单》中的红衣小女孩就是将这一手法发挥到了极致。</p>
-<p>奏詞そして发布了许多双色漫画和插画，其中也有一部分原因是，学マス 乃至 IMAS 家族中，偶像的主题色本来就是很重要的元素。不过，实际上又与 Splash of Color 有非常明显的区别：除了用主题色突出角色，还对其他角色和背景做了一定的上色。虽然你也可以理解为，这种处理单纯是为了增加双色的层次感与对比度；但实际上，对其他角色上色则体现了一种世界观级别的「滤镜」，即情绪被实体化为色彩，而非仅仅作为信息和线索的传递。</p>
-<p>在此基础之上，尽管颜色变得鲜明、世界变得多样，有一件事却没有变：作为读者能直观感受到的「艺术风格」，也就是色彩风格，以及细看绝对不会遗漏的线条笔触。此外我可以认为，其人在黑白和双色漫画中确实沿用了不同的思路，而不仅仅是「使用第二种灰度上色」。至于多种单色在同一画面中的拼贴，它和全彩还是存在显然的区别 —— 饱和度和对比度很明显要低，色彩更加简单且互不干扰。也因此，这仍然可以认为是一种「双色」。</p>
-<p>最终，尽管作者通过这一单色滤片「看世界」的方式看似固定，但实际上比较前后的作品，还是能察觉其风格的变化。简而言之，线条更加细腻、色彩搭配更加柔和，而色彩对比更加强烈、多格构图更有层次感，这些都是在不断尝试和实践中得到的经验；但又不仅于此，从中我们得以窥伺作者心境的变迁，于此时钟爱何物，又于彼刻忧虑何事。</p>
-</article>
-<div class="article-footer">
-    <section id="license">
-      <div class="header"><span>许可协议</span></div>
-      <div class="body"><p>本文采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh">署名-相同方式共享 4.0 国际许可协议</a>，转载请注明出处。</p>
-</div>
-    </section>
-    
-
-</div>
-
-<div class="related-wrap" id="read-next"><section class="body"><div class="item" id="prev"><div class="note">较新文章</div><a href="/2024/202412/">2024 年 12 月：旧乡晶尘</a></div><div class="item" id="next"><div class="note">较早文章</div><a href="/2024/202407/">2024 年 7 月：存在延续</a></div></section></div>
-
-
-
-
-  <div class="related-wrap md-text" id="comments">
-    <section class='header cmt-title cap theme'>
-      <p>快来参与讨论吧~</p>
-
-    </section>
-    <section class='body cmt-body beaudar'>
-      
-
-<svg class="loading" style="vertical-align:middle;fill:currentColor;overflow:hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2709"><path d="M832 512c0-176-144-320-320-320V128c211.2 0 384 172.8 384 384h-64zM192 512c0 176 144 320 320 320v64C300.8 896 128 723.2 128 512h64z" p-id="2710"></path></svg>
-
-<div id="beaudar" repo="mojimoon/blog-comments" issue-term="pathname" theme="preferred-color-scheme" input-position="top" comment-order="desc" loading="false" branch="main"></div>
-
-    </section>
-  </div>
-
-
-
-<footer class="page-footer footnote"><hr><div class="text"><p><a target="_blank" rel="noopener" href="https://github.com/mojimoon">@mojimoon</a> Overclocked by <a target="_blank" rel="noopener" href="https://xaoxuu.com/wiki/stellar/">Stellar</a></p>
-</div></footer>
-<div class="main-mask" onclick="sidebar.dismiss()"></div></div><aside class="l_right">
-<div class="widgets">
-
-
-
-<widget class="widget-wrapper toc" id="data-toc" collapse="false"><div class="widget-header dis-select"><span class="name">本文目录</span><a class="cap-action" onclick="sidebar.toggleTOC()" ><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6h11m-11 6h11m-11 6h11M4 6h1v4m-1 0h2m0 8H4c0-1 2-2 2-3s-1-1.5-2-1"/></svg></a></div><div class="widget-body"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%A5%94%E5%AD%90"><span class="toc-text"> 楔子</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%A2%98%E5%A4%96%E8%AF%9D"><span class="toc-text"> 题外话</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%B4%AB%E8%97%A4%E8%8A%B1%E4%B8%8B"><span class="toc-text"> 紫藤花下</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%8D%E5%8F%AF%E8%83%BD%E4%B8%89%E8%A7%92"><span class="toc-text"> 不可能三角</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%96%E7%95%8C%E6%9F%93%E4%B8%8A%E5%8D%95%E8%89%B2"><span class="toc-text"> 世界染上单色</span></a></li></ol></div><div class="widget-footer"><a class="top" onclick="util.scrollTop()"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><!-- Icon from Solar by 480 Design - https://creativecommons.org/licenses/by/4.0/ --><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.5"><path stroke-linejoin="round" d="m9 15.5l3-3l3 3m-6-4l3-3l3 3"/><path d="M7 3.338A9.95 9.95 0 0 1 12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12c0-1.821.487-3.53 1.338-5"/></g></svg><span>回到顶部</span></a><a class="buttom" onclick="util.scrollComment()"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><!-- Icon from Solar by 480 Design - https://creativecommons.org/licenses/by/4.0/ --><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.5" d="M8 10.5h8M8 14h5.5M17 3.338A9.95 9.95 0 0 0 12 2C6.477 2 2 6.477 2 12c0 1.6.376 3.112 1.043 4.453c.178.356.237.763.134 1.148l-.595 2.226a1.3 1.3 0 0 0 1.591 1.592l2.226-.596a1.63 1.63 0 0 1 1.149.133A9.96 9.96 0 0 0 12 22c5.523 0 10-4.477 10-10c0-1.821-.487-3.53-1.338-5"/></svg><span>参与讨论</span></a></div></widget>
-</div></aside><div class='float-panel'>
-  <button type='button' style='display:none' class='laptop-only rightbar-toggle mobile' onclick='sidebar.rightbar()'>
-    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6h11m-11 6h11m-11 6h11M4 6h1v4m-1 0h2m0 8H4c0-1 2-2 2-3s-1-1.5-2-1"/></svg>
-  </button>
-  <button type='button' style='display:none' class='mobile-only leftbar-toggle mobile' onclick='sidebar.leftbar()'>
-    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 11c0-3.771 0-5.657 1.172-6.828C4.343 3 6.229 3 10 3h4c3.771 0 5.657 0 6.828 1.172C22 5.343 22 7.229 22 11v2c0 3.771 0 5.657-1.172 6.828C19.657 21 17.771 21 14 21h-4c-3.771 0-5.657 0-6.828-1.172C2 18.657 2 16.771 2 13z"/><path id="sep" stroke-linecap="round" d="M5.5 10h6m-5 4h4m4.5 7V3"/></g></svg>
-  </button>
-</div>
-</div><div class="scripts">
-
-
-<script type="text/javascript">
-  window.canonical = {"originalHost":null,"officialHosts":["localhost"],"encoded":""};
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="hexo-theme" content="https://github.com/xaoxuu/hexo-theme-stellar/tree/1.33.1" theme-name="Stellar" theme-version="1.33.1"><meta name="generator" content="Hexo 7.3.0"><meta http-equiv="x-dns-prefetch-control" content="on"><meta name="renderer" content="webkit"><meta name="force-rendering" content="webkit"><meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"><meta name="HandheldFriendly" content="True"><meta name="mobile-web-app-capable" content="yes"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1"><meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000"><meta name="theme-color" content="#f9fafb"><title>2024 年 8 月：三元悖论 - もじもんの文字門</title><meta name="description" content="bxs:quote-left-orange在既要、又要和外部制约构成的不可能三角中，通常不会放弃外部制约。bxs:quote-right-orange"><meta property="og:type" content="article"><meta property="og:title" content="2024 年 8 月：三元悖论"><meta property="og:url" content="https://blog.mojimoon.top/2024/202408/"><meta property="og:site_name" content="もじもんの文字門"><meta property="og:description" content="bxs:quote-left-orange在既要、又要和外部制约构成的不可能三角中，通常不会放弃外部制约。bxs:quote-right-orange"><meta property="og:locale" content="zh_CN"><meta property="og:image" content="https://gcore.jsdelivr.net/gh/mojimoon/blog@v20260815/image/mojimoon.png"><meta property="article:published_time" content="2024-08-26T00:00:00.000Z"><meta property="article:modified_time" content="2024-12-31T03:32:52.778Z"><meta property="article:author" content="mojimoon"><meta property="article:tag" content="mojimoon, computer science, python, blog, hexo, stellar, personal blog, deep learning"><meta name="twitter:card" content="summary"><meta name="twitter:image" content="https://gcore.jsdelivr.net/gh/mojimoon/blog@v20260815/image/mojimoon.png"><meta name="keywords" content="mojimoon, computer science, python, blog, hexo, stellar, personal blog, deep learning"><link rel="stylesheet" href="https://gcore.jsdelivr.net/gh/mojimoon/blog@v20260815/css/main.css?v=1.33.1"><link rel="shortcut icon" href="/image/favicon.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"mojimoon","sameAs":[],"image":"https://gcore.jsdelivr.net/gh/mojimoon/blog@v20260815/image/mojimoon.png"},"dateCreated":"2024-08-26T08:00:00+08:00","dateModified":"2024-12-31T11:32:52+08:00","datePublished":"2024-08-26T08:00:00+08:00","description":"bxs:quote-left-orange在既要、又要和外部制约构成的不可能三角中，通常不会放弃外部制约。bxs:quote-right-orange","headline":"2024 年 8 月：三元悖论","mainEntityOfPage":{"@type":"WebPage","@id":"https://blog.mojimoon.top/2024/202408/"},"publisher":{"@type":"Organization","name":"mojimoon","sameAs":[],"image":"https://gcore.jsdelivr.net/gh/mojimoon/blog@v20260815/image/mojimoon.png","logo":{"@type":"ImageObject","url":"https://gcore.jsdelivr.net/gh/mojimoon/blog@v20260815/image/mojimoon.png"}},"url":"https://blog.mojimoon.top/2024/202408/","image":[]}</script><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet"><link rel="stylesheet" href="https://gcore.jsdelivr.net/gh/mojimoon/blog@v20260815/css/override.css"></head><body><div class="l_body content" id="start" layout="post" type="tech"><aside class="l_left"><div class="sidebg"></div><div class="leftbar-container"><header class="header"><div class="logo-wrap"><a class="avatar" href="/about/"><div class="bg" style="opacity:0;background-image:url(https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/avatar/round/rainbow64@3x.webp)"></div><img no-lazy class="avatar" src="https://gcore.jsdelivr.net/gh/mojimoon/blog@v20260815/image/mojimoon.png" onerror='this.classList.add("error"),this.src="https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/image/2659360.svg"'></a><a class="title" href="/"><div class="main">もじもんの文字門</div><div class="sub normal cap">Computer Science</div><div class="sub hover cap" style="opacity:0">City University of Hong Kong</div></a></div></header><div class="nav-area"><nav class="menu dis-select"></nav></div><div class="widgets"><div class="search-wrapper" id="search-wrapper"><form class="search-form"><a class="search-button" onclick="document.getElementById(&quot;search-input&quot;).focus();"><svg t="1705074644177" viewBox="0 0 1025 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1560" width="200" height="200"><path d="M1008.839137 935.96571 792.364903 719.491476a56.783488 56.783488 0 0 0-80.152866 0 358.53545 358.53545 0 1 1 100.857314-335.166073 362.840335 362.840335 0 0 1-3.689902 170.145468 51.248635 51.248635 0 1 0 99.217358 26.444296 462.057693 462.057693 0 1 0-158.255785 242.303546l185.930047 185.725053a51.248635 51.248635 0 0 0 72.568068 0 51.248635 51.248635 0 0 0 0-72.978056z" p-id="1561"></path><path d="M616.479587 615.969233a50.428657 50.428657 0 0 0-61.498362-5.534852 174.655348 174.655348 0 0 1-177.525271 3.484907 49.403684 49.403684 0 0 0-58.833433 6.76482l-3.074918 2.869923a49.403684 49.403684 0 0 0 8.609771 78.10292 277.767601 277.767601 0 0 0 286.992355-5.739847 49.403684 49.403684 0 0 0 8.404776-76.667958z" p-id="1562"></path></svg></a><input type="text" class="search-input" id="search-input" placeholder="站内搜索"></form><div id="search-result"></div><div class="search-no-result">没有找到内容！</div></div><widget class="widget-wrapper recent post-list"><div class="widget-header dis-select"><span class="name">最近更新</span></div><div class="widget-body fs14"><a class="item title" href="/2025/ssd-enclosure/"><span class="title">拯救旧笔记本：制作移动硬盘盒</span></a><a class="item title" href="/2025/why-75-keyboard/"><span class="title">为什么75%键盘是程序员的最佳选择？</span></a><a class="item title" href="/2023/202304/"><span class="title">2023 年 4 月：脱轨</span></a><a class="item title" href="/2023/202305B/"><span class="title">解决 Windows 更新禁用导致微软商店无法安装的问题 (0x80070422)</span></a><a class="item title" href="/2023/202305C/"><span class="title">解决 Stable Diffusion WebUI 安装 xformers 出现 Torch 无法使用 GPU 的问题</span></a><a class="item title" href="/2023/20230617/"><span class="title">2023-06-17 | Back to Square One</span></a><a class="item title" href="/2023/202306F/"><span class="title">2023 年 6 月特刊：并非美食</span></a><a class="item title" href="/2023/202306A/"><span class="title">2023 年 6 月下：夏天</span></a><a class="item title" href="/2023/DontDownload/"><span class="title">不要相信 haitenjp.com 等下载站，请在 DLsite 支持作者</span></a><a class="item title" href="/2023/Javaweb/"><span class="title">笔记：JavaWeb 项目环境配置</span></a></div></widget></div></div></aside><div class="l_main" id="main"><div class="article banner top"><div class="content"><div class="top bread-nav footnote"><div class="left"><div class="flex-row" id="breadcrumb"><a class="cap breadcrumb" href="/">主页</a><span class="sep"></span> <a class="cap breadcrumb" href="/">文章</a><span class="sep"></span><a class="cap breadcrumb-link" href="/categories/Journal/">Journal</a></div><div class="flex-row" id="post-meta"><span class="text created">发布于：<time datetime="2024-08-26T00:00:00.000Z">2024-08-26</time></span><span class="sep updated"></span><span class="text updated">更新于：<time datetime="2024-12-31T03:32:52.778Z">2024-12-31</time></span></div></div></div><div class="bottom only-title"><div class="text-area"><h1 class="text title"><span>2024 年 8 月：三元悖论</span></h1></div></div></div></div><article class="md-text content"><div class="tag-plugin quot p"><p class="content">bxs:quote-left-orange<span class="text">在既要、又要和外部制约构成的不可能三角中，通常不会放弃外部制约。</span>bxs:quote-right-orange</p></div><span id="more"></span><h2 id="楔子"><a class="markdownIt-Anchor" href="#楔子"></a> 楔子</h2><p>本文的背景之一是画师<a target="_blank" rel="noopener" href="https://x.com/So_shi_te_">奏詞そして</a>。</p><p>其人非常勤奋 —— 勤奋到了你根本不会想要关注这个推特。截至本文写作时，该帐号已经发布了 21.6 万推文，其中包括 1.1 万张图像，且绝大多数都是插画和漫画（而非生活照和晒卡）。关注这样的推特已经超过了污染时间线的范畴，因为其本身就是时间线。</p><p>这让我不禁想到，对画师而言，开个小号或者 misskey 记录生活恐怕是十分有必要的，但并不一定有所帮助。</p><p>此外，奏詞そして在 Comiket 上的社团名为「そして物語が終わる」。这正是由麻枝准制作、Riya 演唱的《Love Song》（2005）中的 EP12 的歌曲名。这一专辑最出名的 EP13《Love Song》，经历了将近 20 年的重编曲和 Key 社三代歌姬的演绎，如今还可以在 HBR 中听到它的旋律；而 EP4《走る》也在 LBEX 中被重编曲为沙耶的主题曲《駆ける》，这也是我极为喜欢的 BGM 之一。</p><p>难以想象，事物的联系如此之紧密，以至于它们间隔着时间与媒介的差异，却仍然得以遥相呼应。而这种无关紧要的小小发现，却足以给我巨大的喜悦。</p><h2 id="题外话"><a class="markdownIt-Anchor" href="#题外话"></a> 题外话</h2><p>作为正题前的开胃菜，请看<a target="_blank" rel="noopener" href="https://x.com/So_shi_te_/status/1739284964234170371/photo/1">VCR</a>。</p><p>这张图最值得注意的是「NL成人向け」这个标签。</p><p>NL 是什么意思呢？如果你 Google 一下，会发现 NL 这个词和 BL/GL 之类的并列。借此，你也可以通过上下文推断其意义。</p><p>—— 我是这样想的，但当我把这个问题抛到群里时，却没有人能够给出正确答案。</p><details class="tag-plugin colorful folding"><summary><p>所以 NL 到底是什么？</p></summary><div class="body"><p>NL = ノーマルラブ = Normal Love，即「传统意义上男女搭配」。约等于 BG。</p><p>在某些圈子里使用 NL 而非 BG 确有其理由 —— 也可以说是语言陌生化的结果。</p><p>P.S. 并不是 ノンケラブ = Nonke Love。</p></div></details><p>由此可见，不要低估日本人的语言创造力 —— 字面意思上的创造，创造意义不明的缩写，甚至创造出一种新的语言。</p><h2 id="紫藤花下"><a class="markdownIt-Anchor" href="#紫藤花下"></a> 紫藤花下</h2><p>花语终究是人赋予的象征意义。花本身并不会有所期待，也不会有所感受。它们只是依据自己的生命周期，绽放、凋零，然后再次绽放。</p><p>紫藤花是一种藤本植物。藤本植物由于其茎干细长，不能直立生长，只能依附于其他物体上。也因此，它一年之中只有在开花期能够夺人眼球 —— 不过就在这几周时间里，它能做到遮天蔽日，为庭院带来一片紫色的海洋。</p><p>因此，在文化中，紫藤花也就与其依附于他人的意义相联系。虽然紫藤花原产于东亚和北美诸地，但由于其 18-19 世纪才出口到欧洲等地，此时各原产地早已形成了多种不同的花语，因此其在不同文化中的象征很不相同。在维多利亚时代，紫藤花由于其可以依附于其他树生长，被赋予了「我依附于你」的含义，进而演变为「steadfastness（坚贞）」的花语。在东亚，其鲜明的色调让紫藤花与「浪漫」等亘古不变的主题相联系，不过具体而言，在日本还有「长寿」与「好运」之意，在中国，下垂的花穗则被赋予了「谦卑」的含义。（<a target="_blank" rel="noopener" href="https://www.petalrepublic.com/wisteria-flower-meaning/">参考资料</a>）</p><p>不过这些含义是否准确可考，不必深究。更加重要的是，紫藤花因其充满激情的短暂的花期而为人所珍惜，意味着人性化的象征意义 —— 无论是坚贞、浪漫、谦卑还是好运 —— 都基于「客观的存在」这一事实。进一步地，基于「客观的存续」，人们赋予了这种植物以「主观的意义」，并以此来表达自己的情感。正因为其存在的时日有限，人类才将期许赋予「现在仍在存在」的紫藤花，而不问其何日凋零。</p><p>生活是连续的存在 —— 我们正因为知道生活仍将继续，且必将继续，才会有所期许。</p><p>而虚构是断续的存在。其一，虚构是人的创作，意味着它的存在是有限且不连续的，并且由于创作的速度远小于消费的速度，意味着这个问题迟早会成为现实 —— 只不过大部分时候我们将其直接抛到脑后。其二，虚构是有所基础的。原创的虚构受制于现实，而衍生的虚构受制于原创。因循旧例，我们称之为二创。原创受制于现实 —— 这是一个十分现实的问题，需要具体问题具体分析。而二创受制于原创 —— 意味着二创只有在原创存续的情况下才有意义。此处的存续并不是指「作者仍在创作」，而是指「作品仍在被消费」；这是个容易被混淆的概念，只不过对于某些媒介，这两者是等价的。二创受制于原创同时也引入了一个不可能三角：模式、内容和原作，只能同时满足其中两个。</p><h2 id="不可能三角"><a class="markdownIt-Anchor" href="#不可能三角"></a> 不可能三角</h2><p>不可能三角指的是在同时存在的三个条件中，只能满足其中两个。这个概念最早出现在经济学中，用于描述货币政策的三个目标：固定汇率、自由资本流动和独立货币政策。这三个目标之间存在矛盾，无法同时实现。利率变化导致汇率变化，因此在不管控资本流动的情况下，无法同时实现固定汇率和独立货币政策，于是只能放弃其中一个。</p><p>回到正题。我们有必要先定义一下这几个名词：</p><ul><li>模式是「二创得以被作为独立作品消费」的方式<ul><li>媒介：漫画、小说、动画剧场</li><li>形式：短篇、长篇分割、长期连载</li><li>风格</li></ul></li><li>内容，字面意思<ul><li>故事</li><li>人物</li><li>设定：对设定的延伸和再创作，及不言自明的设定（headcanon）</li></ul></li><li>原作，还是字面意思<ul><li>与原作的关系</li><li>受众的认知</li><li>内容预设</li></ul></li></ul><p>为什么这三者之间会存在矛盾呢？</p><ul><li>同时具有模式和原作，则内容无法充分表达。<ul><li>内容可能受制于原作带来的预设，无法将作者创作独立作品的意图充分表达。（原作→模式→内容）</li><li>内容可能受制于二创作为独立作品带来的创作能力限制，比如「受篇幅所限」。（模式→原作→内容）</li></ul></li><li>同时具有内容与原作，则模式无法充分利用。<ul><li>现存的模式可能无法满足内容的需求，越接近专业创作的内容，越难以找到合适的模式。尽管存在各种工具辅助创作，但其主要目的是提高效率，而非提高质量。（内容→原作→模式）</li><li>虽说二创的风格未必要与原作一致，但为了保持基于内容预设的连续性，通常会选择与原作相近的模式。（原作→内容→模式）</li></ul></li><li>同时具有模式和内容，则原作无法充分表达。<ul><li>在专业的模式和独特的内容下，创作者很有可能带来一个全新的故事，此时原作的存在除了提供认知只剩下负担。（模式→内容→原作）</li><li>考虑实际的原创创作，从内容出发的创作应该是最为常见的；但在二创中用同样的方式创作就会显得有些多余。（内容→模式→原作）</li></ul></li></ul><p>在既要、又要和外部制约构成的不可能三角中，通常不会放弃外部制约。外部制约不受创作者本身意图的影响，但正因此能够附加高于原创创作的价值。如果把原作丢掉，确实解决了矛盾，但作品也就失去了关注度。其本质矛盾 —— 「独立创作」应该是「原创」的，因为原创能够自由调剂内容与模式；但与此同时，原创的独立创作是不受到外部支持的，也即作者必须自己承担风险。</p><p>所以，归根到底，二创的意义是什么，或者说，可以是什么？单纯从其不能抛弃原作，所以必须要在内容与模式中二选一的角度来看：</p><table><thead><tr><th></th><th>内容纯粹</th><th>内容中立</th><th>内容自由</th></tr></thead><tbody><tr><td>模式纯粹</td><td>-</td><td>“我本应做到”</td><td>“我想做到”</td></tr><tr><td>模式中立</td><td>“我确信会看到”</td><td>“我看着呢”</td><td>“我也许会看到”</td></tr><tr><td>模式自由</td><td>“我刷推特想到”</td><td>“我在别处想到”</td><td>“我在梦里想到”</td></tr></tbody></table><p>还是稍微解释一下：</p><ul><li>“我本应做到”：“正是因为没有这样的作品，我才要创作”（模式→原作→内容）</li><li>“我想做到”：“作者不敢写的，我帮他写”</li><li>“我确信会看到”：“如果我是作者，我也会这样写”（内容→原作→模式）</li><li>“我看着呢”：“我觉得这样的故事很有趣”</li><li>“我也许会看到”：“读者肯定知道是谁写的”</li><li>“我刷推特想到”：“肯定有人会这样写”</li><li>“我在别处想到”：“把别的故事化为己用”</li><li>“我在梦里想到”：“你喜欢就好”</li></ul><p>顺便一提，各种各样的二创都存在，至于哪个区域是大众认可的，可能永远不会有定论。但这并不妨碍我们去创作，因为创作本身就是一种乐趣。</p><p>不同的作者也有截然不同的创作方式。奏詞そして否定了“我想做到”这种普遍的模式，而是选择了“我本应做到”。正是因为存在这样一个角色塑造的缺位 —— 无论原创还是二创，都未尝有这样的作品 —— 才让他得以创作。</p><p>这倒并不是说“我想做到”不好 —— 而是指出了其关键矛盾，通过牺牲内容的独立性来传递模式和原作的信息。继承原作的衣钵，却又忽略了其戏剧冲突和角色塑造的重要性，往往会显得平淡无奇 —— 哪怕在模式上有所创新。但与此同时，其一大优势就在于弱化内容门槛，让生产和消费都变得更加容易。</p><p>但如果想要往更高的地方走，就必然会受到体裁的限制。作为一部完整、独立的作品，作者受到创作时间、分发成本和宣传渠道的多重制约，不可能说面面俱到、页数多多。这也就是为何很多二创作品都会显得「不够看」，因为它们的内容实际上是为了模式服务的 —— 或者说，哪怕模式尽善尽美，也无法呈现足够的内容。</p><p>但确有必要如此去做，因为山就在那里。一部「既要」已经完成了极致的内容呈现，虽然牺牲了一些节奏与节制，却更能让读者感受到其真意；一部「又要」打通了模式的瓶颈，恰到好处地提供了应有的氛围和情绪，为美好的故事画上了完美的句号。那么你现在需要的恰恰就是，「既要又要」。虽然没有人这样做过，也没有人能够做到 —— 但在前人的肩膀上，你还是可以勇攀高峰。</p><h2 id="世界染上单色"><a class="markdownIt-Anchor" href="#世界染上单色"></a> 世界染上单色</h2><p>通常所谓的「黑白」，实际上是灰度图像。毕竟 1bit 的黑白世界实在是太过枯燥，8bit 的灰阶则在黑白之间增加了 254 种可能性。（当然，实际上并没有这么简单；由于人眼对亮度的感知并非线性，因此无论灰度还是 RGB 都需要进行 gamma 校正。）</p><p>而给黑色增加一种颜色 —— 就会使世界变得更加丰富。这种颜色通常是洋红色、青色或黄色，其原因也是显然的：这种「双色图像」最早出现在印刷中，它的成本要低于 CMYK 四色印刷。有趣的是，很多人根本不清楚「双色印刷」这个概念；拿一本青色+黑色的练习册给他们，他们会认为这是一本「单色」的书。黑色难道不是颜色吗？</p><p>当然，我们今天要讨论的不是印刷工艺，而是人类的认知。</p><p>每一位作者都有其独特的艺术风格，可以用线条、色彩和构图来描述。</p><ul><li>线条<ul><li>笔触：最直观的「风格」、精细程度</li><li>形状：框架和结构</li></ul></li><li>色彩<ul><li>明度：氛围、情绪</li><li>对比度：强调、分层</li></ul></li><li>构图<ul><li>突出重点、引导视线</li><li>整体和局部的关系</li></ul></li></ul><p>在全彩绘画中，色彩的作用是最为显著的。甚至可以说，由于鲜艳色彩对人眼的刺激，构图的问题都容易被轻易忽略，而线条则是不放大就看不清的细节。而当色彩被限制到两种时，构图成了最主要的构造元素。线条变得十分重要，因为它们是唯一的分界线；而明与暗、彩色与黑色的对比仍然承载着重要的信息。进一步地，当色彩只剩下灰度，色彩只剩下明与暗的对比。此外，很多时候也会用线条不同形式的组合或堆砌来表现这种对比，与其将画布填满，不如留下一些空白。</p><p>我们通常所说，黑白和彩色漫画的思路完全不同，就是这个道理。将彩色的画面转换为灰度，信息量会下降，读者要从五彩斑斓的灰中寻找线索，未免有些困难。而另一方面，将灰度的画面转换为彩色，信息量会增加，增加到了冗余的程度，让读者受到颜色的干扰而无法专注于线条和构图。尽管背后的技巧和思路是相通的，但实际操作起来却是两种完全不同的体验。进一步地，将灰白漫画改编为动画，就要考虑整体的视听效果，而不仅仅是画面的表现 —— 原封不动地复刻漫画分镜，通常会让观众感到枯燥乏味，因为其他感官没有得到足够的刺激。（当然，实际上还有很多考量，诸如镜头运动、SFX、BGM 等等。）</p><p>典型的例子是 <a target="_blank" rel="noopener" href="https://tvtropes.org/pmwiki/pmwiki.php/Main/SplashOfColor">Splash of Color</a>，将灰度画面中的某一物体染上颜色，以突出其重要性。《辛德勒的名单》中的红衣小女孩就是将这一手法发挥到了极致。</p><p>奏詞そして发布了许多双色漫画和插画，其中也有一部分原因是，学マス 乃至 IMAS 家族中，偶像的主题色本来就是很重要的元素。不过，实际上又与 Splash of Color 有非常明显的区别：除了用主题色突出角色，还对其他角色和背景做了一定的上色。虽然你也可以理解为，这种处理单纯是为了增加双色的层次感与对比度；但实际上，对其他角色上色则体现了一种世界观级别的「滤镜」，即情绪被实体化为色彩，而非仅仅作为信息和线索的传递。</p><p>在此基础之上，尽管颜色变得鲜明、世界变得多样，有一件事却没有变：作为读者能直观感受到的「艺术风格」，也就是色彩风格，以及细看绝对不会遗漏的线条笔触。此外我可以认为，其人在黑白和双色漫画中确实沿用了不同的思路，而不仅仅是「使用第二种灰度上色」。至于多种单色在同一画面中的拼贴，它和全彩还是存在显然的区别 —— 饱和度和对比度很明显要低，色彩更加简单且互不干扰。也因此，这仍然可以认为是一种「双色」。</p><p>最终，尽管作者通过这一单色滤片「看世界」的方式看似固定，但实际上比较前后的作品，还是能察觉其风格的变化。简而言之，线条更加细腻、色彩搭配更加柔和，而色彩对比更加强烈、多格构图更有层次感，这些都是在不断尝试和实践中得到的经验；但又不仅于此，从中我们得以窥伺作者心境的变迁，于此时钟爱何物，又于彼刻忧虑何事。</p></article><div class="article-footer"><section id="license"><div class="header"><span>许可协议</span></div><div class="body"><p>本文采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh">署名-相同方式共享 4.0 国际许可协议</a>，转载请注明出处。</p></div></section></div><div class="related-wrap" id="read-next"><section class="body"><div class="item" id="prev"><div class="note">较新文章</div><a href="/2024/202412/">2024 年 12 月：旧乡晶尘</a></div><div class="item" id="next"><div class="note">较早文章</div><a href="/2024/202407/">2024 年 7 月：存在延续</a></div></section></div><div class="related-wrap md-text" id="comments"><section class="header cmt-title cap theme"><p>快来参与讨论吧~</p></section><section class="body cmt-body beaudar"><svg class="loading" style="vertical-align:middle;fill:currentColor;overflow:hidden" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2709"><path d="M832 512c0-176-144-320-320-320V128c211.2 0 384 172.8 384 384h-64zM192 512c0 176 144 320 320 320v64C300.8 896 128 723.2 128 512h64z" p-id="2710"></path></svg><div id="beaudar" repo="mojimoon/blog-comments" issue-term="pathname" theme="preferred-color-scheme" input-position="top" comment-order="desc" loading="false" branch="main"></div></section></div><footer class="page-footer footnote"><hr><div class="text"><p><a target="_blank" rel="noopener" href="https://github.com/mojimoon">@mojimoon</a> Overclocked by <a target="_blank" rel="noopener" href="https://xaoxuu.com/wiki/stellar/">Stellar</a></p></div></footer><div class="main-mask" onclick="sidebar.dismiss()"></div></div><aside class="l_right"><div class="widgets"><widget class="widget-wrapper toc" id="data-toc" collapse="false"><div class="widget-header dis-select"><span class="name">本文目录</span><a class="cap-action" onclick="sidebar.toggleTOC()"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6h11m-11 6h11m-11 6h11M4 6h1v4m-1 0h2m0 8H4c0-1 2-2 2-3s-1-1.5-2-1"/></svg></a></div><div class="widget-body"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%A5%94%E5%AD%90"><span class="toc-text">楔子</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%A2%98%E5%A4%96%E8%AF%9D"><span class="toc-text">题外话</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%B4%AB%E8%97%A4%E8%8A%B1%E4%B8%8B"><span class="toc-text">紫藤花下</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%8D%E5%8F%AF%E8%83%BD%E4%B8%89%E8%A7%92"><span class="toc-text">不可能三角</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%96%E7%95%8C%E6%9F%93%E4%B8%8A%E5%8D%95%E8%89%B2"><span class="toc-text">世界染上单色</span></a></li></ol></div><div class="widget-footer"><a class="top" onclick="util.scrollTop()"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.5"><path stroke-linejoin="round" d="m9 15.5 3-3 3 3m-6-4 3-3 3 3"/><path d="M7 3.338A9.95 9.95 0 0 1 12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12c0-1.821.487-3.53 1.338-5"/></g></svg><span>回到顶部</span></a><a class="buttom" onclick="util.scrollComment()"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.5" d="M8 10.5h8M8 14h5.5M17 3.338A9.95 9.95 0 0 0 12 2C6.477 2 2 6.477 2 12c0 1.6.376 3.112 1.043 4.453.178.356.237.763.134 1.148l-.595 2.226a1.3 1.3 0 0 0 1.591 1.592l2.226-.596a1.63 1.63 0 0 1 1.149.133A9.96 9.96 0 0 0 12 22c5.523 0 10-4.477 10-10 0-1.821-.487-3.53-1.338-5"/></svg><span>参与讨论</span></a></div></widget></div></aside><div class="float-panel"><button type="button" style="display:none" class="laptop-only rightbar-toggle mobile" onclick="sidebar.rightbar()"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6h11m-11 6h11m-11 6h11M4 6h1v4m-1 0h2m0 8H4c0-1 2-2 2-3s-1-1.5-2-1"/></svg></button> <button type="button" style="display:none" class="mobile-only leftbar-toggle mobile" onclick="sidebar.leftbar()"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 11c0-3.771 0-5.657 1.172-6.828C4.343 3 6.229 3 10 3h4c3.771 0 5.657 0 6.828 1.172C22 5.343 22 7.229 22 11v2c0 3.771 0 5.657-1.172 6.828C19.657 21 17.771 21 14 21h-4c-3.771 0-5.657 0-6.828-1.172C2 18.657 2 16.771 2 13z"/><path id="sep" stroke-linecap="round" d="M5.5 10h6m-5 4h4m4.5 7V3"/></g></svg></button></div></div><div class="scripts"><script>window.canonical = {"originalHost":null,"officialHosts":["localhost"],"encoded":""};
   const ctx = {
     date_suffix: {
       just: `刚刚`,
@@ -328,14 +30,7 @@
     jquery: `https://gcore.jsdelivr.net/npm/jquery@3.7/dist/jquery.min.js`,
     marked: `https://gcore.jsdelivr.net/npm/marked@13.0/lib/marked.umd.min.js`,
     lazyload: `/%5Bobject%20Object%5D`
-  }
-  
-
-</script>
-
-<script type="text/javascript">
-  
-  function RunItem() {
+  }</script><script>function RunItem() {
     this.list = []; // 存放回调函数
     this.start = () => {
       for (var i = 0; i < this.list.length; i++) {
@@ -582,10 +277,7 @@
   };
   utils.dark = Object.assign(utils.dark, {
     push: utils.dark.method.toggle.push,
-  });
-</script>
-<script>
-  const sidebar = {
+  });</script><script>const sidebar = {
     leftbar: () => {
       if (l_body) {
         l_body.toggleAttribute('leftbar');
@@ -607,10 +299,7 @@
     toggleTOC: () => {
       document.querySelector('#data-toc').classList.toggle('collapse');
     }
-  }
-</script>
-<script type="text/javascript">
-  (() => {
+  }</script><script>(() => {
     const tagSwitchers = document.querySelectorAll('.tag-subtree.parent-tag > a > .tag-switcher-wrapper')
     for (const tagSwitcher of tagSwitchers) {
       tagSwitcher.addEventListener('click', (e) => {
@@ -634,12 +323,7 @@
         }
       }
     }
-  })()
-</script>
-
-<script async src="https://gcore.jsdelivr.net/npm/vanilla-lazyload@19.1/dist/lazyload.min.js"></script>
-<script>
-  // https://www.npmjs.com/package/vanilla-lazyload
+  })()</script><script async src="https://gcore.jsdelivr.net/npm/vanilla-lazyload@19.1/dist/lazyload.min.js"></script><script>// https://www.npmjs.com/package/vanilla-lazyload
   // Set the options globally
   // to make LazyLoad self-initialize
   window.lazyLoadOptions = {
@@ -701,15 +385,7 @@
     if (window.lazyLoadInstance?.update) {
       window.lazyLoadInstance.update();
     }
-  }
-  
-</script>
-
-<!-- required -->
-<script src="https://gcore.jsdelivr.net/gh/mojimoon/blog@v20260814/js/main.js?v=1.33.1" defer></script>
-
-<script type="text/javascript">
-  const applyTheme = (theme) => {
+  }</script><script src="https://gcore.jsdelivr.net/gh/mojimoon/blog@v20260815/js/main.js?v=1.33.1" defer></script><script>const applyTheme = (theme) => {
     if (theme === 'auto') {
       document.documentElement.removeAttribute('data-theme')
     } else {
@@ -773,14 +449,7 @@
       utils.dark.mode = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
     }
     utils.dark.method.toggle.start();
-  })()
-</script>
-
-
-<!-- optional -->
-
-  <script type="module">
-  const el = document.querySelector('#comments #beaudar');
+  })()</script><script type="module">const el = document.querySelector('#comments #beaudar');
   util.viewportLazyload(el, load_beaudar, true);
 
   function load_beaudar() {
@@ -800,14 +469,7 @@
       }
     }
     el.appendChild(script);
-  }
-</script>
-
-
-
-
-<script defer>
-  window.addEventListener('DOMContentLoaded', (event) => {
+  }</script><script defer>window.addEventListener('DOMContentLoaded', (event) => {
     ctx.services = Object.assign({}, JSON.parse(`{"mdrender":{"js":"/js/services/mdrender.js"},"siteinfo":{"js":"/js/services/siteinfo.js","api":null},"ghinfo":{"js":"/js/services/ghinfo.js"},"rating":{"js":"/js/services/rating.js","api":"https://star-vote.xaox.cc/api/rating"},"vote":{"js":"/js/services/vote.js","api":"https://star-vote.xaox.cc/api/vote"},"sites":{"js":"/js/services/sites.js"},"friends":{"js":"/js/services/friends.js"},"friends_and_posts":{"js":"/js/services/friends_and_posts.js"},"timeline":{"js":"/js/services/timeline.js"},"fcircle":{"js":"/js/services/fcircle.js"},"weibo":{"js":"/js/services/weibo.js"},"memos":{"js":"/js/services/memos.js"},"voice":{"js":"/js/plugins/voice.js"},"video":{"js":"/js/plugins/video.js"},"download-file":{"js":"/js/plugins/download-file.js"},"twikoo":{"js":"/js/services/twikoo_latest_comment.js"},"waline":{"js":"/js/services/waline_latest_comment.js"},"artalk":{"js":"/js/services/artalk_latest_comment.js"},"giscus":{"js":"/js/services/giscus_latest_comment.js"},"contributors":{"edit_this_page":{"_posts/":null,"wiki/stellar/":"https://github.com/xaoxuu/hexo-theme-stellar-docs/blob/main/"},"js":"/js/services/contributors.js"}}`));
     for (let id of Object.keys(ctx.services)) {
       const js = ctx.services[id].js;
@@ -924,26 +586,12 @@
         }
       });
     });
-  });
-</script>
-
-<script>
-  window.addEventListener('DOMContentLoaded', (event) => {
+  });</script><script>window.addEventListener('DOMContentLoaded', (event) => {
     ctx.search = {
       path: `/search.json`,
     }
     utils.js('/js/search/local-search.js', { defer: true });
-  });
-</script><script>
-  window.FPConfig = {
-    delay: 0,
-    ignoreKeywords: [],
-    maxRPS: 5,
-    hoverDelay: 25
-  };
-</script>
-<script defer src="https://gcore.jsdelivr.net/npm/flying-pages@2/flying-pages.min.js"></script><script>
-  ctx.fancybox = {
+  });</script><script>window.FPConfig={delay:0,ignoreKeywords:[],maxRPS:5,hoverDelay:25}</script><script defer src="https://gcore.jsdelivr.net/npm/flying-pages@2/flying-pages.min.js"></script><script>ctx.fancybox = {
     selector: `.timenode p>img`,
     css: `https://gcore.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css`,
     js: `https://gcore.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js`
@@ -976,10 +624,7 @@
         }
       });
     })
-  }
-</script>
-<script>
-  window.addEventListener('DOMContentLoaded', (event) => {
+  }</script><script>window.addEventListener('DOMContentLoaded', (event) => {
     const swiper_api = document.getElementById('swiper-api');
     if (swiper_api != undefined) {
       utils.css(`https://unpkg.com/swiper@10.3/swiper-bundle.min.css`);
@@ -1002,10 +647,7 @@
         });
       })
     }
-  });
-</script>
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
+  });</script><script>document.addEventListener('DOMContentLoaded', function () {
     window.codeElements = document.querySelectorAll('.code');
     if (window.codeElements.length > 0) {
       ctx.copycode = {
@@ -1015,10 +657,4 @@
       };
       utils.js('/js/plugins/copycode.js');
     }
-  });
-</script>
-
-
-<!-- inject -->
-
-</div></body></html>
+  });</script></div></body></html>
