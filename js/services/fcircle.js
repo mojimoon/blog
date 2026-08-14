@@ -1,1 +1,37 @@
-utils.jq(()=>{$(function(){for(var e=document.getElementsByClassName("ds-fcircle"),t=0;t<e.length;t++){let s=e[t],a=s.dataset.api;if(null!=a){let r=def.avatar;utils.request(s,a,async a=>{a=(await a.json()).article_data||[];let t=s.getAttribute("limit");a.forEach((a,e)=>{t&&e>=t||(e=(e=(e=(e=(e='<div class="timenode" index="'+e+'"><div class="header"><div class="user-info">')+'<img src="'+(a.avatar||r)+'" onerror="javascript:this.src=\''+r+"';\">")+"<span>"+a.author+"</span></div>")+"<span>"+a.created+"</span></div>")+'<a class="body" href="'+a.link+'" target="_blank" rel="external nofollow noopener noreferrer">'+a.title+"</a></div>",$(s).append(e))})})}}})});
+utils.jq(() => {
+  $(function () {
+    const els = document.getElementsByClassName('ds-fcircle');
+    for (var i = 0; i < els.length; i++) {
+      const el = els[i];
+      const api = el.dataset.api;
+      if (api == null) {
+        continue;
+      }
+      const default_avatar = def.avatar;
+      // layout
+      utils.request(el, api, async resp => {
+        const data = await resp.json();
+        const arr = data.article_data || [];
+        const limit = el.getAttribute('limit');
+        arr.forEach((item, i) => {
+          if (limit && i >= limit) {
+            return;
+          }
+          var cell = '<div class="timenode" index="' + i + '">';
+          cell += '<div class="header">';
+          cell += '<div class="user-info">';
+          cell += '<img src="' + (item.avatar || default_avatar) + '" onerror="javascript:this.src=\'' + default_avatar + '\';">';
+          cell += '<span>' + item.author + '</span>';
+          cell += '</div>';
+          cell += '<span>' + item.created + '</span>';
+          cell += '</div>';
+          cell += '<a class="body" href="' + item.link + '" target="_blank" rel="external nofollow noopener noreferrer">';
+          cell += item.title;
+          cell += '</a>';
+          cell += '</div>';
+          $(el).append(cell);
+        });
+      });
+    }
+  });
+});

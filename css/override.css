@@ -1,1 +1,74 @@
-.katex-html{display:none!important}:root{--color-keyword:#8959a8;--color-title:#3f51b5;--color-type:#1e88e5;--color-number:#fd8607;--color-string:#3c763d;--color-html-tag:#cd5f0e;--color-html-number:#27ae60}@media (prefers-color-scheme:dark){:root{--color-keyword:#c792ea;--color-title:#82aaff;--color-type:#2196f3;--color-number:#f78c6c;--color-string:#449e48;--color-html-tag:#ff82aa;--color-html-number:#17afca}}.code>pre .javascript .function,.code>pre .keyword,.code>pre .meta-keyword{color:var(--color-keyword);font-weight:700}.code>pre .attr,.code>pre .attribute,.code>pre .title{color:var(--color-title)}.code>pre .built_in,.code>pre .tag .name,.code>pre .type{color:var(--color-type)}.code>pre .constant,.code>pre .literal,.code>pre .number,.code>pre .preprocessor{color:var(--color-number)}.code>pre .meta-string,.code>pre .string{color:var(--color-string)}.highlight.css .line .attribute,.highlight.html .line .attribute,.highlight.json .line .attr,.highlight.less .line .attribute,.highlight.stylus .line .attribute{color:var(--color-title)}.highlight.css .line .selector-tag,.highlight.css .line .tag .name,.highlight.html .line .selector-tag,.highlight.html .line .tag .name,.highlight.less .line .selector-tag,.highlight.less .line .tag .name,.highlight.stylus .line .selector-tag,.highlight.stylus .line .tag .name{color:var(--color-html-tag)}.highlight.css .line .number,.highlight.html .line .number,.highlight.less .line .number,.highlight.stylus .line .number{color:var(--color-html-number)}
+/* override.css */
+
+/* original theme
+
+:root {
+    --color-keyword: #8959a8;
+    --color-title: #3f51b5;
+    --color-type: #2196f3;
+    --color-number: #fd8607;
+    --color-string: #449e48;
+    --color-html-tag: #ee2b29;
+    --color-html-number: #17afca;
+}
+
+*/
+
+.katex-html {
+    display: none !important;
+}
+
+:root {
+    --color-keyword: #8959a8;
+    --color-title: #3f51b5;
+    --color-type: #1e88e5;
+    --color-number: #fd8607;
+    --color-string: #3c763d;
+    --color-html-tag: #cd5f0e;
+    --color-html-number: #27ae60;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color-keyword: #c792ea;
+        --color-title: #82aaff;
+        --color-type: #2196f3;
+        --color-number: #f78c6c;
+        --color-string: #449e48;
+        --color-html-tag: #ff82aa;
+        --color-html-number: #17afca;
+    }
+}
+
+.code > pre .keyword, .code > pre .meta-keyword, .code > pre .javascript .function {
+    color: var(--color-keyword);
+    font-weight: bold;
+}
+
+.code > pre .title, .code > pre .attr, .code > pre .attribute {
+    color: var(--color-title);
+}
+
+.code > pre .type, .code > pre .built_in, .code > pre .tag .name {
+    color: var(--color-type);
+}
+
+.code > pre .number, .code > pre .preprocessor, .code > pre .literal, .code > pre .constant {
+    color: var(--color-number);
+}
+
+.code > pre .string, .code > pre .meta-string {
+    color: var(--color-string);
+}
+
+.highlight.html .line .attribute, .highlight.css .line .attribute, .highlight.less .line .attribute, .highlight.stylus .line .attribute, .highlight.json .line .attr {
+    color: var(--color-title);
+}
+
+.highlight.html .line .tag .name, .highlight.css .line .tag .name, .highlight.less .line .tag .name, .highlight.stylus .line .tag .name, .highlight.html .line .selector-tag, .highlight.css .line .selector-tag, .highlight.less .line .selector-tag, .highlight.stylus .line .selector-tag {
+    color: var(--color-html-tag);
+}
+
+.highlight.html .line .number, .highlight.css .line .number, .highlight.less .line .number, .highlight.stylus .line .number {
+    color: var(--color-html-number);
+}

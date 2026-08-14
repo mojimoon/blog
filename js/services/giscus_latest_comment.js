@@ -1,1 +1,37 @@
-utils.jq(()=>{$(function(){for(var a=document.getElementsByClassName("ds-giscus"),t=0;t<a.length;t++){let s=a[t],e=s.dataset.api;if(null!=e){let r=def.avatar;utils.request(s,e,async e=>{e=await e.json();let t=s.getAttribute("limit");e.forEach((e,a)=>{t&&a>=t||(comment=50<e.body.length?e.body.substring(0,50)+"...":e.body,a=(a=(a=(a=(a=(a='<div class="timenode" index="'+a+'"><div class="header"><div class="user-info">')+'<img src="'+(e.author.avatarUrl||r)+'" onerror="javascript:this.src=\''+r+"';\">")+"<span>"+e.author.login+"</span></div>")+"<span>"+new Date(e.createdAt).toLocaleString()+"</span>")+'</div><a class="body" href="'+e.url+'" target="_blank" rel="external nofollow noopener noreferrer">')+comment+"</a></div>",$(s).append(a))})})}}})});
+utils.jq(() => {
+    $(function () {
+      const els = document.getElementsByClassName('ds-giscus');
+      for (var i = 0; i < els.length; i++) {
+        const el = els[i];
+        const api = el.dataset.api;
+        if (api == null) {
+          continue;
+        }
+        const default_avatar = def.avatar;
+        // layout
+        utils.request(el, api, async resp => {
+          const data = await resp.json();
+          const limit = el.getAttribute('limit');
+          data.forEach((item, i) => {
+            if (limit && i >= limit) {
+              return;
+            }
+            comment = item.body.length > 50 ? item.body.substring(0, 50) + '...' : item.body;
+            var cell = '<div class="timenode" index="' + i + '">';
+            cell += '<div class="header">';
+            cell += '<div class="user-info">';
+            cell += '<img src="' + (item.author.avatarUrl || default_avatar) + '" onerror="javascript:this.src=\'' + default_avatar + '\';">';
+            cell += '<span>' + item.author.login + '</span>';
+            cell += '</div>';
+            cell += '<span>' + new Date(item.createdAt).toLocaleString() + '</span>';
+            cell += '</div>';
+            cell += '<a class="body" href="' + item.url + '" target="_blank" rel="external nofollow noopener noreferrer">';
+            cell += comment;
+            cell += '</a>';
+            cell += '</div>';
+            $(el).append(cell);
+          });
+        });
+      }
+    });
+  });

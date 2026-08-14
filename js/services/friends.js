@@ -1,1 +1,33 @@
-utils.jq(()=>{$(function(){for(var e=document.getElementsByClassName("ds-friends"),l=0;l<e.length;l++){let t=e[l],a=t.dataset.api;if(null!=a){let s=def.avatar;utils.request(t,a,async a=>{var e;for(e of(a=await a.json()).content||a){var l,r='<div class="grid-cell user-card">',r=(r=(r+=`<a class="card-link" target="_blank" rel="external nofollow noopener noreferrer" href="${e.html_url||e.url}">`)+`<img src="${e.avatar_url||e.avatar||e.icon||s}" onerror="javascript:this.removeAttribute('data-src');this.src='${s}';"/>`+'<div class="name image-meta">')+`<span class="image-caption">${e.title||e.login}</span>`+"</div>";e.labels&&0<e.labels.length&&(r+=`<div class="label" style="background:#${(l=e.labels[0]).color};">${l.name}</div>`),r+="</a></div>",$(t).find(".grid-box").append(r)}window.wrapLazyloadImages(t)})}}})});
+utils.jq(() => {
+  $(function () {
+    const els = document.getElementsByClassName('ds-friends');
+    for (var i = 0; i < els.length; i++) {
+      const el = els[i];
+      const api = el.dataset.api;
+      if (api == null) {
+        continue;
+      }
+      const default_avatar = def.avatar;
+      // layout
+      utils.request(el, api, async resp => {
+        const data = await resp.json();
+        for (let item of (data.content || data)) {
+          var cell = `<div class="grid-cell user-card">`;
+          cell += `<a class="card-link" target="_blank" rel="external nofollow noopener noreferrer" href="${item.html_url || item.url}">`;;
+          cell += `<img src="${item.avatar_url || item.avatar || item.icon || default_avatar}" onerror="javascript:this.removeAttribute(\'data-src\');this.src=\'${default_avatar}\';"/>`;
+          cell += `<div class="name image-meta">`;
+          cell += `<span class="image-caption">${item.title || item.login}</span>`;
+          cell += `</div>`;
+          if (item.labels && item.labels.length > 0) {
+            let label = item.labels[0];
+            cell += `<div class="label" style="background:#${label.color};">${label.name}</div>`;
+          }
+          cell += `</a>`;
+          cell += `</div>`;
+          $(el).find('.grid-box').append(cell);
+        }
+        window.wrapLazyloadImages(el);
+      });
+    }
+  });
+});
